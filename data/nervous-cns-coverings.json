@@ -1,0 +1,5312 @@
+{
+ "schema_version": "1.2",
+ "topic": {
+  "id": "nervous-cns-coverings",
+  "system": "nervous",
+  "title": {
+   "mn": null,
+   "la": null,
+   "en": "Circulation and the Central Nervous System"
+  }
+ },
+ "structures": [
+  {
+   "id": "common-carotid-artery",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Common carotid artery"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Aorta-гийн зүрхийг хангадаг эхний салаануудын дараах салаанаас (баруун талд brachiocephalic artery-аас) үүсэж толгой, хүзүүг цусаар хангадаг артери. Цааш internal carotid artery болон салаална; external carotid artery нь Cranium-ын гадаргуугийн эдийг хангана. Суурь хэсэгт нь сунах рецепторууд байрлаж, босох үед цусны даралт буурахад шууд хариу үзүүлдэг (orthostatic reflex).",
+   "details": null,
+   "clinical_mn": null,
+   "images": [],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply",
+     "fields": [
+      "names.en",
+      "description_mn"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "internal-carotid-artery",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Internal carotid artery"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": "common-carotid-artery",
+   "description_mn": "Common carotid artery-ийн салаа; Os temporale-ийн Canalis carotidis-аар гавлын хөндийд орж тархийг цусаар хангана. Зүүн, баруун internal carotid artery нь basilar artery-ийн салаануудтай хамт circle of Willis-ийг үүсгэнэ.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1314_Circle_of_WillisN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Chapter Review"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "vertebral-artery",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Vertebral arteries"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Тархи, нугасыг хангадаг хоёр дахь хос артери. Нугалмын баганын хоёр талаар өгсөж, хүзүүнд Vertebrae cervicales-ийн Foramen transversarium-аар дамжин хамгаалагдана; Os occipitale-ийн Foramen magnum-аар гавлын хөндийд орно. Салаанууд нь нийлж anterior spinal artery-г, хоёр vertebral artery өөрсдөө нийлж basilar artery-г үүсгэнэ.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1314_Circle_of_WillisN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Chapter Review"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "anterior-spinal-artery",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "spinal-cord",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Anterior spinal artery"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Зүүн, баруун vertebral artery-ийн салаанууд нийлж үүсгэх артери; Medulla spinalis-ийн урд гадаргуугаар anterior median fissure дагуу явж нугасны урд хэсгийг цусаар хангана.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1314_Circle_of_WillisN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "basilar-artery",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Basilar artery"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Хоёр vertebral artery нийлж үүсгэх артери; brain stem болон Cerebellum руу салаа өгнө. Түүний салаанууд internal carotid artery-уудтай хамт circle of Willis-ийг үүсгэнэ.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1314_Circle_of_WillisN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Glossary-д 'brain stem-ийн dorsal гадаргуугаар явна' гэсэн өгүүлбэр бий; үндсэн тексттэй харьцуулж багш шалгах хүртэл тайлбарт оруулаагүй. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "circle-of-willis",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Circle of Willis"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Тархины суурийг тойрсон артерийн өвөрмөц зохион байгуулалт (артериудын бэлчир); зүүн, баруун internal carotid artery ба basilar artery-ийн салаанууд нийлж үүсгэнэ. Аль нэг артери нарийсах эсвэл бөглөрсөн ч тархины цусан хангамжийг (perfusion) тасралтгүй хадгална; цус circle of Willis-ээр дамжин Cerebrum-д тархана.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1314_Circle_of_WillisN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "visible"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply (anatomy interactive)"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Chapter Review"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зурагт цагираг бүхэлдээ харагдах боловч 'Circle of Willis' гэсэн шошгогүй (зургийн тайлбарт нэрлэгдсэн). Нэрлэгдсэн салаанууд (anterior/posterior cerebral, communicating г.м.) зөвхөн зургийн шошгонд байгаа тул тусдаа бүтэц болгоогүй. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "middle-cerebral-artery",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Middle cerebral artery"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Circle of Willis-ээр дамжсан цус хүрэх артерийн нэг: эх текстийн анимацид circle of Willis-ээр middle cerebral artery руу урсах цусны хэвийн чиглэлийг харуулсан. Хангах муж нь материалд тайлбарлагдаагүй.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1314_Circle_of_WillisN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply (anatomy interactive)",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Эх текстэд bold биш; зөвхөн 'anatomy interactive' хайрцаг болон зургийн шошгонд нэрлэгдсэн. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "dural-sinuses",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Dural sinuses"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Dura-д хүрээлэгдсэн, тархийг тойрсон венийн бүтцүүд; ТМТ-ээр дамжсан цусыг jugular veins руу цуглуулна. Granulationes arachnoideae-ээр шингэсэн CSF мөн эдгээрт цутгаж, цустай хамт гавлын хөндийгөөс гарна.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return",
+     "fields": [
+      "names.en",
+      "description_mn"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Chapter Review"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "superior-sagittal-sinus",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Superior sagittal sinus"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": "dural-sinuses",
+   "description_mn": "Fissura longitudinalis cerebri-ийн ховилоор (дээд хэсгээр) явах dural sinus; Cerebrum-ийн гадна хэсгийн ихэнхээс цус цуглуулж, meninges-ээс CSF шингээнэ. Confluence of sinuses руу цутгана.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1315_Brain_Sinuses.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    },
+    {
+     "file": "1316_Meningeal_LayersN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    },
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "confluence-of-sinuses",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Confluence of sinuses"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": "dural-sinuses",
+   "description_mn": "Superior sagittal sinus, occipital sinuses ба straight sinus цутгадаг венийн нийлэх хэсэг; эндээс цус transverse sinuses руу урсана.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1315_Brain_Sinuses.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Эх текстэд bold биш боловч нэрлэгдсэн, зурагт шошготой. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "occipital-sinus",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Occipital sinuses"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": "dural-sinuses",
+   "description_mn": "Cerebrum-ийн Lobus occipitalis-ийн захын дагуух dural sinus-ууд; confluence of sinuses руу цутгана.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1315_Brain_Sinuses.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "straight-sinus",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Straight sinus"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": "dural-sinuses",
+   "description_mn": "Тархины гүн төв хэсгээс цус цуглуулж бусад sinus-уудтай нийлүүлэх dural sinus; confluence of sinuses руу цутгана.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1315_Brain_Sinuses.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "transverse-sinus",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Transverse sinuses"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": "dural-sinuses",
+   "description_mn": "Lobus occipitalis ба Cerebellum хоорондох зайн хоёр талаар явах dural sinus-ууд; confluence of sinuses-ээс цус хүлээн авч sigmoid sinuses руу дамжуулна.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1315_Brain_Sinuses.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийн шошгонд 'Tranverse sinus' гэж үсгийн алдаатай бичигдсэн. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "sigmoid-sinus",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Sigmoid sinuses"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": "dural-sinuses",
+   "description_mn": "Transverse sinuses-тэй холбогдож, цусыг шууд jugular veins руу цутгадаг dural sinus-ууд.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1315_Brain_Sinuses.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зурагт 'Blood returns to jugular vein via the sigmoid sinus' гэсэн шошгоор заасан. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "jugular-vein",
+   "system": "nervous",
+   "kind": "vessel",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Jugular veins"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Толгой, хүзүүнээс 'хэрэглэгдсэн' цусыг буцаах венүүд; sigmoid sinuses-ээс цус (шингэсэн CSF-ийн хамт) хүлээн авна. Эндээс цус зүрх рүү, цааш уушгинд хүчилтөрөгчөөр баяжихаар явна.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return",
+     "fields": [
+      "names.en",
+      "description_mn"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зурагт тусдаа шошгогүй тул практик асуулт гаргаагүй."
+   }
+  },
+  {
+   "id": "meninges",
+   "system": "nervous",
+   "kind": "meninx",
+   "region": "brain",
+   "ta2_id": 5369,
+   "names": {
+    "mn": null,
+    "la": "Meninges",
+    "en": "Meninges"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "ТМТ-ний гадаргууг бүрхэж тархи, нугасыг хамгаалах холбогч эдийн хальснууд. Гаднаас дотогш Dura, Arachnoidea, Pia гэсэн гурван ширхэглэг давхаргатай.",
+   "details": null,
+   "clinical_mn": "Meningitis нь meninges-ийн үрэвсэл; бактери (Streptococcus, Staphylococcus, сүрьеэгийн үүсгэгч г.м.) эсвэл вирус (ихэвчлэн enterovirus, мөн herpes, West Nile virus) үүсгэнэ. Шинж тэмдэг: халуурах, жихүүдэс хүрэх, дотор муухайрах, бөөлжих, гэрэлд мэдрэг болох, хүзүү өвдөх, хүчтэй толгой өвдөх, сэтгэцийн байдлын өөрчлөлт; сонсгол алдагдах нь түгээмэл үр дагавар. Үндсэн шинжилгээ нь lumbar puncture; бактерийн хэлбэр нь илүү хүнд бөгөөд антибиотикоор эмчилнэ, вирусын хэлбэр антибиотикт хариу өгөхгүй ч хөнгөн.",
+   "images": [],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Protective Coverings of the Brain and Spinal Cord",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "clinical_mn"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Meninges (Disorders box)"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Chapter Review"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5369",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Гурван давхаргыг тус тусад нь зурагтай холбосон; нийт meninges-д практик асуулт гаргаагүй."
+   }
+  },
+  {
+   "id": "dura-mater",
+   "system": "nervous",
+   "kind": "meninx",
+   "region": "brain",
+   "ta2_id": 5370,
+   "names": {
+    "mn": null,
+    "la": "Dura",
+    "en": "Dura mater"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "meninges",
+   "description_mn": "Meninges-ийн хамгийн гаднах, зузаан, бат бөх ширхэглэг давхарга; тархи, нугасыг бүхэлд нь, мөн гавлын хөндий ба нугалмын сувагт орох томоохон судсуудыг бүрхэнэ. Гавлын ясны дотор гадаргуу болон нугалмын хөндийн төгсгөлд шууд бэхлэгдэнэ; нэр нь Латинаар 'хатуу эх' гэсэн утгатай. Тархины том ан цав руу орох нугалаасуудтай: хоёр нь Cerebrum ба Cerebellum-ийн дунд шугамын зааг руу орно, нэг нь Lobus occipitalis ба Cerebellum-ийн хооронд майхан мэт тавиур үүсгэнэ, нөгөө нь pituitary gland-ийг хүрээлнэ. Венийн sinus-уудыг хүрээлж тулна.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1316_Meningeal_LayersN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    },
+    {
+     "file": "1315_Brain_Sinuses.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    },
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Protective Coverings of the Brain and Spinal Cord",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Dura Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Chapter Review"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5370",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "TA2 5370 'Dura' мөрийг OpenStax-ын 'dura mater'-т тохируулав. Зураг 1317-д 'Meningeal dura mater' гэж шошголсон. Нугалаасуудын нэр (falx, tentorium г.м.) эх текстэд нэрлэгдээгүй тул бичээгүй. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "arachnoid-mater",
+   "system": "nervous",
+   "kind": "meninx",
+   "region": "brain",
+   "ta2_id": 5386,
+   "names": {
+    "mn": null,
+    "la": "Arachnoidea",
+    "en": "Arachnoid mater"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "synonyms": [
+    {
+     "mn": null,
+     "la": null,
+     "en": "Arachnoid"
+    },
+    {
+     "mn": null,
+     "la": null,
+     "en": "Arachnoid membrane"
+    }
+   ],
+   "parent_id": "meninges",
+   "description_mn": "Meninges-ийн дунд давхарга; нимгэн ширхэглэг эдээс тогтож ТМТ-г тойрсон сул уут үүсгэнэ. Pia-тай хооронд нь аалзны тор мэт Trabeculae arachnoideae байдаг тул ингэж нэрлэгдсэн. Dural sinus-ууд руу Granulationes arachnoideae болон цухуйна.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1316_Meningeal_LayersN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Protective Coverings of the Brain and Spinal Cord",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "synonyms",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arachnoid Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5386",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "TA2 5386 'Arachnoidea' мөрийг 'arachnoid mater'-т тохируулав. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "arachnoid-trabeculae",
+   "system": "nervous",
+   "kind": "meninx",
+   "region": "brain",
+   "ta2_id": 5390,
+   "names": {
+    "mn": null,
+    "la": "Trabeculae arachnoideae",
+    "en": "Arachnoid trabeculae"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "arachnoid-mater",
+   "description_mn": "Arachnoidea-ийн доорх, аалзны тор мэт нимгэн утаслаг тор; Arachnoidea ба Pia-ийн хооронд, Spatium subarachnoideum дотор байрлана.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1316_Meningeal_LayersN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Protective Coverings of the Brain and Spinal Cord",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arachnoid Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5390",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "pia-mater",
+   "system": "nervous",
+   "kind": "meninx",
+   "region": "brain",
+   "ta2_id": 5405,
+   "names": {
+    "mn": null,
+    "la": "Pia",
+    "en": "Pia mater"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "meninges",
+   "description_mn": "ТМТ-ний гадаргууг шууд бүрхэх нимгэн, хамгийн дотор ширхэглэг хальс; Cortex cerebri ба Cerebellum-ийн атираа (gyri), ховил (sulci) болон бусад хонхорт нэвтэрнэ. Шингэн нэвтрүүлдэггүй үргэлжилсэн эсийн давхаргатай гэж үздэг; нэр нь Латинаар 'зөөлөн эх' гэсэн утгатай. Нугасны төгсгөлөөс нарийн утас нь Columna vertebralis-ийн дээд бэлхүүсний түвшнээс sacrum-ын төгсгөл хүртэл үргэлжилнэ. Мэдрэлийн эдийг тэжээх судсууд Pia ба мэдрэлийн эдийн хооронд байрлана.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1316_Meningeal_LayersN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Protective Coverings of the Brain and Spinal Cord",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Pia Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5405",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "TA2 5405 'Pia' мөрийг 'pia mater'-т тохируулав. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "subarachnoid-space",
+   "system": "nervous",
+   "kind": "meninx",
+   "region": "brain",
+   "ta2_id": 5387,
+   "names": {
+    "mn": null,
+    "la": "Spatium subarachnoideum",
+    "en": "Subarachnoid space"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "meninges",
+   "description_mn": "Arachnoidea ба Pia-ийн хоорондох зай; эргэлдэж буй CSF болон Trabeculae arachnoideae-ээр дүүрэн. Ховдлуудаас гарсан CSF энд бүх ТМТ-г тойрон урсаж, бодисын солилцооны хаягдлыг зайлуулах ба тархи, нугасыг шингэн дэрээр хамгаална. CSF эндээс Granulationes arachnoideae-ээр цусанд шингэнэ.",
+   "details": null,
+   "clinical_mn": "CSF-ийн дээжийг (цусны шинжилгээтэй адил) авч мэдрэлийн эмгэгийн химийн нотолгоог илрүүлж болно. Нугас Columna vertebralis-ийн доод бэлхүүсний хэсэг хүртэл үргэлжилдэггүй тул энд Dura ба Arachnoidea-г цоолон Spatium subarachnoideum-д зүү оруулж CSF авдаг (lumbar puncture) — нугасны эдийг гэмтээх эрсдэлээс зайлсхийнэ. Энэ нь meningitis-ийн үндсэн шинжилгээ юм.",
+   "images": [
+    {
+     "file": "1316_Meningeal_LayersN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    },
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arachnoid Mater",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "clinical_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Pia Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Meninges (Disorders box)"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5387",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "TA2 хүснэгтийн (Z-Anatomy TA2.csv) илт үсгийн алдааг зассан; багш шалгана. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "arachnoid-granulations",
+   "system": "nervous",
+   "kind": "meninx",
+   "region": "brain",
+   "ta2_id": 5389,
+   "names": {
+    "mn": null,
+    "la": "Granulationes arachnoideae",
+    "en": "Arachnoid granulations"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "synonyms": [
+    {
+     "mn": null,
+     "la": null,
+     "en": "Arachnoid villus"
+    }
+   ],
+   "parent_id": "arachnoid-mater",
+   "description_mn": "Arachnoidea-ийн dural sinus-ууд руу цухуйсан төсөөлөл (outpocketing); CSF-ийг бодисын солилцооны хаягдлын хамт шүүж цусанд буцаан шингээнэ. CSF-ийн эргэлтийн хүснэгтэд Spatium subarachnoideum-ийн судасны бүтэц гэж заасан.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    },
+    {
+     "file": "1316_Meningeal_LayersN.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arachnoid Mater",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "synonyms",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5389",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг 1316-д 'Arachnoid granulation villi', тайлбарт 'arachnoid villus' гэж нэрлэсэн. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "ventricles",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "brain",
+   "ta2_id": null,
+   "names": {
+    "mn": null,
+    "la": null,
+    "en": "Ventricles"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "missing",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Тархины доторх CSF эргэлддэг хөндий зайнууд; мэдрэлийн хоолойн хөндий төвийн үлдэгдэл. Дөрвөн ховдол (хоёр Ventriculus lateralis, Ventriculus tertius, Ventriculus quartus) бүгд мэдрэлийн хоолойн анхны хөндий болох Canalis centralis-аас үүссэн. Зарим ховдолд Plexus chorioideus цусыг шүүж CSF үүсгэх ба CSF бүх ховдлоор эргэлдэж эцэст нь Spatium subarachnoideum руу гарна.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricular System",
+     "fields": [
+      "names.en",
+      "description_mn"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "names.la",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Ерөнхий нэр томьёо ('ventricles'); TA2 хүснэгтэд нийтлэг 'ховдлын систем' мөр олдсонгүй."
+   }
+  },
+  {
+   "id": "lateral-ventricle",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "brain",
+   "ta2_id": 5639,
+   "names": {
+    "mn": null,
+    "la": "Ventriculus lateralis",
+    "en": "Lateral ventricles"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "ventricles",
+   "description_mn": "Cerebrum-ийн гүнд, зүүн, баруун талд байрлах хоёр ховдол; өмнө нь эхний ба хоёр дахь ховдол гэж нэрлэдэг байв. Telencephalon гавлын хөндийд томрохдоо 'C' хэлбэртэй болдог тул эдгээр ховдол ч духны, оройн, дагзны, эцэст нь чамархайн хэсгийг дамжин C хэлбэрээр сунана. Духны хэсэг нь Foramen interventriculare-ээр Ventriculus tertius-тай холбогдоно; Plexus chorioideus агуулна.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    },
+    {
+     "file": "1308_Frontal_Section_Basal_Nuclei.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5639",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зурагт 'Right lateral ventricle' гэж шошголсон. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "interventricular-foramen",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "brain",
+   "ta2_id": 5641,
+   "names": {
+    "mn": null,
+    "la": "Foramen interventriculare",
+    "en": "Interventricular foramina"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "ventricles",
+   "description_mn": "Ventriculus lateralis-уудын духны хэсгийг Ventriculus tertius-тай холбох хоёр нүх; CSF эдгээрээр дамжина.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5641",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "third-ventricle",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "brain",
+   "ta2_id": 5769,
+   "names": {
+    "mn": null,
+    "la": "Ventriculus tertius",
+    "en": "Third ventricle"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "ventricles",
+   "description_mn": "Diencephalon-ий зүүн, баруун талын хоорондох зай; Hypothalamus ба Thalamus-ийн дотор хананаар хязгаарлагдана. Ихэнх тархинд хоёр Thalamus төвд massa intermedia болж шүргэлцэх ба түүнийг Ventriculus tertius тойрно. Aquaeductus mesencephali руу нээгдэнэ; Plexus chorioideus агуулж нэмэлт CSF үүсгэнэ.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5769",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "cerebral-aqueduct",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "brain",
+   "ta2_id": 5910,
+   "names": {
+    "mn": null,
+    "la": "Aquaeductus mesencephali",
+    "en": "Cerebral aqueduct"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "ventricles",
+   "description_mn": "Ventriculus tertius ба Ventriculus quartus-ийг холбох суваг; Epithalamus-ийн яг доор нээгдэж Mesencephalon-ийг дамжина. Tectum mesencephali нь дээвэр, Tegmentum mesencephali нь ёроол болно. Plexus chorioideus агуулдаггүй.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5910",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "fourth-ventricle",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "brain",
+   "ta2_id": 5966,
+   "names": {
+    "mn": null,
+    "la": "Ventriculus quartus",
+    "en": "Fourth ventricle"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "ventricles",
+   "description_mn": "Cerebellum ба Pons, Medulla oblongata-ийн дээд хэсгийн хоорондох зай; ёроол нь Pons ба дээд Medulla oblongata-ийн нурууны (dorsal) гадаргуу. Доош нарийсч нугасны Canalis centralis болон үргэлжилнэ. Apertura mediana ба хоёр Apertura lateralis-аар Spatium subarachnoideum руу нээгдэнэ; Plexus chorioideus агуулж нэмэлт CSF үүсгэнэ.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5966",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "median-aperture",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "brain",
+   "ta2_id": 5970,
+   "names": {
+    "mn": null,
+    "la": "Apertura mediana ventriculi quarti",
+    "en": "Median aperture"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "fourth-ventricle",
+   "description_mn": "Ventriculus quartus-аас Spatium subarachnoideum руу дунд шугамд, Medulla oblongata ба Cerebellum-ийн хооронд нээгдэх ганц нүх; CSF ховдлын системээс эндүүгээр гарна.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5970",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "lateral-aperture",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "brain",
+   "ta2_id": 5969,
+   "names": {
+    "mn": null,
+    "la": "Apertura lateralis ventriculi quarti",
+    "en": "Lateral apertures"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "fourth-ventricle",
+   "description_mn": "Ventriculus quartus-аас Spatium subarachnoideum руу хоёр талд, Medulla oblongata ба Cerebellum-ийн хооронд нээгдэх хос нүх; CSF ховдлын системээс эндүүгээр гарна.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5969",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "central-canal",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "spinal-cord",
+   "ta2_id": 6127,
+   "names": {
+    "mn": null,
+    "la": "Canalis centralis",
+    "en": "Central canal"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": "spinal-cord",
+   "description_mn": "Medulla spinalis доторх хөндий зай; мэдрэлийн хоолойн төвийн үлдэгдэл бөгөөд бүх ховдол үүнээс үүссэн. Ventriculus quartus доош нарийсч Canalis centralis болно. CSF Ventriculus quartus-аас Canalis centralis руу урсаж болох ч энэ нь үндсэндээ мухар зам (cul-de-sac) тул ихэнх CSF apertures-аар Spatium subarachnoideum руу гарна. Plexus chorioideus агуулдаггүй.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    },
+    {
+     "file": "1313_Spinal_Cord_Cross_Section.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 6127",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  },
+  {
+   "id": "choroid-plexus",
+   "system": "nervous",
+   "kind": "ventricle",
+   "region": "brain",
+   "ta2_id": 5409,
+   "names": {
+    "mn": null,
+    "la": "Plexus chorioideus",
+    "en": "Choroid plexus"
+   },
+   "name_status": {
+    "mn": "missing",
+    "la": "source",
+    "en": "source"
+   },
+   "parent_id": null,
+   "description_mn": "Ховдлуудад байрлах тусгай бүрхүүл (membrane); Ependyma-ийн эсүүд цусны хялгасан судсыг хүрээлж цусыг шүүн CSF үүсгэнэ. Дөрвөн ховдол бүгдэд байдаг (Aquaeductus mesencephali ба Canalis centralis-д байхгүй). Задлан шинжилгээнд зөөлөн, сэвсгэр, ягаан өнгөтэй харагдаж болно. Нэг plexus бага хэмжээг шүүдэг ч нийтдээ өдөрт ойролцоогоор 500 мл CSF тасралтгүй үүсгэнэ.",
+   "details": null,
+   "clinical_mn": null,
+   "images": [
+    {
+     "file": "1317_CFS_Circulation.jpg",
+     "source_id": "openstax-ap2e",
+     "view": null,
+     "region_id": null,
+     "figure_check": "labeled"
+    }
+   ],
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles",
+     "fields": [
+      "names.en",
+      "description_mn",
+      "images"
+     ]
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "ta2",
+     "locator": "TA2 5409",
+     "fields": [
+      "ta2_id",
+      "names.la"
+     ]
+    }
+   ],
+   "missing_in_sources": [
+    "names.mn",
+    "clinical_mn"
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "TA2 5409 (Pia-ийн доорх ерөнхий 'Plexus chorioideus') мөрийг ашиглав. Зургийг нүдээр шалгасан (Claude, 2026-10-20)."
+   }
+  }
+ ],
+ "practical_questions": [
+  {
+   "id": "prac-internal-carotid-artery-01",
+   "structure_id": "internal-carotid-artery",
+   "image": {
+    "file": "1314_Circle_of_WillisN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Internal carotid artery"
+   },
+   "accepted_answers": [
+    "Internal carotid artery",
+    "Internal carotid"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1314_Circle_of_WillisN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-vertebral-artery-01",
+   "structure_id": "vertebral-artery",
+   "image": {
+    "file": "1314_Circle_of_WillisN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Vertebral arteries"
+   },
+   "accepted_answers": [
+    "Vertebral artery",
+    "Vertebral arteries"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1314_Circle_of_WillisN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-anterior-spinal-artery-01",
+   "structure_id": "anterior-spinal-artery",
+   "image": {
+    "file": "1314_Circle_of_WillisN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Anterior spinal artery"
+   },
+   "accepted_answers": [
+    "Anterior spinal artery"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1314_Circle_of_WillisN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-basilar-artery-01",
+   "structure_id": "basilar-artery",
+   "image": {
+    "file": "1314_Circle_of_WillisN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Basilar artery"
+   },
+   "accepted_answers": [
+    "Basilar artery"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1314_Circle_of_WillisN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-circle-of-willis-01",
+   "structure_id": "circle-of-willis",
+   "image": {
+    "file": "1314_Circle_of_WillisN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "visible"
+   },
+   "prompt_mn": "Зурагт тархины суурийн артериудын нийлж үүсгэсэн цагираг хэлбэрийн бүтцийг харуулав. Энэ бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Circle of Willis"
+   },
+   "accepted_answers": [
+    "Circle of Willis"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1314_Circle_of_WillisN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-middle-cerebral-artery-01",
+   "structure_id": "middle-cerebral-artery",
+   "image": {
+    "file": "1314_Circle_of_WillisN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Middle cerebral artery"
+   },
+   "accepted_answers": [
+    "Middle cerebral artery"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1314_Circle_of_WillisN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-superior-sagittal-sinus-01",
+   "structure_id": "superior-sagittal-sinus",
+   "image": {
+    "file": "1315_Brain_Sinuses.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Superior sagittal sinus"
+   },
+   "accepted_answers": [
+    "Superior sagittal sinus"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1315_Brain_Sinuses"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-confluence-of-sinuses-01",
+   "structure_id": "confluence-of-sinuses",
+   "image": {
+    "file": "1315_Brain_Sinuses.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Confluence of sinuses"
+   },
+   "accepted_answers": [
+    "Confluence of sinuses"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1315_Brain_Sinuses"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-occipital-sinus-01",
+   "structure_id": "occipital-sinus",
+   "image": {
+    "file": "1315_Brain_Sinuses.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Occipital sinuses"
+   },
+   "accepted_answers": [
+    "Occipital sinus",
+    "Occipital sinuses"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1315_Brain_Sinuses"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-straight-sinus-01",
+   "structure_id": "straight-sinus",
+   "image": {
+    "file": "1315_Brain_Sinuses.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Straight sinus"
+   },
+   "accepted_answers": [
+    "Straight sinus"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1315_Brain_Sinuses"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-transverse-sinus-01",
+   "structure_id": "transverse-sinus",
+   "image": {
+    "file": "1315_Brain_Sinuses.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Transverse sinuses"
+   },
+   "accepted_answers": [
+    "Transverse sinus",
+    "Transverse sinuses"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1315_Brain_Sinuses"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-sigmoid-sinus-01",
+   "structure_id": "sigmoid-sinus",
+   "image": {
+    "file": "1315_Brain_Sinuses.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": null,
+    "en": "Sigmoid sinuses"
+   },
+   "accepted_answers": [
+    "Sigmoid sinus",
+    "Sigmoid sinuses"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1315_Brain_Sinuses"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-dura-mater-01",
+   "structure_id": "dura-mater",
+   "image": {
+    "file": "1316_Meningeal_LayersN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Dura",
+    "en": "Dura mater"
+   },
+   "accepted_answers": [
+    "Dura mater",
+    "Dura"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1316_Meningeal_LayersN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-arachnoid-mater-01",
+   "structure_id": "arachnoid-mater",
+   "image": {
+    "file": "1316_Meningeal_LayersN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Arachnoidea",
+    "en": "Arachnoid mater"
+   },
+   "accepted_answers": [
+    "Arachnoid mater",
+    "Arachnoid",
+    "Arachnoid membrane"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1316_Meningeal_LayersN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-arachnoid-trabeculae-01",
+   "structure_id": "arachnoid-trabeculae",
+   "image": {
+    "file": "1316_Meningeal_LayersN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Trabeculae arachnoideae",
+    "en": "Arachnoid trabeculae"
+   },
+   "accepted_answers": [
+    "Arachnoid trabeculae"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1316_Meningeal_LayersN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-pia-mater-01",
+   "structure_id": "pia-mater",
+   "image": {
+    "file": "1316_Meningeal_LayersN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Pia",
+    "en": "Pia mater"
+   },
+   "accepted_answers": [
+    "Pia mater",
+    "Pia"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1316_Meningeal_LayersN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-subarachnoid-space-01",
+   "structure_id": "subarachnoid-space",
+   "image": {
+    "file": "1316_Meningeal_LayersN.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Spatium subarachnoideum",
+    "en": "Subarachnoid space"
+   },
+   "accepted_answers": [
+    "Subarachnoid space"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1316_Meningeal_LayersN"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-arachnoid-granulations-01",
+   "structure_id": "arachnoid-granulations",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Granulationes arachnoideae",
+    "en": "Arachnoid granulations"
+   },
+   "accepted_answers": [
+    "Arachnoid granulations",
+    "Arachnoid granulation",
+    "Arachnoid villi"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-lateral-ventricle-01",
+   "structure_id": "lateral-ventricle",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Ventriculus lateralis",
+    "en": "Lateral ventricles"
+   },
+   "accepted_answers": [
+    "Lateral ventricle",
+    "Lateral ventricles",
+    "Right lateral ventricle"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-interventricular-foramen-01",
+   "structure_id": "interventricular-foramen",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Foramen interventriculare",
+    "en": "Interventricular foramina"
+   },
+   "accepted_answers": [
+    "Interventricular foramen",
+    "Interventricular foramina"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-third-ventricle-01",
+   "structure_id": "third-ventricle",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Ventriculus tertius",
+    "en": "Third ventricle"
+   },
+   "accepted_answers": [
+    "Third ventricle"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-cerebral-aqueduct-01",
+   "structure_id": "cerebral-aqueduct",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Aquaeductus mesencephali",
+    "en": "Cerebral aqueduct"
+   },
+   "accepted_answers": [
+    "Cerebral aqueduct",
+    "Aqueduct of midbrain"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-fourth-ventricle-01",
+   "structure_id": "fourth-ventricle",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Ventriculus quartus",
+    "en": "Fourth ventricle"
+   },
+   "accepted_answers": [
+    "Fourth ventricle"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-median-aperture-01",
+   "structure_id": "median-aperture",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Apertura mediana ventriculi quarti",
+    "en": "Median aperture"
+   },
+   "accepted_answers": [
+    "Median aperture"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-lateral-aperture-01",
+   "structure_id": "lateral-aperture",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Apertura lateralis ventriculi quarti",
+    "en": "Lateral apertures"
+   },
+   "accepted_answers": [
+    "Lateral aperture",
+    "Lateral apertures"
+   ],
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-central-canal-01",
+   "structure_id": "central-canal",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Canalis centralis",
+    "en": "Central canal"
+   },
+   "accepted_answers": [
+    "Central canal"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  },
+  {
+   "id": "prac-choroid-plexus-01",
+   "structure_id": "choroid-plexus",
+   "image": {
+    "file": "1317_CFS_Circulation.jpg",
+    "source_id": "openstax-ap2e",
+    "view": null,
+    "region_id": null,
+    "figure_check": "labeled"
+   },
+   "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+   "answer": {
+    "mn": null,
+    "la": "Plexus chorioideus",
+    "en": "Choroid plexus"
+   },
+   "accepted_answers": [
+    "Choroid plexus",
+    "Choroid plexuses"
+   ],
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Figure 1317_CFS_Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+   }
+  }
+ ],
+ "theory_questions": [
+  {
+   "id": "theo-internal-carotid-artery-01",
+   "structure_ids": [
+    "internal-carotid-artery",
+    "carotid-canal"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Internal carotid artery гавлын хөндийд аль нүхээр ордог вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Os occipitale-ийн Foramen magnum"
+    },
+    {
+     "id": "b",
+     "text_mn": "Os temporale-ийн Canalis carotidis"
+    },
+    {
+     "id": "c",
+     "text_mn": "Vertebrae cervicales-ийн Foramen transversarium"
+    },
+    {
+     "id": "d",
+     "text_mn": "Ventriculus quartus-ийн Apertura mediana"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Internal carotid artery нь Os temporale-ийн Canalis carotidis-аар гавлын хөндийд орно. Foramen magnum-аар vertebral arteries ордог; Foramen transversarium нь хүзүүнд vertebral arteries-ийг хамгаална.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-vertebral-artery-01",
+   "structure_ids": [
+    "vertebral-artery",
+    "foramen-magnum"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Vertebral arteries гавлын хөндийд аль нүхээр ордог вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Canalis carotidis"
+    },
+    {
+     "id": "b",
+     "text_mn": "Foramen interventriculare"
+    },
+    {
+     "id": "c",
+     "text_mn": "Foramen magnum"
+    },
+    {
+     "id": "d",
+     "text_mn": "Apertura lateralis ventriculi quarti"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Vertebral arteries нь Os occipitale-ийн Foramen magnum-аар гавлын хөндийд орно. Canalis carotidis-аар internal carotid artery орно; Foramen interventriculare, apertures нь ховдлын системийн нүхнүүд.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-vertebral-artery-02",
+   "structure_ids": [
+    "vertebral-artery",
+    "transverse-foramen",
+    "cervical-vertebrae"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Vertebral arteries хүзүүгээр өнгөрөхдөө юугаар хамгаалагддаг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Vertebrae cervicales-ийн Foramen transversarium"
+    },
+    {
+     "id": "b",
+     "text_mn": "Dura-ийн нугалаас"
+    },
+    {
+     "id": "c",
+     "text_mn": "Os temporale-ийн Canalis carotidis"
+    },
+    {
+     "id": "d",
+     "text_mn": "Spatium subarachnoideum"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Vertebral arteries хүзүүгээр өнгөрөхдөө Vertebrae cervicales-ийн Foramen transversarium-аар дамжиж хамгаалагдана.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-basilar-artery-01",
+   "structure_ids": [
+    "basilar-artery",
+    "vertebral-artery"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Basilar artery хэрхэн үүсдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Хоёр internal carotid artery нийлж"
+    },
+    {
+     "id": "b",
+     "text_mn": "Common carotid artery-ийн шууд үргэлжлэл"
+    },
+    {
+     "id": "c",
+     "text_mn": "Хоёр vertebral artery нийлж"
+    },
+    {
+     "id": "d",
+     "text_mn": "Anterior spinal artery-ийн салаа"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Хоёр vertebral artery нийлж basilar artery-г үүсгэнэ. Internal carotid artery нь common carotid artery-ийн салаа; anterior spinal artery нь vertebral arteries-ийн салаанаас үүснэ.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-basilar-artery-02",
+   "structure_ids": [
+    "basilar-artery",
+    "cerebellum"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Basilar artery-ийн салаанууд юуг хангадаг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Cranium-ын гадаргуугийн эдийг"
+    },
+    {
+     "id": "b",
+     "text_mn": "Brain stem ба Cerebellum-ийг"
+    },
+    {
+     "id": "c",
+     "text_mn": "Medulla spinalis-ийн урд хэсгийг"
+    },
+    {
+     "id": "d",
+     "text_mn": "Зүрхийг"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Basilar artery нь brain stem ба Cerebellum руу салаа өгнө. Cranium-ын гадаргууг external carotid arteries, нугасны урд хэсгийг anterior spinal artery, зүрхийг aorta-гийн хамгийн эхний салаанууд хангана.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-anterior-spinal-artery-01",
+   "structure_ids": [
+    "anterior-spinal-artery",
+    "vertebral-artery"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Anterior spinal artery-ийн талаар зөв өгүүлбэрийг сонго.",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Basilar artery-ийн салаа бөгөөд Cerebellum-ийг хангана"
+    },
+    {
+     "id": "b",
+     "text_mn": "Internal carotid artery-ийн салаа бөгөөд Canalis carotidis-аар орно"
+    },
+    {
+     "id": "c",
+     "text_mn": "Нугасны арын гадаргуугаар явна"
+    },
+    {
+     "id": "d",
+     "text_mn": "Vertebral arteries-ийн салаанууд нийлж үүсэх бөгөөд anterior median fissure дагуу нугасны урд хэсгийг хангана"
+    }
+   ],
+   "correct_option_ids": [
+    "d"
+   ],
+   "explanation_mn": "Зүүн, баруун vertebral arteries-ийн салаанууд нийлж anterior spinal artery-г үүсгэнэ; энэ нь нугасны урд гадаргуугаар anterior median fissure дагуу явж урд хэсгийг хангана.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-circle-of-willis-01",
+   "structure_ids": [
+    "circle-of-willis",
+    "internal-carotid-artery",
+    "basilar-artery"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Circle of Willis-ийг аль артериуд үүсгэдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Зүүн, баруун internal carotid artery ба basilar artery-ийн салаанууд"
+    },
+    {
+     "id": "b",
+     "text_mn": "Зөвхөн хоёр vertebral artery"
+    },
+    {
+     "id": "c",
+     "text_mn": "External carotid arteries ба jugular veins"
+    },
+    {
+     "id": "d",
+     "text_mn": "Anterior spinal artery ба common carotid artery"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Зүүн, баруун internal carotid arteries болон basilar artery-ийн салаанууд бүгд circle of Willis болно.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Chapter Review"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-circle-of-willis-02",
+   "structure_ids": [
+    "circle-of-willis"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Circle of Willis-ийн гол ач холбогдол юу вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "CSF үүсгэх"
+    },
+    {
+     "id": "b",
+     "text_mn": "Нэг артери нарийсах эсвэл бөглөрөхөд ч тархины цусан хангамжийг тасралтгүй хадгалах"
+    },
+    {
+     "id": "c",
+     "text_mn": "Тархины венийн цусыг jugular veins руу цуглуулах"
+    },
+    {
+     "id": "d",
+     "text_mn": "Босох үед цусны даралтын бууралтыг мэдрэх"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Circle of Willis нь артериудын бэлчир бөгөөд нэг хэсгээр урсгал нарийсах эсвэл бөглөрсөн ч тархины perfusion-ийг хадгална. CSF-ийг Plexus chorioideus үүсгэнэ; венийн цусыг dural sinuses цуглуулна; даралтыг common carotid-ийн суурийн сунах рецепторууд мэдэрнэ.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Chapter Review"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-common-carotid-artery-01",
+   "structure_ids": [
+    "common-carotid-artery",
+    "internal-carotid-artery"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Cranium-ын гадаргуугийн эдийг аль артериуд хангадаг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Internal carotid arteries"
+    },
+    {
+     "id": "b",
+     "text_mn": "Vertebral arteries"
+    },
+    {
+     "id": "c",
+     "text_mn": "External carotid arteries"
+    },
+    {
+     "id": "d",
+     "text_mn": "Basilar artery"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Common carotid arteries нь internal carotid arteries болон салаална; external carotid arteries нь Cranium-ын гадаргуугийн эдийг хангана. Internal carotid ба vertebral arteries нь ТМТ-г хангана.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-common-carotid-artery-02",
+   "structure_ids": [
+    "common-carotid-artery"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Common carotid arteries-ийн суурь хэсгийн сунах рецепторууд ямар рефлексэд оролцдог вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Orthostatic reflex — босох үед цусны даралтыг хадгалах"
+    },
+    {
+     "id": "b",
+     "text_mn": "Залгих рефлекс"
+    },
+    {
+     "id": "c",
+     "text_mn": "CSF үүсгэлтийг зогсоох рефлекс"
+    },
+    {
+     "id": "d",
+     "text_mn": "Зүрхний цохилтыг удаашруулж даралтыг бууруулах рефлекс"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Common carotid-ийн суурийн сунах рецепторууд босох үед даралт буурахад шууд хариу үзүүлж orthostatic reflex-ийг үүсгэнэ: симпатик системээр зүрхний цохилт нэмэгдэж цусны даралт өснө.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-superior-sagittal-sinus-01",
+   "structure_ids": [
+    "superior-sagittal-sinus"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Superior sagittal sinus хаана байрлах вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Lobus occipitalis ба Cerebellum хоорондох зайн хоёр талд"
+    },
+    {
+     "id": "b",
+     "text_mn": "Тархины гүн төвд"
+    },
+    {
+     "id": "c",
+     "text_mn": "Fissura longitudinalis cerebri-ийн ховилд"
+    },
+    {
+     "id": "d",
+     "text_mn": "Шууд jugular veins-тэй залгах хэсэгт"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Superior sagittal sinus нь Fissura longitudinalis cerebri-ийн ховилоор явж meninges-ээс CSF шингээнэ. Хоёр талд transverse sinuses, гүн төвд straight sinus, jugular veins-тэй sigmoid sinuses залгана.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-dural-sinuses-01",
+   "structure_ids": [
+    "dural-sinuses",
+    "superior-sagittal-sinus",
+    "confluence-of-sinuses",
+    "transverse-sinus",
+    "sigmoid-sinus",
+    "jugular-vein"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Тархины венийн цусны урсгалын зөв дарааллыг сонго.",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Superior sagittal sinus → transverse sinuses → confluence of sinuses → sigmoid sinuses → jugular veins"
+    },
+    {
+     "id": "b",
+     "text_mn": "Superior sagittal sinus → confluence of sinuses → transverse sinuses → sigmoid sinuses → jugular veins"
+    },
+    {
+     "id": "c",
+     "text_mn": "Superior sagittal sinus → sigmoid sinuses → transverse sinuses → jugular veins"
+    },
+    {
+     "id": "d",
+     "text_mn": "Straight sinus → jugular veins → confluence of sinuses → transverse sinuses"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Superior sagittal sinus нь confluence of sinuses руу цутгаж, тэндээс transverse sinuses руу, цааш sigmoid sinuses-ээр jugular veins руу цутгана.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-sigmoid-sinus-01",
+   "structure_ids": [
+    "sigmoid-sinus",
+    "jugular-vein"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Аль dural sinus-ууд шууд jugular veins руу цутгадаг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Superior sagittal sinus"
+    },
+    {
+     "id": "b",
+     "text_mn": "Straight sinus"
+    },
+    {
+     "id": "c",
+     "text_mn": "Occipital sinuses"
+    },
+    {
+     "id": "d",
+     "text_mn": "Sigmoid sinuses"
+    }
+   ],
+   "correct_option_ids": [
+    "d"
+   ],
+   "explanation_mn": "Sigmoid sinuses нь transverse sinuses-тэй холбогдож, цусыг шууд jugular veins руу цутгана. Бусад нь confluence of sinuses руу цутгана.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-straight-sinus-01",
+   "structure_ids": [
+    "straight-sinus",
+    "superior-sagittal-sinus"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Тархины гүн төв хэсгээс цус цуглуулдаг dural sinus аль нь вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Straight sinus"
+    },
+    {
+     "id": "b",
+     "text_mn": "Superior sagittal sinus"
+    },
+    {
+     "id": "c",
+     "text_mn": "Transverse sinuses"
+    },
+    {
+     "id": "d",
+     "text_mn": "Sigmoid sinuses"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Straight sinus нь тархины гүн төвөөс цус цуглуулна. Superior sagittal sinus нь Cerebrum-ийн гадна хэсгийн ихэнхээс цус цуглуулна.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-confluence-of-sinuses-01",
+   "structure_ids": [
+    "confluence-of-sinuses",
+    "superior-sagittal-sinus",
+    "occipital-sinus",
+    "straight-sinus"
+   ],
+   "question_type": "multiple-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Confluence of sinuses руу аль sinus-ууд цутгадаг вэ? (бүх зөвийг сонго)",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Superior sagittal sinus"
+    },
+    {
+     "id": "b",
+     "text_mn": "Occipital sinuses"
+    },
+    {
+     "id": "c",
+     "text_mn": "Straight sinus"
+    },
+    {
+     "id": "d",
+     "text_mn": "Sigmoid sinuses"
+    }
+   ],
+   "correct_option_ids": [
+    "a",
+    "b",
+    "c"
+   ],
+   "explanation_mn": "Superior sagittal sinus нь occipital sinuses ба straight sinus-тэй хамт confluence of sinuses руу цутгаж, цаашаа transverse sinuses руу урсана. Sigmoid sinuses нь transverse sinuses-ээс цус авч jugular veins руу дамжуулна.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-transverse-sinus-01",
+   "structure_ids": [
+    "transverse-sinus",
+    "sigmoid-sinus"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Transverse sinuses цусаа шууд аль бүтэц рүү дамжуулдаг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Superior sagittal sinus"
+    },
+    {
+     "id": "b",
+     "text_mn": "Sigmoid sinuses"
+    },
+    {
+     "id": "c",
+     "text_mn": "Straight sinus"
+    },
+    {
+     "id": "d",
+     "text_mn": "Internal carotid artery"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Transverse sinuses нь sigmoid sinuses-тэй холбогдож, тэдгээр нь jugular veins руу цутгана.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Venous Return"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-occipital-sinus-01",
+   "structure_ids": [
+    "occipital-sinus"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Occipital sinuses хаана байрлах вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Fissura longitudinalis cerebri-ийн ховилд"
+    },
+    {
+     "id": "b",
+     "text_mn": "Тархины гүн төвд"
+    },
+    {
+     "id": "c",
+     "text_mn": "Cerebrum-ийн Lobus occipitalis-ийн захын дагуу"
+    },
+    {
+     "id": "d",
+     "text_mn": "Нугасны урд гадаргуу дээр"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Occipital sinuses нь Cerebrum-ийн дагзны дэлбэнгийн (Lobus occipitalis) захын дагуух dural sinus-ууд.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-meninges-01",
+   "structure_ids": [
+    "meninges",
+    "dura-mater",
+    "arachnoid-mater",
+    "pia-mater"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Meninges-ийн давхаргуудыг гаднаас дотогш зөв дарааллаар сонго.",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Pia → Arachnoidea → Dura"
+    },
+    {
+     "id": "b",
+     "text_mn": "Arachnoidea → Dura → Pia"
+    },
+    {
+     "id": "c",
+     "text_mn": "Dura → Pia → Arachnoidea"
+    },
+    {
+     "id": "d",
+     "text_mn": "Dura → Arachnoidea → Pia"
+    }
+   ],
+   "correct_option_ids": [
+    "d"
+   ],
+   "explanation_mn": "Dura нь хамгийн гаднах зузаан давхарга, Arachnoidea дунд давхарга, Pia нь ТМТ-ний гадаргууг шууд бүрхэх хамгийн дотор давхарга.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Protective Coverings of the Brain and Spinal Cord"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arachnoid Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-dura-mater-01",
+   "structure_ids": [
+    "dura-mater"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Dura-ийн талаар зөв өгүүлбэрийг сонго.",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Гавлын ясны дотор гадаргуу ба нугалмын хөндийн төгсгөлд бэхлэгддэг зузаан, бат бөх давхарга"
+    },
+    {
+     "id": "b",
+     "text_mn": "Gyri ба sulci-д нэвтэрч ТМТ-ний гадаргууг шууд бүрхэнэ"
+    },
+    {
+     "id": "c",
+     "text_mn": "Аалзны тор мэт trabeculae-тай дунд давхарга"
+    },
+    {
+     "id": "d",
+     "text_mn": "Нэр нь 'зөөлөн эх' гэсэн утгатай"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Dura ('хатуу эх') нь гавлын ясны дотор гадаргуу болон нугалмын хөндийн төгсгөлд шууд бэхлэгдэх зузаан хамгаалах давхарга. Gyri-д нэвтэрдэг, 'зөөлөн эх' гэсэн нэртэй нь Pia; trabeculae-тай нь Arachnoidea.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Protective Coverings of the Brain and Spinal Cord"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Dura Mater"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-dura-mater-02",
+   "structure_ids": [
+    "dura-mater",
+    "cerebellum"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Dura-ийн нугалаасуудын талаар эх текстэд тохирох өгүүлбэрийг сонго.",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Нугалаас нь Pia-г цоолж ховдлууд руу ордог"
+    },
+    {
+     "id": "b",
+     "text_mn": "Нэг нугалаас нь Lobus occipitalis ба Cerebellum-ийн хооронд майхан мэт тавиур үүсгэнэ"
+    },
+    {
+     "id": "c",
+     "text_mn": "Dura нугалаас үүсгэдэггүй"
+    },
+    {
+     "id": "d",
+     "text_mn": "Нугалаасууд нь CSF үүсгэдэг"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Dura тархины том ан цав руу нугалаас үүсгэнэ: хоёр нь Cerebrum ба Cerebellum-ийн дунд шугамын зааг руу, нэг нь дагзны дэлбэн ба Cerebellum-ийн хооронд майхан мэт тавиур, нөгөө нь pituitary gland-ийг хүрээлнэ. CSF-ийг Plexus chorioideus үүсгэнэ.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Dura Mater"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-arachnoid-mater-01",
+   "structure_ids": [
+    "arachnoid-mater",
+    "arachnoid-trabeculae"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "terminology",
+   "stem_mn": "Arachnoidea ('аалз' гэсэн үгнээс) ийм нэрийг юунаас болж авсан бэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Найман давхаргатай тул"
+    },
+    {
+     "id": "b",
+     "text_mn": "Аалзны тор мэт trabeculae нь Pia-тай хооронд нь байдаг тул"
+    },
+    {
+     "id": "c",
+     "text_mn": "Dural sinus руу цухуйдаг тул"
+    },
+    {
+     "id": "d",
+     "text_mn": "Гавлын ясанд наалддаг тул"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Arachnoidea нь Pia-тай хооронд нь байх аалзны тор мэт Trabeculae arachnoideae-ээсээ нэрээ авсан.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Protective Coverings of the Brain and Spinal Cord"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arachnoid Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-arachnoid-trabeculae-01",
+   "structure_ids": [
+    "arachnoid-trabeculae",
+    "subarachnoid-space"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Trabeculae arachnoideae хаана байрладаг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Dura ба гавлын ясны хооронд"
+    },
+    {
+     "id": "b",
+     "text_mn": "Ventriculus tertius дотор"
+    },
+    {
+     "id": "c",
+     "text_mn": "Spatium subarachnoideum-д, Arachnoidea ба Pia-ийн хооронд"
+    },
+    {
+     "id": "d",
+     "text_mn": "Dural sinus дотор"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Trabeculae arachnoideae нь Arachnoidea ба Pia-ийн хоорондох Spatium subarachnoideum-д байрлах утаслаг тор юм.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arachnoid Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-pia-mater-01",
+   "structure_ids": [
+    "pia-mater"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Pia-ийн талаар зөв өгүүлбэрийг сонго.",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Гавлын ясны дотор гадаргууд бэхлэгдэнэ"
+    },
+    {
+     "id": "b",
+     "text_mn": "ТМТ-ний гадаргууг шууд бүрхэж gyri ба sulci-ийн дотор нэвтэрнэ"
+    },
+    {
+     "id": "c",
+     "text_mn": "Dural sinus руу granulations болж цухуйна"
+    },
+    {
+     "id": "d",
+     "text_mn": "ТМТ-г тойрсон сул уут үүсгэнэ"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Pia нь ТМТ-ний гадаргууд шууд наалдаж Cortex cerebri ба Cerebellum-ийн sulci-ийн дотор талыг бүрхэнэ. Гавлын ясанд бэхлэгддэг нь Dura; уут үүсгэж, granulations-аар цухуйдаг нь Arachnoidea.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Protective Coverings of the Brain and Spinal Cord"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Pia Mater"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-pia-mater-02",
+   "structure_ids": [
+    "pia-mater"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Мэдрэлийн эдийг тэжээх судсууд хаана байрладаг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Pia ба мэдрэлийн эдийн хооронд"
+    },
+    {
+     "id": "b",
+     "text_mn": "Ховдлуудын дотор"
+    },
+    {
+     "id": "c",
+     "text_mn": "Canalis centralis дотор"
+    },
+    {
+     "id": "d",
+     "text_mn": "Гавлын ясны гадна гадаргуу дээр"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Эх текстэд ТМТ-ний эдийг тэжээх судсууд Pia ба мэдрэлийн эдийн хооронд байрладаг гэжээ.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Pia Mater"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-subarachnoid-space-01",
+   "structure_ids": [
+    "subarachnoid-space"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Spatium subarachnoideum аль давхаргуудын хооронд байрлаж, юугаар дүүрэн байдаг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Dura ба гавлын ясны хооронд; венийн цусаар"
+    },
+    {
+     "id": "b",
+     "text_mn": "Arachnoidea ба Pia-ийн хооронд; CSF ба trabeculae-ээр"
+    },
+    {
+     "id": "c",
+     "text_mn": "Dura ба Arachnoidea-ийн хооронд; агаараар"
+    },
+    {
+     "id": "d",
+     "text_mn": "Pia ба мэдрэлийн эдийн хооронд; зөвхөн судсаар"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Spatium subarachnoideum нь Arachnoidea ба Pia-ийн хоорондох зай бөгөөд CSF болон Trabeculae arachnoideae агуулна.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arachnoid Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Chapter Review"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-subarachnoid-space-02",
+   "structure_ids": [
+    "subarachnoid-space",
+    "dura-mater",
+    "arachnoid-mater"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "clinical",
+   "stem_mn": "Lumbar puncture-ийг яагаад доод бэлхүүсний түвшинд хийдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Тэнд Dura байхгүй тул"
+    },
+    {
+     "id": "b",
+     "text_mn": "Тэнд CSF хамгийн их үүсдэг тул"
+    },
+    {
+     "id": "c",
+     "text_mn": "Нугас доод бэлхүүсний хэсэг хүртэл үргэлжилдэггүй тул нугасны эдийг гэмтээх эрсдэлгүй"
+    },
+    {
+     "id": "d",
+     "text_mn": "Тэнд Plexus chorioideus байрладаг тул"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Нугас дээд бэлхүүсний түвшинд төгсдөг тул доод бэлхүүсэнд зүүг Dura ба Arachnoidea-г цоолон Spatium subarachnoideum-д оруулж CSF авахад нугасны эдийг гэмтээх эрсдэл үгүй.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Pia Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Meninges (Disorders box)"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-meninges-02",
+   "structure_ids": [
+    "meninges"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "clinical",
+   "stem_mn": "Meningitis-ийн талаар зөв өгүүлбэрийг сонго.",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Вирусын meningitis-ийг антибиотикоор эмчилнэ"
+    },
+    {
+     "id": "b",
+     "text_mn": "Бактерийн meningitis илүү хүнд явцтай байх хандлагатай"
+    },
+    {
+     "id": "c",
+     "text_mn": "Үндсэн шинжилгээ нь цусны шинжилгээ"
+    },
+    {
+     "id": "d",
+     "text_mn": "Зөвхөн вирусээр үүсдэг"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Meningitis бактери эсвэл вирусээр үүснэ; бактерийн хэлбэр илүү хүнд бөгөөд антибиотикоор эмчилнэ, вирусынх антибиотикт хариу өгөхгүй. Үндсэн шинжилгээ нь lumbar puncture.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Meninges (Disorders box)"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-meninges-03",
+   "structure_ids": [
+    "meninges"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "clinical",
+   "stem_mn": "Meningitis-ийн түгээмэл үр дагавар аль нь вэ (meninges-ээр дамждаг мэдрэлүүдтэй холбоотой)?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Сонсгол алдагдах"
+    },
+    {
+     "id": "b",
+     "text_mn": "Хараа бүрэн алдагдах"
+    },
+    {
+     "id": "c",
+     "text_mn": "Залгих чадвар алдагдах"
+    },
+    {
+     "id": "d",
+     "text_mn": "Хөл саажих"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Meninges-ээр мэдрэлүүд дамждаг тул захын бүтцүүд гэмтэх эрсдэлтэй; эх текстэд сонсгол алдагдах нь meningitis-ийн түгээмэл үр дагавар гэжээ.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Meninges (Disorders box)"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-arachnoid-granulations-01",
+   "structure_ids": [
+    "arachnoid-granulations",
+    "dural-sinuses"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Granulationes arachnoideae-ийн үүрэг юу вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "CSF үүсгэх"
+    },
+    {
+     "id": "b",
+     "text_mn": "CSF-ийг dural sinuses-ээр дамжуулан цусанд буцаан шингээх"
+    },
+    {
+     "id": "c",
+     "text_mn": "Ховдлуудыг хооронд нь холбох"
+    },
+    {
+     "id": "d",
+     "text_mn": "Артерийн цусыг тархинд хүргэх"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Granulationes arachnoideae нь Arachnoidea-ийн dural sinuses руу цухуйсан хэсэг бөгөөд CSF-ийг хаягдлын хамт цусанд шингээнэ. CSF-ийг Plexus chorioideus үүсгэнэ.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arachnoid Mater"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-ventricles-01",
+   "structure_ids": [
+    "ventricles",
+    "central-canal"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "terminology",
+   "stem_mn": "Тархины ховдлууд хэд байх ба юунаас үүссэн бэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Гурав; Dura-ийн нугалаасаас"
+    },
+    {
+     "id": "b",
+     "text_mn": "Дөрөв; мэдрэлийн хоолойн анхны хөндий (Canalis centralis)-аас"
+    },
+    {
+     "id": "c",
+     "text_mn": "Хоёр; Spatium subarachnoideum-аас"
+    },
+    {
+     "id": "d",
+     "text_mn": "Дөрөв; dural sinuses-ээс"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Тархинд дөрвөн ховдол байх ба бүгд мэдрэлийн хоолойн анхны хөндий зай болох Canalis centralis-аас үүссэн.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-lateral-ventricle-01",
+   "structure_ids": [
+    "lateral-ventricle",
+    "cerebrum"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Ventriculus lateralis-ийн талаар зөв өгүүлбэрийг сонго.",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Mesencephalon-ийг дамжин өнгөрнө"
+    },
+    {
+     "id": "b",
+     "text_mn": "Diencephalon-ий хоёр талын хооронд байрлана"
+    },
+    {
+     "id": "c",
+     "text_mn": "Cerebrum-ийн гүнд байрлах ба өмнө нь эхний, хоёр дахь ховдол гэж нэрлэгддэг байв"
+    },
+    {
+     "id": "d",
+     "text_mn": "Cerebellum ба Pons-ийн хооронд байрлана"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Ventriculus lateralis-ууд Cerebrum-ийн гүнд байрлах ба өмнө нь эхний ба хоёр дахь ховдол гэж нэрлэгддэг байв. Diencephalon-д Ventriculus tertius, Mesencephalon-д Aquaeductus mesencephali, Cerebellum ба Pons-ийн хооронд Ventriculus quartus байрлана.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-lateral-ventricle-02",
+   "structure_ids": [
+    "lateral-ventricle"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Ventriculus lateralis яагаад 'C' хэлбэртэй байдаг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Telencephalon гавлын хөндийд томрохдоо Os frontale-ээр хязгаарлагдаж C хэлбэр авдаг тул"
+    },
+    {
+     "id": "b",
+     "text_mn": "Dura-ийн нугалаас дарж хэлбэржүүлдэг тул"
+    },
+    {
+     "id": "c",
+     "text_mn": "Plexus chorioideus-ийн даралтаас"
+    },
+    {
+     "id": "d",
+     "text_mn": "Aquaeductus mesencephali-ийн хэлбэрийг дагадаг тул"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Telencephalon томрохдоо гавлын (Os frontale) хязгаараас цааш ургаж чадахгүй тул Cerebrum духны, оройн, дагзны, чамархайн хэсгийг дамжин C хэлбэр авч, доторх хөндий нь мөн C хэлбэрээр сунана.",
+   "difficulty": 3,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-interventricular-foramen-01",
+   "structure_ids": [
+    "interventricular-foramen",
+    "lateral-ventricle",
+    "third-ventricle"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Foramen interventriculare аль ховдлуудыг холбодог вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Ventriculus tertius ба Ventriculus quartus"
+    },
+    {
+     "id": "b",
+     "text_mn": "Ventriculus lateralis ба Ventriculus tertius"
+    },
+    {
+     "id": "c",
+     "text_mn": "Ventriculus quartus ба Spatium subarachnoideum"
+    },
+    {
+     "id": "d",
+     "text_mn": "Ventriculus quartus ба Canalis centralis"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Хоёр Foramen interventriculare нь Ventriculus lateralis-уудын духны хэсгийг Ventriculus tertius-тай холбоно. Ventriculus tertius ба quartus-ийг Aquaeductus mesencephali, Ventriculus quartus-ийг Spatium subarachnoideum-тай apertures холбоно.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-third-ventricle-01",
+   "structure_ids": [
+    "third-ventricle",
+    "thalamus"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Ventriculus tertius-ийн ханыг аль бүтцүүд үүсгэдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Pons ба Medulla oblongata"
+    },
+    {
+     "id": "b",
+     "text_mn": "Tectum ба Tegmentum mesencephali"
+    },
+    {
+     "id": "c",
+     "text_mn": "Hypothalamus ба Thalamus-ийн дотор хана"
+    },
+    {
+     "id": "d",
+     "text_mn": "Cerebellum ба Pons"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Ventriculus tertius нь Hypothalamus ба Thalamus-ийн дотор хананаар хязгаарлагдсан Diencephalon дахь зай. Tectum ба tegmentum нь Aquaeductus mesencephali-ийн дээвэр, ёроол; Pons ба Medulla oblongata нь Ventriculus quartus-ийн ёроол.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-cerebral-aqueduct-01",
+   "structure_ids": [
+    "cerebral-aqueduct",
+    "midbrain"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Aquaeductus mesencephali-ийн дээвэр ба ёроолыг юу үүсгэдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Дээвэр — Tectum mesencephali, ёроол — Tegmentum mesencephali"
+    },
+    {
+     "id": "b",
+     "text_mn": "Дээвэр — Cerebellum, ёроол — Pons"
+    },
+    {
+     "id": "c",
+     "text_mn": "Дээвэр — Thalamus, ёроол — Hypothalamus"
+    },
+    {
+     "id": "d",
+     "text_mn": "Дээвэр — Tegmentum mesencephali, ёроол — Tectum mesencephali"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Aquaeductus mesencephali нь Mesencephalon-ийг дамжих ба Tectum нь дээвэр, Tegmentum нь ёроол болно.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-fourth-ventricle-01",
+   "structure_ids": [
+    "fourth-ventricle",
+    "pons",
+    "medulla-oblongata"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Ventriculus quartus-ийн ёроолыг юу үүсгэдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Hypothalamus-ийн дотор хана"
+    },
+    {
+     "id": "b",
+     "text_mn": "Pons ба дээд Medulla oblongata-ийн нурууны гадаргуу"
+    },
+    {
+     "id": "c",
+     "text_mn": "Tectum mesencephali"
+    },
+    {
+     "id": "d",
+     "text_mn": "Os occipitale"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Ventriculus quartus нь Cerebellum ба Pons, дээд Medulla oblongata-ийн хооронд байрлах ба ёроол нь Pons ба дээд Medulla oblongata-ийн нурууны (dorsal) гадаргуу юм.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-median-aperture-01",
+   "structure_ids": [
+    "median-aperture",
+    "lateral-aperture",
+    "fourth-ventricle",
+    "subarachnoid-space"
+   ],
+   "question_type": "multiple-choice",
+   "topic_tag": "location",
+   "stem_mn": "CSF ховдлын системээс Spatium subarachnoideum руу аль нүхнүүдээр гардаг вэ? (бүх зөвийг сонго)",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Apertura mediana ventriculi quarti"
+    },
+    {
+     "id": "b",
+     "text_mn": "Apertura lateralis ventriculi quarti"
+    },
+    {
+     "id": "c",
+     "text_mn": "Foramen interventriculare"
+    },
+    {
+     "id": "d",
+     "text_mn": "Aquaeductus mesencephali"
+    }
+   ],
+   "correct_option_ids": [
+    "a",
+    "b"
+   ],
+   "explanation_mn": "Ventriculus quartus-аас ганц Apertura mediana болон хос Apertura lateralis-аар CSF Spatium subarachnoideum руу гарна. Foramen interventriculare ба Aquaeductus mesencephali нь ховдлуудыг хооронд нь холбоно.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-central-canal-01",
+   "structure_ids": [
+    "central-canal",
+    "fourth-ventricle"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Ventriculus quartus-аас Canalis centralis руу орсон CSF-ийн талаар зөв өгүүлбэр аль нь вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Canalis centralis нь Spatium subarachnoideum руу шууд нээгдэх гол гарц"
+    },
+    {
+     "id": "b",
+     "text_mn": "Canalis centralis-д Plexus chorioideus их хэмжээний CSF үүсгэнэ"
+    },
+    {
+     "id": "c",
+     "text_mn": "Canalis centralis нь үндсэндээ мухар зам тул ихэнх CSF apertures-аар Spatium subarachnoideum руу гарна"
+    },
+    {
+     "id": "d",
+     "text_mn": "Canalis centralis нь dural sinuses руу цутгана"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "CSF Ventriculus quartus-аас Canalis centralis руу урсаж болох ч энэ нь мухар зам (cul-de-sac) тул ихэнх нь median ба lateral apertures-аар Spatium subarachnoideum руу гарна. Хүснэгтэд Canalis centralis-д судасны бүтэц 'байхгүй' гэжээ.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-choroid-plexus-01",
+   "structure_ids": [
+    "choroid-plexus"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Plexus chorioideus-д CSF-ийг ямар эсүүд үүсгэдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Цусны хялгасан судсыг хүрээлсэн Ependyma-ийн эсүүд"
+    },
+    {
+     "id": "b",
+     "text_mn": "Dura-ийн ширхэглэг эсүүд"
+    },
+    {
+     "id": "c",
+     "text_mn": "Trabeculae arachnoideae"
+    },
+    {
+     "id": "d",
+     "text_mn": "Granulationes arachnoideae"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Plexus chorioideus-д Ependyma-ийн эсүүд хялгасан судсыг хүрээлж цусыг шүүн CSF үүсгэнэ. Granulationes arachnoideae нь CSF-ийг буцаан шингээнэ.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Glossary"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-choroid-plexus-02",
+   "structure_ids": [
+    "choroid-plexus",
+    "cerebral-aqueduct"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "CSF-ийн эргэлтийн хүснэгтийн дагуу аль бүрэлдэхүүнд Plexus chorioideus БАЙХГҮЙ вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Ventriculus lateralis"
+    },
+    {
+     "id": "b",
+     "text_mn": "Ventriculus tertius"
+    },
+    {
+     "id": "c",
+     "text_mn": "Aquaeductus mesencephali"
+    },
+    {
+     "id": "d",
+     "text_mn": "Ventriculus quartus"
+    }
+   ],
+   "correct_option_ids": [
+    "c"
+   ],
+   "explanation_mn": "Хүснэгтэд Plexus chorioideus нь Ventriculus lateralis, tertius, quartus-д байх ба Aquaeductus mesencephali болон Canalis centralis-д судасны бүтэц 'байхгүй' гэжээ.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Table: Components of CSF Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-choroid-plexus-03",
+   "structure_ids": [
+    "choroid-plexus"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "Plexus chorioideus-ууд өдөрт нийт ойролцоогоор хэдий хэмжээний CSF үүсгэдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "50 мл"
+    },
+    {
+     "id": "b",
+     "text_mn": "500 мл"
+    },
+    {
+     "id": "c",
+     "text_mn": "5 литр"
+    },
+    {
+     "id": "d",
+     "text_mn": "1500 мл"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Нэг plexus маш бага хэмжээг шүүдэг ч нийтдээ өдөрт ойролцоогоор 500 мл CSF тасралтгүй үүсгэнэ.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-csf-pathway-01",
+   "structure_ids": [
+    "lateral-ventricle",
+    "interventricular-foramen",
+    "third-ventricle",
+    "cerebral-aqueduct",
+    "fourth-ventricle",
+    "subarachnoid-space",
+    "arachnoid-granulations"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "location",
+   "stem_mn": "CSF-ийн эргэлтийн зөв дарааллыг сонго.",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Ventriculus tertius → Ventriculus lateralis → Ventriculus quartus → Aquaeductus mesencephali → Spatium subarachnoideum"
+    },
+    {
+     "id": "b",
+     "text_mn": "Ventriculus lateralis → Foramen interventriculare → Ventriculus tertius → Aquaeductus mesencephali → Ventriculus quartus → apertures → Spatium subarachnoideum → Granulationes arachnoideae"
+    },
+    {
+     "id": "c",
+     "text_mn": "Spatium subarachnoideum → Ventriculus quartus → Ventriculus lateralis → dural sinuses"
+    },
+    {
+     "id": "d",
+     "text_mn": "Ventriculus lateralis → Aquaeductus mesencephali → Ventriculus tertius → Canalis centralis → dural sinuses"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "CSF Ventriculus lateralis-аас Foramen interventriculare-ээр Ventriculus tertius руу, Aquaeductus mesencephali-ээр Ventriculus quartus руу урсаж, median ба lateral apertures-аар Spatium subarachnoideum руу гарч, Granulationes arachnoideae-ээр dural sinuses-ийн цусанд шингэнэ.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    },
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-csf-composition-01",
+   "structure_ids": [
+    "choroid-plexus",
+    "ventricles"
+   ],
+   "question_type": "true-false",
+   "topic_tag": "terminology",
+   "stem_mn": "CSF нь үндсэндээ ус, жижиг молекул, электролитээс тогтсон, цусны бүрэлдэхүүнийг хязгаарлагдмал хэмжээгээр агуулсан тунгалаг уусмал. Энэ өгүүлбэр үнэн үү?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Үнэн"
+    },
+    {
+     "id": "b",
+     "text_mn": "Худал"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Эх текстэд CSF нь цусны бүрэлдэхүүн хэсгийг хязгаарлагдмал хэмжээгээр агуулсан тунгалаг уусмал, үндсэндээ ус, жижиг молекул, электролит; хүчилтөрөгч, нүүрсхүчлийн хий уусаж мэдрэлийн эдтэй диффузиор солилцоно гэжээ.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — The Ventricles"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-subarachnoid-space-03",
+   "structure_ids": [
+    "subarachnoid-space"
+   ],
+   "question_type": "multiple-choice",
+   "topic_tag": "location",
+   "stem_mn": "Spatium subarachnoideum дахь CSF-ийн хоёр гол үүргийг сонго. (бүх зөвийг сонго)",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "ТМТ-ний бодисын солилцооны хаягдлыг зайлуулах"
+    },
+    {
+     "id": "b",
+     "text_mn": "Тархи, нугасыг шингэн дэрээр хамгаалах"
+    },
+    {
+     "id": "c",
+     "text_mn": "Тархинд артерийн цусыг хүргэх"
+    },
+    {
+     "id": "d",
+     "text_mn": "Тархины гадаргууг гавлын ясанд бэхлэх"
+    }
+   ],
+   "correct_option_ids": [
+    "a",
+    "b"
+   ],
+   "explanation_mn": "Spatium subarachnoideum-д CSF нь мэдрэлийн эдийн хаягдлыг ТМТ-ээс зайлуулах ба тархи, нугасыг шингэн дэрээр хамгаалах хоёр чухал үүрэгтэй. Артерийн цусыг internal carotid ба vertebral arteries хүргэнэ; гавлын ясанд Dura бэхлэгдэнэ.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Cerebrospinal Fluid Circulation"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-stroke-01",
+   "structure_ids": [
+    "internal-carotid-artery",
+    "vertebral-artery",
+    "circle-of-willis"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "clinical",
+   "stem_mn": "Эх текстийн дагуу stroke (тархины цусан хангамжийн тасалдал) юунаас үүсдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Dural sinus-ийн хэт их даралтаас"
+    },
+    {
+     "id": "b",
+     "text_mn": "Тархины артерийг бөглөх embolus (цусны бүлэн, өөхний эмболи, агаарын бөмбөлөг)-оос"
+    },
+    {
+     "id": "c",
+     "text_mn": "CSF хэт их үүсэхээс"
+    },
+    {
+     "id": "d",
+     "text_mn": "Meninges-ийн бактерийн үрэвслээс"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Stroke нь тархины артерийг embolus (цусны бүлэн, өөхний эмболи эсвэл агаарын бөмбөлөг) бөглөснөөс үүсэх ба цусаар хангагдаагүй эд үхнэ. Meninges-ийн үрэвсэл нь meningitis.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Central Nervous System (Disorders box)"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-stroke-02",
+   "structure_ids": [
+    "circle-of-willis"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "clinical",
+   "stem_mn": "Stroke-ийг танихад хэрэглэдэг FAST товчлолын үсгүүд юуг илэрхийлдэг вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Face, Arms, Speech, Time"
+    },
+    {
+     "id": "b",
+     "text_mn": "Fever, Ache, Sleep, Temperature"
+    },
+    {
+     "id": "c",
+     "text_mn": "Face, Ataxia, Swallowing, Tremor"
+    },
+    {
+     "id": "d",
+     "text_mn": "Focus, Alertness, Sight, Touch"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "FAST: Face — нүүрний булчингийн хөдөлгөөн, Arms — хоёр гараа өргөж чадах эсэх, Speech — яриа өөрчлөгдсөн эсэх, Time — тусламж дуудах цаг.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Central Nervous System (Disorders box)"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-stroke-03",
+   "structure_ids": [
+    "medulla-oblongata",
+    "vertebral-artery"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "clinical",
+   "stem_mn": "Эх текстэд дурдсанаар Medulla oblongata-ийн хажуу хэсгийн stroke ямар чадварыг алдагдуулж болох вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Залгих чадвар"
+    },
+    {
+     "id": "b",
+     "text_mn": "Царай таних чадвар"
+    },
+    {
+     "id": "c",
+     "text_mn": "Сонсгол"
+    },
+    {
+     "id": "d",
+     "text_mn": "Үнэр мэдрэх чадвар"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "Хажуу Medulla oblongata-ийн stroke залгих чадварыг алдагдуулж болох ба тэнд цагаан бодисын замууд дамждаг тул нүүр, мөчдийн мэдрэхүй ч алдагдаж болно. Царай таних чадвар нь кортексийн тодорхой хэсгийн цусан хангамжтай холбоотой.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Central Nervous System (Disorders box)"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-tia-01",
+   "structure_ids": [
+    "circle-of-willis"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "clinical",
+   "stem_mn": "Transient ischemic attack (TIA, 'бага stroke')-ийн онцлог аль нь вэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Бөглөрөл түр зуурын бөгөөд эсийн үхэлд хүргэхгүй; эдгэрвэл үйл ажиллагаа сэргэж болно"
+    },
+    {
+     "id": "b",
+     "text_mn": "Үргэлж байнгын саажилт үүсгэнэ"
+    },
+    {
+     "id": "c",
+     "text_mn": "Meninges-ийн вирусын халдвар"
+    },
+    {
+     "id": "d",
+     "text_mn": "Венийн sinus-ийн бөглөрөл"
+    }
+   ],
+   "correct_option_ids": [
+    "a"
+   ],
+   "explanation_mn": "TIA-д бөглөрөл түр зуурын бөгөөд эсийн үхэлд хүргэхүйц биш; мэдрэлийн эсүүд эдгэрэх хүртэл үйл ажиллагаа алдагдаж, дараа нь сэргэж болно.",
+   "difficulty": 2,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Central Nervous System (Disorders box)"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  },
+  {
+   "id": "theo-middle-cerebral-artery-01",
+   "structure_ids": [
+    "middle-cerebral-artery",
+    "circle-of-willis"
+   ],
+   "question_type": "single-choice",
+   "topic_tag": "blood-supply",
+   "stem_mn": "Эх текстийн анимацид circle of Willis-ээр дамжин аль артери руу урсах цусны хэвийн чиглэлийг харуулсан бэ?",
+   "options": [
+    {
+     "id": "a",
+     "text_mn": "Anterior spinal artery"
+    },
+    {
+     "id": "b",
+     "text_mn": "Middle cerebral artery"
+    },
+    {
+     "id": "c",
+     "text_mn": "Common carotid artery"
+    },
+    {
+     "id": "d",
+     "text_mn": "Vertebral artery"
+    }
+   ],
+   "correct_option_ids": [
+    "b"
+   ],
+   "explanation_mn": "Anatomy interactive хэсэгт circle of Willis-ээр middle cerebral artery руу урсах цусны хэвийн чиглэлийг харуулсан гэжээ. Vertebral ба common carotid arteries нь circle of Willis-ийн өмнөх, anterior spinal artery нугас руу явах судас.",
+   "difficulty": 1,
+   "sources": [
+    {
+     "source_id": "openstax-ap2e",
+     "locator": "Ch.13.3 Circulation and the Central Nervous System — Arterial Supply (anatomy interactive)"
+    }
+   ],
+   "review": {
+    "verified": false,
+    "verified_by": null,
+    "verified_date": null,
+    "notes": null
+   }
+  }
+ ]
+}

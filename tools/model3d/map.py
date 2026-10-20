@@ -22,6 +22,21 @@ for f in sorted(glob.glob(R + '/data/*.json')):
         if s.get('ta2_id') in ta2: keys += list(ta2[s['ta2_id']])
         for k in keys:
             if k: idx.setdefault(norm(k), (tid, s['id']))
+# TA2 шатлалаар эцэг бүтэц (tools/model3d/part_of.json)
+PO = json.load(open(R + '/tools/model3d/part_of.json', encoding='utf-8'))
+ta2_by_en = {}
+for i, (la, en) in ta2.items():
+    for k in (la, en): ta2_by_en.setdefault(norm(k), i)
+sid_topic = {sid: t for (t, sid) in idx.values()}
+def part_of(raw):
+    for pat, sid in PO['name_patterns']:
+        if re.search(pat, raw) and sid in sid_topic: return (sid_topic[sid], sid)
+    i = ta2_by_en.get(norm(raw)) or ta2_by_en.get(norm(re.sub(r'\*', '', raw)))
+    if i is None: return None
+    best = None
+    for a, b, sid in PO['ta2_ranges']:
+        if a <= i <= b and sid in sid_topic and (best is None or b - a < best[0]): best = (b - a, sid)
+    return (sid_topic[best[1]], best[1]) if best else None
 hit = miss = 0; misses = []
 for n in nodes:
     raw = re.sub(r'\.[a-z0-9]+$', '', n['node'])
@@ -55,6 +70,9 @@ for n in nodes:
         if not m2: m2 = idx.get(norm(re.sub(r'\b(muscle|part)\b', '', stripped)))
         if m2 and stripped != raw: m = m2; n['part_of'] = True
         elif m2: m = m2
+    if not m and n['kind'] == 'bone':
+        m = part_of(raw)
+        if m: n['part_of'] = True
     n['name'] = raw
     if m: n['topic'], n['structure_id'] = m; hit += 1
     else: miss += 1; misses.append((n['kind'], raw))

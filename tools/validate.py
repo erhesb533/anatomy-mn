@@ -26,7 +26,7 @@ for f in glob.glob(os.path.join(HERE, 'sources', 'ta2-*.md')):
             ta2[int(m.group(1))] = (m.group(2), m.group(3))
 
 figures = set()
-for f in glob.glob(os.path.join(HERE, 'sources', '0*-*.md')):
+for f in glob.glob(os.path.join(HERE, 'sources', '[01]*-*.md')):
     figures |= set(re.findall(r'\[Зураг: ([^\]]+)\]', open(f, encoding='utf-8').read()))
 
 files = [f for a in sys.argv[1:] if not a.startswith('--') for f in glob.glob(a)

@@ -165,6 +165,51 @@
     "practical": 22,
     "theory": 57
    }
+  },
+  {
+   "id": "nervous-cns",
+   "file": "nervous-cns.json",
+   "system": "nervous",
+   "title": {
+    "mn": null,
+    "la": "Systema nervosum centrale",
+    "en": "Central nervous system — brain and spinal cord"
+   },
+   "counts": {
+    "structures": 78,
+    "practical": 41,
+    "theory": 96
+   }
+  },
+  {
+   "id": "nervous-cns-coverings",
+   "file": "nervous-cns-coverings.json",
+   "system": "nervous",
+   "title": {
+    "mn": null,
+    "la": null,
+    "en": "Circulation and the Central Nervous System"
+   },
+   "counts": {
+    "structures": 32,
+    "practical": 27,
+    "theory": 49
+   }
+  },
+  {
+   "id": "nervous-pns",
+   "file": "nervous-pns.json",
+   "system": "nervous",
+   "title": {
+    "mn": null,
+    "la": null,
+    "en": "The Peripheral Nervous System"
+   },
+   "counts": {
+    "structures": 58,
+    "practical": 30,
+    "theory": 73
+   }
   }
  ]
 }

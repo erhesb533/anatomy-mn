@@ -4,7 +4,8 @@ import json, glob, os
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 ORDER = ['bones-general', 'bones-skull', 'bones-vertebral-column-thorax', 'bones-upper-limb', 'bones-lower-limb',
          'joints-general', 'joints-selected',
-         'muscles-head-neck-back', 'muscles-abdomen-thorax', 'muscles-upper-limb', 'muscles-lower-limb']
+         'muscles-head-neck-back', 'muscles-abdomen-thorax', 'muscles-upper-limb', 'muscles-lower-limb',
+         'nervous-cns', 'nervous-cns-coverings', 'nervous-pns']
 topics, search = [], []
 for f in sorted(glob.glob(os.path.join(ROOT, 'data', '*.json'))):
     name = os.path.basename(f)

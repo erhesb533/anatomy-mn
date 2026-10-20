@@ -1,188 +1,283 @@
 {
-  "license": "Z-Anatomy (CC BY-SA 4.0), BodyParts3D (CC BY-SA 2.1 JP) — models/LICENSE-Z-Anatomy.txt",
-  "layers": {
-    "skeleton": {
-      "file": "models/skeleton.glb",
-      "map": "models/skeleton.map.json",
-      "label": "Араг яс",
-      "source": "SkeletalSystem100.fbx — бүх яс (хоёр тал), булчингийн бэхэлгээ ба цэггүй"
-    },
-    "skull": {
-      "file": "models/skull.glb",
-      "map": "models/skull.map.json",
-      "label": "Гавал",
-      "source": "SkeletalSystem100.fbx — Bones of cranium, Extracranial bones of head, Teeth"
-    },
-    "vertebral-thorax": {
-      "file": "models/vertebral-thorax.glb",
-      "map": "models/vertebral-thorax.map.json",
-      "label": "Нуруу, цээж",
-      "source": "SkeletalSystem100.fbx — Vertebral column, Thoracic skeleton"
-    },
-    "upper-limb": {
-      "file": "models/upper-limb.glb",
-      "map": "models/upper-limb.map.json",
-      "label": "Гарын яс",
-      "source": "SkeletalSystem100.fbx — Bones of upper limb (баруун)"
-    },
-    "lower-limb": {
-      "file": "models/lower-limb.glb",
-      "map": "models/lower-limb.map.json",
-      "label": "Хөлийн яс",
-      "source": "SkeletalSystem100.fbx — Bones of lower limb (баруун)"
-    },
-    "muscles-upper-limb": {
-      "file": "models/muscles-upper-limb.glb",
-      "map": "models/muscles-upper-limb.map.json",
-      "label": "Булчин",
-      "source": "MuscularSystem100.fbx — Muscles of upper limb, Hypaxial muscles of back, Muscles of thorax (баруун)"
-    },
-    "muscles-lower-limb": {
-      "file": "models/muscles-lower-limb.glb",
-      "map": "models/muscles-lower-limb.map.json",
-      "label": "Булчин",
-      "source": "MuscularSystem100.fbx — Muscles of lower limb (баруун)"
-    },
-    "muscles-head-neck-back": {
-      "file": "models/muscles-head-neck-back.glb",
-      "map": "models/muscles-head-neck-back.map.json",
-      "label": "Булчин",
-      "source": "MuscularSystem100.fbx — Cranial, Cervical, Dorsal part (хоёр тал)"
-    },
-    "muscles-abdomen-thorax": {
-      "file": "models/muscles-abdomen-thorax.glb",
-      "map": "models/muscles-abdomen-thorax.map.json",
-      "label": "Булчин",
-      "source": "MuscularSystem100.fbx — Thoracic, Abdominal, Pelvic part (хоёр тал)"
-    },
-    "joints": {
-      "file": "models/joints.glb",
-      "map": "models/joints.map.json",
-      "label": "Үе, холбоос",
-      "source": "Joints100.fbx — гавал, нуруу, цээж (хоёр тал); гар, хөл (баруун)"
-    }
+ "license": "Z-Anatomy (CC BY-SA 4.0), BodyParts3D (CC BY-SA 2.1 JP) — models/LICENSE-Z-Anatomy.txt",
+ "layers": {
+  "skeleton": {
+   "file": "models/skeleton.glb",
+   "map": "models/skeleton.map.json",
+   "label": "Араг яс",
+   "source": "SkeletalSystem100.fbx — бүх яс (хоёр тал), булчингийн бэхэлгээ ба цэггүй"
   },
-  "models": [
-    {
-      "id": "skeleton",
-      "label": "Бүтэн араг яс",
-      "topics": [
-        "bones-general"
-      ],
-      "layers": [
-        "skeleton"
-      ],
-      "hint": "Бүх араг яс. Яс дээр дарж нэрийг нь харна, \"Задлах\"-аар яс бүрийг салгаж харна."
-    },
-    {
-      "id": "skull",
-      "label": "Гавал",
-      "topics": [
-        "bones-skull"
-      ],
-      "layers": [
-        "skull"
-      ],
-      "hint": "Гавал, доод эрүү, хэлэн доорх яс. Яс бүр дээр дарж нэрийг нь харна; шүд нь зөвхөн харагдацад зориулагдсан."
-    },
-    {
-      "id": "vertebral-thorax",
-      "label": "Нуруу ба цээжний яс",
-      "topics": [
-        "bones-vertebral-column-thorax"
-      ],
-      "layers": [
-        "vertebral-thorax"
-      ],
-      "hint": "Нугаламууд, хавирга, өвчүү. Нэг бүлгийн нугалам (жишээ нь цээжний) бүгд нэг бүтэц болж холбогдсон."
-    },
-    {
-      "id": "upper-limb",
-      "label": "Баруун гар",
-      "topics": [
-        "bones-upper-limb"
-      ],
-      "layers": [
-        "upper-limb"
-      ],
-      "hint": "Баруун гар. Чирж эргүүлнэ, хоёр хуруугаар томруулна, яс эсвэл цэг дээр дарж нэрийг нь харна."
-    },
-    {
-      "id": "lower-limb",
-      "label": "Баруун хөл ба аарцаг",
-      "topics": [
-        "bones-lower-limb"
-      ],
-      "layers": [
-        "lower-limb"
-      ],
-      "hint": "Баруун талын аарцагны яс, гуя, шилбэ, тавхайн яс. Яс эсвэл цэг дээр дарж нэрийг нь харна."
-    },
-    {
-      "id": "muscles-upper-limb",
-      "label": "Мөр ба гарын булчин",
-      "topics": [
-        "muscles-upper-limb"
-      ],
-      "layers": [
-        "muscles-upper-limb",
-        "upper-limb",
-        "vertebral-thorax"
-      ],
-      "hint": "Баруун гарын булчин ясны хамт. Булчин дээр дарж эхлэл, бэхлэл, үйл ажиллагааг харна. Давхаргыг асааж унтрааж болно."
-    },
-    {
-      "id": "muscles-lower-limb",
-      "label": "Аарцаг ба хөлийн булчин",
-      "topics": [
-        "muscles-lower-limb"
-      ],
-      "layers": [
-        "muscles-lower-limb",
-        "lower-limb"
-      ],
-      "hint": "Баруун хөлийн булчин ясны хамт. Булчин дээр дарж эхлэл, бэхлэл, үйл ажиллагааг харна."
-    },
-    {
-      "id": "muscles-head-neck-back",
-      "label": "Толгой, хүзүү, нурууны булчин",
-      "topics": [
-        "muscles-head-neck-back"
-      ],
-      "layers": [
-        "muscles-head-neck-back",
-        "skull",
-        "vertebral-thorax"
-      ],
-      "hint": "Нүүр, зажлуур, хүзүү, нурууны булчин. Атласд байхгүй булчингууд (жишээ нь хоолой) саарал өнгөтэй, сонгогдохгүй."
-    },
-    {
-      "id": "muscles-abdomen-thorax",
-      "label": "Цээж, хэвлийн булчин",
-      "topics": [
-        "muscles-abdomen-thorax"
-      ],
-      "layers": [
-        "muscles-abdomen-thorax",
-        "skeleton"
-      ],
-      "hint": "Цээж, хэвлий, аарцгийн ёроолын булчин. Араг ясны давхаргыг унтрааж булчинг дангаар нь харж болно."
-    },
-    {
-      "id": "joints",
-      "label": "Үе мөч ба холбоос",
-      "topics": [
-        "joints-selected",
-        "joints-general"
-      ],
-      "layers": [
-        "joints",
-        "skeleton"
-      ],
-      "hint": "Үений капсул, холбоос, мениск, диск. Араг яс тунгалаг тул холбоосууд тод харагдана; атласд байгаа бүтэц хөх, бусад нь саарал.",
-      "ghost": [
-        "skeleton"
-      ]
-    }
-  ]
+  "skull": {
+   "file": "models/skull.glb",
+   "map": "models/skull.map.json",
+   "label": "Гавал",
+   "source": "SkeletalSystem100.fbx — Bones of cranium, Extracranial bones of head, Teeth"
+  },
+  "vertebral-thorax": {
+   "file": "models/vertebral-thorax.glb",
+   "map": "models/vertebral-thorax.map.json",
+   "label": "Нуруу, цээж",
+   "source": "SkeletalSystem100.fbx — Vertebral column, Thoracic skeleton"
+  },
+  "upper-limb": {
+   "file": "models/upper-limb.glb",
+   "map": "models/upper-limb.map.json",
+   "label": "Гарын яс",
+   "source": "SkeletalSystem100.fbx — Bones of upper limb (баруун)"
+  },
+  "lower-limb": {
+   "file": "models/lower-limb.glb",
+   "map": "models/lower-limb.map.json",
+   "label": "Хөлийн яс",
+   "source": "SkeletalSystem100.fbx — Bones of lower limb (баруун)"
+  },
+  "muscles-upper-limb": {
+   "file": "models/muscles-upper-limb.glb",
+   "map": "models/muscles-upper-limb.map.json",
+   "label": "Булчин",
+   "source": "MuscularSystem100.fbx — Muscles of upper limb, Hypaxial muscles of back, Muscles of thorax (баруун)"
+  },
+  "muscles-lower-limb": {
+   "file": "models/muscles-lower-limb.glb",
+   "map": "models/muscles-lower-limb.map.json",
+   "label": "Булчин",
+   "source": "MuscularSystem100.fbx — Muscles of lower limb (баруун)"
+  },
+  "muscles-head-neck-back": {
+   "file": "models/muscles-head-neck-back.glb",
+   "map": "models/muscles-head-neck-back.map.json",
+   "label": "Булчин",
+   "source": "MuscularSystem100.fbx — Cranial, Cervical, Dorsal part (хоёр тал)"
+  },
+  "muscles-abdomen-thorax": {
+   "file": "models/muscles-abdomen-thorax.glb",
+   "map": "models/muscles-abdomen-thorax.map.json",
+   "label": "Булчин",
+   "source": "MuscularSystem100.fbx — Thoracic, Abdominal, Pelvic part (хоёр тал)"
+  },
+  "joints": {
+   "file": "models/joints.glb",
+   "map": "models/joints.map.json",
+   "label": "Үе, холбоос",
+   "source": "Joints100.fbx — гавал, нуруу, цээж (хоёр тал); гар, хөл (баруун)"
+  },
+  "brain": {
+   "file": "models/brain.glb",
+   "map": "models/brain.map.json",
+   "label": "Тархи",
+   "tint": "brain",
+   "source": "NervousSystem100.fbx — Brain (хоёр тал)"
+  },
+  "meninges": {
+   "file": "models/meninges.glb",
+   "map": "models/meninges.map.json",
+   "label": "Хатуу хальс",
+   "tint": "brain",
+   "source": "NervousSystem100.fbx — Meninges"
+  },
+  "spinal-cord": {
+   "file": "models/spinal-cord.glb",
+   "map": "models/spinal-cord.map.json",
+   "label": "Нугас",
+   "tint": "brain",
+   "source": "NervousSystem100.fbx — Spinal cord"
+  },
+  "cranial-nerves": {
+   "file": "models/cranial-nerves.glb",
+   "map": "models/cranial-nerves.map.json",
+   "label": "Гавлын мэдрэл",
+   "tint": "nerve",
+   "source": "NervousSystem100.fbx — Cranial nerves (хоёр тал)"
+  },
+  "spinal-nerves": {
+   "file": "models/spinal-nerves.glb",
+   "map": "models/spinal-nerves.map.json",
+   "label": "Нугасны мэдрэл",
+   "tint": "nerve",
+   "source": "NervousSystem100.fbx — Spinal nerves, Roots, Ganglia, Autonomic (баруун)"
+  }
+ },
+ "models": [
+  {
+   "id": "skeleton",
+   "label": "Бүтэн араг яс",
+   "topics": [
+    "bones-general"
+   ],
+   "layers": [
+    "skeleton"
+   ],
+   "hint": "Бүх араг яс. Яс дээр дарж нэрийг нь харна, \"Задлах\"-аар яс бүрийг салгаж харна."
+  },
+  {
+   "id": "skull",
+   "label": "Гавал",
+   "topics": [
+    "bones-skull"
+   ],
+   "layers": [
+    "skull"
+   ],
+   "hint": "Гавал, доод эрүү, хэлэн доорх яс. Яс бүр дээр дарж нэрийг нь харна; шүд нь зөвхөн харагдацад зориулагдсан."
+  },
+  {
+   "id": "vertebral-thorax",
+   "label": "Нуруу ба цээжний яс",
+   "topics": [
+    "bones-vertebral-column-thorax"
+   ],
+   "layers": [
+    "vertebral-thorax"
+   ],
+   "hint": "Нугаламууд, хавирга, өвчүү. Нэг бүлгийн нугалам (жишээ нь цээжний) бүгд нэг бүтэц болж холбогдсон."
+  },
+  {
+   "id": "upper-limb",
+   "label": "Баруун гар",
+   "topics": [
+    "bones-upper-limb"
+   ],
+   "layers": [
+    "upper-limb"
+   ],
+   "hint": "Баруун гар. Чирж эргүүлнэ, хоёр хуруугаар томруулна, яс эсвэл цэг дээр дарж нэрийг нь харна."
+  },
+  {
+   "id": "lower-limb",
+   "label": "Баруун хөл ба аарцаг",
+   "topics": [
+    "bones-lower-limb"
+   ],
+   "layers": [
+    "lower-limb"
+   ],
+   "hint": "Баруун талын аарцагны яс, гуя, шилбэ, тавхайн яс. Яс эсвэл цэг дээр дарж нэрийг нь харна."
+  },
+  {
+   "id": "muscles-upper-limb",
+   "label": "Мөр ба гарын булчин",
+   "topics": [
+    "muscles-upper-limb"
+   ],
+   "layers": [
+    "muscles-upper-limb",
+    "upper-limb",
+    "vertebral-thorax"
+   ],
+   "hint": "Баруун гарын булчин ясны хамт. Булчин дээр дарж эхлэл, бэхлэл, үйл ажиллагааг харна. Давхаргыг асааж унтрааж болно."
+  },
+  {
+   "id": "muscles-lower-limb",
+   "label": "Аарцаг ба хөлийн булчин",
+   "topics": [
+    "muscles-lower-limb"
+   ],
+   "layers": [
+    "muscles-lower-limb",
+    "lower-limb"
+   ],
+   "hint": "Баруун хөлийн булчин ясны хамт. Булчин дээр дарж эхлэл, бэхлэл, үйл ажиллагааг харна."
+  },
+  {
+   "id": "muscles-head-neck-back",
+   "label": "Толгой, хүзүү, нурууны булчин",
+   "topics": [
+    "muscles-head-neck-back"
+   ],
+   "layers": [
+    "muscles-head-neck-back",
+    "skull",
+    "vertebral-thorax"
+   ],
+   "hint": "Нүүр, зажлуур, хүзүү, нурууны булчин. Атласд байхгүй булчингууд (жишээ нь хоолой) саарал өнгөтэй, сонгогдохгүй."
+  },
+  {
+   "id": "muscles-abdomen-thorax",
+   "label": "Цээж, хэвлийн булчин",
+   "topics": [
+    "muscles-abdomen-thorax"
+   ],
+   "layers": [
+    "muscles-abdomen-thorax",
+    "skeleton"
+   ],
+   "hint": "Цээж, хэвлий, аарцгийн ёроолын булчин. Араг ясны давхаргыг унтрааж булчинг дангаар нь харж болно."
+  },
+  {
+   "id": "joints",
+   "label": "Үе мөч ба холбоос",
+   "topics": [
+    "joints-selected",
+    "joints-general"
+   ],
+   "layers": [
+    "joints",
+    "skeleton"
+   ],
+   "hint": "Үений капсул, холбоос, мениск, диск. Араг яс тунгалаг тул холбоосууд тод харагдана; атласд байгаа бүтэц хөх, бусад нь саарал.",
+   "ghost": [
+    "skeleton"
+   ]
+  },
+  {
+   "id": "brain",
+   "label": "Тархи ба гавлын мэдрэл",
+   "layers": [
+    "brain",
+    "cranial-nerves"
+   ],
+   "topics": [
+    "nervous-cns",
+    "nervous-pns"
+   ],
+   "hint": "Lobi cerebri, diencephalon, truncus encephali, cerebellum, ventriculi ба nervi craniales (I–XII).",
+   "frame": [
+    "brain"
+   ],
+   "view": "lateral"
+  },
+  {
+   "id": "brain-coverings",
+   "label": "Тархины хатуу хальс ба ховдол",
+   "layers": [
+    "brain",
+    "meninges"
+   ],
+   "topics": [
+    "nervous-cns-coverings"
+   ],
+   "hint": "Dura mater (falx cerebri, tentorium cerebelli), plexus choroideus ба ventriculi.",
+   "frame": [
+    "brain"
+   ]
+  },
+  {
+   "id": "spinal-cord",
+   "label": "Нугасны бүтэц",
+   "layers": [
+    "spinal-cord"
+   ],
+   "topics": [
+    "nervous-cns"
+   ],
+   "hint": "Хөндлөн огтлолын гулсуурыг хөдөлгөж cornua (саарал бодис) ба funiculi (цагаан бодис)-г харна.",
+   "clip": true
+  },
+  {
+   "id": "nerves",
+   "label": "Захын мэдрэл",
+   "layers": [
+    "spinal-nerves",
+    "cranial-nerves",
+    "skeleton"
+   ],
+   "ghost": [
+    "skeleton"
+   ],
+   "topics": [
+    "nervous-pns"
+   ],
+   "hint": "Nervi spinales, plexus brachialis ба plexus lumbosacralis (баруун тал)."
+  }
+ ]
 }

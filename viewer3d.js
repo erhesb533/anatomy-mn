@@ -49,6 +49,7 @@ export async function mount(container, modelId) {
         <button class="chip" data-t="quiz" aria-pressed="false">Таних тест</button>
         <button class="chip" data-t="showall" hidden>Бүгдийг харуулах</button>
       </div>
+      ${model.clip ? `<label class="v3d-explode v3d-clip small">Хөндлөн огтлол <input type="range" min="0" max="100" value="88" aria-label="Хөндлөн огтлолын түвшин"></label>` : ''}
       <label class="v3d-explode small" hidden>Задралын хэмжээ <input type="range" min="0" max="100" value="60" aria-label="Задралын хэмжээ"></label>
       <div class="v3d-legend small" hidden><span class="dot o"></span> эхлэл <span class="dot e"></span> бэхлэл</div>
       <div class="v3d-panel" aria-live="polite"></div>
@@ -71,7 +72,19 @@ export async function mount(container, modelId) {
   controls.enableDamping = true; controls.dampingFactor = 0.12; controls.screenSpacePanning = true;
 
   // DoubleSide: зарим загварт нормаль урвуу (жишээ нь эгэм) — хоёр талаас нь гэрэлтүүлнэ
-  const std = (color, extra = {}) => new THREE.MeshStandardMaterial({ color, roughness: 0.7, metalness: 0, side: THREE.DoubleSide, ...extra });
+  const clipPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 0);
+  const std = (color, extra = {}) => new THREE.MeshStandardMaterial({ color, roughness: 0.7, metalness: 0, side: THREE.DoubleSide,
+    clippingPlanes: model.clip ? [clipPlane] : null, ...extra });
+  // тархины хэсгүүдийг ялгахын тулд бүтэц бүрд ойролцоо (ягаан-шаргал) өөр өнгө өгнө
+  const brainMats = new Map();
+  const brainMatFor = sid => {
+    if (!brainMats.has(sid)) {
+      let h = 0; for (const ch of sid) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+      const c = new THREE.Color().setHSL((0.93 + (h % 1000) / 1000 * 0.22) % 1, 0.42 + (h >> 10) % 100 / 100 * 0.3, 0.62 + (h >> 17) % 100 / 100 * 0.16);
+      brainMats.set(sid, std(c, { roughness: 0.6 }));
+    }
+    return brainMats.get(sid);
+  };
   const muscleColor = new THREE.Color(css('--muscles') || '#B3261E').lerp(new THREE.Color(0xffffff), 0.18);
   const MAT = {
     bone: std(0xE9DFC9),
@@ -101,7 +114,7 @@ export async function mount(container, modelId) {
   const baseMatFor = info => {
     const k = kindOf(info), matched = !!info.structure_id, tint = tintOf(info);
     if (tint === 'nerve' || NERVE_KINDS.has(k)) return matched ? MAT.nerve : MAT.ctxNerve;
-    if (tint === 'brain' || NEURO_KINDS.has(k)) return matched ? MAT.brain : MAT.ctxBrain;
+    if (tint === 'brain' || NEURO_KINDS.has(k)) return matched ? brainMatFor(info.structure_id) : MAT.ctxBrain;
     if (MUSCLE_KINDS.has(k) || layerDefs[info.layer].id.startsWith('muscles')) return matched ? MAT.muscle : MAT.ctxMuscle;
     if (SOFT_KINDS.has(k) || layerDefs[info.layer].id === 'joints') return matched ? MAT.soft : MAT.ctxSoft;
     if (ghostLayers.has(info.layer)) return MAT.ghostBone;
@@ -131,7 +144,8 @@ export async function mount(container, modelId) {
       if (!info) { o.visible = false; return; }
       o.userData.info = info; o.userData.part = n;
       // зарим хэсгийн (жишээ нь эгэм) нормаль загварт буруу — геометрээс дахин тооцоолно
-      if (info.kind === 'bone' || info.kind === 'context') o.geometry.computeVertexNormals();
+      // нимгэн мэдрэлийн хоолойд (квантчилсан байрлал) дахин тооцсон нормаль тэг болдог — файлын нормалийг хэвээр үлдээнэ
+      if ((info.kind === 'bone' || info.kind === 'context') && !layerDefs[li].tint) o.geometry.computeVertexNormals();
       if (info.kind === 'bone') {
         o.material = baseMatFor(info); o.userData.base = o.material;
         if (info.structure_id) pickables.push(o); else contextMeshes.push(o);
@@ -145,7 +159,9 @@ export async function mount(container, modelId) {
   const allParts = [...pickables, ...contextMeshes];
 
   // ---- framing ----
-  const box = new THREE.Box3(); layerRoots.forEach(r => box.expandByObject(r));
+  // model.frame: зөвхөн эдгээр давхаргад тааруулж харуулна (жишээ нь тархи — vagus доош үргэлжилдэг)
+  const frameIdx = (model.frame || []).map(id => model.layers.indexOf(id)).filter(i => i >= 0);
+  const box = new THREE.Box3(); layerRoots.forEach((r, i) => { if (!frameIdx.length || frameIdx.includes(i)) box.expandByObject(r); });
   const size = box.getSize(new THREE.Vector3()), center = box.getCenter(new THREE.Vector3());
   const radius = size.length() / 2;
   function focus(obj, context = 2.2) {
@@ -159,10 +175,43 @@ export async function mount(container, modelId) {
     controls.target.copy(target); camera.position.copy(target).add(dir.multiplyScalar(dist)); controls.update(); render();
   }
   function frame(target = center, r = radius) {
-    const dist = r / Math.sin(THREE.MathUtils.degToRad(camera.fov / 2)) * 0.95;
+    const vf = THREE.MathUtils.degToRad(camera.fov / 2), hf = Math.atan(Math.tan(vf) * Math.max(camera.aspect, 0.01));
+    // хайрцгийн хэмжээгээр (бөмбөрцгөөс нягт) — өндөр, өргөний аль нь хязгаарлаж байгааг харгалзана
+    const k = r / radius, lat = model.view === 'lateral';
+    const W = (lat ? size.z : size.x) * k / 2, H = size.y * k / 2, D = (lat ? size.x : size.z) * k / 2;
+    const dist = Math.max(H / Math.tan(vf), W / Math.tan(hf)) * 1.1 + D;
     camera.near = dist / 200; camera.far = dist * 20; camera.updateProjectionMatrix();
-    camera.position.copy(target).add(new THREE.Vector3(0, 0, dist)); // урдаас (anterior)
+    // урдаас (anterior); model.view = 'lateral' бол хажуугаас
+    camera.position.copy(target).add(model.view === 'lateral' ? new THREE.Vector3(dist, 0, 0) : new THREE.Vector3(0, 0, dist));
     controls.target.copy(target); controls.update(); render();
+  }
+
+  // ---- хөндлөн огтлол (model.clip): хэвтээ хавтгайгаар дээд хэсгийг таслан дотоод бүтцийг харуулна ----
+  const clip = { on: !!model.clip, plane: clipPlane };
+  if (clip.on) {
+    renderer.localClippingEnabled = true;
+    const $clip = container.querySelector('.v3d-clip input');
+    const thick = size.x * 1.6; // нугасны өргөн (z нь муруйлтаас болж урт)
+    const setClip = (v, reframe) => {
+      clip.plane.constant = box.min.y + (box.max.y - box.min.y) * v / 100;
+      if (reframe) {
+        // огтлолын төв: хавтгайн ойролцоох оройнуудын дундаж (нугас муруй тул bbox-ын төвөөс зөрнө)
+        const y0 = clip.plane.constant, tol = (box.max.y - box.min.y) * 0.004, acc = new THREE.Vector3(); let nAcc = 0;
+        const v = new THREE.Vector3();
+        for (const o of allParts) { const pa = o.geometry.attributes.position; o.updateWorldMatrix(true, false);
+          for (let i = 0; i < pa.count; i += 3) { v.fromBufferAttribute(pa, i).applyMatrix4(o.matrixWorld); if (Math.abs(v.y - y0) < tol) { acc.add(v); nAcc++; } } }
+        const cx = nAcc ? acc.x / nAcc : center.x, cz = nAcc ? acc.z / nAcc : center.z;
+        const t = new THREE.Vector3(cx, y0 - thick * 0.05, cz);
+        const vf = THREE.MathUtils.degToRad(camera.fov / 2), hf = Math.atan(Math.tan(vf) * Math.max(camera.aspect, 0.01));
+        const dist = thick * 0.75 / Math.sin(Math.min(vf, hf));
+        camera.near = dist / 200; camera.far = dist * 50; camera.updateProjectionMatrix();
+        camera.position.copy(t).add(new THREE.Vector3(0, dist * 0.94, dist * 0.34));
+        controls.target.copy(t); controls.update();
+      }
+      render();
+    };
+    $clip.oninput = () => setClip(+$clip.value, true);
+    clip.reset = () => setClip(+$clip.value, true);
   }
 
   // ---- landmark pins (зөвхөн ясны давхаргад) ----
@@ -245,7 +294,7 @@ export async function mount(container, modelId) {
   })();
   controls.addEventListener('change', render);
   const ro = new ResizeObserver(resize); ro.observe($c);
-  resize(); frame();
+  resize(); frame(); if (clip.on) clip.reset();
   const countBy = pred => new Set(pickables.filter(o => pred(kindOf(o.userData.info))).map(o => o.userData.info.structure_id)).size;
   const nBone = countBy(k => !MUSCLE_KINDS.has(k) && !SOFT_KINDS.has(k) && !NEURO_KINDS.has(k)), nMus = countBy(k => MUSCLE_KINDS.has(k)), nSoft = countBy(k => SOFT_KINDS.has(k));
   const nNerve = countBy(k => NERVE_KINDS.has(k)), nNeuro = countBy(k => NEURO_KINDS.has(k) && !NERVE_KINDS.has(k));
@@ -317,7 +366,7 @@ export async function mount(container, modelId) {
     ray.setFromCamera(ptr, camera);
     // саарал (атласд ороогүй) хэсэг доорх хэсгийг халхлахгүйн тулд тэдгээрийг алгасна
     const targets = [...(pins.visible ? pins.children : []), ...attachments, ...pickables].filter(visibleDeep);
-    const hit = ray.intersectObjects(targets, false)[0];
+    const hit = ray.intersectObjects(targets, false).find(h => !clip.on || h.point.y <= clip.plane.constant);
     if (!hit) { clearSel(); render(); $panel.innerHTML = ''; return; }
     highlight(meshesOf(hit.object)); describe(hit.object);
   });
@@ -329,7 +378,7 @@ export async function mount(container, modelId) {
   tools.querySelector('[data-t=att]').onclick = e => showAtt(e.currentTarget.getAttribute('aria-pressed') !== 'true');
   tools.querySelector('[data-t=pins]').onclick = e => { pins.visible = e.currentTarget.getAttribute('aria-pressed') !== 'true'; setPressed('pins', pins.visible); render(); };
   const $ex = container.querySelector('.v3d-explode'), $range = $ex.querySelector('input');
-  tools.querySelector('[data-t=reset]').onclick = () => { isolate(null); setPressed('explode', false); $ex.hidden = true; animateExplode(0); frame(); };
+  tools.querySelector('[data-t=reset]').onclick = () => { isolate(null); setPressed('explode', false); $ex.hidden = true; animateExplode(0); frame(); if (clip.on) clip.reset(); };
   tools.querySelector('[data-t=explode]').onclick = e => {
     const on = e.currentTarget.getAttribute('aria-pressed') !== 'true';
     setPressed('explode', on); $ex.hidden = !on; const t = on ? $range.value / 100 : 0;

@@ -127,7 +127,7 @@ async function viewHome() {
   $app.innerHTML = `
     <section class="hero">
       <p class="plate"><span class="b">Ossa</span>, <span class="j">juncturae</span>, <span class="m">musculi</span>${bySys('nervous').length ? ', <span class="n">nervi</span>' : ''}</p>
-      <p>Яс, үе мөч, булчингийн ${idx.topics.reduce((a, t) => a + t.counts.structures, 0)} бүтэц. Атласаар үзэж, флэшкартаар цээжилж, зураг дээр таньж, тестээр шалгана.</p>
+      <p>${bySys('nervous').length ? 'Яс, үе мөч, булчин, мэдрэлийн' : 'Яс, үе мөч, булчингийн'} ${idx.topics.reduce((a, t) => a + t.counts.structures, 0)} бүтэц. Атласаар үзэж, флэшкартаар цээжилж, зураг дээр таньж, тестээр шалгана.</p>
       <div class="search"><input id="q" type="search" placeholder="Бүтэц хайх: humerus, deltoid, condyle…" aria-label="Бүтэц хайх" autocomplete="off"></div>
       <ul class="results" id="results"></ul>
     </section>

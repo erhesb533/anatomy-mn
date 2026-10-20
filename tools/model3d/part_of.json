@@ -1,0 +1,13 @@
+{
+ "_comment": "Атласд тусдаа бүтэцгүй загварын хэсгийг TA2 шатлалаар (TA2 ID-ийн муж) эцэг бүтэц рүү холбоно. Апп-д 'загварт: <хэсгийн нэр>' гэж харагдана.",
+ "ta2_ranges": [
+  [5445, 5466, "frontal-lobe"], [5467, 5479, "parietal-lobe"], [5480, 5487, "occipital-lobe"], [5488, 5501, "temporal-lobe"],
+  [5661, 5787, "diencephalon"], [5662, 5664, "epithalamus"], [5675, 5677, "epithalamus"],
+  [5788, 5855, "cerebellum"], [5874, 5920, "midbrain"], [5921, 5960, "pons"],
+  [5370, 5384, "dura-mater"],
+  [6077, 6078, "lateral-horn"],
+  [6086, 6092, "posterior-columns"], [6093, 6109, "lateral-columns"], [6110, 6119, "anterior-columns"],
+  [6395, 6417, "brachial-plexus"]
+ ],
+ "name_patterns": [["^Lat_Fis", "lateral-sulcus"]]
+}
