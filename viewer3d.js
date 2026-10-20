@@ -11,7 +11,11 @@ const KIND_TEXT = {
   bone: 'яс', 'bone-landmark': 'ясны хэсэг', 'skeleton-division': 'араг ясны хэсэг', cartilage: 'мөгөөрс',
   joint: 'үе', 'joint-part': 'үений хэсэг', ligament: 'холбоос', 'tendon-fascia': 'шөрмөс, фасци',
   muscle: 'булчин', 'muscle-group': 'булчингийн бүлэг', origin: 'булчингийн эхлэл', insertion: 'булчингийн бэхлэл',
+  'brain-part': 'тархины хэсэг', 'spinal-cord-part': 'нугасны хэсэг', nerve: 'мэдрэл', ganglion: 'зангилаа',
+  meninx: 'бүрхүүл', ventricle: 'ховдол', vessel: 'судас', tract: 'зам',
 };
+const NERVE_KINDS = new Set(['nerve', 'ganglion']);
+const NEURO_KINDS = new Set(['brain-part', 'spinal-cord-part', 'meninx', 'ventricle', 'vessel', 'tract', 'nerve', 'ganglion']);
 const MUSCLE_KINDS = new Set(['muscle', 'muscle-group', 'tendon-fascia']);
 const SOFT_KINDS = new Set(['ligament', 'joint', 'joint-part']);
 
@@ -77,15 +81,27 @@ export async function mount(container, modelId) {
     ctxMuscle: std(0xB89A96, { roughness: 0.6 }),
     ctxSoft: std(0xC9CED4, { roughness: 0.6 }),
     ghostBone: std(0xE9DFC9, { transparent: true, opacity: 0.35, depthWrite: false }),
+    // мэдрэлийн тогтолцоо: мэдрэл = шар (атласын уламжлал), тархи = цайвар ягаан-саарал
+    nerve: std(new THREE.Color(css('--nerves') || '#7A6500').lerp(new THREE.Color(0xffe680), 0.55), { roughness: 0.5 }),
+    ctxNerve: std(0xD8D0A8, { roughness: 0.6 }),
+    brain: std(0xE6C3BC, { roughness: 0.6 }),
+    ctxBrain: std(0xCFC6C4, { roughness: 0.65 }),
   };
+  // мэдрэл шар өнгөтэй тул мэдрэлийн давхаргад тодруулгыг цэнхэр болгоно
+  const tintOf = info => layerDefs[info.layer].tint || '';
   const ghostLayers = new Set((model.ghost || []).map(id => model.layers.indexOf(id)));
   const hiMat = std(0xffd23f, { roughness: 0.55, emissive: 0x553300, emissiveIntensity: 0.35 });
+  const hiNerve = std(0x2fb8ff, { roughness: 0.5, emissive: 0x003355, emissiveIntensity: 0.4 });
+  const hiFor = info => tintOf(info) === 'nerve' ? hiNerve : hiMat;
+  const hiWord = info => tintOf(info) === 'nerve' ? 'Цэнхэрээр' : 'Шараар';
   const dimMat = std(0xE9DFC9, { roughness: 0.8, transparent: true, opacity: 0.22, depthWrite: false });
   const attMat = kind => std(new THREE.Color(kind === 'origin' ? (css('--muscles') || '#B3261E') : (css('--joints') || '#2C5FA8')),
     { roughness: 0.6, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2, transparent: true, opacity: 0.92 });
   const attHi = std(0xffd23f, { roughness: 0.5, polygonOffset: true, polygonOffsetFactor: -3, polygonOffsetUnits: -3 });
   const baseMatFor = info => {
-    const k = kindOf(info), matched = !!info.structure_id;
+    const k = kindOf(info), matched = !!info.structure_id, tint = tintOf(info);
+    if (tint === 'nerve' || NERVE_KINDS.has(k)) return matched ? MAT.nerve : MAT.ctxNerve;
+    if (tint === 'brain' || NEURO_KINDS.has(k)) return matched ? MAT.brain : MAT.ctxBrain;
     if (MUSCLE_KINDS.has(k) || layerDefs[info.layer].id.startsWith('muscles')) return matched ? MAT.muscle : MAT.ctxMuscle;
     if (SOFT_KINDS.has(k) || layerDefs[info.layer].id === 'joints') return matched ? MAT.soft : MAT.ctxSoft;
     if (ghostLayers.has(info.layer)) return MAT.ghostBone;
@@ -231,8 +247,9 @@ export async function mount(container, modelId) {
   const ro = new ResizeObserver(resize); ro.observe($c);
   resize(); frame();
   const countBy = pred => new Set(pickables.filter(o => pred(kindOf(o.userData.info))).map(o => o.userData.info.structure_id)).size;
-  const nBone = countBy(k => !MUSCLE_KINDS.has(k) && !SOFT_KINDS.has(k)), nMus = countBy(k => MUSCLE_KINDS.has(k)), nSoft = countBy(k => SOFT_KINDS.has(k));
-  $status.textContent = [nBone && `${nBone} яс`, nMus && `${nMus} булчин`, nSoft && `${nSoft} үе, холбоос`, landmarks.length && `${landmarks.length} ясны хэсэг`]
+  const nBone = countBy(k => !MUSCLE_KINDS.has(k) && !SOFT_KINDS.has(k) && !NEURO_KINDS.has(k)), nMus = countBy(k => MUSCLE_KINDS.has(k)), nSoft = countBy(k => SOFT_KINDS.has(k));
+  const nNerve = countBy(k => NERVE_KINDS.has(k)), nNeuro = countBy(k => NEURO_KINDS.has(k) && !NERVE_KINDS.has(k));
+  $status.textContent = [nBone && `${nBone} яс`, nMus && `${nMus} булчин`, nSoft && `${nSoft} үе, холбоос`, nNeuro && `${nNeuro} тархи, нугасны бүтэц`, nNerve && `${nNerve} мэдрэл`, landmarks.length && `${landmarks.length} ясны хэсэг`]
     .filter(Boolean).join(' · ') + '. Дарж сонгоно, чирж эргүүлнэ.' + (contextMeshes.length ? ' Саарал хэсгүүд атласд ороогүй.' : '');
 
   // ---- selection ----
@@ -248,7 +265,7 @@ export async function mount(container, modelId) {
   function clearSel() { undim(); for (const o of selected) restore(o); selected = []; }
   function highlight(objs) {
     clearSel();
-    for (const o of objs) o.material = o.parent === pins ? pinHi : (o.userData.info.kind === 'bone' ? hiMat : attHi);
+    for (const o of objs) o.material = o.parent === pins ? pinHi : (o.userData.info.kind === 'bone' ? hiFor(o.userData.info) : attHi);
     selected = objs; render();
   }
   function describe(obj) {
@@ -331,7 +348,7 @@ export async function mount(container, modelId) {
 
   // ---- 3D таних тест ----
   const quiz = { on: false, item: null, score: 0, n: 0 };
-  const primary = layerDefs.map((l, i) => i).filter(i => /^(muscles|joints)/.test(layerDefs[i].id));
+  const primary = layerDefs.map((l, i) => i).filter(i => /^(muscles|joints)/.test(layerDefs[i].id) || layerDefs[i].tint);
   const quizPool = () => [
     ...[...new Map(pickables.filter(o => visibleDeep(o) && (!primary.length || !primary.some(i => layerRoots[i].visible) || primary.includes(o.userData.info.layer))).map(o => [o.userData.info.layer + ':' + o.userData.info.structure_id, o])).values()]
       .map(o => ({ obj: o, info: o.userData.info })),
@@ -339,7 +356,7 @@ export async function mount(container, modelId) {
   ];
   function startQuiz() { isolate(null); quiz.on = true; quiz.score = 0; quiz.n = 0; showAtt(false); nextQ(); }
   function stopQuiz() { quiz.on = false; pins.children.forEach(p => p.visible = true); pins.visible = false; setPressed('pins', false); clearSel(); render(); $panel.innerHTML = ''; }
-  const noun = info => { const k = kindOf(info); return info.kind === 'landmark' ? 'цэгийн ясны хэсэг' : MUSCLE_KINDS.has(k) ? 'булчин' : SOFT_KINDS.has(k) ? 'бүтэц' : 'яс'; };
+  const noun = info => { const k = kindOf(info); return info.kind === 'landmark' ? 'цэгийн ясны хэсэг' : MUSCLE_KINDS.has(k) ? 'булчин' : NERVE_KINDS.has(k) ? 'мэдрэл' : NEURO_KINDS.has(k) ? 'бүтэц' : SOFT_KINDS.has(k) ? 'бүтэц' : 'яс'; };
   function nextQ() {
     const pool = quizPool();
     if (!pool.length) { $panel.innerHTML = '<p>Асуулт гаргах хэсэг алга. Давхаргуудаа асаана уу.</p>'; return; }
@@ -355,7 +372,7 @@ export async function mount(container, modelId) {
     const same = pool.filter(p => noun(p.info) === noun(item.info) && p.info.structure_id !== item.info.structure_id);
     const opts = A.shuffle([item, ...A.shuffle(same).slice(0, 3)]);
     $panel.innerHTML = `<div class="progress-line"><span>Таних тест · ${quiz.score} / ${quiz.n}</span></div>
-      <p class="stem">Шараар тодруулсан ${noun(item.info)} аль нь вэ?</p>
+      <p class="stem">${item.obj.parent === pins ? 'Шараар' : hiWord(item.info)} тодруулсан ${noun(item.info)} аль нь вэ?</p>
       <div class="opts">${opts.map((o, i) => `<button class="opt" data-i="${i}"><span class="k">${'ABCD'[i]}</span><span class="latin">${A.esc(label(o.info))}</span></button>`).join('')}</div>`;
     $panel.querySelectorAll('[data-i]').forEach(b => b.onclick = () => {
       const pick = opts[+b.dataset.i], ok = pick.info.structure_id === item.info.structure_id;

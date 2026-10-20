@@ -18,16 +18,22 @@ const TOPIC_LABELS = {
   'muscles-abdomen-thorax': 'Цээж, хэвлий, аарцгийн ёроолын булчин',
   'muscles-upper-limb': 'Мөрний бүс ба дээд мөчний булчин',
   'muscles-lower-limb': 'Аарцаг ба доод мөчний булчин',
+  'nervous-cns': 'Тархи ба нугас',
+  'nervous-cns-coverings': 'Тархины бүрхүүл, ховдол, судас',
+  'nervous-pns': 'Гавал ба нугасны мэдрэл',
 };
 const SYSTEMS = [
   { id: 'bones', mn: 'Яс', la: 'Ossa' },
   { id: 'joints', mn: 'Үе мөч', la: 'Juncturae' },
   { id: 'muscles', mn: 'Булчин', la: 'Musculi' },
+  { id: 'nervous', mn: 'Мэдрэл', la: 'Systema nervosum' },
 ];
 const KIND_LABELS = {
   'bone': 'яс', 'bone-landmark': 'ясны хэсэг', 'skeleton-division': 'араг ясны хэсэг', 'cartilage': 'мөгөөрс',
   'joint': 'үе', 'joint-part': 'үений хэсэг', 'ligament': 'холбоос', 'tendon-fascia': 'шөрмөс, фасци',
   'muscle': 'булчин', 'muscle-group': 'булчингийн бүлэг', 'opening': 'нүх', 'region': 'муж',
+  'brain-part': 'тархины хэсэг', 'spinal-cord-part': 'нугасны хэсэг', 'nerve': 'мэдрэл', 'ganglion': 'зангилаа',
+  'meninx': 'бүрхүүл', 'ventricle': 'ховдол', 'vessel': 'судас', 'tract': 'зам',
 };
 const FIELD_LABELS = {
   description_mn: 'Тайлбар', clinical_mn: 'Эмнэлзүй',
@@ -120,12 +126,12 @@ async function viewHome() {
   const bySys = s => idx.topics.filter(t => t.system === s);
   $app.innerHTML = `
     <section class="hero">
-      <p class="plate"><span class="b">Ossa</span>, <span class="j">juncturae</span>, <span class="m">musculi</span></p>
+      <p class="plate"><span class="b">Ossa</span>, <span class="j">juncturae</span>, <span class="m">musculi</span>${bySys('nervous').length ? ', <span class="n">nervi</span>' : ''}</p>
       <p>Яс, үе мөч, булчингийн ${idx.topics.reduce((a, t) => a + t.counts.structures, 0)} бүтэц. Атласаар үзэж, флэшкартаар цээжилж, зураг дээр таньж, тестээр шалгана.</p>
       <div class="search"><input id="q" type="search" placeholder="Бүтэц хайх: humerus, deltoid, condyle…" aria-label="Бүтэц хайх" autocomplete="off"></div>
       <ul class="results" id="results"></ul>
     </section>
-    ${SYSTEMS.map(sys => `
+    ${SYSTEMS.filter(sys => bySys(sys.id).length).map(sys => `
       <section class="system ${sysClass(sys.id)}">
         <h2>${sys.mn} <span class="la">${sys.la}</span></h2>
         <ul class="topics">

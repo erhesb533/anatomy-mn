@@ -13,10 +13,10 @@
 - `verified: false` бичлэгийг апп-д "Шалгагдаагүй" гэж харуулна; `null` талбарыг "Материалд байхгүй" гэж харуулна.
 - Интерфейсийн текст Монголоор, энгийн үгээр. Анатомийн нэрийг UI текстэд Латинаар бич (Монгол нэр томьёо бүү зохио).
 - Утсанд эхэлж зохио (390px), харанхуй горим, гарын товчлуурын focus, `prefers-reduced-motion`.
-- Өнгө: яс `--bones`, үе мөч `--joints`, булчин `--muscles` (атласын уламжлал). Шинэ өнгө бүү нэм.
+- Өнгө: яс `--bones`, үе мөч `--joints`, булчин `--muscles`, мэдрэл `--nerves` (атласын уламжлал). Шинэ өнгө бүү нэм.
 
 ## 3D загвар
-- Эх: Z-Anatomy `SkeletalSystem100.fbx`, `MuscularSystem100.fbx`, `Joints100.fbx` → `tools/model3d/build.mjs`
+- Эх: Z-Anatomy `SkeletalSystem100.fbx`, `MuscularSystem100.fbx`, `Joints100.fbx`, `NervousSystem100.fbx` → `tools/model3d/build.mjs`
   (FBX2glTF → glTF, бүлэг/тал сонгох `Name.g@both`, `RATIO`, `NO_ATT=1`, `NO_DEDUP=1`, meshopt шахалт) → `models/<layer>.glb`.
 - `models/index.json`: `layers` (glb + map) ба `models` (давхаргуудын жагсаалт, `topics`, `ghost` = тунгалаг давхарга).
   Нэг загвар олон давхаргатай байж болно (жишээ нь булчин + яс). Сэдвийн хуудсанд тухайн сэдэвтэй бүх загвар харагдана.

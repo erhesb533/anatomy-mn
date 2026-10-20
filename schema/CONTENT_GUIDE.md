@@ -43,6 +43,19 @@ region (triangle, fossa, eminence, perineum).
 Зураг бүрийг нүдээр шалгаж `figure_check`-д `labeled` (нэрээр шошголсон) эсвэл `visible` (шошгогүй ч тод харагдана) гэж тэмдэглэнэ.
 Зурагт олдохгүй бүтцийг зурагтай холбохгүй, практик асуулт гаргахгүй.
 
+## Мэдрэлийн тогтолцоо (schema 1.2)
+- system = "nervous"; region = brain / spinal-cord / peripheral-nerves (гавлын мэдрэл → peripheral-nerves).
+- kind: brain-part, spinal-cord-part, nerve, ganglion, meninx, ventricle, vessel, tract. details = null (энэ тогтолцоонд details бүтэц алга;
+  үүрэг, байрлал, холбоог description_mn-д бичнэ). Мэдрэлийн доод ангилал/үүрэг (жишээ нь гавлын мэдрэл мэдрэхүйн/хөдөлгөөний)
+  эх текстэд байвал description_mn-д оруул.
+- TA2 хүснэгт: ta2-04-cns.md (тархи, нугас, хальс, ховдол), ta2-05-pns.md (гавлын, нугасны, ургал мэдрэл).
+- ID жишээ: cerebrum, frontal-lobe, precentral-gyrus, central-sulcus, thalamus, hypothalamus, midbrain, pons, medulla-oblongata,
+  cerebellum, spinal-cord, dorsal-horn, dura-mater, arachnoid-mater, pia-mater, lateral-ventricle, third-ventricle,
+  cerebral-aqueduct, fourth-ventricle, choroid-plexus, circle-of-willis (эх текстийн нэрээр), olfactory-nerve, optic-nerve,
+  oculomotor-nerve, trochlear-nerve, trigeminal-nerve, abducens-nerve, facial-nerve, vestibulocochlear-nerve,
+  glossopharyngeal-nerve, vagus-nerve, accessory-nerve, hypoglossal-nerve, brachial-plexus, cervical-plexus, lumbar-plexus, sacral-plexus,
+  dorsal-root-ganglion, sciatic-nerve, femoral-nerve.
+
 ## ID дүрэм (файл хоорондын холбоос үүнээс хамаарна)
 - Англи нэрийг жижиг үсэг, зураасаар: `humerus`, `head-of-humerus`, `greater-tubercle`, `biceps-brachii`,
   `glenohumeral-joint`, `deltoid-tuberosity`.

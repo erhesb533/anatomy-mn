@@ -1,5 +1,5 @@
 /* Анатоми MN — өнгө нь анатомийн атласын уламжлалыг дагана:
-   яс = шар хүрэн, үе мөч = венийн хөх, булчин = артерийн улаан. */
+   яс = шар хүрэн, үе мөч = венийн хөх, булчин = артерийн улаан, мэдрэл = шар. */
 :root {
   --paper: #EEF1F2;
   --surface: #FFFFFF;
@@ -9,6 +9,7 @@
   --bones: #9A6F12;
   --joints: #2C5FA8;
   --muscles: #B3261E;
+  --nerves: #7A6500;
   --ok: #2E7D4F;
   --warn: #8A5A00;
   --sys: var(--ink);
@@ -21,13 +22,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --paper: #12171C; --surface: #1B2228; --ink: #E6EBEE; --muted: #9AA7B2; --line: #2E3942;
-    --bones: #D9AE4A; --joints: #7FA6E6; --muscles: #EC7369; --ok: #6CC08F; --warn: #E0B45A;
+    --bones: #D9AE4A; --joints: #7FA6E6; --muscles: #EC7369; --nerves: #E6C84A; --ok: #6CC08F; --warn: #E0B45A;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #12171C; --surface: #1B2228; --ink: #E6EBEE; --muted: #9AA7B2; --line: #2E3942;
-  --bones: #D9AE4A; --joints: #7FA6E6; --muscles: #EC7369; --ok: #6CC08F; --warn: #E0B45A;
+  --bones: #D9AE4A; --joints: #7FA6E6; --muscles: #EC7369; --nerves: #E6C84A; --ok: #6CC08F; --warn: #E0B45A;
   color-scheme: dark;
 }
 
@@ -44,6 +45,7 @@ button { font: inherit; color: inherit; }
 .sys-bones { --sys: var(--bones); }
 .sys-joints { --sys: var(--joints); }
 .sys-muscles { --sys: var(--muscles); }
+.sys-nervous { --sys: var(--nerves); }
 
 /* Header */
 .bar {
@@ -76,7 +78,7 @@ h3 { font-size: 16px; margin: 20px 0 6px; font-weight: 600; }
   font-family: var(--serif); font-style: italic; font-weight: 700;
   font-size: clamp(34px, 9vw, 58px); line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 14px;
 }
-.hero .plate .b { color: var(--bones); } .hero .plate .j { color: var(--joints); } .hero .plate .m { color: var(--muscles); }
+.hero .plate .b { color: var(--bones); } .hero .plate .j { color: var(--joints); } .hero .plate .m { color: var(--muscles); } .hero .plate .n { color: var(--nerves); }
 .hero p { margin: 0; max-width: 56ch; color: var(--muted); }
 .search { position: relative; margin: 18px 0 0; }
 .search input {
