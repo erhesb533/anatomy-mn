@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Анатоми MN</title>
+  <meta name="description" content="Анагаахын оюутнуудад зориулсан анатомийн давтлагын апп: яс, үе мөч, булчин. Атлас, флэшкарт, зураг таних, тест.">
+  <meta name="theme-color" content="#EEF1F2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#12171C" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="#/">Анатоми <span>MN</span></a>
+    <div class="lang" role="group" aria-label="Нэрийн хэл">
+      <button data-lang="la" type="button">Lat</button>
+      <button data-lang="en" type="button">Eng</button>
+      <button data-lang="mn" type="button">Мон</button>
+    </div>
+  </header>
+  <main id="app" tabindex="-1"><p class="loading">Ачаалж байна…</p></main>
+  <footer class="foot">
+    <a href="#/about">Эх сурвалж, лиценз</a>
+    <span>Агуулга багшаар шалгагдаагүй — шалгалтад бэлдэхдээ сурах бичигтэйгээ тулгаарай.</span>
+  </footer>
+  <dialog id="zoom"><img alt=""><button type="button" class="close">Хаах</button></dialog>
+  <script src="app.js"></script>
+</body>
+</html>

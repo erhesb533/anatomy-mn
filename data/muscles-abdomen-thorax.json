@@ -1,0 +1,4298 @@
+{
+  "schema_version": "1.1",
+  "topic": {
+    "id": "muscles-abdomen-thorax",
+    "system": "muscles",
+    "title": {
+      "mn": null,
+      "la": null,
+      "en": "Axial muscles of the abdominal wall, thorax, pelvic floor and perineum"
+    }
+  },
+  "structures": [
+    {
+      "id": "muscles-of-abdomen",
+      "system": "muscles",
+      "kind": "muscle-group",
+      "region": "abdomen",
+      "ta2_id": 2356,
+      "names": {
+        "mn": null,
+        "la": "Musculi abdominis",
+        "en": "Muscles of the abdomen"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Хэвлийн урд ба хажуу хэсгийг бүрхэж, урд дунд шугамд нийлдэг дөрвөн хос булчин: m. obliquus externus abdominis, m. obliquus internus abdominis, m. transversus abdominis, m. rectus abdominis. Хэвлийн урд хана хэвлийн эрхтнүүдийг хамгаалж, нурууны баганыг хөдөлгөнө; хүснэгтэд хэвлийн арын ханын m. quadratus lumborum-ийг мөн оруулсан.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1112_Muscles_of_the_Abdomen.jpg",
+          "source_id": "openstax-ap2e",
+          "view": "anterior",
+          "region_id": null,
+          "figure_check": "visible"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Chapter Review",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2356",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "external-oblique",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "abdomen",
+      "ta2_id": 2364,
+      "names": {
+        "mn": null,
+        "la": "Musculus obliquus externus abdominis",
+        "en": "External oblique"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "muscles-of-abdomen",
+      "description_mn": "Хэвлийн урд-хажуу ханын гурван хавтгай булчингийн хамгийн өнгөц давхарга. Ширхгүүд нь доош, дотогш (дөрвөн хуруугаа өмдний халаасанд хийх чиглэлээр) явна.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Хавирга 5–12; os ilium (хүснэгтэд m. obliquus externus ба internus abdominis-ийг нэг мөрөнд хамт өгсөн).",
+        "insertion_mn": "Хавирга 7–10; linea alba; os ilium (хүснэгтэд m. obliquus internus abdominis-тэй хамт өгсөн).",
+        "action_mn": "Бэлхүүсээр мушгих (нурууны баганын 'supination') ба хажуу тийш нугалах.",
+        "innervation_mn": "Thoraco-abdominal nerves (T7-11) ба subcostal nerve (T12)",
+        "blood_supply_mn": null,
+        "origin_bone_ids": [
+          "ribs",
+          "ilium"
+        ],
+        "insertion_bone_ids": [
+          "ribs",
+          "ilium"
+        ]
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1112_Muscles_of_the_Abdomen.jpg",
+          "source_id": "openstax-ap2e",
+          "view": "anterior",
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2364",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Abdominal external oblique muscle (infobox) — https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+          "fields": [
+            "details.innervation_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "details.blood_supply_mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Хүснэгтэд external ба internal oblique-ийн эхлэл/бэхлэл/үйлдэл нэг мөрөнд хамт өгөгдсөн тул хоёуланд ижил бичив. Эхлэл/бэхлэлийг эх хүснэгтээс яг хуулав; багш эх хүснэгтийн утгыг шалгана. [Wikipedia-тэй зөрүү — багш шалгана: Artery талбар infobox-д байхгүй тул blood_supply_mn бөглөөгүй. Existing insertion_mn-д 'хавирга 7–10' гэж байгаа нь Wikipedia-гийн insertion (xiphoid process, iliac crest, pubic crest/tubercle, linea alba, inguinal ligament, ASIS)-д байхгүй (хүснэгтэд internus-тай хамт өгсөнтэй холбоотой).]"
+      }
+    },
+    {
+      "id": "internal-oblique",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "abdomen",
+      "ta2_id": 2373,
+      "names": {
+        "mn": null,
+        "la": "Musculus obliquus internus abdominis",
+        "en": "Internal oblique"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "muscles-of-abdomen",
+      "description_mn": "Хэвлийн урд-хажуу ханын дунд давхаргын хавтгай булчин. Ширхгүүд нь m. obliquus externus abdominis-ийн ширхэгт перпендикуляр буюу дээш, дотогш (халаасанд гараа хийхэд эрхий хурууны чиглэлээр) явна.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Хавирга 5–12; os ilium (хүснэгтэд m. obliquus externus ба internus abdominis-ийг нэг мөрөнд хамт өгсөн).",
+        "insertion_mn": "Хавирга 7–10; linea alba; os ilium (хүснэгтэд m. obliquus externus abdominis-тэй хамт өгсөн).",
+        "action_mn": "Бэлхүүсээр мушгих (нурууны баганын 'supination') ба хажуу тийш нугалах.",
+        "innervation_mn": "Thoracoabdominal nn. (T7-T11), subcostal n. (T12), iliohypogastric n. (L1) ба ilioinguinal n. (L1)",
+        "blood_supply_mn": "Subcostal arteries",
+        "origin_bone_ids": [
+          "ribs",
+          "ilium"
+        ],
+        "insertion_bone_ids": [
+          "ribs",
+          "ilium"
+        ]
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1112_Muscles_of_the_Abdomen.jpg",
+          "source_id": "openstax-ap2e",
+          "view": "anterior",
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2373",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Internal abdominal oblique muscle (infobox) — https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+          "fields": [
+            "details.innervation_mn",
+            "details.blood_supply_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Хүснэгтэд external ба internal oblique-ийн эхлэл/бэхлэл/үйлдэл нэг мөрөнд хамт өгөгдсөн тул хоёуланд ижил бичив. Эхлэл/бэхлэлийг эх хүснэгтээс яг хуулав; багш эх хүснэгтийн утгыг шалгана. [Wikipedia-тэй зөрүү — багш шалгана: existing origin_mn 'Хавирга 5–12; os ilium' and insertion_mn 'Хавирга 7–10; linea alba; os ilium' (OpenStax combined external+internal oblique row) differ from Wikipedia: Origin 'Inguinal ligament, iliac crest and the lumbodorsal fascia'; Insertion 'Linea alba, pectineal line of pubis (via conjoint tendon) and ribs 10-12'. Not changed.]"
+      }
+    },
+    {
+      "id": "transversus-abdominis",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "abdomen",
+      "ta2_id": 2375,
+      "names": {
+        "mn": null,
+        "la": "Musculus transversus abdominis",
+        "en": "Transversus abdominis"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "muscles-of-abdomen",
+      "description_mn": "Хэвлийн урд-хажуу ханын хамгийн гүн давхарга. Ширхгүүд нь өмдний бүсний урд хэсэг шиг хэвлийг хөндлөн тойрон байрлана. Гурван давхарга булчин өөр өөр чиглэлтэй тул их биеийн олон төрлийн хөдөлгөөн, эргэлтийг хангаж, ясгүй хэсэгт хэвлийн эрхтнүүдийг хамгаална.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Os ilium; хавирга 5–10.",
+        "insertion_mn": "Sternum; linea alba; os pubis.",
+        "action_mn": "Хүчтэй амьсгал гаргах, бие засах, шээх, төрөх үед хэвлийн хөндийг шахна (compression).",
+        "innervation_mn": "Thoracoabdominal nn. (T6-T11), Subcostal n. (T12), iliohypogastric nerve (L1) ба ilioinguinal nerve (L1)",
+        "blood_supply_mn": "Subcostal arteries",
+        "origin_bone_ids": [
+          "ilium",
+          "ribs"
+        ],
+        "insertion_bone_ids": [
+          "sternum",
+          "pubis"
+        ]
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1112_Muscles_of_the_Abdomen.jpg",
+          "source_id": "openstax-ap2e",
+          "view": "anterior",
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2375",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Transverse abdominal muscle (infobox) — https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+          "fields": [
+            "details.innervation_mn",
+            "details.blood_supply_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Эхлэл/бэхлэлийг эх хүснэгтээс яг хуулав; багш эх хүснэгтийн утгыг шалгана. [Wikipedia-тэй зөрүү — багш шалгана: Existing origin_mn 'Os ilium; хавирга 5–10' vs Wikipedia 'Iliac crest, inguinal ligament, thoracolumbar fascia, and costal cartilages 7-12' (rib levels differ: 5–10 vs 7–12). Existing insertion 'Sternum' vs Wikipedia 'Xiphoid process' (compatible).]"
+      }
+    },
+    {
+      "id": "rectus-abdominis",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "abdomen",
+      "ta2_id": 2357,
+      "names": {
+        "mn": null,
+        "la": "Musculus rectus abdominis",
+        "en": "Rectus abdominis"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "muscles-of-abdomen",
+      "description_mn": "Хэвлийн урд хананы дунд хэсэгт байрлах хос урт, шулуун булчин (\"sit-up\" булчин гэж нэрлэдэг). Их биеийн уртын дагуу сунаж, vagina musculi recti abdominis-д бүрхэгдэнэ; гурван intersectiones tendineae-гээр сегментчлэгдэж \"six-pack\" дүр төрх үүсгэнэ.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Os pubis (текстэд: crista pubica ба symphysis pubica).",
+        "insertion_mn": "Sternum; хавирга 5 ба 7 (эх хүснэгтийн дагуу).",
+        "action_mn": "Нурууны баганыг нугалах (суух хөдөлгөөн).",
+        "innervation_mn": "Thoraco-abdominal nerves (T7–T11) ба subcostal (T12) мэдрэлээр сегментээр мэдрүүлнэ",
+        "blood_supply_mn": "Inferior epigastric artery",
+        "origin_bone_ids": [
+          "pubis"
+        ],
+        "insertion_bone_ids": [
+          "sternum",
+          "ribs"
+        ]
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1112_Muscles_of_the_Abdomen.jpg",
+          "source_id": "openstax-ap2e",
+          "view": "anterior",
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details.origin_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2357",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Rectus abdominis muscle (infobox) — https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+          "fields": [
+            "details.innervation_mn",
+            "details.blood_supply_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Эхлэл/бэхлэлийг эх хүснэгтээс яг хуулав; багш эх хүснэгтийн утгыг шалгана. [Wikipedia-тэй зөрүү — багш шалгана: Existing insertion_mn: 'хавирга 5 ба 7' vs Wikipedia 'Costal cartilages of ribs 5-7 xiphoid process of sternum' (5–7 range, costal cartilages + xiphoid) — minor wording difference, not changed.]"
+      }
+    },
+    {
+      "id": "rectus-sheath",
+      "system": "muscles",
+      "kind": "tendon-fascia",
+      "region": "abdomen",
+      "ta2_id": 2359,
+      "names": {
+        "mn": null,
+        "la": "Vagina musculi recti abdominis",
+        "en": "Rectus sheath"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "synonyms": [
+        {
+          "mn": null,
+          "la": null,
+          "en": "Rectus sheaths"
+        }
+      ],
+      "parent_id": null,
+      "description_mn": "M. rectus abdominis-ийг бүрхэх холбогч эдийн хуудас. Хоёр талын rectus sheath урд дунд шугамд нийлж linea alba-г үүсгэнэ.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1112_Muscles_of_the_Abdomen.jpg",
+          "source_id": "openstax-ap2e",
+          "view": "anterior",
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2359",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "[schema 1.1: kind \"ligament\" → \"tendon-fascia\"]"
+      }
+    },
+    {
+      "id": "linea-alba",
+      "system": "muscles",
+      "kind": "tendon-fascia",
+      "region": "abdomen",
+      "ta2_id": 2377,
+      "names": {
+        "mn": null,
+        "la": "Linea alba",
+        "en": "Linea alba"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Их биеийн урд дунд шугамын дагуу явах цагаан, фиброз тууз; хоёр талын vagina musculi recti abdominis нийлж үүсгэнэ. Хүснэгтийн дагуу m. obliquus externus/internus abdominis ба m. transversus abdominis үүнд бэхлэгдэнэ.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen",
+          "fields": [
+            "names.en",
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2377",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "[schema 1.1: kind \"ligament\" → \"tendon-fascia\"]"
+      }
+    },
+    {
+      "id": "tendinous-intersections",
+      "system": "muscles",
+      "kind": "tendon-fascia",
+      "region": "abdomen",
+      "ta2_id": 2358,
+      "names": {
+        "mn": null,
+        "la": "Intersectiones tendineae",
+        "en": "Tendinous intersections"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "rectus-abdominis",
+      "description_mn": "M. rectus abdominis-ийг сегментүүдэд хуваадаг коллаген ширхгийн гурван хөндлөн тууз. Олон удаа sit-up хийхэд сегмент бүр томорч \"six-pack\" дүр төрх үүснэ.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen",
+          "fields": [
+            "names.en",
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2358",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "[schema 1.1: kind \"ligament\" → \"tendon-fascia\"]"
+      }
+    },
+    {
+      "id": "quadratus-lumborum",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "abdomen",
+      "ta2_id": 2382,
+      "names": {
+        "mn": null,
+        "la": "Musculus quadratus lumborum",
+        "en": "Quadratus lumborum"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "muscles-of-abdomen",
+      "description_mn": "Хэвлийн арын ханыг vertebrae lumbales, os ilium-ийн хэсгүүд, m. psoas major, m. iliacus-тай хамт үүсгэх булчин. Их биеийн энэ хэсэг биеийн бусад хэсгийг тогтворжуулж, байрлалыг хадгалахад гол үүрэгтэй.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Os ilium; хавирга 5–10 (эх хүснэгтийн дагуу).",
+        "insertion_mn": "Хавирга 12; vertebrae lumbales L1–L4.",
+        "action_mn": "Нурууны баганыг хажуу тийш нугалах; биеийн байрлалыг хадгалж, тогтворжуулахад туслах.",
+        "innervation_mn": "Арван хоёрдугаар цээжний мэдрэл ба lumbar nerves-ийн нэгээс дөрөвдүгээр ventral rami (T12, L1-L4)",
+        "blood_supply_mn": "Lumbar arteries, iliolumbar artery-ийн lumbar салаа",
+        "origin_bone_ids": [
+          "ilium",
+          "ribs"
+        ],
+        "insertion_bone_ids": [
+          "ribs",
+          "lumbar-vertebrae"
+        ]
+      },
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details.action_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2382",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Quadratus lumborum muscle (infobox) — https://en.wikipedia.org/wiki/Quadratus_lumborum_muscle",
+          "fields": [
+            "details.innervation_mn",
+            "details.blood_supply_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг 1112-ын (b) хэсэгт 'нурууны доод хэсгийн булчингууд' гэж ерөнхий бичсэн, quadratus lumborum нэрлэгдээгүй тул зураг холбоогүй. Эхлэл/бэхлэлийг эх хүснэгтээс яг хуулав; багш эх хүснэгтийн утгыг шалгана. [Wikipedia-тэй зөрүү — багш шалгана: Бага зөрүү: existing origin_mn-д 'хавирга 5–10' орсон; Wikipedia infobox-д origin нь зөвхөн 'Posterior border of iliac crest'. (Өөрчлөөгүй.)]"
+      }
+    },
+    {
+      "id": "muscles-of-thorax",
+      "system": "muscles",
+      "kind": "muscle-group",
+      "region": "thorax",
+      "ta2_id": 2299,
+      "names": {
+        "mn": null,
+        "la": "Musculi thoracis",
+        "en": "Muscles of the thorax"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Цээжний хөндийн хэмжээг өөрчилж амьсгалахад тусалдаг булчингууд — diaphragma ба musculi intercostales. Амьсгал авахад цээжний хөндий томорч цээж өргөгдөнө; гаргахад хөндий жижгэрч цээж буурна.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Thorax",
+          "fields": [
+            "names.en",
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Thorax (table)",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2299",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "TA2 'Musculi thoracis' нь pectoralis major г.м. булчинг ч хамардаг өргөн ойлголт; энэ сэдэвт зөвхөн эх текстийн хүснэгт дэх булчингуудыг хамааруулав."
+      }
+    },
+    {
+      "id": "diaphragm",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "thorax",
+      "ta2_id": 2327,
+      "names": {
+        "mn": null,
+        "la": "Diaphragma",
+        "en": "Diaphragm"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "muscles-of-thorax",
+      "description_mn": "Цээж ба хэвлийн хөндийг тусгаарлах, тайван үедээ бөмбөгөр хэлбэртэй араг ясны булчин. Дээд гадаргуу нь гүдгэр (цээжний хөндийн ёроол), доод гадаргуу нь хотгор (хэвлийн хөндийн дээвэр). Агшиж хавтгайрахад гялтангийн хөндийн эзэлхүүн нэмэгдэж, даралт буурч агаар уушгинд орно. Бие засах, шээх, төрөх үед хэвлийн булчинтай хамтран ажиллана (\"Valsalva maneuver\").",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Sternum (урд талд processus xiphoideus); хавирга 6–12 буюу доод зургаан хавирга ба тэдгээрийн мөгөөрс (хажуу талд); vertebrae lumbales ба 12-р хавирга (ар талд).",
+        "insertion_mn": "Centrum tendineum — булчин хэсгүүд нь хажуу талаас шөрмөсөнд бэхлэгдэнэ.",
+        "action_mn": "Ээлжлэн агшиж, сулрахдаа цээжний хөндийн эзэлхүүнийг өөрчилж амьсгал авах, гаргахыг хангана; амьсгалаа түгжихэд тогтвортой агшиж хэвлийн хөндийн эзэлхүүн, даралтыг тогтворжуулна.",
+        "innervation_mn": "Phrenic nerve ба доод intercostal nerves",
+        "blood_supply_mn": "Pericardiacophrenic artery, musculophrenic artery, inferior phrenic arteries",
+        "origin_bone_ids": [
+          "sternum",
+          "ribs",
+          "lumbar-vertebrae"
+        ],
+        "insertion_bone_ids": []
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1113_The_Diaphragm.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Thorax (table)",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Chapter Review",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2327",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Thoracic diaphragm (infobox) — https://en.wikipedia.org/wiki/Thoracic_diaphragm",
+          "fields": [
+            "details.innervation_mn",
+            "details.blood_supply_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Эхлэл/бэхлэлийг эх хүснэгтээс яг хуулав; багш эх хүснэгтийн утгыг шалгана."
+      }
+    },
+    {
+      "id": "central-tendon-of-diaphragm",
+      "system": "muscles",
+      "kind": "tendon-fascia",
+      "region": "thorax",
+      "ta2_id": 2340,
+      "names": {
+        "mn": null,
+        "la": "Centrum tendineum",
+        "en": "Central tendon"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "diaphragm",
+      "description_mn": "Diaphragma-гийн төвийн шөрмөслөг хэсэг; хажуу талын булчин хэсгүүд үүнд бэхлэгдэнэ. Перикардын уутны доод гадаргуу ба париетал гялтангийн доод гадаргуу үүнтэй нийлдэг.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm",
+          "fields": [
+            "names.en",
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Thorax (table)",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2340",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "[schema 1.1: kind \"ligament\" → \"tendon-fascia\"]"
+      }
+    },
+    {
+      "id": "caval-opening",
+      "system": "muscles",
+      "kind": "opening",
+      "region": "thorax",
+      "ta2_id": 2341,
+      "names": {
+        "mn": null,
+        "la": "Foramen venae cavae",
+        "en": "Caval opening"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "synonyms": [
+        {
+          "mn": null,
+          "la": null,
+          "en": "Foramen for the vena cava"
+        }
+      ],
+      "parent_id": "diaphragm",
+      "description_mn": "Diaphragma дахь цээж ба хэвлийн хооронд бүтэц дамжих гурван нүхний нэг; vena cava inferior үүгээр дамжина.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm",
+          "fields": [
+            "names.en",
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "synonyms"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2341",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Schema-д 'нүх/opening' гэсэн kind байхгүй тул diaphragma-гийн нүхийг 'ligament' (фиброз бүтцийн хэсэг) гэж ангиллаа; багш kind-ыг шийднэ. [schema 1.1: kind \"ligament\" → \"opening\"]"
+      }
+    },
+    {
+      "id": "esophageal-hiatus",
+      "system": "muscles",
+      "kind": "opening",
+      "region": "thorax",
+      "ta2_id": 2344,
+      "names": {
+        "mn": null,
+        "la": "Hiatus oesophageus",
+        "en": "Esophageal hiatus"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "diaphragm",
+      "description_mn": "Diaphragma дахь нүх; улаан хоолой (oesophagus) ба түүнд наалдсан мэдрэлүүд үүгээр дамжина.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm",
+          "fields": [
+            "names.en",
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2344",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Schema-д 'нүх/opening' гэсэн kind байхгүй тул diaphragma-гийн нүхийг 'ligament' (фиброз бүтцийн хэсэг) гэж ангиллаа; багш kind-ыг шийднэ. [schema 1.1: kind \"ligament\" → \"opening\"]"
+      }
+    },
+    {
+      "id": "aortic-hiatus",
+      "system": "muscles",
+      "kind": "opening",
+      "region": "thorax",
+      "ta2_id": 2342,
+      "names": {
+        "mn": null,
+        "la": "Hiatus aorticus",
+        "en": "Aortic hiatus"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "diaphragm",
+      "description_mn": "Diaphragma-гийн арын хэсэгт байрлах нүх; aorta, ductus thoracicus ба vena azygos үүгээр дамжина.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm",
+          "fields": [
+            "names.en",
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2342",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Schema-д 'нүх/opening' гэсэн kind байхгүй тул diaphragma-гийн нүхийг 'ligament' (фиброз бүтцийн хэсэг) гэж ангиллаа; багш kind-ыг шийднэ. [schema 1.1: kind \"ligament\" → \"opening\"]"
+      }
+    },
+    {
+      "id": "intercostal-muscles",
+      "system": "muscles",
+      "kind": "muscle-group",
+      "region": "thorax",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Intercostal muscles"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": "muscles-of-thorax",
+      "description_mn": "Хавирга хоорондын зай бүрийг хамрах гурван багц булчин (external, internal, innermost intercostal). Гол үүрэг нь хавирганы торны хэмжээг өөрчилж амьсгалахад туслах.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1114_Thorax.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "visible"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Intercostal Muscles",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "TA2-д гурван intercostal булчинг нэгтгэсэн 'Musculi intercostales' мөр байхгүй тул Латин нэр null."
+      }
+    },
+    {
+      "id": "external-intercostal",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "thorax",
+      "ta2_id": 2311,
+      "names": {
+        "mn": null,
+        "la": "Musculi intercostales externi",
+        "en": "External intercostal"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "intercostal-muscles",
+      "description_mn": "Өнгөц байрлалтай 11 хос булчин; биеийн хажуу талд байрлана. Агшихдаа хавирганы торыг өргөж тэлэх тул амьсгал авахад тусална.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Тухайн intercostal булчингийн дээд талын хавирга.",
+        "insertion_mn": "Тухайн intercostal булчингийн доод талын хавирга.",
+        "action_mn": "Хавиргыг өргөж цээжний хөндийг тэлнэ — амьсгал авахад тусална.",
+        "innervation_mn": "Intercostal nerves",
+        "blood_supply_mn": "Intercostal arteries",
+        "origin_bone_ids": [
+          "ribs"
+        ],
+        "insertion_bone_ids": [
+          "ribs"
+        ]
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1114_Thorax.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Intercostal Muscles",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details.action_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Thorax (table)",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2311",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: External intercostal muscles (infobox) — https://en.wikipedia.org/wiki/External_intercostal_muscles",
+          "fields": [
+            "details.innervation_mn",
+            "details.blood_supply_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "internal-intercostal",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "thorax",
+      "ta2_id": 2312,
+      "names": {
+        "mn": null,
+        "la": "Musculi intercostales interni",
+        "en": "Internal intercostal"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "intercostal-muscles",
+      "description_mn": "Mm. intercostales externi-ийн шууд доор (гүнд) байрлах 11 хос булчин; sternum-ийн ойролцоо дотор талд байрлана. Хавиргуудыг ойртуулж хавирганы торыг нарийсгах тул амьсгал гаргахад ашиглагдана.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Тухайн intercostal булчингийн доод талын хавирга.",
+        "insertion_mn": "Тухайн intercostal булчингийн дээд талын хавирга.",
+        "action_mn": "Хүчтэй амьсгал гаргах үед хавиргуудыг дээд/доод тэнхлэгийн дагуу хөдөлгөж ойртуулна.",
+        "innervation_mn": "Intercostal nerves",
+        "blood_supply_mn": "Intercostal arteries",
+        "origin_bone_ids": [
+          "ribs"
+        ],
+        "insertion_bone_ids": [
+          "ribs"
+        ]
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1114_Thorax.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Intercostal Muscles",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details.action_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Thorax (table)",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2312",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Internal intercostal muscles (infobox) — https://en.wikipedia.org/wiki/Internal_intercostal_muscles",
+          "fields": [
+            "details.innervation_mn",
+            "details.blood_supply_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "[Wikipedia-тэй зөрүү — багш шалгана: Minor: Wikipedia action 'Hold ribs steady' vs existing action_mn (draws ribs together in forced expiration) — differ in emphasis, not opposite.]"
+      }
+    },
+    {
+      "id": "innermost-intercostal",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "thorax",
+      "ta2_id": 2313,
+      "names": {
+        "mn": null,
+        "la": "Musculi intercostales intimi",
+        "en": "Innermost intercostal"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "intercostal-muscles",
+      "description_mn": "Хамгийн гүн intercostal булчингууд; external ба internal intercostal булчингийн гүнд байрлана.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Хавирга бүрийн доод-хойд ирмэг (дээд хавирга)",
+        "insertion_mn": "Хавирганы дээд-хойд ирмэг (доод хавирга)",
+        "action_mn": "Mm. intercostales interni-ийн үйлдэлд синергист болж хавиргуудыг ойртуулна.",
+        "innervation_mn": "Intercostal nerves",
+        "blood_supply_mn": "Intercostal arteries"
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1114_Thorax.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Intercostal Muscles",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details.action_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "details.action_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2313",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Innermost intercostal muscle (infobox) — https://en.wikipedia.org/wiki/Innermost_intercostal_muscle",
+          "fields": [
+            "details.origin_mn",
+            "details.insertion_mn",
+            "details.innervation_mn",
+            "details.blood_supply_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "pelvic-diaphragm",
+      "system": "muscles",
+      "kind": "muscle-group",
+      "region": "pelvic-girdle",
+      "ta2_id": 2402,
+      "names": {
+        "mn": null,
+        "la": "Diaphragma pelvis",
+        "en": "Pelvic diaphragm"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Аарцгийн хөндийн доод хэсгийг тодорхойлох булчинлаг хуудас (аарцгийн ёроол); урдаас хойш os pubis-аас os coccygis хүртэл сунана. M. levator ani ба m. ischiococcygeus-ээс тогтоно; нүхээр нь canalis analis, urethra, эмэгтэйд vagina гарна. Аарцгийн эрхтнүүдийг тулж, хэвлийн доторх даралтыг эсэргүүцнэ.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Chapter Review",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2402",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг 1115-ын тайлбар 'pelvic floor muscles' гэж ерөнхий нэрлэсэн тул diaphragma pelvis-тэй холбов; багш шалгана."
+      }
+    },
+    {
+      "id": "levator-ani",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "pelvic-girdle",
+      "ta2_id": 2403,
+      "names": {
+        "mn": null,
+        "la": "Musculus levator ani",
+        "en": "Levator ani"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "pelvic-diaphragm",
+      "description_mn": "Аарцгийн ёроолын хамгийн чухал гэж тооцогддог том булчин; m. pubococcygeus ба m. iliococcygeus гэсэн хоёр араг ясны булчингаас тогтоно.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Lesser pelvis-ийн хажуу хананы дотоод гадаргуу",
+        "insertion_mn": "Coccyx-ийн дотоод гадаргуу, эсрэг талын levator ani, мөн түүнийг нэвтэрч өнгөрөх бүтцүүдэд",
+        "action_mn": "Аарцгийн хөндийн эрхтнүүдийг тулж дэмжинэ; хэвлийн булчингийн агшилтаас үүсэх даралтыг эсэргүүцэж, даралтыг бүдүүн гэдсэнд (бие засах) ба умайд (төрөх) чиглүүлнэ; urethra ба anus-д араг ясны булчин сфинктер үүсгэнэ.",
+        "innervation_mn": "S2. Pubococcygeus ба iliococcygeus: levator ani nerve (S4); pudendal nerve-ээс гарах inferior rectal nerve (S3, S4); coccygeal plexus. Puborectalis: S3, S4; levator ani nerve",
+        "blood_supply_mn": "Inferior gluteal artery"
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details.action_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "details.action_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2403",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Levator ani (infobox) — https://en.wikipedia.org/wiki/Levator_ani",
+          "fields": [
+            "details.origin_mn",
+            "details.insertion_mn",
+            "details.innervation_mn",
+            "details.blood_supply_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "pubococcygeus",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "pelvic-girdle",
+      "ta2_id": 2405,
+      "names": {
+        "mn": null,
+        "la": "Musculus pubococcygeus",
+        "en": "Pubococcygeus"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "levator-ani",
+      "description_mn": "M. iliococcygeus-тэй хамт m. levator ani-г бүрдүүлэх араг ясны булчин.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": null,
+        "insertion_mn": null,
+        "action_mn": null,
+        "innervation_mn": null,
+        "blood_supply_mn": null
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2405",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "details.origin_mn",
+        "details.insertion_mn",
+        "details.action_mn",
+        "details.innervation_mn",
+        "details.blood_supply_mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "iliococcygeus",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "pelvic-girdle",
+      "ta2_id": 2404,
+      "names": {
+        "mn": null,
+        "la": "Musculus iliococcygeus",
+        "en": "Iliococcygeus"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "levator-ani",
+      "description_mn": "M. pubococcygeus-тэй хамт m. levator ani-г бүрдүүлэх араг ясны булчин.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": null,
+        "insertion_mn": null,
+        "action_mn": null,
+        "innervation_mn": null,
+        "blood_supply_mn": null
+      },
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2404",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "details.origin_mn",
+        "details.insertion_mn",
+        "details.action_mn",
+        "details.innervation_mn",
+        "details.blood_supply_mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "ischiococcygeus",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "pelvic-girdle",
+      "ta2_id": 2412,
+      "names": {
+        "mn": null,
+        "la": "Musculus coccygeus",
+        "en": "Ischiococcygeus"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "synonyms": [
+        {
+          "mn": null,
+          "la": null,
+          "en": "Coccygeus"
+        }
+      ],
+      "parent_id": "pelvic-diaphragm",
+      "description_mn": "M. levator ani-тэй хамт diaphragma pelvis-ийг бүрдүүлэх булчин. Os coccygis-ийг урагш татаж, бие засах, төрөх үед m. levator ani-д туслана.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": "Sacrospinous ligament ба ischial spine",
+        "insertion_mn": "Coccyx-ийн хажуу ирмэг ба sacrum-ийн харгалзах ирмэг",
+        "action_mn": "Os coccygis-ийг урагш татна; хэвлийн даралтыг эсэргүүцэхэд m. levator ani-д туслана.",
+        "innervation_mn": "Pudendal nerve; sacral nerves: S4, S5 эсвэл S3-S4",
+        "blood_supply_mn": null
+      },
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "synonyms",
+            "description_mn",
+            "details.action_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "details.action_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2412",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        },
+        {
+          "source_id": "wikipedia-en",
+          "locator": "Wikipedia: Coccygeus muscle (infobox) — https://en.wikipedia.org/wiki/Coccygeus_muscle",
+          "fields": [
+            "details.origin_mn",
+            "details.insertion_mn",
+            "details.innervation_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "details.blood_supply_mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Эх текст diaphragma pelvis-ийг нэг газар 'levator ani and the ischiococcygeus', нөгөө газар 'levator ani and coccygeus' гэж бичсэн тул ischiococcygeus = coccygeus гэж үзэж TA2 2412 'Musculus coccygeus'-тэй холбов; багш шалгана."
+      }
+    },
+    {
+      "id": "perineum",
+      "system": "muscles",
+      "kind": "region",
+      "region": "pelvic-girdle",
+      "ta2_id": 131,
+      "names": {
+        "mn": null,
+        "la": "Perineum",
+        "en": "Perineum"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Diaphragma pelvis-ийн шууд доор орших, урдаа symphysis pubica, ард os coccygis, хажуудаа tuber ischiadicum-аар хязгаарлагдах ромб хэлбэрийн зай. Хөндлөн хуваагдаж урд urogenital triangle, ард trigonum anale болно; мөн өнгөц ба гүн давхаргад хуваагдана. Perineum-ийн булчингууд хоёр хүйсэд шээх, эрэгтэйд ejaculation, эмэгтэйд үтрээний агшилтад оролцоно.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "1116_Muscle_of_the_Perineum.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "visible"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Chapter Review",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 131",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Schema-д 'бүс/зай (region/space)' гэсэн kind байхгүй тул 'muscle-group' гэж ангиллаа; багш kind-ыг шийднэ. TA2 мөр ta2-00-general-terms.md-ээс. [schema 1.1: kind \"muscle-group\" → \"region\"]"
+      }
+    },
+    {
+      "id": "urogenital-triangle",
+      "system": "muscles",
+      "kind": "region",
+      "region": "pelvic-girdle",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Urogenital triangle"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": "perineum",
+      "description_mn": "Perineum-ийн урд гурвалжин; гадна бэлэг эрхтнийг агуулна.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Schema-д 'бүс/зай (region/space)' гэсэн kind байхгүй тул 'muscle-group' гэж ангиллаа; багш kind-ыг шийднэ. TA2-д 'Trigonum urogenitale' мөр алга; ойролцоо мөр нь TA2 279 'Regio urogenitalis' (Urogenital region) — яг таарахгүй тул Латин нэр null. [schema 1.1: kind \"muscle-group\" → \"region\"]"
+      }
+    },
+    {
+      "id": "anal-triangle",
+      "system": "muscles",
+      "kind": "region",
+      "region": "pelvic-girdle",
+      "ta2_id": 278,
+      "names": {
+        "mn": null,
+        "la": "Trigonum anale",
+        "en": "Anal triangle"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "perineum",
+      "description_mn": "Perineum-ийн арын гурвалжин; anus-ийг агуулна.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 278",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Schema-д 'бүс/зай (region/space)' гэсэн kind байхгүй тул 'muscle-group' гэж ангиллаа; багш kind-ыг шийднэ. TA2 мөр ta2-00-general-terms.md-ээс. [schema 1.1: kind \"muscle-group\" → \"region\"]"
+      }
+    },
+    {
+      "id": "compressor-urethrae",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "pelvic-girdle",
+      "ta2_id": 2423,
+      "names": {
+        "mn": null,
+        "la": "Compressor urethrae",
+        "en": "Compressor urethrae"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "perineum",
+      "description_mn": "Эмэгтэйд байх гүн perineum-ийн булчин.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": null,
+        "insertion_mn": null,
+        "action_mn": "Sphincter urethrovaginalis-тэй хамт үтрээг хаах үүрэгтэй.",
+        "innervation_mn": null,
+        "blood_supply_mn": null
+      },
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details.action_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2423",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "details.origin_mn",
+        "details.insertion_mn",
+        "details.innervation_mn",
+        "details.blood_supply_mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг 1116-ын тайлбар ерөнхий (функцээр) тул энэ булчинг зурагтай холбоогүй; багш зураг дээр нь баталвал нэмнэ."
+      }
+    },
+    {
+      "id": "sphincter-urethrovaginalis",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "pelvic-girdle",
+      "ta2_id": 2424,
+      "names": {
+        "mn": null,
+        "la": "Sphincter urethrovaginalis",
+        "en": "Sphincter urethrovaginalis"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "perineum",
+      "description_mn": "Эмэгтэйд байх гүн perineum-ийн булчин.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": null,
+        "insertion_mn": null,
+        "action_mn": "Compressor urethrae-тэй хамт үтрээг хаах үүрэгтэй.",
+        "innervation_mn": null,
+        "blood_supply_mn": null
+      },
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details.action_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2424",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "details.origin_mn",
+        "details.insertion_mn",
+        "details.innervation_mn",
+        "details.blood_supply_mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг 1116-ын тайлбар ерөнхий (функцээр) тул энэ булчинг зурагтай холбоогүй; багш зураг дээр нь баталвал нэмнэ."
+      }
+    },
+    {
+      "id": "deep-transverse-perineal",
+      "system": "muscles",
+      "kind": "muscle",
+      "region": "pelvic-girdle",
+      "ta2_id": 2420,
+      "names": {
+        "mn": null,
+        "la": "Musculus transversus profundus perinei",
+        "en": "Deep transverse perineal"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "perineum",
+      "description_mn": "Эрэгтэйд байх гүн perineum-ийн булчин.",
+      "details": {
+        "detail_type": "muscle",
+        "origin_mn": null,
+        "insertion_mn": null,
+        "action_mn": "Эрэгтэйд үрийн шингэн гадагшлуулахад (ejaculation) оролцоно.",
+        "innervation_mn": null,
+        "blood_supply_mn": null
+      },
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "details.action_mn"
+          ]
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary",
+          "fields": [
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 2420",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "details.origin_mn",
+        "details.insertion_mn",
+        "details.innervation_mn",
+        "details.blood_supply_mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг 1116-ын тайлбар ерөнхий (функцээр) тул энэ булчинг зурагтай холбоогүй; багш зураг дээр нь баталвал нэмнэ."
+      }
+    }
+  ],
+  "practical_questions": [
+    {
+      "id": "prac-muscles-of-abdomen-01",
+      "structure_id": "muscles-of-abdomen",
+      "image": {
+        "file": "1112_Muscles_of_the_Abdomen.jpg",
+        "source_id": "openstax-ap2e",
+        "view": "anterior",
+        "region_id": null,
+        "figure_check": "visible"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculi abdominis",
+        "en": "Muscles of the abdomen"
+      },
+      "accepted_answers": [
+        "Muscles of the abdomen",
+        "Musculi abdominis"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1112_Muscles_of_the_Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-external-oblique-01",
+      "structure_id": "external-oblique",
+      "image": {
+        "file": "1112_Muscles_of_the_Abdomen.jpg",
+        "source_id": "openstax-ap2e",
+        "view": "anterior",
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculus obliquus externus abdominis",
+        "en": "External oblique"
+      },
+      "accepted_answers": [
+        "External oblique",
+        "Musculus obliquus externus abdominis"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1112_Muscles_of_the_Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-internal-oblique-01",
+      "structure_id": "internal-oblique",
+      "image": {
+        "file": "1112_Muscles_of_the_Abdomen.jpg",
+        "source_id": "openstax-ap2e",
+        "view": "anterior",
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculus obliquus internus abdominis",
+        "en": "Internal oblique"
+      },
+      "accepted_answers": [
+        "Internal oblique",
+        "Musculus obliquus internus abdominis"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1112_Muscles_of_the_Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-transversus-abdominis-01",
+      "structure_id": "transversus-abdominis",
+      "image": {
+        "file": "1112_Muscles_of_the_Abdomen.jpg",
+        "source_id": "openstax-ap2e",
+        "view": "anterior",
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculus transversus abdominis",
+        "en": "Transversus abdominis"
+      },
+      "accepted_answers": [
+        "Transversus abdominis",
+        "Musculus transversus abdominis"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1112_Muscles_of_the_Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-rectus-abdominis-01",
+      "structure_id": "rectus-abdominis",
+      "image": {
+        "file": "1112_Muscles_of_the_Abdomen.jpg",
+        "source_id": "openstax-ap2e",
+        "view": "anterior",
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculus rectus abdominis",
+        "en": "Rectus abdominis"
+      },
+      "accepted_answers": [
+        "Rectus abdominis",
+        "Musculus rectus abdominis"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1112_Muscles_of_the_Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-rectus-sheath-01",
+      "structure_id": "rectus-sheath",
+      "image": {
+        "file": "1112_Muscles_of_the_Abdomen.jpg",
+        "source_id": "openstax-ap2e",
+        "view": "anterior",
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Vagina musculi recti abdominis",
+        "en": "Rectus sheath"
+      },
+      "accepted_answers": [
+        "Rectus sheath",
+        "Vagina musculi recti abdominis",
+        "Rectus sheaths"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1112_Muscles_of_the_Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-diaphragm-01",
+      "structure_id": "diaphragm",
+      "image": {
+        "file": "1113_The_Diaphragm.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Diaphragma",
+        "en": "Diaphragm"
+      },
+      "accepted_answers": [
+        "Diaphragm",
+        "Diaphragma"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1113_The_Diaphragm"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-intercostal-muscles-01",
+      "structure_id": "intercostal-muscles",
+      "image": {
+        "file": "1114_Thorax.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "visible"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Intercostal muscles"
+      },
+      "accepted_answers": [
+        "Intercostal muscles"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1114_Thorax"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-external-intercostal-01",
+      "structure_id": "external-intercostal",
+      "image": {
+        "file": "1114_Thorax.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculi intercostales externi",
+        "en": "External intercostal"
+      },
+      "accepted_answers": [
+        "External intercostal",
+        "Musculi intercostales externi"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1114_Thorax"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-internal-intercostal-01",
+      "structure_id": "internal-intercostal",
+      "image": {
+        "file": "1114_Thorax.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculi intercostales interni",
+        "en": "Internal intercostal"
+      },
+      "accepted_answers": [
+        "Internal intercostal",
+        "Musculi intercostales interni"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1114_Thorax"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-innermost-intercostal-01",
+      "structure_id": "innermost-intercostal",
+      "image": {
+        "file": "1114_Thorax.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculi intercostales intimi",
+        "en": "Innermost intercostal"
+      },
+      "accepted_answers": [
+        "Innermost intercostal",
+        "Musculi intercostales intimi"
+      ],
+      "difficulty": 3,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1114_Thorax"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-pelvic-diaphragm-01",
+      "structure_id": "pelvic-diaphragm",
+      "image": {
+        "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Diaphragma pelvis",
+        "en": "Pelvic diaphragm"
+      },
+      "accepted_answers": [
+        "Pelvic diaphragm",
+        "Diaphragma pelvis"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1115_Muscles_of_the_Pelvic_Floor"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-levator-ani-01",
+      "structure_id": "levator-ani",
+      "image": {
+        "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculus levator ani",
+        "en": "Levator ani"
+      },
+      "accepted_answers": [
+        "Levator ani",
+        "Musculus levator ani"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1115_Muscles_of_the_Pelvic_Floor"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-pubococcygeus-01",
+      "structure_id": "pubococcygeus",
+      "image": {
+        "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculus pubococcygeus",
+        "en": "Pubococcygeus"
+      },
+      "accepted_answers": [
+        "Pubococcygeus",
+        "Musculus pubococcygeus"
+      ],
+      "difficulty": 3,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1115_Muscles_of_the_Pelvic_Floor"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-iliococcygeus-01",
+      "structure_id": "iliococcygeus",
+      "image": {
+        "file": "1115_Muscles_of_the_Pelvic_Floor.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Musculus iliococcygeus",
+        "en": "Iliococcygeus"
+      },
+      "accepted_answers": [
+        "Iliococcygeus",
+        "Musculus iliococcygeus"
+      ],
+      "difficulty": 3,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1115_Muscles_of_the_Pelvic_Floor"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-perineum-01",
+      "structure_id": "perineum",
+      "image": {
+        "file": "1116_Muscle_of_the_Perineum.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "visible"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Perineum",
+        "en": "Perineum"
+      },
+      "accepted_answers": [
+        "Perineum"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Figure 1116_Muscle_of_the_Perineum"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": "theo-external-oblique-01",
+      "structure_ids": [
+        "external-oblique",
+        "internal-oblique",
+        "transversus-abdominis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Хэвлийн урд-хажуу ханын гурван хавтгай булчингийн хамгийн өнгөц давхаргыг аль булчин үүсгэдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. obliquus externus abdominis"
+        },
+        {
+          "id": "b",
+          "text_mn": "M. obliquus internus abdominis"
+        },
+        {
+          "id": "c",
+          "text_mn": "M. transversus abdominis"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. quadratus lumborum"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "External oblique хамгийн өнгөц, internal oblique дунд, transversus abdominis хамгийн гүн давхарга. Quadratus lumborum нь хэвлийн арын ханыг үүсгэнэ.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-internal-oblique-01",
+      "structure_ids": [
+        "internal-oblique",
+        "external-oblique"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "M. obliquus internus abdominis-ийн булчингийн ширхгүүд ямар чиглэлтэй вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Дээш, дотогш — m. obliquus externus abdominis-ийн ширхэгт перпендикуляр"
+        },
+        {
+          "id": "b",
+          "text_mn": "Доош, дотогш — халаасанд хуруугаа хийх чиглэлээр"
+        },
+        {
+          "id": "c",
+          "text_mn": "Хэвлийг бүс шиг хөндлөн тойрсон"
+        },
+        {
+          "id": "d",
+          "text_mn": "Дээд хавиргаас доод хавирга руу, хавирга хоорондын зайд"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Internal oblique нь external oblique-д перпендикуляр, дээш, дотогш явна. Доош-дотогш чиглэл нь external oblique-ийнх, хөндлөн чиглэл нь transversus abdominis-ийнх, хавирга хоорондын ширхэг нь intercostal булчингийнх.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-transversus-abdominis-01",
+      "structure_ids": [
+        "transversus-abdominis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "Хүчтэй амьсгал гаргах, бие засах, шээх, төрөх үед хэвлийн хөндийг шахах гол булчин аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. transversus abdominis"
+        },
+        {
+          "id": "b",
+          "text_mn": "M. rectus abdominis"
+        },
+        {
+          "id": "c",
+          "text_mn": "M. quadratus lumborum"
+        },
+        {
+          "id": "d",
+          "text_mn": "Mm. intercostales externi"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Хүснэгтэд хэвлийг шахах (compression) гол булчин нь transversus abdominis. Rectus abdominis нурууг нугалж, quadratus lumborum хажуу тийш нугалж, external intercostals хавиргыг өргөнө.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-transversus-abdominis-02",
+      "structure_ids": [
+        "transversus-abdominis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "insertion",
+      "stem_mn": "Эх хүснэгтийн дагуу m. transversus abdominis хаана бэхлэгддэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Sternum; linea alba; os pubis"
+        },
+        {
+          "id": "b",
+          "text_mn": "Хавирга 7–10; linea alba; os ilium"
+        },
+        {
+          "id": "c",
+          "text_mn": "Sternum; хавирга 5 ба 7"
+        },
+        {
+          "id": "d",
+          "text_mn": "Хавирга 12; vertebrae lumbales L1–L4"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Transversus abdominis: sternum, linea alba, os pubis. Хавирга 7–10/linea alba/ilium нь obliques-ийн, sternum/хавирга 5 ба 7 нь rectus abdominis-ийн, хавирга 12/L1–L4 нь quadratus lumborum-ийн бэхлэл.",
+      "difficulty": 3,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-rectus-abdominis-01",
+      "structure_ids": [
+        "rectus-abdominis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "origin",
+      "stem_mn": "M. rectus abdominis хаанаас эхэлдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Os pubis — crista pubica ба symphysis pubica"
+        },
+        {
+          "id": "b",
+          "text_mn": "Хавирга 5–12 ба os ilium"
+        },
+        {
+          "id": "c",
+          "text_mn": "Sternum ба processus xiphoideus"
+        },
+        {
+          "id": "d",
+          "text_mn": "Хавирга 12 ба vertebrae lumbales"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Rectus abdominis нь crista pubica ба symphysis pubica-аас (хүснэгтэд: os pubis) эхэлж, их биеийн уртын дагуу сунана. Хавирга 5–12/ilium нь obliques-ийн эхлэл.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-rectus-abdominis-02",
+      "structure_ids": [
+        "rectus-abdominis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "Суух (sit-up) хөдөлгөөнд нурууны баганыг нугалах гол булчин аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. rectus abdominis"
+        },
+        {
+          "id": "b",
+          "text_mn": "M. obliquus externus abdominis"
+        },
+        {
+          "id": "c",
+          "text_mn": "M. transversus abdominis"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. quadratus lumborum"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Хүснэгтэд 'sitting up' буюу нурууны баганыг нугалах гол булчин нь rectus abdominis. Obliques бэлхүүсээр мушгиж, transversus abdominis хэвлийг шахаж, quadratus lumborum хажуу тийш нугална.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-tendinous-intersections-01",
+      "structure_ids": [
+        "tendinous-intersections",
+        "rectus-abdominis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "M. rectus abdominis-ийг сегментүүдэд хувааж \"six-pack\" дүр төрх үүсгэдэг бүтэц аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Intersectiones tendineae"
+        },
+        {
+          "id": "b",
+          "text_mn": "Linea alba"
+        },
+        {
+          "id": "c",
+          "text_mn": "Vagina musculi recti abdominis"
+        },
+        {
+          "id": "d",
+          "text_mn": "Centrum tendineum"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Rectus abdominis-ийг коллаген ширхгийн гурван хөндлөн тууз — intersectiones tendineae — сегментчилнэ. Linea alba нь дунд шугамын тууз, rectus sheath нь булчинг бүрхэнэ, centrum tendineum нь diaphragma-гийнх.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-linea-alba-01",
+      "structure_ids": [
+        "linea-alba",
+        "rectus-sheath"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Linea alba юунаас үүсдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Хоёр талын rectus sheath урд дунд шугамд нийлж үүсгэнэ"
+        },
+        {
+          "id": "b",
+          "text_mn": "Intersectiones tendineae нийлж үүсгэнэ"
+        },
+        {
+          "id": "c",
+          "text_mn": "Diaphragma-гийн centrum tendineum үргэлжилж үүсгэнэ"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. quadratus lumborum-ийн шөрмөс үүсгэнэ"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Linea alba нь биеийн урд дунд шугамд нийлсэн хоёр талын rectus sheath-ээс тогтох цагаан, фиброз тууз.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-rectus-sheath-01",
+      "structure_ids": [
+        "rectus-sheath",
+        "rectus-abdominis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Vagina musculi recti abdominis (rectus sheath) аль булчинг бүрхэдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. rectus abdominis"
+        },
+        {
+          "id": "b",
+          "text_mn": "M. transversus abdominis"
+        },
+        {
+          "id": "c",
+          "text_mn": "M. quadratus lumborum"
+        },
+        {
+          "id": "d",
+          "text_mn": "Mm. intercostales externi"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Зураг 1112-ын тайлбар ба текстийн дагуу rectus abdominis нь rectus sheath гэх холбогч эдийн хуудсаар бүрхэгдэнэ.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-quadratus-lumborum-01",
+      "structure_ids": [
+        "quadratus-lumborum"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Дараах булчингийн аль нь хэвлийн арын ханыг үүсгэхэд оролцдог вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. quadratus lumborum"
+        },
+        {
+          "id": "b",
+          "text_mn": "M. rectus abdominis"
+        },
+        {
+          "id": "c",
+          "text_mn": "M. obliquus externus abdominis"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. transversus abdominis"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Хэвлийн арын ханыг vertebrae lumbales, os ilium-ийн хэсэг, m. psoas major, m. iliacus ба m. quadratus lumborum үүсгэнэ. Бусад гурав нь урд-хажуу ханын булчин.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-quadratus-lumborum-02",
+      "structure_ids": [
+        "quadratus-lumborum"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "insertion",
+      "stem_mn": "Эх хүснэгтийн дагуу m. quadratus lumborum хаана бэхлэгддэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Хавирга 12; vertebrae lumbales L1–L4"
+        },
+        {
+          "id": "b",
+          "text_mn": "Sternum; linea alba; os pubis"
+        },
+        {
+          "id": "c",
+          "text_mn": "Хавирга 7–10; linea alba; os ilium"
+        },
+        {
+          "id": "d",
+          "text_mn": "Centrum tendineum"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Quadratus lumborum нь 12-р хавирга ба L1–L4 нугаламд бэхлэгдэнэ. Бусад нь transversus abdominis, obliques, diaphragma-гийн бэхлэл.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-external-oblique-02",
+      "structure_ids": [
+        "external-oblique",
+        "internal-oblique"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "M. obliquus externus ба internus abdominis-ийн хүснэгтэд заасан үйлдэл аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Бэлхүүсээр мушгих ба хажуу тийш нугалах"
+        },
+        {
+          "id": "b",
+          "text_mn": "Суух үед нурууны баганыг нугалах"
+        },
+        {
+          "id": "c",
+          "text_mn": "Хэвлийн хөндийг шахах"
+        },
+        {
+          "id": "d",
+          "text_mn": "Хавиргыг өргөж цээжний хөндийг тэлэх"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Хүснэгтэд obliques нь бэлхүүсээр мушгих (supination), хажуу тийш нугалах үйлдлийн гол булчин. Суух — rectus abdominis, шахах — transversus abdominis, хавирга өргөх — external intercostals.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen (table)"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-muscles-of-abdomen-01",
+      "structure_ids": [
+        "muscles-of-abdomen",
+        "quadratus-lumborum"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Дараах булчингийн аль нь хэвлийн урд-хажуу ханын дөрвөн бүлэгт ОРДОГГҮЙ вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. quadratus lumborum"
+        },
+        {
+          "id": "b",
+          "text_mn": "M. obliquus externus abdominis"
+        },
+        {
+          "id": "c",
+          "text_mn": "M. obliquus internus abdominis"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. rectus abdominis"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Урд-хажуу ханын дөрвөн бүлэг: external oblique, internal oblique, transversus abdominis, rectus abdominis. Quadratus lumborum хэвлийн арын ханыг үүсгэнэ.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Abdomen"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Chapter Review"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-diaphragm-01",
+      "structure_ids": [
+        "diaphragm"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Тайван үед diaphragma ямар хэлбэртэй, дээд гадаргуу нь ямар байдаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Бөмбөгөр; дээд гадаргуу гүдгэр — цээжний хөндийн ёроолыг үүсгэнэ"
+        },
+        {
+          "id": "b",
+          "text_mn": "Бөмбөгөр; дээд гадаргуу хотгор — хэвлийн хөндийн дээврийг үүсгэнэ"
+        },
+        {
+          "id": "c",
+          "text_mn": "Хавтгай; хоёр гадаргуу тэгш"
+        },
+        {
+          "id": "d",
+          "text_mn": "Юүлүүр хэлбэртэй; урд нь os pubis-т бэхлэгдэнэ"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Diaphragma тайван үед бөмбөгөр; дээд гадаргуу нь гүдгэр (цээжний хөндийн өргөгдсөн ёроол), доод гадаргуу нь хотгор (хэвлийн хөндийн дээвэр).",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-diaphragm-02",
+      "structure_ids": [
+        "diaphragm"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "Diaphragma агшиж хавтгайрахад юу болох вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Гялтангийн хөндийн эзэлхүүн нэмэгдэж, даралт буурч, агаар уушгинд орно"
+        },
+        {
+          "id": "b",
+          "text_mn": "Гялтангийн хөндийн эзэлхүүн буурч, агаар уушгинаас гарна"
+        },
+        {
+          "id": "c",
+          "text_mn": "Гялтангийн хөндийн даралт нэмэгдэж, агаар уушгинд орно"
+        },
+        {
+          "id": "d",
+          "text_mn": "Цээжний хөндий жижгэрч цээж буурна"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Chapter Review: diaphragma агшиж хавтгайрахад гялтангийн хөндийн эзэлхүүн нэмэгдэж, даралт нь буурдаг тул агаар уушгинд урсана.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Chapter Review"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-diaphragm-03",
+      "structure_ids": [
+        "diaphragm"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "origin",
+      "stem_mn": "Дараах ясны аль нь diaphragma-гийн эхлэлд ОРДОГГҮЙ вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Os pubis"
+        },
+        {
+          "id": "b",
+          "text_mn": "Sternum (processus xiphoideus)"
+        },
+        {
+          "id": "c",
+          "text_mn": "Доод зургаан хавирга ба мөгөөрс"
+        },
+        {
+          "id": "d",
+          "text_mn": "Vertebrae lumbales"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Diaphragma нь processus xiphoideus (sternum), доод зургаан хавирга ба мөгөөрс, vertebrae lumbales ба 12-р хавиргаас эхэлнэ. Os pubis-аас rectus abdominis эхэлнэ.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Thorax (table)"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-central-tendon-of-diaphragm-01",
+      "structure_ids": [
+        "central-tendon-of-diaphragm",
+        "diaphragm"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Перикардын уутны доод гадаргуу ба париетал гялтангийн доод гадаргуу diaphragma-гийн аль хэсэгтэй нийлдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Centrum tendineum"
+        },
+        {
+          "id": "b",
+          "text_mn": "Hiatus aorticus"
+        },
+        {
+          "id": "c",
+          "text_mn": "Foramen venae cavae"
+        },
+        {
+          "id": "d",
+          "text_mn": "Hiatus oesophageus"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Перикардын уут ба париетал гялтангийн доод гадаргуу centrum tendineum-тэй нийлнэ; бусад нь бүтэц дамжих нүхнүүд.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-caval-opening-01",
+      "structure_ids": [
+        "caval-opening",
+        "diaphragm"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Vena cava inferior diaphragma-гийн аль нүхээр дамждаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Foramen venae cavae (caval opening)"
+        },
+        {
+          "id": "b",
+          "text_mn": "Hiatus oesophageus"
+        },
+        {
+          "id": "c",
+          "text_mn": "Hiatus aorticus"
+        },
+        {
+          "id": "d",
+          "text_mn": "Diaphragma pelvis-ийн нүх"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Vena cava inferior caval opening-оор, oesophagus ба мэдрэлүүд esophageal hiatus-аар, aorta, ductus thoracicus, vena azygos aortic hiatus-аар дамжина.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-aortic-hiatus-01",
+      "structure_ids": [
+        "aortic-hiatus",
+        "diaphragm"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Diaphragma-гийн арын хэсэг дэх hiatus aorticus-ээр юу дамждаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Aorta, ductus thoracicus, vena azygos"
+        },
+        {
+          "id": "b",
+          "text_mn": "Vena cava inferior"
+        },
+        {
+          "id": "c",
+          "text_mn": "Oesophagus ба түүнд наалдсан мэдрэлүүд"
+        },
+        {
+          "id": "d",
+          "text_mn": "Urethra ба canalis analis"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Aortic hiatus-аар aorta, ductus thoracicus, vena azygos дамжина. Vena cava inferior — caval opening, oesophagus — esophageal hiatus; urethra ба canalis analis diaphragma pelvis-ийг нэвтэрнэ.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-esophageal-hiatus-01",
+      "structure_ids": [
+        "esophageal-hiatus",
+        "diaphragm"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Улаан хоолой (oesophagus) ба түүнд наалдсан мэдрэлүүд diaphragma-гийн аль нүхээр дамждаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Hiatus oesophageus"
+        },
+        {
+          "id": "b",
+          "text_mn": "Foramen venae cavae"
+        },
+        {
+          "id": "c",
+          "text_mn": "Hiatus aorticus"
+        },
+        {
+          "id": "d",
+          "text_mn": "Centrum tendineum-ийн төв"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Текстэд oesophagus ба наалдсан мэдрэлүүд esophageal hiatus-аар дамжина гэжээ.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Diaphragm"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-external-intercostal-01",
+      "structure_ids": [
+        "external-intercostal",
+        "internal-intercostal",
+        "innermost-intercostal"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "Агшихдаа хавирганы торыг өргөж тэлэх тул амьсгал авахад тусалдаг булчин аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Mm. intercostales externi"
+        },
+        {
+          "id": "b",
+          "text_mn": "Mm. intercostales interni"
+        },
+        {
+          "id": "c",
+          "text_mn": "Mm. intercostales intimi"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. transversus abdominis"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "External intercostals хавирганы торыг өргөж тэлнэ (амьсгал авах). Internal intercostals хавиргыг ойртуулж амьсгал гаргахад, innermost нь internal-ийн синергист.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Intercostal Muscles"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-internal-intercostal-01",
+      "structure_ids": [
+        "internal-intercostal",
+        "external-intercostal"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "origin",
+      "stem_mn": "Эх хүснэгтийн дагуу m. intercostalis internus-ийн эхлэл ба бэхлэл аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Доод талын хавиргаас эхэлж, дээд талын хавиргад бэхлэгдэнэ"
+        },
+        {
+          "id": "b",
+          "text_mn": "Дээд талын хавиргаас эхэлж, доод талын хавиргад бэхлэгдэнэ"
+        },
+        {
+          "id": "c",
+          "text_mn": "Sternum-аас эхэлж, centrum tendineum-д бэхлэгдэнэ"
+        },
+        {
+          "id": "d",
+          "text_mn": "Os ilium-аас эхэлж, 12-р хавиргад бэхлэгдэнэ"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Internal intercostals — доод хавиргаас дээд хавирга руу; external intercostals эсрэгээрээ дээд хавиргаас доод хавирга руу явна.",
+      "difficulty": 3,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Thorax (table)"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-innermost-intercostal-01",
+      "structure_ids": [
+        "innermost-intercostal",
+        "internal-intercostal"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "Mm. intercostales intimi-ийн үүрэг юу вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Mm. intercostales interni-ийн үйлдэлд синергист болж хавиргуудыг ойртуулна"
+        },
+        {
+          "id": "b",
+          "text_mn": "Mm. intercostales externi-ийн синергист болж хавиргыг өргөнө"
+        },
+        {
+          "id": "c",
+          "text_mn": "Хавирганы торыг тэлж амьсгал авахад гол үүрэг гүйцэтгэнэ"
+        },
+        {
+          "id": "d",
+          "text_mn": "Хэвлийн хөндийг шахна"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Innermost intercostals хамгийн гүн байрлах ба internal intercostals-ийн синергист болж хавиргуудыг ойртуулна.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Intercostal Muscles"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-intercostal-muscles-01",
+      "structure_ids": [
+        "intercostal-muscles",
+        "external-intercostal",
+        "internal-intercostal",
+        "innermost-intercostal"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Intercostal булчингуудын өнгөцөөс гүн рүү чиглэсэн зөв дараалал аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "External → internal → innermost"
+        },
+        {
+          "id": "b",
+          "text_mn": "Internal → external → innermost"
+        },
+        {
+          "id": "c",
+          "text_mn": "Innermost → internal → external"
+        },
+        {
+          "id": "d",
+          "text_mn": "External → innermost → internal"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "External intercostals өнгөц, internal intercostals тэдний шууд доор, innermost intercostals хамгийн гүнд байрлана.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Intercostal Muscles"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-intercostal-muscles-02",
+      "structure_ids": [
+        "external-intercostal",
+        "internal-intercostal"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Текстийн дагуу external ба internal intercostal булчин тус бүр хэдэн хос байдаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "11 хос"
+        },
+        {
+          "id": "b",
+          "text_mn": "12 хос"
+        },
+        {
+          "id": "c",
+          "text_mn": "10 хос"
+        },
+        {
+          "id": "d",
+          "text_mn": "7 хос"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Текстэд external intercostal 11 хос, internal intercostal 11 хос гэж заасан.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — The Intercostal Muscles"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-pelvic-diaphragm-01",
+      "structure_ids": [
+        "pelvic-diaphragm",
+        "levator-ani",
+        "ischiococcygeus"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Diaphragma pelvis-ийг аль булчингууд бүрдүүлдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. levator ani ба m. ischiococcygeus"
+        },
+        {
+          "id": "b",
+          "text_mn": "Compressor urethrae ба sphincter urethrovaginalis"
+        },
+        {
+          "id": "c",
+          "text_mn": "M. quadratus lumborum ба m. psoas major"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. transversus abdominis ба m. rectus abdominis"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Pelvic diaphragm нь os pubis-аас os coccygis хүртэл сунах ба levator ani, ischiococcygeus-ээс тогтоно. Compressor urethrae, sphincter urethrovaginalis нь perineum-ийн булчин.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-levator-ani-01",
+      "structure_ids": [
+        "levator-ani",
+        "pubococcygeus",
+        "iliococcygeus"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "M. levator ani ямар хоёр булчингаас тогтдог вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. pubococcygeus ба m. iliococcygeus"
+        },
+        {
+          "id": "b",
+          "text_mn": "M. ischiococcygeus ба m. pubococcygeus"
+        },
+        {
+          "id": "c",
+          "text_mn": "Compressor urethrae ба sphincter urethrovaginalis"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. transversus profundus perinei ба m. iliococcygeus"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Levator ani нь pubococcygeus ба iliococcygeus-ээс тогтоно. Ischiococcygeus нь levator ani-тэй хамт pelvic diaphragm-ийг бүрдүүлэх тусдаа булчин.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-levator-ani-02",
+      "structure_ids": [
+        "levator-ani"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "Аарцгийн ёроолын хамгийн чухал булчин гэж тооцогддог m. levator ani-ийн үүрэг аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Аарцгийн эрхтнүүдийг дэмжиж, хэвлийн булчингийн агшилтаас үүсэх даралтыг эсэргүүцнэ"
+        },
+        {
+          "id": "b",
+          "text_mn": "Зөвхөн os coccygis-ийг урагш татна"
+        },
+        {
+          "id": "c",
+          "text_mn": "Эрэгтэйд ejaculation-д оролцоно"
+        },
+        {
+          "id": "d",
+          "text_mn": "Хавиргыг өргөж амьсгал авахад тусална"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Levator ani аарцгийн эрхтнүүдийг тулж, хэвлийн даралтыг эсэргүүцэж бие засах, төрөхөд тусалж, urethra ба anus-д сфинктер үүсгэнэ. Os coccygis-ийг урагш татах нь ischiococcygeus, ejaculation нь deep transverse perineal.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-ischiococcygeus-01",
+      "structure_ids": [
+        "ischiococcygeus"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "M. levator ani-д туслан os coccygis-ийг урагш татдаг булчин аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. ischiococcygeus (coccygeus)"
+        },
+        {
+          "id": "b",
+          "text_mn": "M. pubococcygeus"
+        },
+        {
+          "id": "c",
+          "text_mn": "M. quadratus lumborum"
+        },
+        {
+          "id": "d",
+          "text_mn": "Compressor urethrae"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Ischiococcygeus нь levator ani-д туслаж os coccygis-ийг урагш татна.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-perineum-01",
+      "structure_ids": [
+        "perineum"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Perineum-ийн хил хязгаарыг зөв заасан нь аль вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Урд — symphysis pubica, ард — os coccygis, хажуу — tuber ischiadicum"
+        },
+        {
+          "id": "b",
+          "text_mn": "Урд — os coccygis, ард — symphysis pubica, хажуу — tuber ischiadicum"
+        },
+        {
+          "id": "c",
+          "text_mn": "Урд — sternum, ард — vertebrae lumbales, хажуу — хавирга"
+        },
+        {
+          "id": "d",
+          "text_mn": "Урд — symphysis pubica, ард — os coccygis, хажуу — os ilium-ийн хотгор"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Perineum нь урдаа symphysis pubica, ард os coccygis, хажуудаа tuber ischiadicum-аар хязгаарлагдах ромб хэлбэрийн зай бөгөөд diaphragma pelvis-ийн шууд доор оршино.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-urogenital-triangle-01",
+      "structure_ids": [
+        "urogenital-triangle",
+        "anal-triangle",
+        "perineum"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Гадна бэлэг эрхтнийг агуулдаг perineum-ийн гурвалжин аль нь, хаана байрладаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Urogenital triangle — урд"
+        },
+        {
+          "id": "b",
+          "text_mn": "Trigonum anale — ард"
+        },
+        {
+          "id": "c",
+          "text_mn": "Trigonum anale — урд"
+        },
+        {
+          "id": "d",
+          "text_mn": "Urogenital triangle — ард"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Perineum хөндлөн хуваагдаж урд нь гадна бэлэг эрхтнийг агуулах urogenital triangle, ард нь anus-ийг агуулах anal triangle болно.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum"
+        },
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Glossary"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-deep-transverse-perineal-01",
+      "structure_ids": [
+        "deep-transverse-perineal"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "Эрэгтэйд ejaculation-д оролцдог гүн perineum-ийн булчин аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "M. transversus profundus perinei (deep transverse perineal)"
+        },
+        {
+          "id": "b",
+          "text_mn": "Compressor urethrae"
+        },
+        {
+          "id": "c",
+          "text_mn": "Sphincter urethrovaginalis"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. iliococcygeus"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Текстэд эрэгтэйд deep transverse perineal булчин ejaculation-д оролцоно гэжээ; compressor urethrae ба sphincter urethrovaginalis эмэгтэйд үтрээг хаана.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-compressor-urethrae-01",
+      "structure_ids": [
+        "compressor-urethrae",
+        "sphincter-urethrovaginalis"
+      ],
+      "question_type": "multiple-choice",
+      "topic_tag": "action",
+      "stem_mn": "Эмэгтэйд үтрээг хаах үүрэгтэй perineum-ийн булчингуудыг сонго (хоёр зөв хариулт).",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Compressor urethrae"
+        },
+        {
+          "id": "b",
+          "text_mn": "Sphincter urethrovaginalis"
+        },
+        {
+          "id": "c",
+          "text_mn": "M. transversus profundus perinei"
+        },
+        {
+          "id": "d",
+          "text_mn": "M. quadratus lumborum"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "b"
+      ],
+      "explanation_mn": "Эмэгтэйд compressor urethrae ба sphincter urethrovaginalis үтрээг хаах үүрэгтэй. Deep transverse perineal эрэгтэйд ejaculation-д оролцоно; quadratus lumborum хэвлийн арын ханын булчин.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Pelvic Floor and Perineum"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-muscles-of-thorax-01",
+      "structure_ids": [
+        "muscles-of-thorax",
+        "diaphragm",
+        "intercostal-muscles"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "action",
+      "stem_mn": "Цээжний булчингуудын (diaphragma, intercostal булчингууд) гол үүрэг юу вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Цээжний хөндийн хэмжээг өөрчилж амьсгалахад туслах"
+        },
+        {
+          "id": "b",
+          "text_mn": "Нурууны баганыг хажуу тийш нугалах"
+        },
+        {
+          "id": "c",
+          "text_mn": "Аарцгийн эрхтнүүдийг дэмжих"
+        },
+        {
+          "id": "d",
+          "text_mn": "Бэлхүүсээр мушгих"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Цээжний булчингууд цээжний хөндийн хэмжээг өөрчилж амьсгалахад тусална. Хажуу тийш нугалах — quadratus lumborum, аарцгийн эрхтнийг дэмжих — levator ani, мушгих — obliques.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.11.4 Axial Muscles of the Abdominal Wall, and Thorax — Muscles of the Thorax"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    }
+  ]
+}

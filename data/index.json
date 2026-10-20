@@ -1,0 +1,170 @@
+{
+ "version": "1.1",
+ "topics": [
+  {
+   "id": "bones-general",
+   "file": "bones-general.json",
+   "system": "bones",
+   "title": {
+    "mn": null,
+    "la": null,
+    "en": "General bone structure and classification; divisions of the skeleton"
+   },
+   "counts": {
+    "structures": 37,
+    "practical": 28,
+    "theory": 55
+   }
+  },
+  {
+   "id": "bones-skull",
+   "file": "bones-skull.json",
+   "system": "bones",
+   "title": {
+    "mn": null,
+    "la": "Cranium",
+    "en": "The Skull"
+   },
+   "counts": {
+    "structures": 97,
+    "practical": 93,
+    "theory": 69
+   }
+  },
+  {
+   "id": "bones-vertebral-column-thorax",
+   "file": "bones-vertebral-column-thorax.json",
+   "system": "bones",
+   "title": {
+    "mn": null,
+    "la": null,
+    "en": "Vertebral column and thoracic cage"
+   },
+   "counts": {
+    "structures": 62,
+    "practical": 46,
+    "theory": 63
+   }
+  },
+  {
+   "id": "bones-upper-limb",
+   "file": "bones-upper-limb.json",
+   "system": "bones",
+   "title": {
+    "mn": null,
+    "la": "Ossa membri superiori",
+    "en": "Pectoral girdle and bones of the upper limb"
+   },
+   "counts": {
+    "structures": 67,
+    "practical": 59,
+    "theory": 75
+   }
+  },
+  {
+   "id": "bones-lower-limb",
+   "file": "bones-lower-limb.json",
+   "system": "bones",
+   "title": {
+    "mn": null,
+    "la": "Ossa membri inferioris",
+    "en": "Pelvic girdle, pelvis and bones of the lower limb"
+   },
+   "counts": {
+    "structures": 86,
+    "practical": 69,
+    "theory": 93
+   }
+  },
+  {
+   "id": "joints-general",
+   "file": "joints-general.json",
+   "system": "joints",
+   "title": {
+    "mn": null,
+    "la": "Juncturae",
+    "en": "Joint classification and types of body movements"
+   },
+   "counts": {
+    "structures": 51,
+    "practical": 21,
+    "theory": 65
+   }
+  },
+  {
+   "id": "joints-selected",
+   "file": "joints-selected.json",
+   "system": "joints",
+   "title": {
+    "mn": null,
+    "la": null,
+    "en": "Anatomy of Selected Synovial Joints"
+   },
+   "counts": {
+    "structures": 45,
+    "practical": 23,
+    "theory": 52
+   }
+  },
+  {
+   "id": "muscles-head-neck-back",
+   "file": "muscles-head-neck-back.json",
+   "system": "muscles",
+   "title": {
+    "mn": null,
+    "la": null,
+    "en": "Axial Muscles of the Head, Neck, and Back"
+   },
+   "counts": {
+    "structures": 70,
+    "practical": 15,
+    "theory": 69
+   }
+  },
+  {
+   "id": "muscles-abdomen-thorax",
+   "file": "muscles-abdomen-thorax.json",
+   "system": "muscles",
+   "title": {
+    "mn": null,
+    "la": null,
+    "en": "Axial muscles of the abdominal wall, thorax, pelvic floor and perineum"
+   },
+   "counts": {
+    "structures": 30,
+    "practical": 16,
+    "theory": 34
+   }
+  },
+  {
+   "id": "muscles-upper-limb",
+   "file": "muscles-upper-limb.json",
+   "system": "muscles",
+   "title": {
+    "mn": null,
+    "la": null,
+    "en": "Muscles of the Pectoral Girdle and Upper Limbs"
+   },
+   "counts": {
+    "structures": 66,
+    "practical": 47,
+    "theory": 53
+   }
+  },
+  {
+   "id": "muscles-lower-limb",
+   "file": "muscles-lower-limb.json",
+   "system": "muscles",
+   "title": {
+    "mn": null,
+    "la": "Musculi membri inferioris",
+    "en": "Appendicular Muscles of the Pelvic Girdle and Lower Limbs"
+   },
+   "counts": {
+    "structures": 61,
+    "practical": 22,
+    "theory": 57
+   }
+  }
+ ]
+}

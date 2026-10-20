@@ -1,0 +1,89 @@
+{
+  "description": "Агуулгын эх сурвалжийн бүртгэл. Бичлэг бүрийн sources[].source_id эндээс авна. Апп дээрх 'Эх сурвалж' хуудас үүнээс бүтээгдэнэ (лицензийн шаардлага).",
+  "sources": [
+    {
+      "id": "openstax-ap2e",
+      "title": "Anatomy and Physiology 2e",
+      "authors": "J. Gordon Betts et al.",
+      "publisher": "OpenStax, Rice University",
+      "url": "https://openstax.org/details/books/anatomy-and-physiology-2e",
+      "data_url": "https://github.com/openstax/osbooks-anatomy-physiology",
+      "license": "CC BY-NC-SA 4.0",
+      "license_terms": "Эх сурвалжийг дурдах; арилжааны бус; үүнээс бүтээсэн агуулгыг ижил лицензээр түгээх.",
+      "project_files": [
+        "sources/openstax/00-anatomical-terminology.md",
+        "sources/openstax/01-bone-tissue.md",
+        "sources/openstax/02-axial-skeleton.md",
+        "sources/openstax/03-appendicular-skeleton.md",
+        "sources/openstax/04-joints.md",
+        "sources/openstax/05-muscular-system.md"
+      ],
+      "provides": [
+        "names.en",
+        "description",
+        "landmarks",
+        "joint classification",
+        "origin",
+        "insertion",
+        "action",
+        "clinical",
+        "figure file names"
+      ],
+      "does_not_provide": [
+        "names.mn",
+        "most innervation",
+        "blood supply"
+      ]
+    },
+    {
+      "id": "ta2",
+      "title": "Terminologia Anatomica, 2nd edition (TA2)",
+      "publisher": "FIPAT (Federative International Programme for Anatomical Terminology), 2019",
+      "url": "https://libraries.dal.ca/Fipat/terminologies.html",
+      "data_url": "https://github.com/Z-Anatomy/The-blend (TA2.csv)",
+      "license": "CC BY-SA 4.0 (Z-Anatomy өгөгдлийн файл)",
+      "license_terms": "Эх сурвалжийг дурдах; үүнээс бүтээсэн агуулгыг ижил лицензээр түгээх.",
+      "project_files": [
+        "sources/ta2/ta2-00-general-terms.md",
+        "sources/ta2/ta2-01-bones.md",
+        "sources/ta2/ta2-02-joints.md",
+        "sources/ta2/ta2-03-muscles.md"
+      ],
+      "provides": [
+        "ta2_id",
+        "names.la",
+        "names.en"
+      ],
+      "does_not_provide": [
+        "names.mn",
+        "descriptions"
+      ]
+    },
+    {
+      "id": "wikipedia-en",
+      "title": "English Wikipedia — булчингийн нийтлэлүүдийн инфобокс (Infobox muscle)",
+      "publisher": "Wikimedia Foundation",
+      "url": "https://en.wikipedia.org/",
+      "license": "CC BY-SA 4.0",
+      "license_terms": "Эх сурвалжийг (нийтлэлийн нэр, холбоос) дурдах; үүнээс бүтээсэн агуулгыг ижил лицензээр түгээх.",
+      "retrieved": "2026-10-19",
+      "provides": [
+        "details.origin_mn",
+        "details.insertion_mn",
+        "details.action_mn",
+        "details.innervation_mn",
+        "details.blood_supply_mn"
+      ],
+      "note": "Зөвхөн OpenStax-д байхгүй талбарыг нөхөхөд ашигласан. Нийтлэл бүрийн холбоос нь бичлэгийн sources[].locator-д байна. Нэвтэрхий толь тул багшийн шалгалт онцгой чухал."
+    },
+    {
+      "id": "mn-glossary",
+      "title": "Монгол анатомийн нэр томьёоны толь (ХҮЛЭЭГДЭЖ БАЙНА)",
+      "status": "missing",
+      "note": "Сургуулийн сурах бичиг эсвэл багшийн бэлтгэсэн Монгол–Латин нэрийн жагсаалт. Энэ файл Project-д орох хүртэл names.mn = null, name_status.mn = 'missing'.",
+      "provides": [
+        "names.mn"
+      ]
+    }
+  ]
+}

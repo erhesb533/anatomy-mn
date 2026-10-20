@@ -1,0 +1,51 @@
+name: Шалгах ба GitHub Pages-д байршуулах
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install jsonschema==4.23.0
+      - name: Агуулгыг schema-аар шалгах
+        run: python3 tools/validate.py 'data/*.json' --exclude-index
+      - name: Индекс шинэчлэгдсэн эсэх
+        run: |
+          python3 tools/build_index.py
+          git diff --exit-code data/index.json data/search.json || (echo "data/index.json хуучирсан: python3 tools/build_index.py ажиллуулаад commit хий" && exit 1)
+
+  deploy:
+    needs: validate
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Нийтлэх файлуудыг бэлтгэх
+        run: |
+          mkdir _site
+          cp -r index.html styles.css app.js sw.js manifest.webmanifest icons data media _site/
+          mkdir -p _site/schema && cp schema/sources.json _site/schema/
+      - uses: actions/upload-pages-artifact@v3
+      - id: deployment
+        uses: actions/deploy-pages@v4

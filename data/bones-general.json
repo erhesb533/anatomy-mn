@@ -1,0 +1,5410 @@
+{
+  "schema_version": "1.1",
+  "topic": {
+    "id": "bones-general",
+    "system": "bones",
+    "title": {
+      "mn": null,
+      "la": null,
+      "en": "General bone structure and classification; divisions of the skeleton"
+    }
+  },
+  "structures": [
+    {
+      "id": "skeleton",
+      "system": "bones",
+      "kind": "skeleton-division",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Skeleton"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Биеийн бүх яснаас бүрдэнэ; насанд хүрэгчийн араг яс 206 ястай. Бага насныханд зарим яс хүүхэд, өсвөр насанд нийлж нэг яс болдог тул ясны тоо илүү байна. Биеийн жинг таталцлын хүчний эсрэг даах хатуу дотоод тулгуур болж, булчин үйлчилж хөдөлгөөн үүсгэх суурь болно; мөн дотор эрхтнийг хамгаалж, кальци, фосфатын гол агуулах болно.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System",
+          "fields": [
+            "names.en",
+            "description_mn"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "kind='bone' гэж тавьсан (schema-д 'араг ясны хэсэг' гэсэн төрөл алга). TA2 352 'Systema skeletale' (skeletal system) нь OpenStax-ын 'skeleton' (зөвхөн яснууд)-аас өргөн ойлголт тул Латин нэр холбоогүй. [schema 1.1: kind \"bone\" → \"skeleton-division\"]"
+      }
+    },
+    {
+      "id": "axial-skeleton",
+      "system": "bones",
+      "kind": "skeleton-division",
+      "region": "general",
+      "ta2_id": 353,
+      "names": {
+        "mn": null,
+        "la": "Skeleton axiale",
+        "en": "Axial skeleton"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "skeleton",
+      "description_mn": "Биеийн босоо, төв тэнхлэгийг үүсгэж, толгой, хүзүү, цээж, нурууны бүх ясыг агуулна. Насанд хүрэгчдэд 80 яснаас бүрдэх ба skull (22 яс), vertebral column, thoracic cage-ийг багтаана; мөн толгойтой холбоотой os hyoideum ба ossicula auditus (нийт 7 яс) орно. Тархи, нугас, зүрх, уушгийг хамгаалж, толгой, хүзүү, нуруу болон мөр, түнхний үеэр мөчийг хөдөлгөх булчингийн бэхлэх газар болно.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "701_Axial_Skeleton-01.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 353",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "kind='bone' (schema-д араг ясны хэсгийн төрөл алга). [schema 1.1: kind \"bone\" → \"skeleton-division\"]"
+      }
+    },
+    {
+      "id": "appendicular-skeleton",
+      "system": "bones",
+      "kind": "skeleton-division",
+      "region": "general",
+      "ta2_id": 359,
+      "names": {
+        "mn": null,
+        "la": "Skeleton appendiculare",
+        "en": "Appendicular skeleton"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "skeleton",
+      "description_mn": "Дээд, доод мөчний бүх яс болон мөч бүрийг axial skeleton-д бэхлэх яснуудаас бүрдэнэ. Насанд хүрэгчдэд 126 ястай.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "701_Axial_Skeleton-01.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 359",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "kind='bone' (schema-д араг ясны хэсгийн төрөл алга). 701 зургийн тайлбарт appendicular skeleton-ийг дурдсан. [schema 1.1: kind \"bone\" → \"skeleton-division\"]"
+      }
+    },
+    {
+      "id": "diaphysis",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 391,
+      "names": {
+        "mn": null,
+        "la": "Diaphysis",
+        "en": "Diaphysis"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Урт ясны проксимал ба дистал үзүүрийн хооронд үргэлжлэх гуурсан их бие. Дотроо шар чөмгөөр дүүрсэн хөндий (medullary cavity) байх ба хана нь нягт, хатуу substantia compacta-гаас тогтоно.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "603_Anatomy_of_a_Long_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 391",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "epiphysis",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 393,
+      "names": {
+        "mn": null,
+        "la": "Epiphysis",
+        "en": "Epiphysis"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Урт ясны үзүүр бүр дээрх өргөссөн хэсэг (олон тоо — epiphyses). Дотроо substantia spongiosa-гаар дүүрсэн бөгөөд түүний завсрыг улаан чөмөг дүүргэнэ.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "603_Anatomy_of_a_Long_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 393",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "metaphysis",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 392,
+      "names": {
+        "mn": null,
+        "la": "Metaphysis",
+        "en": "Metaphysis"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Epiphysis ба diaphysis нийлэх нарийн хэсэг; өсөж буй ясанд epiphyseal plate (lamina epiphysialis)-ийг агуулна.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "603_Anatomy_of_a_Long_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 392",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Текстэд тодоор (bold) тэмдэглээгүй ч Gross Anatomy хэсэгт нэрлэгдсэн тул оруулав. 603 зураг: текст 'урт ясны бүтэц нь ясны бүх хэсгийг харуулна (зургийг үз)' гэснээр холбов."
+      }
+    },
+    {
+      "id": "epiphyseal-plate",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 395,
+      "names": {
+        "mn": null,
+        "la": "Lamina epiphysialis",
+        "en": "Epiphyseal plate"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "synonyms": [
+        {
+          "mn": null,
+          "la": null,
+          "en": "Growth plate"
+        }
+      ],
+      "parent_id": "metaphysis",
+      "description_mn": "Өсөж буй ясны metaphysis дотор байрлах гиалин (тунгалаг) мөгөөрсний давхарга (growth plate). Яс уртаараа ургах явцад ясан эдээр солигдоно.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "synonyms",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 395",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "TA2-ийн англи нэр 'Epiphysial plate'. 603 зургийг metaphysis-тэй адил үндэслэлээр холбов."
+      }
+    },
+    {
+      "id": "epiphyseal-line",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 396,
+      "names": {
+        "mn": null,
+        "la": "Linea epiphysialis",
+        "en": "Epiphyseal line"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Яс өсөлтөө зогсооход (ойролцоогоор 18–21 нас) epiphyseal plate-ийн мөгөөрс ясан эдээр солигдож үүсэх шугам.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 396",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Текстэд bold биш ч нэрлэгдсэн. Зурагт харагдаж буйг текст батлаагүй тул зураг холбоогүй."
+      }
+    },
+    {
+      "id": "medullary-cavity",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 386,
+      "names": {
+        "mn": null,
+        "la": "Cavitas medullaris ossis",
+        "en": "Medullary cavity"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "diaphysis",
+      "description_mn": "Diaphysis доторх хөндий хэсэг; шар чөмгөөр дүүрсэн. Дотор талаараа endosteum гэх нарийн бүрхүүлээр доторлогдоно.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "603_Anatomy_of_a_Long_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 386",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "compact-bone",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 379,
+      "names": {
+        "mn": null,
+        "la": "Substantia compacta",
+        "en": "Compact bone"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Ясны эдийн хоёр төрлийн илүү нягт, бат бөх нь; шахах хүчийг даана. Periosteum-ийн доор болон урт ясны diaphysis-ийн ханыг үүсгэж, тулгуур, хамгаалалт болно. Хавтгай ясанд diploë-г хоёр талаас нь бүрхэнэ. Микроскопийн бүтцийн нэгж нь osteon.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "603_Anatomy_of_a_Long_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        },
+        {
+          "file": "621_Anatomy_of_a_Flat_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Compact and Spongy Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 379",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "spongy-bone",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 380,
+      "names": {
+        "mn": null,
+        "la": "Substantia spongiosa",
+        "en": "Spongy bone"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "synonyms": [
+        {
+          "mn": null,
+          "la": null,
+          "en": "Cancellous bone"
+        }
+      ],
+      "parent_id": null,
+      "description_mn": "Нүх сүвтэй, trabeculae гэх торон хэлбэрийн матрицын салаануудаас тогтсон ясны эд (cancellous bone). Trabecula бүр ачааллын шугамын дагуу үүсч ясыг бэхжүүлнэ; завсар нь ясыг хөнгөлж, зарим ясанд цус төлжүүлэх улаан чөмгийг агуулна. Урт ясны epiphysis-ийг дүүргэнэ.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "606_Spongy_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        },
+        {
+          "file": "603_Anatomy_of_a_Long_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        },
+        {
+          "file": "621_Anatomy_of_a_Flat_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Compact and Spongy Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "synonyms",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 380",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "periosteum",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 384,
+      "names": {
+        "mn": null,
+        "la": "Periosteum",
+        "en": "Periosteum"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Ясны гадаргууг бүрхэх фиброз бүрхүүл (peri- = 'эргэн тойрон'). Substantia compacta-г тэжээх цусны судас, мэдрэл, тунгалгийн судас агуулна; tendon ба ligament ясанд periosteum-ээр бэхлэгдэнэ. Epiphysis бусад ястай үе үүсгэх хэсгээс бусад гадаргууг бүрэн бүрхэнэ.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "607_Periosteum_and_Endosteum.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 384",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "endosteum",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 387,
+      "names": {
+        "mn": null,
+        "la": "Endosteum",
+        "en": "Endosteum"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "medullary-cavity",
+      "description_mn": "Medullary cavity-г доторлох нарийн бүрхүүл (end- = 'дотор', oste- = 'яс'); ясны өсөлт, засвар, шинэчлэл (remodeling) энд явагдана.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "607_Periosteum_and_Endosteum.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 387",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "articular-cartilage",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 382,
+      "names": {
+        "mn": null,
+        "la": "Cartilago articularis",
+        "en": "Articular cartilage"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "epiphysis",
+      "description_mn": "Epiphysis бусад ястай үе үүсгэх хэсгийг бүрхэх нимгэн мөгөөрсний давхарга; үрэлтийг багасгаж, цохилт шингээгч болно. Энэ хэсэгт periosteum байхгүй.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "603_Anatomy_of_a_Long_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 382",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "603 зургийг 'урт яс нь ясны бүх хэсгийг харуулна' гэсэн текстээр холбов; багш зурагт харагдаж буйг шалгана."
+      }
+    },
+    {
+      "id": "diploe",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 438,
+      "names": {
+        "mn": null,
+        "la": "Diploe",
+        "en": "Diploë"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Хавтгай ясанд (жишээ нь cranium-ийн яс) хоёр давхар substantia compacta-гийн хооронд байрлах substantia spongiosa-гийн давхарга. Гурван давхарга хамтдаа дотор эрхтнийг хамгаална.",
+      "details": null,
+      "clinical_mn": "Cranium-ийн ясны гаднах давхарга хугарсан ч дотор давхарга бүтэн байвал тархи хамгаалагдсан хэвээр үлдэнэ.",
+      "images": [
+        {
+          "file": "621_Anatomy_of_a_Flat_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "clinical_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 438",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "TA2 438 нь calvaria-гийн дэд бүлэгт байрладаг 'Diploe' мөр."
+      }
+    },
+    {
+      "id": "nutrient-foramen",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": 401,
+      "names": {
+        "mn": null,
+        "la": "Foramen nutricium",
+        "en": "Nutrient foramen"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "source",
+        "en": "source"
+      },
+      "parent_id": "diaphysis",
+      "description_mn": "Diaphysis-ийн гадаргуу дээрх жижиг нүх (олон тоо — foramina); substantia spongiosa ба medullary cavity-г тэжээх артери substantia compacta-г нэвтлэн энүүгээр ясанд орно. Мэдрэл мөн энэ замаар орж, вен энүүгээр гарна.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "609_Body_Supply_to_the_Bone.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Blood and Nerve Supply",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        },
+        {
+          "source_id": "ta2",
+          "locator": "TA2 401",
+          "fields": [
+            "ta2_id",
+            "names.la"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "articulations",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Articulations"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "synonyms": [
+        {
+          "mn": null,
+          "la": null,
+          "en": "Articulation"
+        }
+      ],
+      "parent_id": null,
+      "description_mn": "Ясны тэмдгийн гурван ерөнхий ангиллын нэг: хоёр ясны гадаргуу нийлэх газар (articulus = 'үе'). Эдгээр гадаргуу ихэвчлэн бие биедээ тохирсон хэлбэртэй (нэг нь бөмбөгөр, нөгөө нь хонхор) байж үеийн үйл ажиллагааг хөнгөвчилнө. Жишээ: өвдөгний үе.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "synonyms"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий ангилал (bone marking class). TA2-д ерөнхий 'ангиллын' нэр алга."
+      }
+    },
+    {
+      "id": "projections",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Projections"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "synonyms": [
+        {
+          "mn": null,
+          "la": null,
+          "en": "Projection"
+        }
+      ],
+      "parent_id": null,
+      "description_mn": "Ясны тэмдгийн ерөнхий ангилал: ясны гадаргуугаас дээш товойсон хэсэг. Tendon ба ligament бэхлэгдэх газар бөгөөд хэмжээ, хэлбэр нь бэхлэлтээр дамжих хүчний хэмжээг илтгэнэ. Жишээ: vertebra-гийн processus spinosus.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "synonyms"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий ангилал (bone marking class). TA2-д ерөнхий 'ангиллын' нэр алга."
+      }
+    },
+    {
+      "id": "holes",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Holes"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "synonyms": [
+        {
+          "mn": null,
+          "la": null,
+          "en": "Hole"
+        }
+      ],
+      "parent_id": null,
+      "description_mn": "Ясны тэмдгийн ерөнхий ангилал: ясанд цусны судас, мэдрэл нэвтрэн орох нүх, ховил, хонхор. Хэмжээ, хэлбэр нь тухайн газраар нэвтрэх судас, мэдрэлийн хэмжээг илтгэнэ.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "synonyms"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий ангилал (bone marking class). TA2-д ерөнхий 'ангиллын' нэр алга."
+      }
+    },
+    {
+      "id": "head",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Head"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Articulations ангилалд хамаарах ясны тэмдэг: тодорхой товойсон бөмбөгөр гадаргуу. Жишээ: caput ossis femoris.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "facet",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Facet"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Articulations ангилалд хамаарах ясны тэмдэг: хавтгай гадаргуу. Жишээ: vertebrae.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "condyle",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Condyle"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Articulations ангилалд хамаарах ясны тэмдэг: бөмбөгөр гадаргуу. Жишээ: condylus occipitalis.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "protuberance",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Protuberance"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Projections ангилалд хамаарах ясны тэмдэг: товойсон хэсэг. Жишээ: chin.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "process",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Process"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Projections ангилалд хамаарах ясны тэмдэг: цухуйсан хэсэг (prominence). Жишээ: vertebra-гийн processus transversus.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "visible"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "spine",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Spine"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Projections ангилалд хамаарах ясны тэмдэг: шовх (хурц) цухуйлт. Жишээ: spina ischiadica.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "tubercle",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Tubercle"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Projections ангилалд хамаарах ясны тэмдэг: жижиг, бөмбөгөр цухуйлт. Жишээ: humerus-ийн tubercle.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "tuberosity",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Tuberosity"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Projections ангилалд хамаарах ясны тэмдэг: барзгар гадаргуу. Жишээ: tuberositas deltoidea.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "line",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Line"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Projections ангилалд хамаарах ясны тэмдэг: бага зэрэг товойсон, сунасан нуруувч. Жишээ: os parietale-ийн temporal lines.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "crest",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Crest"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Projections ангилалд хамаарах ясны тэмдэг: нуруувч (ridge). Жишээ: crista iliaca.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "fossa",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Fossa"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Holes ангилалд хамаарах ясны тэмдэг: сунасан хонхор (basin). Жишээ: fossa mandibularis.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "fovea",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Fovea"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Holes ангилалд хамаарах ясны тэмдэг: жижиг хонхорхой (pit). Жишээ: os femoris-ийн толгой дээрх fovea capitis.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "sulcus",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Sulcus"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Holes ангилалд хамаарах ясны тэмдэг: ховил (groove). Жишээ: os temporale-ийн sigmoid sulcus.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "canal",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Canal"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Holes ангилалд хамаарах ясны тэмдэг: ясан доторх суваг (passage). Жишээ: auditory canal.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "fissure",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Fissure"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Holes ангилалд хамаарах ясны тэмдэг: ясыг нэвтэлсэн ан цав (slit). Жишээ: auricular fissure.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "foramen",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Foramen"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Holes ангилалд хамаарах ясны тэмдэг: ясыг нэвтэлсэн нүх. Жишээ: os occipitale дахь foramen magnum.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "meatus",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Meatus"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Holes ангилалд хамаарах ясны тэмдэг: суваг руу орох нүх. Жишээ: external auditory meatus.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    },
+    {
+      "id": "sinus",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "general",
+      "ta2_id": null,
+      "names": {
+        "mn": null,
+        "la": null,
+        "en": "Sinus"
+      },
+      "name_status": {
+        "mn": "missing",
+        "la": "missing",
+        "en": "source"
+      },
+      "parent_id": null,
+      "description_mn": "Holes ангилалд хамаарах ясны тэмдэг: ясан доторх агаартай хөндий. Жишээ: nasal sinus.",
+      "details": null,
+      "clinical_mn": null,
+      "images": [
+        {
+          "file": "602_Bone_Markings.jpg",
+          "source_id": "openstax-ap2e",
+          "view": null,
+          "region_id": null,
+          "figure_check": "labeled"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings",
+          "fields": [
+            "names.en",
+            "description_mn",
+            "images"
+          ]
+        }
+      ],
+      "missing_in_sources": [
+        "names.mn",
+        "names.la",
+        "clinical_mn"
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Ясны тэмдгийн ерөнхий нэр томьёо (bone-markings хүснэгт). TA2-д ерөнхий тэмдгийн нэр (тодорхой ясгүй) мөр алга тул Латин нэр null. 602 зургийг 'bone markings ... are illustrated in (figure)' гэсэн текстээр холбов."
+      }
+    }
+  ],
+  "practical_questions": [
+    {
+      "id": "prac-axial-skeleton-01",
+      "structure_id": "axial-skeleton",
+      "image": {
+        "file": "701_Axial_Skeleton-01.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Skeleton axiale",
+        "en": "Axial skeleton"
+      },
+      "accepted_answers": [
+        "Skeleton axiale",
+        "Axial skeleton"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Figure 701_Axial_Skeleton-01"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-appendicular-skeleton-01",
+      "structure_id": "appendicular-skeleton",
+      "image": {
+        "file": "701_Axial_Skeleton-01.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Skeleton appendiculare",
+        "en": "Appendicular skeleton"
+      },
+      "accepted_answers": [
+        "Skeleton appendiculare",
+        "Appendicular skeleton"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Figure 701_Axial_Skeleton-01"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-diaphysis-01",
+      "structure_id": "diaphysis",
+      "image": {
+        "file": "603_Anatomy_of_a_Long_Bone.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Diaphysis",
+        "en": "Diaphysis"
+      },
+      "accepted_answers": [
+        "Diaphysis"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 603_Anatomy_of_a_Long_Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-epiphysis-01",
+      "structure_id": "epiphysis",
+      "image": {
+        "file": "603_Anatomy_of_a_Long_Bone.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Epiphysis",
+        "en": "Epiphysis"
+      },
+      "accepted_answers": [
+        "Epiphysis"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 603_Anatomy_of_a_Long_Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-metaphysis-01",
+      "structure_id": "metaphysis",
+      "image": {
+        "file": "603_Anatomy_of_a_Long_Bone.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Metaphysis",
+        "en": "Metaphysis"
+      },
+      "accepted_answers": [
+        "Metaphysis"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 603_Anatomy_of_a_Long_Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-medullary-cavity-01",
+      "structure_id": "medullary-cavity",
+      "image": {
+        "file": "603_Anatomy_of_a_Long_Bone.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Cavitas medullaris ossis",
+        "en": "Medullary cavity"
+      },
+      "accepted_answers": [
+        "Cavitas medullaris ossis",
+        "Medullary cavity"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 603_Anatomy_of_a_Long_Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-compact-bone-01",
+      "structure_id": "compact-bone",
+      "image": {
+        "file": "603_Anatomy_of_a_Long_Bone.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Substantia compacta",
+        "en": "Compact bone"
+      },
+      "accepted_answers": [
+        "Substantia compacta",
+        "Compact bone"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 603_Anatomy_of_a_Long_Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-spongy-bone-01",
+      "structure_id": "spongy-bone",
+      "image": {
+        "file": "606_Spongy_Bone.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Substantia spongiosa",
+        "en": "Spongy bone"
+      },
+      "accepted_answers": [
+        "Substantia spongiosa",
+        "Spongy bone",
+        "Cancellous bone"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 606_Spongy_Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-periosteum-01",
+      "structure_id": "periosteum",
+      "image": {
+        "file": "607_Periosteum_and_Endosteum.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Periosteum",
+        "en": "Periosteum"
+      },
+      "accepted_answers": [
+        "Periosteum"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 607_Periosteum_and_Endosteum"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-endosteum-01",
+      "structure_id": "endosteum",
+      "image": {
+        "file": "607_Periosteum_and_Endosteum.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Endosteum",
+        "en": "Endosteum"
+      },
+      "accepted_answers": [
+        "Endosteum"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 607_Periosteum_and_Endosteum"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-articular-cartilage-01",
+      "structure_id": "articular-cartilage",
+      "image": {
+        "file": "603_Anatomy_of_a_Long_Bone.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Cartilago articularis",
+        "en": "Articular cartilage"
+      },
+      "accepted_answers": [
+        "Cartilago articularis",
+        "Articular cartilage"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 603_Anatomy_of_a_Long_Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-diploe-01",
+      "structure_id": "diploe",
+      "image": {
+        "file": "621_Anatomy_of_a_Flat_Bone.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Diploe",
+        "en": "Diploë"
+      },
+      "accepted_answers": [
+        "Diploe",
+        "Diploë"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 621_Anatomy_of_a_Flat_Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-nutrient-foramen-01",
+      "structure_id": "nutrient-foramen",
+      "image": {
+        "file": "609_Body_Supply_to_the_Bone.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": "Foramen nutricium",
+        "en": "Nutrient foramen"
+      },
+      "accepted_answers": [
+        "Foramen nutricium",
+        "Nutrient foramen"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 609_Body_Supply_to_the_Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-head-01",
+      "structure_id": "head",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Head"
+      },
+      "accepted_answers": [
+        "Head"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-facet-01",
+      "structure_id": "facet",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Facet"
+      },
+      "accepted_answers": [
+        "Facet"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-condyle-01",
+      "structure_id": "condyle",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Condyle"
+      },
+      "accepted_answers": [
+        "Condyle"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-protuberance-01",
+      "structure_id": "protuberance",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Protuberance"
+      },
+      "accepted_answers": [
+        "Protuberance"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-process-01",
+      "structure_id": "process",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "visible"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Process"
+      },
+      "accepted_answers": [
+        "Process"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-tubercle-01",
+      "structure_id": "tubercle",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Tubercle"
+      },
+      "accepted_answers": [
+        "Tubercle"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-tuberosity-01",
+      "structure_id": "tuberosity",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Tuberosity"
+      },
+      "accepted_answers": [
+        "Tuberosity"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-crest-01",
+      "structure_id": "crest",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Crest"
+      },
+      "accepted_answers": [
+        "Crest"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-fossa-01",
+      "structure_id": "fossa",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Fossa"
+      },
+      "accepted_answers": [
+        "Fossa"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-fovea-01",
+      "structure_id": "fovea",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Fovea"
+      },
+      "accepted_answers": [
+        "Fovea"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-sulcus-01",
+      "structure_id": "sulcus",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Sulcus"
+      },
+      "accepted_answers": [
+        "Sulcus"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-canal-01",
+      "structure_id": "canal",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Canal"
+      },
+      "accepted_answers": [
+        "Canal"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-fissure-01",
+      "structure_id": "fissure",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Fissure"
+      },
+      "accepted_answers": [
+        "Fissure"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-foramen-01",
+      "structure_id": "foramen",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Foramen"
+      },
+      "accepted_answers": [
+        "Foramen"
+      ],
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    },
+    {
+      "id": "prac-sinus-01",
+      "structure_id": "sinus",
+      "image": {
+        "file": "602_Bone_Markings.jpg",
+        "source_id": "openstax-ap2e",
+        "view": null,
+        "region_id": null,
+        "figure_check": "labeled"
+      },
+      "prompt_mn": "Сумаар заасан ясны тэмдгийн (bone marking) төрлийг нэрлэ.",
+      "answer": {
+        "mn": null,
+        "la": null,
+        "en": "Sinus"
+      },
+      "accepted_answers": [
+        "Sinus"
+      ],
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Figure 602_Bone_Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно."
+      }
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": "theo-long-bone-01",
+      "structure_ids": [
+        "femur",
+        "humerus"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Аль яс урт ясанд (long bone) хамаарах вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Femur"
+        },
+        {
+          "id": "b",
+          "text_mn": "Ossa carpi"
+        },
+        {
+          "id": "c",
+          "text_mn": "Sternum"
+        },
+        {
+          "id": "d",
+          "text_mn": "Patella"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Урт яс нь өргөнөөсөө урт цилиндр хэлбэртэй; жишээ нь femur, tibia, fibula, humerus, ulna, radius, metacarpals, metatarsals, phalanges. Ossa carpi нь богино, sternum нь хавтгай, patella нь sesamoid яс.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.2 Bone Classification"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-short-bone-01",
+      "structure_ids": [
+        "carpal-bones",
+        "tarsal-bones"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Хүний араг ясанд богино яс (short bone) зөвхөн хаана байдаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Ossa carpi ба ossa tarsi"
+        },
+        {
+          "id": "b",
+          "text_mn": "Ossa metacarpi ба ossa metatarsi"
+        },
+        {
+          "id": "c",
+          "text_mn": "Vertebrae"
+        },
+        {
+          "id": "d",
+          "text_mn": "Patellae"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Богино яс нь урт, өргөн, зузаан нь ойролцоо тэнцүү шоо хэлбэртэй; хүний араг ясанд цорын ганц богино яснууд нь бугуйн carpals ба шагайн tarsals. Metacarpals, metatarsals нь урт, vertebrae нь irregular, patella нь sesamoid яс.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.2 Bone Classification"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-flat-bone-01",
+      "structure_ids": [
+        "sternum",
+        "ribs",
+        "scapula"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Аль нь хавтгай ясны (flat bone) жишээ БИШ вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Sternum"
+        },
+        {
+          "id": "b",
+          "text_mn": "Costae"
+        },
+        {
+          "id": "c",
+          "text_mn": "Scapula"
+        },
+        {
+          "id": "d",
+          "text_mn": "Vertebra"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "explanation_mn": "Хавтгай ясны жишээ нь cranium-ийн яснууд, scapulae, sternum, costae. Vertebrae нь нарийн төвөгтэй хэлбэртэй irregular ясанд хамаарна.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.2 Bone Classification"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-flat-bone-02",
+      "structure_ids": [
+        "sternum",
+        "ribs"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Хавтгай ясны (flat bone) үүрэг аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Булчин бэхлэгдэх газар болж, дотор эрхтнийг хамгаална"
+        },
+        {
+          "id": "b",
+          "text_mn": "Булчин агшихад хөшүүрэг болж хөдөлнө"
+        },
+        {
+          "id": "c",
+          "text_mn": "Tendon-ыг шахах хүчнээс хамгаална"
+        },
+        {
+          "id": "d",
+          "text_mn": "Тогтвортой байдал, тулгуур болж бага зэрэг хөдөлгөөн өгнө"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Хавтгай яс нь нимгэн бөгөөд ихэвчлэн муруй; булчин бэхлэгдэх газар болж, дотор эрхтнийг хамгаална. Хөшүүрэг нь урт ясны, tendon хамгаалах нь sesamoid ясны, тогтвортой байдал нь богино ясны үүрэг.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.2 Bone Classification"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-irregular-bone-01",
+      "structure_ids": [
+        "vertebra"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Аль яс irregular bone-д хамаарах вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Vertebra"
+        },
+        {
+          "id": "b",
+          "text_mn": "Humerus"
+        },
+        {
+          "id": "c",
+          "text_mn": "Ossa tarsi"
+        },
+        {
+          "id": "d",
+          "text_mn": "Patella"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Irregular яс нь тодорхой хэлбэргүй, нарийн төвөгтэй хэлбэртэй; жишээ нь нугасыг дэмжиж, шахах хүчнээс хамгаалах vertebrae ба синустай нүүрний олон яс. Humerus урт, ossa tarsi богино, patella sesamoid яс.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.2 Bone Classification"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-sesamoid-bone-01",
+      "structure_ids": [
+        "patella"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Бүх хүнд нийтлэг байдаг цорын ганц sesamoid яс аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Patella"
+        },
+        {
+          "id": "b",
+          "text_mn": "Scapula"
+        },
+        {
+          "id": "c",
+          "text_mn": "Ossa carpi"
+        },
+        {
+          "id": "d",
+          "text_mn": "Costae"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Sesamoid яснууд хүн бүрт тоо, байрлалаараа ялгаатай боловч patellae нь хүн бүрт нийтлэг байдаг цорын ганц sesamoid яс. Scapula, costae хавтгай, ossa carpi богино яс.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.2 Bone Classification"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-sesamoid-bone-02",
+      "structure_ids": [
+        "patella"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Sesamoid яс хаана үүсдэг, ямар үүрэгтэй вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Үед их даралт үүсдэг газрын tendon дотор үүсч, tendon-ыг шахах хүчнээс хамгаална"
+        },
+        {
+          "id": "b",
+          "text_mn": "Хөндлөн ургах мөгөөрсөнд үүсч, ясыг уртасгана"
+        },
+        {
+          "id": "c",
+          "text_mn": "Нүүрний ясанд агаартай хөндий үүсгэнэ"
+        },
+        {
+          "id": "d",
+          "text_mn": "Мөчний яснуудыг axial skeleton-д бэхэлнэ"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Sesamoid яс нь гүнжидийн үр шиг жижиг, бөөрөнхий; үед их даралт үүсдэг газрын tendon дотор үүсч, tendon-ыг шахах хүчийг даван туулахад тусалж хамгаална. Ихэвчлэн хөл, гар, өвдөгтэй холбоотой tendon-д байдаг.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.2 Bone Classification"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-bone-classification-01",
+      "structure_ids": [
+        "skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Насанд хүрэгчийн 206 ясыг юуны үндсэн дээр таван ангилалд хуваадаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Хэлбэр"
+        },
+        {
+          "id": "b",
+          "text_mn": "Хэмжээ"
+        },
+        {
+          "id": "c",
+          "text_mn": "Байршил (axial/appendicular)"
+        },
+        {
+          "id": "d",
+          "text_mn": "Ясны эдийн төрөл"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "206 яс хэлбэрээрээ long, short, flat, irregular, sesamoid гэсэн 5 ангилалд хуваагдана; хэлбэр нь үүрэгтэйгээ холбоотой. 'Long bone' гэдэг нь хэмжээг бус хэлбэрийг заадаг.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.2 Bone Classification"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-short-bone-02",
+      "structure_ids": [
+        "carpal-bones"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Богино ясны (short bone) үүрэг аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Тогтвортой байдал, тулгуур болж, хязгаарлагдмал хөдөлгөөн өгнө"
+        },
+        {
+          "id": "b",
+          "text_mn": "Хөшүүрэг болно"
+        },
+        {
+          "id": "c",
+          "text_mn": "Tendon-ыг шахах хүчнээс хамгаална"
+        },
+        {
+          "id": "d",
+          "text_mn": "Нугасыг шахах хүчнээс хамгаална"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Богино яснууд тогтвортой байдал, тулгуур болохын зэрэгцээ бага зэрэг хөдөлгөөн өгнө. Хөшүүрэг — урт яс, tendon хамгаалах — sesamoid, нугасыг хамгаалах — vertebrae (irregular).",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.2 Bone Classification"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-skeleton-01",
+      "structure_ids": [
+        "skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Насанд хүрэгчийн араг яс хэдэн яснаас бүрддэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "206"
+        },
+        {
+          "id": "b",
+          "text_mn": "270–300"
+        },
+        {
+          "id": "c",
+          "text_mn": "80"
+        },
+        {
+          "id": "d",
+          "text_mn": "126"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Насанд хүрэгчийн араг яс 206 ястай. Нярай 270–300 ястай төрж, зарим нь нийлдэг; 80 нь axial, 126 нь appendicular skeleton-ийн ясны тоо.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-skeleton-02",
+      "structure_ids": [
+        "skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Текстэд дурдсанаар араг яс аль эрдсийн гол агуулах вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Кальци ба фосфат"
+        },
+        {
+          "id": "b",
+          "text_mn": "Натри ба кали"
+        },
+        {
+          "id": "c",
+          "text_mn": "Төмөр ба цайр"
+        },
+        {
+          "id": "d",
+          "text_mn": "Иод ба зэс"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Араг ясны яснууд кальци, фосфат зэрэг чухал эрдсийн гол агуулах болно; ясны чөмөг өөх хадгалж, цусны эс үүсгэх эдийг агуулна.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-skeleton-03",
+      "structure_ids": [
+        "skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Араг ясны дээд ба доод хэсгийн ялгааг зөв тодорхойлсныг сонго.",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Доод хэсэг нь алхах, гүйх үеийн тогтвортой байдалд, дээд хэсэг нь илүү их хөдөлгөөнд дасан зохицсон"
+        },
+        {
+          "id": "b",
+          "text_mn": "Дээд хэсэг нь тогтвортой байдалд, доод хэсэг нь илүү их хөдөлгөөнд дасан зохицсон"
+        },
+        {
+          "id": "c",
+          "text_mn": "Хоёулаа ижил хөдөлгөөний далайцтай"
+        },
+        {
+          "id": "d",
+          "text_mn": "Доод хэсэг нь зөвхөн дотор эрхтэн хамгаалах үүрэгтэй"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Араг ясны доод хэсэг алхах, гүйх үеийн тогтвортой байдалд тусгайлан зохицсон; дээд хэсэг нь эд зүйл өргөх, толгой, их биеийг эргүүлэх боломжтой илүү их хөдөлгөөнтэй.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-axial-skeleton-01",
+      "structure_ids": [
+        "axial-skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Насанд хүрэгчийн axial skeleton хэдэн ястай, ямар хэсгүүдээс бүрдэх вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "80; skull, vertebral column, thoracic cage"
+        },
+        {
+          "id": "b",
+          "text_mn": "126; дээд ба доод мөчний яс"
+        },
+        {
+          "id": "c",
+          "text_mn": "80; skull ба мөчийг их биед бэхлэх яснууд"
+        },
+        {
+          "id": "d",
+          "text_mn": "206; бүх яс"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Axial skeleton нь 80 ястай; skull, vertebral column, thoracic cage-ээс бүрдэнэ. Мөчний яс ба тэдгээрийг бэхлэх яснууд нь 126 ястай appendicular skeleton-д хамаарна.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-axial-skeleton-02",
+      "structure_ids": [
+        "axial-skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Axial skeleton аль эрхтнүүдийг хамгаалдаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Тархи, нугас, зүрх, уушги"
+        },
+        {
+          "id": "b",
+          "text_mn": "Зөвхөн аарцгийн эрхтэн"
+        },
+        {
+          "id": "c",
+          "text_mn": "Зөвхөн хэвлийн эрхтэн"
+        },
+        {
+          "id": "d",
+          "text_mn": "Дээд мөчний судас"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Axial skeleton нь биеийн босоо, төв тэнхлэгийг үүсгэж, тархи, нугас, зүрх, уушгийг хамгаална.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-appendicular-skeleton-01",
+      "structure_ids": [
+        "appendicular-skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Appendicular skeleton-д юу хамаарах вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Дээд, доод мөчний бүх яс ба мөчийг axial skeleton-д бэхлэх яснууд"
+        },
+        {
+          "id": "b",
+          "text_mn": "Sternum ба costae"
+        },
+        {
+          "id": "c",
+          "text_mn": "Skull ба os hyoideum"
+        },
+        {
+          "id": "d",
+          "text_mn": "Vertebral column, sacrum, coccyx"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Appendicular skeleton нь дээд, доод мөчний бүх яс болон мөч бүрийг axial skeleton-д бэхлэх яснаас бүрдэх 126 ястай. Бусад хариултууд axial skeleton-д хамаарна.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-hyoid-bone-01",
+      "structure_ids": [
+        "hyoid-bone",
+        "axial-skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Хүзүүний дээд хэсэгт байрлах, бусад ямар ч ястай шүргэлцдэггүй U хэлбэрийн жижиг яс аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Os hyoideum"
+        },
+        {
+          "id": "b",
+          "text_mn": "Ossicula auditus"
+        },
+        {
+          "id": "c",
+          "text_mn": "Os coccygis"
+        },
+        {
+          "id": "d",
+          "text_mn": "Sternum"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Os hyoideum нь хүзүүний дээд хэсэгт байрлах, бусад ястай шүргэлцдэггүй U хэлбэрийн яс. Ossicula auditus дунд чихэнд, os coccygis нурууны доод үзүүрт, sternum цээжний урд байрлана.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-thoracic-cage-01",
+      "structure_ids": [
+        "thoracic-cage",
+        "axial-skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Thoracic cage юунаас бүрддэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "12 хос costae ба sternum"
+        },
+        {
+          "id": "b",
+          "text_mn": "24 vertebra, sacrum, coccyx"
+        },
+        {
+          "id": "c",
+          "text_mn": "22 яс"
+        },
+        {
+          "id": "d",
+          "text_mn": "Os hyoideum ба ossicula auditus"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Thoracic cage нь 12 хос costae ба цээжний урд талын хавтгай яс sternum-ээс бүрдэнэ. 24 vertebra + sacrum + coccyx нь vertebral column, 22 яс нь skull.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-vertebral-column-01",
+      "structure_ids": [
+        "vertebral-column",
+        "axial-skeleton"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Насанд хүрэгчийн vertebral column юунаас бүрддэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "24 vertebra дээр нэмэх нь sacrum ба coccyx"
+        },
+        {
+          "id": "b",
+          "text_mn": "12 хос costae ба sternum"
+        },
+        {
+          "id": "c",
+          "text_mn": "33 тусдаа vertebra"
+        },
+        {
+          "id": "d",
+          "text_mn": "22 яс ба os hyoideum"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Vertebral column нь vertebra гэж нэрлэгдэх 24 яс ба sacrum, coccyx-оос бүрдэнэ.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.7.1 Divisions of the Skeletal System"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-diaphysis-01",
+      "structure_ids": [
+        "diaphysis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Diaphysis гэж юу вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Ясны проксимал ба дистал үзүүрийн хооронд үргэлжлэх гуурсан их бие"
+        },
+        {
+          "id": "b",
+          "text_mn": "Ясны үзүүр бүр дээрх өргөссөн хэсэг"
+        },
+        {
+          "id": "c",
+          "text_mn": "Epiphysis ба diaphysis нийлэх нарийн хэсэг"
+        },
+        {
+          "id": "d",
+          "text_mn": "Medullary cavity-г доторлох бүрхүүл"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Diaphysis нь урт ясны проксимал ба дистал үзүүрийн хоорондох гуурсан их бие. Өргөссөн үзүүр нь epiphysis, нарийн хэсэг нь metaphysis, доторлох бүрхүүл нь endosteum.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-epiphysis-01",
+      "structure_ids": [
+        "epiphysis",
+        "spongy-bone"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Урт ясны epiphysis дотор юу байдаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Substantia spongiosa ба улаан чөмөг"
+        },
+        {
+          "id": "b",
+          "text_mn": "Substantia compacta ба шар чөмөг"
+        },
+        {
+          "id": "c",
+          "text_mn": "Гиалин мөгөөрс"
+        },
+        {
+          "id": "d",
+          "text_mn": "Агаартай хөндий"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Epiphysis нь substantia spongiosa-гаар дүүрсэн бөгөөд түүний завсрыг улаан чөмөг дүүргэнэ. Шар чөмөг diaphysis-ийн medullary cavity-д байна.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-metaphysis-01",
+      "structure_ids": [
+        "metaphysis",
+        "epiphyseal-plate"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Metaphysis-ийн байрлал, агуулгыг зөв тодорхойлсныг сонго.",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Epiphysis ба diaphysis нийлэх нарийн хэсэг; epiphyseal plate агуулна"
+        },
+        {
+          "id": "b",
+          "text_mn": "Diaphysis доторх хөндий; шар чөмөг агуулна"
+        },
+        {
+          "id": "c",
+          "text_mn": "Ясны гадаргууг бүрхэх фиброз бүрхүүл"
+        },
+        {
+          "id": "d",
+          "text_mn": "Хавтгай ясны хоёр compact давхаргын хоорондох давхарга"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Epiphysis бүр diaphysis-тэй metaphysis дээр нийлнэ; энэ нарийн хэсэгт epiphyseal plate байна.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-epiphyseal-plate-01",
+      "structure_ids": [
+        "epiphyseal-plate"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Өсөж буй ясны epiphyseal plate (growth plate) ямар эдээс тогтдог вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Гиалин мөгөөрс"
+        },
+        {
+          "id": "b",
+          "text_mn": "Substantia compacta"
+        },
+        {
+          "id": "c",
+          "text_mn": "Substantia spongiosa"
+        },
+        {
+          "id": "d",
+          "text_mn": "Шар чөмөг"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Epiphyseal plate нь өсөж буй ясанд байх гиалин (тунгалаг) мөгөөрсний давхарга бөгөөд яс уртаараа ургах явцад ясан эдээр солигдоно.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-epiphyseal-line-01",
+      "structure_ids": [
+        "epiphyseal-line",
+        "epiphyseal-plate"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Яс өсөлтөө зогсооход (ойролцоогоор 18–21 нас) epiphyseal plate юу болж хувирдаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Epiphyseal line"
+        },
+        {
+          "id": "b",
+          "text_mn": "Articular cartilage"
+        },
+        {
+          "id": "c",
+          "text_mn": "Medullary cavity"
+        },
+        {
+          "id": "d",
+          "text_mn": "Diploë"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Насанд хүрэх үед яс ургахаа зогсоход мөгөөрс ясан эдээр солигдож, epiphyseal plate нь epiphyseal line болно.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-medullary-cavity-01",
+      "structure_ids": [
+        "medullary-cavity",
+        "diaphysis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Diaphysis доторх medullary cavity юугаар дүүрсэн байдаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Шар чөмөг"
+        },
+        {
+          "id": "b",
+          "text_mn": "Улаан чөмөг"
+        },
+        {
+          "id": "c",
+          "text_mn": "Substantia spongiosa"
+        },
+        {
+          "id": "d",
+          "text_mn": "Гиалин мөгөөрс"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Diaphysis доторх хөндий — medullary cavity нь шар чөмгөөр дүүрсэн. Улаан чөмөг epiphysis-ийн substantia spongiosa-гийн завсарт байна.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-endosteum-01",
+      "structure_ids": [
+        "endosteum",
+        "medullary-cavity"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Endosteum-ийн байрлал ба үүргийг зөв тодорхойлсныг сонго.",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Medullary cavity-г доторлож, ясны өсөлт, засвар, remodeling явагдана"
+        },
+        {
+          "id": "b",
+          "text_mn": "Ясны гадаргууг бүрхэж, tendon, ligament бэхлэгдэнэ"
+        },
+        {
+          "id": "c",
+          "text_mn": "Үе үүсгэх epiphysis-ийг бүрхэж, үрэлтийг багасгана"
+        },
+        {
+          "id": "d",
+          "text_mn": "Metaphysis дотор байрлаж, яс уртасна"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Endosteum нь medullary cavity-г доторлох нарийн бүрхүүл бөгөөд энд ясны өсөлт, засвар, remodeling явагдана. Гаднах бүрхүүл нь periosteum, үе үүсгэх гадаргуу дээрх нь articular cartilage.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-periosteum-01",
+      "structure_ids": [
+        "periosteum"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Periosteum-ийн талаар аль нь зөв бэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Ясны гадаргууг бүрхэх фиброз бүрхүүл; судас, мэдрэл, тунгалгийн судас агуулж, tendon ба ligament энд бэхлэгдэнэ"
+        },
+        {
+          "id": "b",
+          "text_mn": "Medullary cavity-г доторлох нарийн бүрхүүл"
+        },
+        {
+          "id": "c",
+          "text_mn": "Epiphysis-ийн үе үүсгэх гадаргууг бүрхэх мөгөөрс"
+        },
+        {
+          "id": "d",
+          "text_mn": "Хавтгай ясны дотор талын substantia spongiosa"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Periosteum нь ясны гадаргууг бүрхэх фиброз бүрхүүл; substantia compacta-г тэжээх судас, мэдрэл, тунгалгийн судас агуулж, tendon ба ligament ясанд periosteum-ээр бэхлэгдэнэ.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-periosteum-02",
+      "structure_ids": [
+        "periosteum",
+        "articular-cartilage"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Periosteum ясны гадаргуугийн аль хэсгийг БҮРХДЭГГҮЙ вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Epiphysis бусад ястай үе үүсгэх хэсэг"
+        },
+        {
+          "id": "b",
+          "text_mn": "Diaphysis-ийн гадаргуу"
+        },
+        {
+          "id": "c",
+          "text_mn": "Tendon бэхлэгдэх газар"
+        },
+        {
+          "id": "d",
+          "text_mn": "Nutrient foramen-ийн орчим"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Periosteum нь epiphysis бусад ястай үе үүсгэх хэсгээс бусад гадаргууг бүрэн бүрхэнэ; тэр хэсэгт epiphysis articular cartilage-аар бүрхэгдэнэ.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-articular-cartilage-01",
+      "structure_ids": [
+        "articular-cartilage"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Articular cartilage-ийн үүрэг аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Үрэлтийг багасгаж, цохилт шингээгч болно"
+        },
+        {
+          "id": "b",
+          "text_mn": "Ясыг уртаар нь ургуулна"
+        },
+        {
+          "id": "c",
+          "text_mn": "Ясыг тэжээх судас агуулна"
+        },
+        {
+          "id": "d",
+          "text_mn": "Цус төлжүүлэх улаан чөмгийг хамгаална"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Articular cartilage нь үе үүсгэх epiphysis-ийг бүрхэх нимгэн мөгөөрсний давхарга бөгөөд үрэлтийг багасгаж, цохилт шингээгч болно. Ургалт — epiphyseal plate, судас — periosteum, улаан чөмөг — trabeculae.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-compact-bone-01",
+      "structure_ids": [
+        "compact-bone"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "location",
+      "stem_mn": "Substantia compacta (compact bone) хаана байдаг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Periosteum-ийн доор ба урт ясны diaphysis-д"
+        },
+        {
+          "id": "b",
+          "text_mn": "Зөвхөн epiphysis-ийн дотор"
+        },
+        {
+          "id": "c",
+          "text_mn": "Зөвхөн medullary cavity дотор"
+        },
+        {
+          "id": "d",
+          "text_mn": "Зөвхөн epiphyseal plate дотор"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Compact bone нь periosteum-ийн доор болон урт ясны diaphysis-д байрлаж, тулгуур, хамгаалалт болно. Diaphysis-ийн хана compact bone-оос тогтоно; epiphysis-ийг spongy bone дүүргэнэ.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Compact and Spongy Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-compact-bone-02",
+      "structure_ids": [
+        "compact-bone"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Compact bone-ийн микроскопийн бүтцийн нэгж аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Osteon (Haversian system)"
+        },
+        {
+          "id": "b",
+          "text_mn": "Trabecula"
+        },
+        {
+          "id": "c",
+          "text_mn": "Lacuna"
+        },
+        {
+          "id": "d",
+          "text_mn": "Canaliculus"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Compact bone-ийн микроскопийн бүтцийн нэгж нь osteon буюу Haversian system; кальцижсан матрицын концентрик цагирагууд (lamellae)-аас тогтоно. Trabeculae нь spongy bone-ийн бүтэц; lacuna нь osteocyte байрлах зай, canaliculi нь матриц доторх суваг.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Compact and Spongy Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-compact-bone-03",
+      "structure_ids": [
+        "compact-bone",
+        "periosteum",
+        "endosteum"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Osteon-ийн central canal-аас тэгш өнцгөөр салбарлаж, судас, мэдрэлийг periosteum ба endosteum хүргэх суваг аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Perforating canal (Volkmann's canal)"
+        },
+        {
+          "id": "b",
+          "text_mn": "Canaliculus"
+        },
+        {
+          "id": "c",
+          "text_mn": "Lacuna"
+        },
+        {
+          "id": "d",
+          "text_mn": "Medullary cavity"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Судас, мэдрэл central canal-аас тэгш өнцгөөр perforating canal (Volkmann's canal)-аар салбарлан periosteum ба endosteum хүрнэ. Canaliculi нь lacunae-г хооронд нь холбох нарийн сувгууд.",
+      "difficulty": 3,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Compact and Spongy Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-spongy-bone-01",
+      "structure_ids": [
+        "spongy-bone"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Spongy (cancellous) bone-ийн талаар аль нь зөв бэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Ачааллын шугамын дагуу үүссэн trabeculae-аас тогтож, зарим ясанд завсар нь улаан чөмөг агуулна"
+        },
+        {
+          "id": "b",
+          "text_mn": "Концентрик osteon-уудаас тогтоно"
+        },
+        {
+          "id": "c",
+          "text_mn": "Diaphysis-ийн ханыг үүсгэнэ"
+        },
+        {
+          "id": "d",
+          "text_mn": "Шахах хүчийг даах хамгийн нягт ясны эд"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Spongy bone нь trabeculae гэх торон бүтэцтэй; trabecula бүр ачааллын шугамын дагуу үүснэ. Завсар нь ясыг хөнгөлж, зарим ясанд цус төлжилт явагдах улаан чөмгийг агуулна. Osteon, diaphysis-ийн хана, шахах хүчийг даах нь compact bone-д хамаарна.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Compact and Spongy Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-diploe-01",
+      "structure_ids": [
+        "diploe",
+        "compact-bone",
+        "spongy-bone"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Хавтгай ясны (жишээ нь cranium-ийн яс) бүтцийг зөв тодорхойлсныг сонго.",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Хоёр давхар compact bone-ийн хооронд spongy bone-ийн давхарга (diploë)"
+        },
+        {
+          "id": "b",
+          "text_mn": "Хоёр давхар spongy bone-ийн хооронд compact bone"
+        },
+        {
+          "id": "c",
+          "text_mn": "Шар чөмгөөр дүүрсэн medullary cavity бүхий гуурс"
+        },
+        {
+          "id": "d",
+          "text_mn": "Зөвхөн compact bone"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Хавтгай яс нь хоёр талаасаа compact bone-ийн давхаргаар доторлогдсон spongy bone-ийн давхарга — diploë-оос тогтоно.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-diploe-02",
+      "structure_ids": [
+        "diploe"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "clinical",
+      "stem_mn": "Cranium-ийн ясны гаднах давхарга хугарвал тархи яагаад хамгаалагдсан хэвээр байж болох вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Diploë-гийн нөгөө талын дотор compact давхарга бүтэн үлдэж болох тул"
+        },
+        {
+          "id": "b",
+          "text_mn": "Cranium-ийн яс medullary cavity-тай тул"
+        },
+        {
+          "id": "c",
+          "text_mn": "Periosteum тархийг бүрэн орлох тул"
+        },
+        {
+          "id": "d",
+          "text_mn": "Articular cartilage цохилтыг шингээх тул"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Хавтгай ясны хоёр compact давхарга ба дундах spongy bone (diploë) хамтдаа дотор эрхтнийг хамгаална; гаднах давхарга хугарсан ч дотор давхарга бүтэн байвал тархи хамгаалагдсан хэвээр байна.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Gross Anatomy of Bone"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-nutrient-foramen-01",
+      "structure_ids": [
+        "nutrient-foramen",
+        "diaphysis"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "terminology",
+      "stem_mn": "Spongy bone ба medullary cavity-г тэжээх артери ясанд юугаар орох вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Diaphysis дээрх nutrient foramen"
+        },
+        {
+          "id": "b",
+          "text_mn": "Epiphyseal plate"
+        },
+        {
+          "id": "c",
+          "text_mn": "Articular cartilage"
+        },
+        {
+          "id": "d",
+          "text_mn": "Endosteum"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Артериуд diaphysis дээрх жижиг нүх — nutrient foramen-оор compact bone-ийг нэвтлэн орно. Мэдрэл мөн энэ замаар орж, вен энүүгээр гарна.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Blood and Nerve Supply"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-bone-markings-01",
+      "structure_ids": [
+        "articulations",
+        "projections",
+        "holes"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Ясны тэмдгийн (bone markings) гурван ерөнхий ангилал аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Articulations, projections, holes"
+        },
+        {
+          "id": "b",
+          "text_mn": "Long, short, flat"
+        },
+        {
+          "id": "c",
+          "text_mn": "Diaphysis, epiphysis, metaphysis"
+        },
+        {
+          "id": "d",
+          "text_mn": "Axial, appendicular, girdle"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Ясны тэмдэг нь articulations (үе), projections (цухуйлт), holes (нүх) гэсэн гурван ерөнхий ангилалтай.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-articulations-01",
+      "structure_ids": [
+        "articulations"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Articulation (ясны тэмдэг)-ийн гадаргуунуудын онцлог аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Хоёр ясны гадаргуу бие биедээ тохирсон хэлбэртэй (нэг нь бөмбөгөр, нөгөө нь хонхор)"
+        },
+        {
+          "id": "b",
+          "text_mn": "Цусны судас, мэдрэл нэвтрэх нүхтэй"
+        },
+        {
+          "id": "c",
+          "text_mn": "Tendon, ligament бэхлэгдэх барзгар товгор"
+        },
+        {
+          "id": "d",
+          "text_mn": "Агаартай хөндийтэй"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Articulation нь хоёр ясны гадаргуу нийлэх газар; эдгээр гадаргуу үеийн үйл ажиллагааг хөнгөвчлөхийн тулд бие биедээ тохирсон (бөмбөгөр ба хонхор) хэлбэртэй байдаг.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-projections-01",
+      "structure_ids": [
+        "projections"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Ясны projection-ийн үүрэг аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Tendon ба ligament бэхлэгдэх газар"
+        },
+        {
+          "id": "b",
+          "text_mn": "Цусны судас, мэдрэл ясанд нэвтрэх"
+        },
+        {
+          "id": "c",
+          "text_mn": "Хоёр ясны гадаргуу нийлж үе үүсгэх"
+        },
+        {
+          "id": "d",
+          "text_mn": "Ясыг уртаар нь ургуулах"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Projection нь ясны гадаргуугаас товойсон хэсэг бөгөөд tendon, ligament бэхлэгдэх газар болно; хэмжээ, хэлбэр нь бэхлэлтээр дамжих хүчийг илтгэнэ. Судас, мэдрэл нэвтрэх нь holes, үе үүсгэх нь articulations.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-holes-01",
+      "structure_ids": [
+        "holes"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Ясны 'hole' ангиллын тэмдгийн хэмжээ, хэлбэр юуг илтгэдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Тухайн газраар нэвтрэх судас, мэдрэлийн хэмжээг"
+        },
+        {
+          "id": "b",
+          "text_mn": "Бэхлэгдэх tendon-оор дамжих хүчийг"
+        },
+        {
+          "id": "c",
+          "text_mn": "Үеийн хөдөлгөөний далайцыг"
+        },
+        {
+          "id": "d",
+          "text_mn": "Ясны насыг"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Hole нь цусны судас, мэдрэл ясанд нэвтрэх нүх эсвэл ховил бөгөөд хэмжээ, хэлбэр нь нэвтрэх судас, мэдрэлийн хэмжээг илтгэнэ. Хүчийг илтгэх нь projections-ийн онцлог.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-head-01",
+      "structure_ids": [
+        "head",
+        "articulations"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "'Head' (тодорхой товойсон бөмбөгөр гадаргуу) ясны тэмдгийн жишээ аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Caput ossis femoris"
+        },
+        {
+          "id": "b",
+          "text_mn": "Tuberositas deltoidea"
+        },
+        {
+          "id": "c",
+          "text_mn": "Fossa mandibularis"
+        },
+        {
+          "id": "d",
+          "text_mn": "Crista iliaca"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Bone markings хүснэгтэд head-ийн жишээ нь femur-ийн толгой. Tuberositas deltoidea — tuberosity, fossa mandibularis — fossa, crista iliaca — crest.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-facet-01",
+      "structure_ids": [
+        "facet"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Хавтгай үений гадаргуу бүхий ясны тэмдэг аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Facet"
+        },
+        {
+          "id": "b",
+          "text_mn": "Condyle"
+        },
+        {
+          "id": "c",
+          "text_mn": "Head"
+        },
+        {
+          "id": "d",
+          "text_mn": "Fovea"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Facet нь хавтгай гадаргуу (жишээ: vertebrae). Condyle — бөмбөгөр гадаргуу, head — тодорхой товойсон бөмбөгөр гадаргуу, fovea — жижиг хонхорхой.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-condyle-01",
+      "structure_ids": [
+        "condyle"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Condylus occipitalis аль төрлийн ясны тэмдэгт хамаарах вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Condyle — бөмбөгөр гадаргуу (articulations)"
+        },
+        {
+          "id": "b",
+          "text_mn": "Spine — шовх цухуйлт"
+        },
+        {
+          "id": "c",
+          "text_mn": "Fissure — ан цав"
+        },
+        {
+          "id": "d",
+          "text_mn": "Sulcus — ховил"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Bone markings хүснэгтэд condyle нь бөмбөгөр гадаргуу бөгөөд жишээ нь occipital condyles; articulations ангилалд хамаарна.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-process-01",
+      "structure_ids": [
+        "process",
+        "projections"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Аль ясны тэмдэг projections ангилалд хамаарах вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Process"
+        },
+        {
+          "id": "b",
+          "text_mn": "Facet"
+        },
+        {
+          "id": "c",
+          "text_mn": "Fossa"
+        },
+        {
+          "id": "d",
+          "text_mn": "Foramen"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Process (жишээ: vertebra-гийн processus transversus) нь projections ангилалд хамаарна. Facet — articulations, fossa ба foramen — holes ангилалд.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-protuberance-01",
+      "structure_ids": [
+        "protuberance"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Bone markings хүснэгтэд 'protuberance'-ийн жишээ болгон юуг дурдсан бэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Chin"
+        },
+        {
+          "id": "b",
+          "text_mn": "Iliac crest"
+        },
+        {
+          "id": "c",
+          "text_mn": "Foramen magnum"
+        },
+        {
+          "id": "d",
+          "text_mn": "Nasal sinus"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Protuberance нь товойсон хэсэг бөгөөд жишээ нь chin. Iliac crest — crest, foramen magnum — foramen, nasal sinus — sinus.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-spine-01",
+      "structure_ids": [
+        "spine"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Spina ischiadica аль төрлийн ясны тэмдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Spine — шовх цухуйлт"
+        },
+        {
+          "id": "b",
+          "text_mn": "Tubercle — жижиг бөмбөгөр цухуйлт"
+        },
+        {
+          "id": "c",
+          "text_mn": "Tuberosity — барзгар гадаргуу"
+        },
+        {
+          "id": "d",
+          "text_mn": "Line — сунасан нуруувч"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Spine нь шовх (sharp) process бөгөөд хүснэгтийн жишээ нь ischial spine.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-tubercle-01",
+      "structure_ids": [
+        "tubercle",
+        "tuberosity"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Tubercle ба tuberosity-г ялгах тодорхойлолт аль нь зөв бэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Tubercle — жижиг бөмбөгөр цухуйлт; tuberosity — барзгар гадаргуу"
+        },
+        {
+          "id": "b",
+          "text_mn": "Tubercle — барзгар гадаргуу; tuberosity — жижиг бөмбөгөр цухуйлт"
+        },
+        {
+          "id": "c",
+          "text_mn": "Хоёулаа holes ангиллын тэмдэг"
+        },
+        {
+          "id": "d",
+          "text_mn": "Хоёулаа articulations ангиллын тэмдэг"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Bone markings хүснэгтээр tubercle нь жижиг, бөмбөгөр process (жишээ: humerus-ийн tubercle), tuberosity нь барзгар гадаргуу (жишээ: deltoid tuberosity); хоёулаа projections.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-tuberosity-01",
+      "structure_ids": [
+        "tuberosity"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Tuberositas deltoidea аль төрлийн ясны тэмдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Tuberosity"
+        },
+        {
+          "id": "b",
+          "text_mn": "Tubercle"
+        },
+        {
+          "id": "c",
+          "text_mn": "Crest"
+        },
+        {
+          "id": "d",
+          "text_mn": "Fossa"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Deltoid tuberosity нь хүснэгтэд tuberosity (барзгар гадаргуу)-ийн жишээ.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-line-crest-01",
+      "structure_ids": [
+        "line",
+        "crest"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Os parietale-ийн temporal lines ба crista iliaca аль ясны тэмдэгт тус тус хамаарах вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Line ба crest"
+        },
+        {
+          "id": "b",
+          "text_mn": "Crest ба line"
+        },
+        {
+          "id": "c",
+          "text_mn": "Sulcus ба fissure"
+        },
+        {
+          "id": "d",
+          "text_mn": "Spine ба process"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Line нь бага зэрэг сунасан нуруувч (жишээ: parietal ясны temporal lines), crest нь нуруувч (жишээ: iliac crest).",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-fossa-01",
+      "structure_ids": [
+        "fossa"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "'Сунасан хонхор (elongated basin)' гэж тодорхойлогдох ясны тэмдэг ба түүний жишээ аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Fossa — fossa mandibularis"
+        },
+        {
+          "id": "b",
+          "text_mn": "Fovea — fovea capitis"
+        },
+        {
+          "id": "c",
+          "text_mn": "Sulcus — sigmoid sulcus"
+        },
+        {
+          "id": "d",
+          "text_mn": "Meatus — external auditory meatus"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Fossa нь сунасан хонхор бөгөөд жишээ нь mandibular fossa. Fovea нь жижиг хонхорхой, sulcus нь ховил, meatus нь суваг руу орох нүх.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-fovea-01",
+      "structure_ids": [
+        "fovea"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Femur-ийн толгой дээрх fovea capitis ямар төрлийн тэмдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Fovea — жижиг хонхорхой"
+        },
+        {
+          "id": "b",
+          "text_mn": "Fossa — сунасан хонхор"
+        },
+        {
+          "id": "c",
+          "text_mn": "Foramen — нэвт нүх"
+        },
+        {
+          "id": "d",
+          "text_mn": "Facet — хавтгай гадаргуу"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Fovea нь жижиг хонхорхой (small pit); жишээ нь femur-ийн толгой дээрх fovea capitis.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-sulcus-01",
+      "structure_ids": [
+        "sulcus"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Os temporale-ийн sigmoid sulcus аль төрлийн ясны тэмдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Sulcus — ховил"
+        },
+        {
+          "id": "b",
+          "text_mn": "Fissure — ан цав"
+        },
+        {
+          "id": "c",
+          "text_mn": "Canal — суваг"
+        },
+        {
+          "id": "d",
+          "text_mn": "Sinus — агаартай хөндий"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Sulcus нь ховил (groove); хүснэгтийн жишээ нь temporal ясны sigmoid sulcus.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-canal-meatus-01",
+      "structure_ids": [
+        "canal",
+        "meatus"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Canal ба meatus-ийн ялгааг зөв тодорхойлсныг сонго.",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Canal — ясан доторх суваг; meatus — суваг руу орох нүх"
+        },
+        {
+          "id": "b",
+          "text_mn": "Canal — суваг руу орох нүх; meatus — ясан доторх суваг"
+        },
+        {
+          "id": "c",
+          "text_mn": "Хоёулаа ясан доторх агаартай хөндий"
+        },
+        {
+          "id": "d",
+          "text_mn": "Хоёулаа projections ангиллын тэмдэг"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Canal нь ясан доторх суваг (жишээ: auditory canal), meatus нь суваг руу орох нүх (жишээ: external auditory meatus); хоёулаа holes ангилалд.",
+      "difficulty": 2,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-fissure-01",
+      "structure_ids": [
+        "fissure"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "'Ясыг нэвтэлсэн ан цав (slit)' гэж тодорхойлогдох ясны тэмдэг аль нь вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Fissure"
+        },
+        {
+          "id": "b",
+          "text_mn": "Foramen"
+        },
+        {
+          "id": "c",
+          "text_mn": "Sulcus"
+        },
+        {
+          "id": "d",
+          "text_mn": "Fovea"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Fissure нь ясыг нэвтэлсэн ан цав (жишээ: auricular fissure). Foramen — нэвт нүх, sulcus — ховил, fovea — жижиг хонхорхой.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-foramen-01",
+      "structure_ids": [
+        "foramen"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Os occipitale дахь foramen magnum аль төрлийн ясны тэмдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Foramen — ясыг нэвтэлсэн нүх"
+        },
+        {
+          "id": "b",
+          "text_mn": "Fossa — сунасан хонхор"
+        },
+        {
+          "id": "c",
+          "text_mn": "Meatus — суваг руу орох нүх"
+        },
+        {
+          "id": "d",
+          "text_mn": "Fovea — жижиг хонхорхой"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Foramen нь ясыг нэвтэлсэн нүх; хүснэгтийн жишээ нь occipital ясны foramen magnum.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    },
+    {
+      "id": "theo-sinus-01",
+      "structure_ids": [
+        "sinus"
+      ],
+      "question_type": "single-choice",
+      "topic_tag": "landmark",
+      "stem_mn": "Ясан доторх агаартай хөндийг юу гэж нэрлэдэг вэ?",
+      "options": [
+        {
+          "id": "a",
+          "text_mn": "Sinus"
+        },
+        {
+          "id": "b",
+          "text_mn": "Canal"
+        },
+        {
+          "id": "c",
+          "text_mn": "Fossa"
+        },
+        {
+          "id": "d",
+          "text_mn": "Medullary cavity"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation_mn": "Bone markings хүснэгтэд sinus нь ясан доторх агаартай хөндий (жишээ: nasal sinus). Medullary cavity нь шар чөмгөөр дүүрсэн хөндий.",
+      "difficulty": 1,
+      "sources": [
+        {
+          "source_id": "openstax-ap2e",
+          "locator": "Ch.6.3 Bone Structure — Bone Markings"
+        }
+      ],
+      "review": {
+        "verified": false,
+        "verified_by": null,
+        "verified_date": null,
+        "notes": null
+      }
+    }
+  ]
+}

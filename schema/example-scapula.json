@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1",
+  "topic": {
+    "id": "bones-pectoral-girdle-example",
+    "system": "bones",
+    "title": { "mn": null, "la": "Cingulum pectorale", "en": "Pectoral girdle" }
+  },
+  "structures": [
+    {
+      "id": "scapula",
+      "system": "bones",
+      "kind": "bone",
+      "region": "pectoral-girdle",
+      "ta2_id": 1143,
+      "names": { "mn": null, "la": "Scapula", "en": "Scapula" },
+      "name_status": { "mn": "missing", "la": "source", "en": "source" },
+      "parent_id": null,
+      "description_mn": "Мөрний бүсний нэг хэсэг бөгөөд дээд мөчрийг их биед бэхэлнэ. Мөрний арын талд байрлах гурвалжин хэлбэрийн хавтгай яс; урд болон арын гадаргуу нь булчингаар хүрээлэгдсэн тул цээжний хүрээний хавиргатай үе үүсгэдэггүй.",
+      "details": {
+        "detail_type": "bone",
+        "bone_class": "flat",
+        "articulates_with": ["humerus", "clavicle"],
+        "landmark_ids": ["acromion", "coracoid-process"]
+      },
+      "clinical_mn": null,
+      "images": [
+        { "file": "803_The_Scapula.jpg", "source_id": "openstax-ap2e", "view": "anterior; posterior", "region_id": null }
+      ],
+      "sources": [
+        { "source_id": "openstax-ap2e", "locator": "Ch.8.1 The Pectoral Girdle — Scapula", "fields": ["names.en", "description_mn", "details", "images"] },
+        { "source_id": "ta2", "locator": "TA2 1143", "fields": ["ta2_id", "names.la"] }
+      ],
+      "missing_in_sources": ["names.mn", "clinical_mn"],
+      "review": { "verified": false, "verified_by": null, "verified_date": null, "notes": "Жишээ бичлэг. bone_class=flat нь OpenStax Ch.6.2-ын ерөнхий ангиллаас; багш шалгана." }
+    },
+    {
+      "id": "acromion",
+      "system": "bones",
+      "kind": "bone-landmark",
+      "region": "pectoral-girdle",
+      "ta2_id": 1152,
+      "names": { "mn": null, "la": "Acromion", "en": "Acromion" },
+      "name_status": { "mn": "missing", "la": "source", "en": "source" },
+      "synonyms": [ { "mn": null, "la": null, "en": "Acromial process" } ],
+      "parent_id": "scapula",
+      "description_mn": "Далны ясны нуруунаас хажуу тийш үргэлжилсэн хавтгай, өргөссөн хэсэг. Мөрний дээд хэсгийн ясан оройг үүсгэж, эгэмний хажуу үзүүртэй үе (acromioclavicular joint) үүсгэнэ.",
+      "details": null,
+      "clinical_mn": "Мөрний хажуу талд хүчтэй цохилт авахад acromioclavicular үе бүрэн мултарч болно (\"мөр салах\" гэмтэл); энэ үед acromioclavicular болон coracoclavicular шөрмөсүүд тасарна.",
+      "images": [
+        { "file": "803_The_Scapula.jpg", "source_id": "openstax-ap2e", "view": "posterior", "region_id": null }
+      ],
+      "sources": [
+        { "source_id": "openstax-ap2e", "locator": "Ch.8.1 The Pectoral Girdle — Scapula", "fields": ["names.en", "synonyms", "description_mn", "clinical_mn"] },
+        { "source_id": "ta2", "locator": "TA2 1152", "fields": ["ta2_id", "names.la"] }
+      ],
+      "missing_in_sources": ["names.mn"],
+      "review": { "verified": false, "verified_by": null, "verified_date": null, "notes": "Жишээ бичлэг." }
+    }
+  ],
+  "practical_questions": [
+    {
+      "id": "prac-acromion-01",
+      "structure_id": "acromion",
+      "image": { "file": "803_The_Scapula.jpg", "source_id": "openstax-ap2e", "view": "posterior", "region_id": null },
+      "prompt_mn": "Сумаар заасан бүтцийг нэрлэ.",
+      "answer": { "mn": null, "la": "Acromion", "en": "Acromion" },
+      "accepted_answers": ["Acromion", "Acromial process"],
+      "difficulty": 1,
+      "sources": [ { "source_id": "openstax-ap2e", "locator": "Ch.8.1 Figure 803_The_Scapula" } ],
+      "review": { "verified": false, "verified_by": null, "verified_date": null, "notes": "Зураг дээрх сумны байрлал (region_id) апп бүтээх үед тодорхойлогдоно." }
+    }
+  ],
+  "theory_questions": [
+    {
+      "id": "theo-acromion-01",
+      "structure_ids": ["acromion", "scapula"],
+      "question_type": "single-choice",
+      "topic_tag": "articulation",
+      "stem_mn": "Acromion нь аль ястай үе үүсгэдэг вэ?",
+      "options": [
+        { "id": "a", "text_mn": "Clavicula (эгэмний хажуу үзүүр)" },
+        { "id": "b", "text_mn": "Humerus (толгой)" },
+        { "id": "c", "text_mn": "Хавирга" },
+        { "id": "d", "text_mn": "Sternum" }
+      ],
+      "correct_option_ids": ["a"],
+      "explanation_mn": "Acromion нь эгэмний хажуу үзүүртэй acromioclavicular үеийг үүсгэнэ. Humerus-ийн толгой нь glenoid cavity-тай үе үүсгэдэг; далны яс хавирга, sternum-тэй шууд үе үүсгэдэггүй.",
+      "difficulty": 1,
+      "sources": [ { "source_id": "openstax-ap2e", "locator": "Ch.8.1 The Pectoral Girdle — Scapula" } ],
+      "review": { "verified": false, "verified_by": null, "verified_date": null, "notes": null }
+    }
+  ]
+}

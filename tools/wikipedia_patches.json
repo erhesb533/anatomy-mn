@@ -1,0 +1,2290 @@
+{
+ "external-oblique": {
+  "article": "Abdominal external oblique muscle",
+  "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+  "raw": {
+   "Origin": "Ribs 5-12",
+   "Insertion": "Xiphoid process, outer lip of the iliac crest, pubic crest, pubic tubercle, linea alba, inguinal ligament, anterior superior iliac spine (ASIS)",
+   "Nerve": "Thoraco-abdominal nerves (T7-11) and subcostal nerve (T12)",
+   "Actions": "Flexion of the torso and contralateral rotation of torso"
+  },
+  "fill": {
+   "innervation_mn": "Thoraco-abdominal nerves (T7-11) ба subcostal nerve (T12)"
+  },
+  "conflicts": "Artery талбар infobox-д байхгүй тул blood_supply_mn бөглөөгүй. Existing insertion_mn-д 'хавирга 7–10' гэж байгаа нь Wikipedia-гийн insertion (xiphoid process, iliac crest, pubic crest/tubercle, linea alba, inguinal ligament, ASIS)-д байхгүй (хүснэгтэд internus-тай хамт өгсөнтэй холбоотой)."
+ },
+ "diaphragm": {
+  "article": "Thoracic diaphragm",
+  "url": "https://en.wikipedia.org/wiki/Thoracic_diaphragm",
+  "raw": {
+   "Origin": "L1–L3, the xiphoid process, 6–12th rib and their costal cartilages",
+   "Insertion": "Central tendon",
+   "Artery": "Pericardiacophrenic artery, musculophrenic artery, inferior phrenic arteries",
+   "Nerve": "Phrenic and lower intercostal nerves",
+   "Actions": "assists inspiration, depresses costal cartilages"
+  },
+  "fill": {
+   "innervation_mn": "Phrenic nerve ба доод intercostal nerves",
+   "blood_supply_mn": "Pericardiacophrenic artery, musculophrenic artery, inferior phrenic arteries"
+  },
+  "conflicts": null
+ },
+ "pubococcygeus": {
+  "skipped": "Pubococcygeus_muscle нь 'Levator ani' нийтлэл рүү redirect хийдэг; тус нийтлэлийн infobox-д Origin/Insertion/Artery/Nerve/Actions утга байхгүй (pubococcygeus-д тусгай infobox алга)."
+ },
+ "deep-transverse-perineal": {
+  "skipped": "Deep_transverse_perineal_muscle нь 'Transverse perineal muscles' нийтлэл рүү очдог; infobox-д Origin/Insertion/Artery/Nerve утга байхгүй (зөвхөн биеийн текстэд), тиймээс infobox-оос бөглөх боломжгүй."
+ },
+ "occipitalis": {
+  "article": "Occipitalis muscle",
+  "url": "https://en.wikipedia.org/wiki/Occipitalis_muscle",
+  "raw": {
+   "Origin": "Superior nuchal line of the occipital bone and mastoid process of the temporal bone",
+   "Insertion": "Galea aponeurosis",
+   "Artery": "Occipital artery",
+   "Nerve": "Posterior auricular nerve (a branch of the facial nerve)",
+   "Actions": "Moves the scalp back"
+  },
+  "fill": {
+   "origin_mn": "Occipital bone-ийн superior nuchal line ба temporal bone-ийн mastoid process",
+   "insertion_mn": "Galea aponeurosis",
+   "action_mn": "Хуйхыг хойш хөдөлгөнө",
+   "innervation_mn": "Posterior auricular nerve (facial nerve-ийн салаа)",
+   "blood_supply_mn": "Occipital artery"
+  },
+  "conflicts": null
+ },
+ "lateral-rectus": {
+  "article": "Lateral rectus muscle",
+  "url": "https://en.wikipedia.org/wiki/Lateral_rectus_muscle",
+  "raw": {
+   "Origin": "Common tendinous ring at the orbital apex",
+   "Insertion": "7 mm temporal to the limbus",
+   "Nerve": "Abducens nerve",
+   "Actions": "Abducts the eyeball (makes it move outwards)"
+  },
+  "fill": {
+   "innervation_mn": "Abducens nerve"
+  },
+  "conflicts": "Artery талбар infobox-д байхгүй тул blood_supply_mn бөглөөгүй."
+ },
+ "masseter": {
+  "article": "Masseter muscle",
+  "url": "https://en.wikipedia.org/wiki/Masseter_muscle",
+  "raw": {
+   "Origin": "Zygomatic arch and maxillary process of zygomatic bone",
+   "Insertion": "Angle surface of ramus of mandible, coronoid process",
+   "Artery": "Masseteric artery",
+   "Nerve": "Mandibular nerve (V3)",
+   "Actions": "Elevation (as in closing of the mouth) and protrusion of mandible"
+  },
+  "fill": {
+   "innervation_mn": "Mandibular nerve (V3)",
+   "blood_supply_mn": "Masseteric artery"
+  },
+  "conflicts": "Existing origin_mn 'Maxilla-ийн нум' гэж байгаа бол Wikipedia: 'maxillary process of zygomatic bone' (zygomatic bone-ийн хэсэг) — бага зэрэг зөрүүтэй."
+ },
+ "styloglossus": {
+  "article": "Styloglossus",
+  "url": "https://en.wikipedia.org/wiki/Styloglossus",
+  "raw": {
+   "Origin": "Styloid process of temporal bone",
+   "Insertion": "Tip and sides of tongue",
+   "Artery": "Sublingual branch of the lingual artery",
+   "Nerve": "Hypoglossal nerve (CN XII)",
+   "Actions": "Retraction and elevation of tongue"
+  },
+  "fill": {
+   "innervation_mn": "Hypoglossal nerve (CN XII)",
+   "blood_supply_mn": "Lingual artery-ийн sublingual салаа"
+  },
+  "conflicts": null
+ },
+ "mylohyoid": {
+  "article": "Mylohyoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Mylohyoid_muscle",
+  "raw": {
+   "Origin": "Mylohyoid line (mandible)",
+   "Insertion": "Body of hyoid bone and median ridge",
+   "Artery": "Mylohyoid branch of inferior alveolar artery and submental artery of facial artery",
+   "Nerve": "Mylohyoid nerve, from inferior alveolar branch of mandibular nerve",
+   "Actions": "Raises oral cavity floor, elevates hyoid, elevates tongue, depresses mandible"
+  },
+  "fill": {
+   "origin_mn": "Mylohyoid line (mandible)",
+   "insertion_mn": "Hyoid bone-ийн их бие ба median ridge",
+   "innervation_mn": "Mylohyoid nerve, mandibular nerve-ийн inferior alveolar салаанаас",
+   "blood_supply_mn": "Inferior alveolar artery-ийн mylohyoid салаа ба facial artery-ийн submental artery"
+  },
+  "conflicts": null
+ },
+ "sternothyroid": {
+  "article": "Sternothyroid muscle",
+  "url": "https://en.wikipedia.org/wiki/Sternothyroid_muscle",
+  "raw": {
+   "Origin": "Manubrium",
+   "Insertion": "Thyroid cartilage",
+   "Artery": "Superior thyroid artery",
+   "Nerve": "Ansa cervicalis",
+   "Actions": "Depresses thyroid cartilage"
+  },
+  "fill": {
+   "origin_mn": "Manubrium",
+   "insertion_mn": "Thyroid cartilage",
+   "innervation_mn": "Ansa cervicalis",
+   "blood_supply_mn": "Superior thyroid artery"
+  },
+  "conflicts": null
+ },
+ "iliocostalis-thoracis": {
+  "skipped": "Wikipedia-д тусдаа 'Iliocostalis thoracis' нийтлэл байхгүй; 'Iliocostalis' нийтлэлийн infobox нь бүх iliocostalis булчинд (нийтлэг origin: sacrum, iliac crest гэх мэт) зориулагдсан, thoracis хэсэгт тусгайлсан утга infobox-д алга."
+ },
+ "spinalis-cervicis": {
+  "article": "Spinalis",
+  "url": "https://en.wikipedia.org/wiki/Spinalis",
+  "raw": {
+   "Origin": "Cervicis: nuchal ligament and spinous process of C7.",
+   "Insertion": "Cervicis: Spinous process of cervical vertebrae except atlas.",
+   "Artery": "Lateral sacral artery",
+   "Nerve": "Posterior branch of spinal nerve",
+   "Actions": "Laterally: Flex the head and neck to the same side. Bilaterally: Extend the vertebral column."
+  },
+  "fill": {
+   "origin_mn": "Nuchal ligament ба C7-ийн spinous process",
+   "insertion_mn": "Atlas-аас бусад cervical vertebrae-ийн spinous process",
+   "action_mn": "Нэг талаас: толгой ба хүзүүг тухайн тал руу нугална. Хоёр талаас: нурууны баганыг тэнийлгэнэ.",
+   "innervation_mn": "Spinal nerve-ийн хойд салаа",
+   "blood_supply_mn": "Lateral sacral artery"
+  },
+  "conflicts": "Infobox нь бүх spinalis булчинд зориулагдсан; Origin/Insertion-ийн 'Cervicis' гэсэн хэсгийг ашигласан. Action, Nerve, Artery нь бүх spinalis-д ерөнхий утга (Artery 'Lateral sacral artery' нь cervicis хэсэгт тохиромжгүй байж магадгүй — багш шалгах)."
+ },
+ "semispinalis-thoracis": {
+  "skipped": "'Semispinalis thoracis' нь 'Semispinalis muscles' нийтлэл рүү очдог; тус нийтлэлд infobox байхгүй."
+ },
+ "anterior-scalene": {
+  "skipped": "'Anterior scalene muscle' нь 'Scalene muscles' нийтлэл рүү очдог; infobox нь бүх scalene булчинд ерөнхий (mm. scalenii), anterior scalene-д тусгайлсан infobox байхгүй."
+ },
+ "gluteus-maximus": {
+  "article": "Gluteus maximus",
+  "url": "https://en.wikipedia.org/wiki/Gluteus_maximus",
+  "raw": {
+   "Origin": "Gluteal surface of ilium, lumbar fascia, sacrum, sacrotuberous ligament",
+   "Insertion": "Gluteal tuberosity of the femur and iliotibial tract",
+   "Artery": "Superior and inferior gluteal arteries",
+   "Nerve": "Inferior gluteal nerve (L5, S1 and S2 nerve roots)",
+   "Actions": "External rotation and extension of the hip joint, supports the extended knee through the iliotibial tract, chief antigravity muscle in sitting and abduction of the hip"
+  },
+  "fill": {
+   "origin_mn": "Ilium-ийн gluteal гадаргуу, lumbar fascia, sacrum, sacrotuberous ligament",
+   "insertion_mn": "Femur-ийн gluteal tuberosity ба iliotibial tract",
+   "innervation_mn": "Inferior gluteal nerve (L5, S1 ба S2 мэдрэлийн үндэс)",
+   "blood_supply_mn": "Superior ба inferior gluteal arteries"
+  },
+  "conflicts": null
+ },
+ "obturator-internus": {
+  "article": "Internal obturator muscle",
+  "url": "https://en.wikipedia.org/wiki/Internal_obturator_muscle",
+  "raw": {
+   "Origin": "Ischiopubic ramus and obturator membrane",
+   "Insertion": "Medial aspect of the greater trochanter",
+   "Artery": "Inferior gluteal artery",
+   "Nerve": "Nerve to obturator internus (L5, S1, S2)",
+   "Actions": "Abducts and laterally rotates the extended hip and abducts the flexed thigh at the hip, and stabilizes the hip during walking"
+  },
+  "fill": {
+   "origin_mn": "Ischiopubic ramus ба obturator membrane",
+   "insertion_mn": "Greater trochanter-ийн дунд тал",
+   "innervation_mn": "Nerve to obturator internus (L5, S1, S2)",
+   "blood_supply_mn": "Inferior gluteal artery"
+  },
+  "conflicts": null
+ },
+ "adductor-longus": {
+  "article": "Adductor longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Adductor_longus_muscle",
+  "raw": {
+   "Origin": "Pubic body just below the pubic crest",
+   "Insertion": "Middle third of linea aspera",
+   "Artery": "Deep femoral artery",
+   "Nerve": "Anterior branch of obturator nerve",
+   "Actions": "Adduction of hip, flexion of hip joint"
+  },
+  "fill": {
+   "origin_mn": "Pubic crest-ийн яг доор, pubis-ийн их бие (pubic body)",
+   "insertion_mn": "Linea aspera-ийн дунд гуравны нэг",
+   "innervation_mn": "Obturator nerve-ийн урд салаа",
+   "blood_supply_mn": "Deep femoral artery"
+  },
+  "conflicts": null
+ },
+ "rectus-femoris": {
+  "article": "Rectus femoris muscle",
+  "url": "https://en.wikipedia.org/wiki/Rectus_femoris_muscle",
+  "raw": {
+   "Origin": "Anterior inferior iliac spine and the exterior surface of the bony ridge which forms the groove on the iliac portion of the acetabulum",
+   "Insertion": "Inserts into the patellar tendon as one of the four quadriceps muscles",
+   "Artery": "Descending branch of the lateral femoral circumflex artery",
+   "Nerve": "Femoral nerve",
+   "Actions": "Knee extension; hip flexion"
+  },
+  "fill": {
+   "origin_mn": "Anterior inferior iliac spine ба acetabulum-ийн iliac хэсэг дээрх ховилыг үүсгэдэг ясан хяр (ridge)-ын гадна гадаргуу",
+   "innervation_mn": "Femoral nerve",
+   "blood_supply_mn": "Lateral femoral circumflex artery-ийн доош чиглэсэн (descending) салаа"
+  },
+  "conflicts": null
+ },
+ "biceps-femoris": {
+  "article": "Biceps femoris muscle",
+  "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
+  "raw": {
+   "Origin": "Tuberosity of the ischium, linea aspera, femur",
+   "Insertion": "The head of the fibula which articulates with the back of the lateral tibial condyle",
+   "Artery": "Deep femoral artery, perforating arteries; long head of biceps femoris: perforating branches from profunda femoris artery",
+   "Nerve": "Long head: tibial nerve short head: common fibular nerve",
+   "Actions": "Flexes knee joint, laterally rotates knee joint (when knee is flexed), extends hip joint (long head only)"
+  },
+  "fill": {
+   "origin_mn": "Ischium-ийн tuberosity, linea aspera, femur",
+   "insertion_mn": "Lateral tibial condyle-ийн арын хэсэгтэй үе үүсгэдэг fibula-ийн толгой (head of the fibula)",
+   "innervation_mn": "Урт толгой: tibial nerve; богино толгой: common fibular nerve",
+   "blood_supply_mn": "Deep femoral artery, perforating arteries; biceps femoris-ийн урт толгой: profunda femoris artery-ийн perforating салаанууд"
+  },
+  "conflicts": null
+ },
+ "extensor-digitorum-longus": {
+  "article": "Extensor digitorum longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_longus_muscle",
+  "raw": {
+   "Origin": "Anterior lateral condyle of tibia, anterior shaft of fibula and superior 3/4 of interosseous membrane",
+   "Insertion": "Dorsal surface; middle and distal phalanges of lateral four digits",
+   "Artery": "Anterior tibial artery",
+   "Nerve": "Deep fibular nerve",
+   "Actions": "Extension of toes and dorsiflexion of ankle"
+  },
+  "fill": {
+   "origin_mn": "Tibia-ийн lateral condyle-ийн урд хэсэг, fibula-ийн их биеийн урд хэсэг ба interosseous membrane-ийн дээд 3/4",
+   "insertion_mn": "Хажуу дөрвөн хурууны middle ба distal phalanges-ийн dorsal гадаргуу",
+   "innervation_mn": "Deep fibular nerve",
+   "blood_supply_mn": "Anterior tibial artery"
+  },
+  "conflicts": null
+ },
+ "soleus": {
+  "article": "Soleus muscle",
+  "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
+  "raw": {
+   "Origin": "Fibula, medial border of tibia (soleal line)",
+   "Insertion": "Tendo calcaneus",
+   "Artery": "Popliteal artery, posterior tibial artery, peroneal artery",
+   "Nerve": "Tibial nerve, specifically, nerve roots L5–S2",
+   "Actions": "Plantar flexion"
+  },
+  "fill": {
+   "origin_mn": "Fibula, tibia-ийн дунд ирмэг (soleal line)",
+   "action_mn": "Plantar flexion (тавхайг ул тийш нугалах)",
+   "innervation_mn": "Tibial nerve, тодруулбал L5–S2 мэдрэлийн үндэс",
+   "blood_supply_mn": "Popliteal artery, posterior tibial artery, peroneal artery"
+  },
+  "conflicts": null
+ },
+ "tibialis-posterior": {
+  "article": "Tibialis posterior muscle",
+  "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+  "raw": {
+   "Origin": "Tibia and fibula",
+   "Insertion": "Navicular and medial cuneiform bone",
+   "Artery": "Posterior tibial artery",
+   "Nerve": "Tibial nerve",
+   "Actions": "Inversion of the foot and plantar flexion of the foot at the ankle"
+  },
+  "fill": {
+   "origin_mn": "Tibia ба fibula",
+   "insertion_mn": "Navicular ба medial cuneiform яс",
+   "innervation_mn": "Tibial nerve",
+   "blood_supply_mn": "Posterior tibial artery"
+  },
+  "conflicts": null
+ },
+ "trapezius": {
+  "article": "Trapezius",
+  "url": "https://en.wikipedia.org/wiki/Trapezius",
+  "raw": {
+   "Origin": "Medial one-third of superior nuchal line, external occipital protuberance, spinous processes of vertebrae C7-T12, Nuchal ligament",
+   "Insertion": "Posterior border of the lateral one-third of the clavicle, acromion process, and spine of scapula",
+   "Artery": "Superficial branch of transverse cervical artery or superficial cervical artery",
+   "Nerve": "Accessory nerve (motor) cervical spinal nerves C3 and C4 (motor and sensation)",
+   "Actions": "Rotation, retraction, elevation, and depression of scapula"
+  },
+  "fill": {
+   "innervation_mn": "Accessory nerve (хөдөлгөх); cervical spinal nerves C3 ба C4 (хөдөлгөх ба мэдрэх)",
+   "blood_supply_mn": "Transverse cervical artery-ийн өнгөц салаа эсвэл superficial cervical artery"
+  },
+  "conflicts": null
+ },
+ "latissimus-dorsi": {
+  "article": "Latissimus dorsi muscle",
+  "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
+  "raw": {
+   "Origin": "Spinous processes of vertebrae T7-S5, thoracolumbar fascia, iliac crest, inferior 4 ribs and inferior angle of scapula",
+   "Insertion": "Floor of intertubercular groove of the humerus",
+   "Artery": "Thoracodorsal branch of the subscapular artery",
+   "Nerve": "Thoracodorsal nerve (C6, C7, C8)",
+   "Actions": "Adducts, extends and internally rotates the arm when the insertion is moved towards the origin. When observing the muscle action of the origin towards the insertion, the lats are a very powerful rotator of the trunk."
+  },
+  "fill": {
+   "insertion_mn": "Humerus-ийн intertubercular groove-ийн ёроол",
+   "innervation_mn": "Thoracodorsal nerve (C6, C7, C8)",
+   "blood_supply_mn": "Subscapular artery-ийн thoracodorsal салаа"
+  },
+  "conflicts": null
+ },
+ "teres-major": {
+  "article": "Teres major muscle",
+  "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
+  "raw": {
+   "Origin": "Posterior aspect of the inferior angle of the scapula",
+   "Insertion": "Medial lip of the intertubercular sulcus of the humerus",
+   "Artery": "Subscapular and circumflex scapular arteries",
+   "Nerve": "Lower subscapular nerve (segmental levels C5 and C6)",
+   "Actions": "Adduct the humerus, internal rotation (medial rotation) of the humerus, extend the humerus from flexed position"
+  },
+  "fill": {
+   "insertion_mn": "Humerus-ийн intertubercular sulcus-ийн дунд уруул (medial lip)",
+   "innervation_mn": "Lower subscapular nerve (сегментийн түвшин C5 ба C6)",
+   "blood_supply_mn": "Subscapular ба circumflex scapular arteries"
+  },
+  "conflicts": null
+ },
+ "brachioradialis": {
+  "article": "Brachioradialis",
+  "url": "https://en.wikipedia.org/wiki/Brachioradialis",
+  "raw": {
+   "Origin": "Lateral supracondylar ridge of the humerus and the orbicular ligament of the radius",
+   "Insertion": "Distal radius (radial styloid process)",
+   "Artery": "Radial recurrent artery",
+   "Nerve": "Radial nerve (C5–C8 & T1)",
+   "Actions": "Flexion of elbow, supination and pronation of the radioulnar joint to 90°"
+  },
+  "fill": {
+   "origin_mn": "Humerus-ийн lateral supracondylar ridge ба radius-ийн orbicular ligament",
+   "insertion_mn": "Radius-ийн алсын хэсэг (radial styloid process)",
+   "innervation_mn": "Radial nerve (C5–C8 ба T1)",
+   "blood_supply_mn": "Radial recurrent artery"
+  },
+  "conflicts": null
+ },
+ "supinator": {
+  "article": "Supinator muscle",
+  "url": "https://en.wikipedia.org/wiki/Supinator_muscle",
+  "raw": {
+   "Origin": "Lateral epicondyle of humerus, supinator crest of ulna, radial collateral ligament, annular ligament",
+   "Insertion": "Lateral proximal radial shaft",
+   "Artery": "Radial recurrent artery",
+   "Nerve": "Deep branch of the radial nerve",
+   "Actions": "Supinates forearm"
+  },
+  "fill": {
+   "origin_mn": "Humerus-ийн lateral epicondyle, ulna-ийн supinator crest, radial collateral ligament, annular ligament",
+   "insertion_mn": "Radius-ийн их биеийн ойрын хэсгийн хажуу (lateral) тал",
+   "innervation_mn": "Radial nerve-ийн гүн салаа",
+   "blood_supply_mn": "Radial recurrent artery"
+  },
+  "conflicts": null
+ },
+ "flexor-pollicis-longus": {
+  "article": "Flexor pollicis longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Flexor_pollicis_longus_muscle",
+  "raw": {
+   "Origin": "The middle 1/2 of the anterior surface of the radius and adjacent to the interosseus membrane.",
+   "Insertion": "The base of the distal phalanx of the thumb",
+   "Artery": "Anterior interosseous artery",
+   "Nerve": "Anterior interosseous nerve (branch of median nerve) (C8, T1)",
+   "Actions": "Flexion of the thumb"
+  },
+  "fill": {
+   "innervation_mn": "Anterior interosseous nerve (median nerve-ийн салаа) (C8, T1)",
+   "blood_supply_mn": "Anterior interosseous artery"
+  },
+  "conflicts": "Existing origin_mn 'Humerus' гэж байгаа бол Wikipedia: radius-ийн урд гадаргуугийн дунд 1/2 ба interosseous membrane-ийн орчим — өөр яс. Existing insertion_mn ерөнхий ('Гарын янз бүрийн хэсэг'), Wikipedia: эрхий хурууны distal phalanx-ийн суурь."
+ },
+ "extensor-digiti-minimi": {
+  "article": "Extensor digiti minimi muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_digiti_minimi_muscle",
+  "raw": {
+   "Origin": "The anterior portion of the lateral epicondyle of the humerus (common extensor tendon)",
+   "Insertion": "At the extensor expansion, located at the base of the middle and distal phalanx of digit V on the dorsal side",
+   "Artery": "Posterior interosseous artery",
+   "Nerve": "Posterior interosseous nerve (C7, 8)",
+   "Actions": "Extends the wrist and the little finger at all joints"
+  },
+  "fill": {
+   "insertion_mn": "V хурууны middle ба distal phalanx-ийн суурьт, dorsal талд байрлах extensor expansion-д",
+   "innervation_mn": "Posterior interosseous nerve (C7, 8)",
+   "blood_supply_mn": "Posterior interosseous artery"
+  },
+  "conflicts": null
+ },
+ "extensor-indicis": {
+  "article": "Extensor indicis muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_indicis_muscle",
+  "raw": {
+   "Origin": "Posterior distal third of ulna and interosseous membrane",
+   "Insertion": "Index finger (extensor hood)",
+   "Artery": "Posterior interosseous artery",
+   "Nerve": "Posterior interosseous nerve",
+   "Actions": "Extends index finger, wrist"
+  },
+  "fill": {
+   "action_mn": "Долоовор хуруу, бугуйг тэнийлгэнэ",
+   "innervation_mn": "Posterior interosseous nerve",
+   "blood_supply_mn": "Posterior interosseous artery"
+  },
+  "conflicts": null
+ },
+ "abductor-digiti-minimi": {
+  "skipped": "'Abductor digiti minimi muscle of hand' нийтлэлд infobox байхгүй (Nerve зөвхөн биеийн текстэд: deep branch of ulnar nerve; Artery огт дурдаагүй); 'Abductor digiti minimi' нь disambiguation хуудас."
+ },
+ "dorsal-interossei": {
+  "article": "Dorsal interossei of the hand",
+  "url": "https://en.wikipedia.org/wiki/Dorsal_interossei_of_the_hand",
+  "raw": {
+   "Origin": "Metacarpals",
+   "Insertion": "Proximal phalanges and extensor expansions",
+   "Artery": "Dorsal and palmar metacarpal artery",
+   "Nerve": "Deep branch of ulnar nerve",
+   "Actions": "Abduct finger"
+  },
+  "fill": {
+   "innervation_mn": "Ulnar nerve-ийн гүн салаа",
+   "blood_supply_mn": "Dorsal ба palmar metacarpal artery"
+  },
+  "conflicts": null
+ },
+ "internal-oblique": {
+  "article": "Internal abdominal oblique muscle",
+  "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+  "raw": {
+   "Origin": "Inguinal ligament, iliac crest and the lumbodorsal fascia",
+   "Insertion": "Linea alba, pectineal line of pubis (via conjoint tendon) and ribs 10-12.",
+   "Artery": "Subcostal arteries",
+   "Nerve": "Thoracoabdominal nn. (T7-T11), subcostal n. (T12), iliohypogastric n. (L1) and ilioinguinal n. (L1)",
+   "Actions": "Bilateral: Compresses abdomen Unilateral: Ipsilateral trunk rotation"
+  },
+  "fill": {
+   "innervation_mn": "Thoracoabdominal nn. (T7-T11), subcostal n. (T12), iliohypogastric n. (L1) ба ilioinguinal n. (L1)",
+   "blood_supply_mn": "Subcostal arteries"
+  },
+  "conflicts": "existing origin_mn 'Хавирга 5–12; os ilium' and insertion_mn 'Хавирга 7–10; linea alba; os ilium' (OpenStax combined external+internal oblique row) differ from Wikipedia: Origin 'Inguinal ligament, iliac crest and the lumbodorsal fascia'; Insertion 'Linea alba, pectineal line of pubis (via conjoint tendon) and ribs 10-12'. Not changed."
+ },
+ "external-intercostal": {
+  "article": "External intercostal muscles",
+  "url": "https://en.wikipedia.org/wiki/External_intercostal_muscles",
+  "raw": {
+   "Origin": "Lower border of ribs",
+   "Insertion": "Upper border of rib below",
+   "Artery": "Intercostal arteries",
+   "Nerve": "Intercostal nerves",
+   "Actions": "Inhalation"
+  },
+  "fill": {
+   "innervation_mn": "Intercostal nerves",
+   "blood_supply_mn": "Intercostal arteries"
+  },
+  "conflicts": null
+ },
+ "iliococcygeus": {
+  "skipped": "No own Wikipedia article: Iliococcygeus/Iliococcygeus_muscle redirect to 'Levator ani'; infobox covers levator ani as a whole, not iliococcygeus."
+ },
+ "orbicularis-oris": {
+  "article": "Orbicularis oris muscle",
+  "url": "https://en.wikipedia.org/wiki/Orbicularis_oris_muscle",
+  "raw": {
+   "Origin": "Maxilla and mandible",
+   "Insertion": "Skin around the lips",
+   "Artery": "Inferior labial artery and superior labial artery.",
+   "Nerve": "Cranial nerve VII, buccal branch",
+   "Actions": "It is sometimes known as the kissing muscle because it is used to pucker the lips."
+  },
+  "fill": {
+   "origin_mn": "Maxilla ба mandible",
+   "insertion_mn": "Уруулын эргэн тойрны арьс",
+   "blood_supply_mn": "Inferior labial artery ба superior labial artery.",
+   "innervation_mn": "Cranial nerve VII, buccal салаа"
+  },
+  "conflicts": null
+ },
+ "buccinator": {
+  "skipped": "Wikipedia 'Buccinator muscle' infobox has no Details rows (only image and Latin 'musculus bucinatorius'); origin/insertion/nerve only in prose, no artery."
+ },
+ "medial-rectus": {
+  "article": "Medial rectus muscle",
+  "url": "https://en.wikipedia.org/wiki/Medial_rectus_muscle",
+  "raw": {
+   "Origin": "Common tendinous ring at the orbital apex",
+   "Insertion": "5.5 mm medial to the limbus",
+   "Nerve": "Inferior division of the oculomotor nerve",
+   "Actions": "Adducts the eyeball (makes it move inwards)"
+  },
+  "fill": {
+   "innervation_mn": "Oculomotor nerve-ийн inferior division (доод салаа)"
+  },
+  "conflicts": null,
+  "note": "Infobox has no Artery; blood_supply_mn left missing."
+ },
+ "temporalis": {
+  "article": "Temporalis muscle",
+  "url": "https://en.wikipedia.org/wiki/Temporalis_muscle",
+  "raw": {
+   "Origin": "Temporal lines on the parietal bone of the skull and the superior temporal surface of the sphenoid bone",
+   "Insertion": "Coronoid process of the mandible and retromolar fossa",
+   "Artery": "Deep temporal arteries",
+   "Nerve": "Deep temporal nerves, branches of the anterior division of the mandibular nerve (V3)",
+   "Actions": "Elevation and retraction of mandible"
+  },
+  "fill": {
+   "innervation_mn": "Deep temporal nerves — mandibular nerve (V3)-ийн anterior division-ийн салаанууд",
+   "blood_supply_mn": "Deep temporal arteries"
+  },
+  "conflicts": "Minor: existing origin_mn 'Os temporale' vs Wikipedia 'Temporal lines on the parietal bone of the skull and the superior temporal surface of the sphenoid bone'. Not changed."
+ },
+ "palatoglossus": {
+  "article": "Palatoglossus muscle",
+  "url": "https://en.wikipedia.org/wiki/Palatoglossus_muscle",
+  "raw": {
+   "Origin": "Palatine aponeurosis",
+   "Insertion": "Tongue",
+   "Nerve": "Vagus nerve (via pharyngeal branch to pharyngeal plexus)",
+   "Actions": "Raising the back part of the tongue"
+  },
+  "fill": {
+   "innervation_mn": "Vagus nerve (pharyngeal branch-аар дамжин pharyngeal plexus руу)"
+  },
+  "conflicts": null,
+  "note": "Infobox has no Artery; blood_supply_mn left missing."
+ },
+ "geniohyoid": {
+  "article": "Geniohyoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Geniohyoid_muscle",
+  "raw": {
+   "Origin": "Inferior mental spine of mandible",
+   "Insertion": "Hyoid bone",
+   "Artery": "Branches of the lingual artery.",
+   "Nerve": "C1 via the hypoglossal nerve",
+   "Actions": "Carry hyoid bone and the tongue upward during deglutition"
+  },
+  "fill": {
+   "origin_mn": "Mandible-ийн inferior mental spine",
+   "insertion_mn": "Hyoid bone",
+   "blood_supply_mn": "Lingual artery-ийн салаанууд.",
+   "innervation_mn": "Hypoglossal nerve-ээр дамжих C1"
+  },
+  "conflicts": null
+ },
+ "sternocleidomastoid": {
+  "article": "Sternocleidomastoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Sternocleidomastoid_muscle",
+  "raw": {
+   "Origin": "Manubrium and medial portion of the clavicle",
+   "Insertion": "Mastoid process of the temporal bone, superior nuchal line",
+   "Artery": "Occipital artery and the superior thyroid artery",
+   "Nerve": "Motor: spinal accessory nerve sensory: cervical plexus Proprioceptive: ventral primary rami of C2 and C3",
+   "Actions": "Unilaterally: contralateral cervical rotation, ipsilateral cervical flexion Bilaterally: cervical flexion, elevation of sternum and assists in forced inhalation."
+  },
+  "fill": {
+   "blood_supply_mn": "Occipital artery ба superior thyroid artery",
+   "innervation_mn": "Хөдөлгөх (motor): spinal accessory nerve; мэдрэх (sensory): cervical plexus; proprioceptive: C2 ба C3-ийн ventral primary rami"
+  },
+  "conflicts": null
+ },
+ "iliocostalis-lumborum": {
+  "skipped": "No own article: Iliocostalis_lumborum redirects to 'Iliocostalis' (Latin musculus iliocostalis); infobox values are for iliocostalis as a whole, not lumborum."
+ },
+ "spinalis-thoracis": {
+  "article": "Spinalis",
+  "url": "https://en.wikipedia.org/wiki/Spinalis",
+  "raw": {
+   "Origin": "Thoracis: Spinous process of upper lumbar and lower thoracic vertebrae. Cervicis: nuchal ligament and spinous process of C7.",
+   "Insertion": "Thoracis: Spinous process of upper thoracic vertebrae. Cervicis: Spinous process of cervical vertebrae except atlas.",
+   "Artery": "Lateral sacral artery",
+   "Nerve": "Posterior branch of spinal nerve",
+   "Actions": "Laterally: Flex the head and neck to the same side. Bilaterally: Extend the vertebral column."
+  },
+  "fill": {
+   "origin_mn": "Дээд бүсэлхийн ба доод цээжний нугаламуудын spinous process",
+   "insertion_mn": "Дээд цээжний нугаламуудын spinous process",
+   "innervation_mn": "Spinal nerve-ийн хойд салаа (posterior branch)",
+   "blood_supply_mn": "Lateral sacral artery"
+  },
+  "conflicts": null,
+  "note": "Article/infobox is for Spinalis as a whole (Latin musculus spinalis); origin/insertion taken from the explicit 'Thoracis:' parts; nerve/artery are whole-muscle values. Actions not filled (infobox action mixes head/neck flexion of cervical part) — action_mn left missing."
+ },
+ "multifidus": {
+  "article": "Multifidus muscle",
+  "url": "https://en.wikipedia.org/wiki/Multifidus_muscle",
+  "raw": {
+   "Origin": "Sacrum, erector spinae aponeurosis, PSIS, and iliac crest",
+   "Insertion": "Spinous process",
+   "Nerve": "Posterior branches",
+   "Actions": "Provides proprioceptive feedback and input due to high muscle spindle density / Bilateral backward extension, unilateral ipsilateral side-bending and contralateral rotation."
+  },
+  "fill": {
+   "origin_mn": "Sacrum, erector spinae aponeurosis, PSIS ба iliac crest",
+   "insertion_mn": "Spinous process",
+   "innervation_mn": "Хойд салаанууд (posterior branches)"
+  },
+  "conflicts": null,
+  "note": "Infobox has no Artery; blood_supply_mn left missing. la was null; infobox Latin 'musculus multifidus spinae'."
+ },
+ "middle-scalene": {
+  "skipped": "No own article: Scalenus_medius_muscle redirects to 'Scalene muscles', whose infobox covers the scalene group (Latin mm. scalenii), not scalenus medius."
+ },
+ "gluteus-medius": {
+  "article": "Gluteus medius",
+  "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
+  "raw": {
+   "Origin": "Gluteal surface of ilium, under gluteus maximus, Aponeurosis glutea",
+   "Insertion": "Greater trochanter of the femur",
+   "Artery": "Superior gluteal artery",
+   "Nerve": "Superior gluteal nerve (L4, L5, S1 nerve roots)",
+   "Actions": "Abduction of the hip; preventing adduction of the hip. Medial/internal rotation and flexion of the hip (anterior fibers). Extension and lateral/external rotation of the hip (posterior fibers)"
+  },
+  "fill": {
+   "origin_mn": "Ilium-ийн gluteal surface, gluteus maximus-ийн доор; Aponeurosis glutea",
+   "insertion_mn": "Femur-ийн greater trochanter",
+   "blood_supply_mn": "Superior gluteal artery",
+   "innervation_mn": "Superior gluteal nerve (L4, L5, S1 мэдрэлийн үндэс)"
+  },
+  "conflicts": null
+ },
+ "obturator-externus": {
+  "article": "External obturator muscle",
+  "url": "https://en.wikipedia.org/wiki/External_obturator_muscle",
+  "raw": {
+   "Origin": "Obturator foramen and obturator membrane",
+   "Insertion": "Trochanteric fossa of femur",
+   "Artery": "Obturator artery",
+   "Nerve": "Posterior branch of obturator nerve (third and fourth lumbar nerves)",
+   "Actions": "Abduct thigh, laterally rotates thigh"
+  },
+  "fill": {
+   "origin_mn": "Obturator foramen ба obturator membrane",
+   "insertion_mn": "Femur-ийн trochanteric fossa",
+   "blood_supply_mn": "Obturator artery",
+   "innervation_mn": "Obturator nerve-ийн хойд салаа (гурав ба дөрөвдүгээр lumbar nerves)"
+  },
+  "conflicts": null,
+  "note": "Page title 'External obturator muscle' (fetched via Obturator_externus_muscle); infobox Latin musculus obturatorius externus."
+ },
+ "adductor-brevis": {
+  "article": "Adductor brevis muscle",
+  "url": "https://en.wikipedia.org/wiki/Adductor_brevis_muscle",
+  "raw": {
+   "Origin": "Anterior surface of the inferior ramus and body of the pubis",
+   "Insertion": "The lesser trochanter and linea aspera of the femur",
+   "Artery": "Deep femoral artery",
+   "Nerve": "Obturator nerve",
+   "Actions": "Adduction of hip"
+  },
+  "fill": {
+   "origin_mn": "Pubis-ийн inferior ramus ба body-ийн урд гадаргуу",
+   "insertion_mn": "Femur-ийн lesser trochanter ба linea aspera",
+   "blood_supply_mn": "Deep femoral artery",
+   "innervation_mn": "Obturator nerve"
+  },
+  "conflicts": null
+ },
+ "vastus-lateralis": {
+  "article": "Vastus lateralis muscle",
+  "url": "https://en.wikipedia.org/wiki/Vastus_lateralis_muscle",
+  "raw": {
+   "Origin": "Greater trochanter, intertrochanteric line, and linea aspera of the femur",
+   "Insertion": "Patella by the quadriceps tendon and tibial tuberosity by the patellar ligament",
+   "Artery": "Lateral circumflex femoral artery",
+   "Nerve": "Femoral nerve",
+   "Actions": "Extends and stabilizes knee"
+  },
+  "fill": {
+   "origin_mn": "Femur-ийн greater trochanter, intertrochanteric line ба linea aspera",
+   "blood_supply_mn": "Lateral circumflex femoral artery",
+   "innervation_mn": "Femoral nerve"
+  },
+  "conflicts": null
+ },
+ "semitendinosus": {
+  "article": "Semitendinosus muscle",
+  "url": "https://en.wikipedia.org/wiki/Semitendinosus_muscle",
+  "raw": {
+   "Origin": "Lower quadrangular part of tuberosity of the ischium",
+   "Insertion": "Pes anserinus (tibia)",
+   "Artery": "Inferior gluteal artery, perforating arteries",
+   "Nerve": "Sciatic (tibial, L5, S1, S2)",
+   "Actions": "Flexion of knee, extension of the hip joint"
+  },
+  "fill": {
+   "origin_mn": "Ischium-ийн tuberosity-ийн доод дөрвөлжин хэсэг",
+   "insertion_mn": "Pes anserinus (tibia)",
+   "blood_supply_mn": "Inferior gluteal artery, perforating arteries",
+   "innervation_mn": "Sciatic (tibial, L5, S1, S2)"
+  },
+  "conflicts": null
+ },
+ "fibularis-tertius": {
+  "article": "Fibularis tertius",
+  "url": "https://en.wikipedia.org/wiki/Fibularis_tertius",
+  "raw": {
+   "Origin": "Distal anterior surface of the fibula also the interosseous membrane",
+   "Insertion": "Dorsal surface of metatarsal 5",
+   "Artery": "Anterior tibial artery",
+   "Nerve": "Deep fibular nerve",
+   "Actions": "Dorsiflexion and eversion of the foot"
+  },
+  "fill": {
+   "insertion_mn": "Metatarsal 5-ын dorsal гадаргуу",
+   "action_mn": "Хөлийн тавхайг dorsiflexion хийх ба eversion хийх",
+   "blood_supply_mn": "Anterior tibial artery",
+   "innervation_mn": "Deep fibular nerve"
+  },
+  "conflicts": null
+ },
+ "plantaris": {
+  "article": "Plantaris muscle",
+  "url": "https://en.wikipedia.org/wiki/Plantaris_muscle",
+  "raw": {
+   "Origin": "Lateral supracondylar ridge of femur above lateral head of gastrocnemius",
+   "Insertion": "Tendo calcaneus (medial side, deep to gastrocnemius tendon)",
+   "Artery": "Sural arteries",
+   "Nerve": "Tibial nerve from anterior rami of S1-S2",
+   "Actions": "Plantar flexes foot and flexes knee"
+  },
+  "fill": {
+   "origin_mn": "Gastrocnemius-ийн lateral head-ээс дээш, femur-ийн lateral supracondylar ridge",
+   "action_mn": "Хөлийн тавхайг plantar flexion хийж, өвдгийг нугална",
+   "blood_supply_mn": "Sural arteries",
+   "innervation_mn": "S1-S2-ийн anterior rami-аас гарах tibial nerve"
+  },
+  "conflicts": null
+ },
+ "extensor-digitorum-brevis": {
+  "article": "Extensor digitorum brevis muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_brevis_muscle",
+  "raw": {
+   "Origin": "Dorsal surface of calcaneus",
+   "Insertion": "Proximal dorsal region of middle phalanges 2, 3 and 4",
+   "Artery": "Dorsalis pedis artery",
+   "Nerve": "Deep fibular nerve",
+   "Actions": "Extends digits 2 through 4"
+  },
+  "fill": {
+   "origin_mn": "Calcaneus-ийн dorsal гадаргуу",
+   "insertion_mn": "2, 3, 4-р middle phalanges-ийн ойрын (proximal) dorsal хэсэг",
+   "blood_supply_mn": "Dorsalis pedis artery",
+   "innervation_mn": "Deep fibular nerve"
+  },
+  "conflicts": null
+ },
+ "rhomboid-major": {
+  "article": "Rhomboid major muscle",
+  "url": "https://en.wikipedia.org/wiki/Rhomboid_major_muscle",
+  "raw": {
+   "Origin": "Spinous processes of the T2 to T5 vertebrae",
+   "Insertion": "Medial border of the scapula, inferior to the insertion of rhomboid minor muscle",
+   "Artery": "Dorsal scapular artery",
+   "Nerve": "Dorsal scapular nerve (C5)",
+   "Actions": "Retracts the scapula and rotates it to depress the glenoid cavity. It also fixes the scapula to the thoracic wall."
+  },
+  "fill": {
+   "innervation_mn": "Dorsal scapular nerve (C5)",
+   "blood_supply_mn": "Dorsal scapular artery"
+  },
+  "conflicts": null
+ },
+ "deltoid": {
+  "article": "Deltoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+  "raw": {
+   "Origin": "The anterior border and upper surface of the lateral third of the clavicle, acromion, spine of the scapula",
+   "Insertion": "Deltoid tuberosity of humerus",
+   "Artery": "Thoracoacromial artery, anterior and posterior humeral circumflex artery",
+   "Nerve": "Axillary nerve",
+   "Actions": "Shoulder abduction, flexion and extension"
+  },
+  "fill": {
+   "innervation_mn": "Axillary nerve",
+   "blood_supply_mn": "Thoracoacromial artery, anterior ба posterior humeral circumflex artery"
+  },
+  "conflicts": null
+ },
+ "teres-minor": {
+  "article": "Teres minor muscle",
+  "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle",
+  "raw": {
+   "Origin": "Lateral border of the scapula",
+   "Insertion": "Inferior facet of greater tubercle of the humerus",
+   "Artery": "Posterior circumflex humeral artery and the circumflex scapular artery",
+   "Nerve": "Axillary nerve (C5-C6)",
+   "Actions": "Laterally rotates the arm, stabilizes humerus"
+  },
+  "fill": {
+   "innervation_mn": "Axillary nerve (C5-C6)",
+   "blood_supply_mn": "Posterior circumflex humeral artery ба circumflex scapular artery"
+  },
+  "conflicts": "Minor: existing action_mn includes 'тэнийлгэнэ' (extension); Wikipedia Actions = 'Laterally rotates the arm, stabilizes humerus' (no extension). Not changed."
+ },
+ "triceps-brachii": {
+  "article": "Triceps",
+  "url": "https://en.wikipedia.org/wiki/Triceps",
+  "raw": {
+   "Origin": "Long head: infraglenoid tubercle of scapula Lateral head: above the radial groove Medial head: below the radial groove",
+   "Insertion": "Olecranon process of ulna",
+   "Artery": "Deep brachial artery, posterior circumflex humeral artery (long head only)",
+   "Nerve": "Radial nerve",
+   "Actions": "Extends forearm, long head extends, adducts arm, extends shoulder"
+  },
+  "fill": {
+   "origin_mn": "Long head: scapula-гийн infraglenoid tubercle; lateral head: radial groove-оос дээш; medial head: radial groove-оос доош",
+   "insertion_mn": "Ulna-гийн olecranon process",
+   "blood_supply_mn": "Deep brachial artery, posterior circumflex humeral artery (зөвхөн long head)",
+   "innervation_mn": "Radial nerve"
+  },
+  "conflicts": null
+ },
+ "flexor-carpi-radialis": {
+  "article": "Flexor carpi radialis muscle",
+  "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+  "raw": {
+   "Origin": "Medial epicondyle of humerus (common flexor tendon)",
+   "Insertion": "Bases of second and third metacarpal bones",
+   "Artery": "Ulnar artery",
+   "Nerve": "Median nerve",
+   "Actions": "Flexion and abduction at wrist"
+  },
+  "fill": {
+   "innervation_mn": "Median nerve",
+   "blood_supply_mn": "Ulnar artery"
+  },
+  "conflicts": null
+ },
+ "flexor-digitorum-profundus": {
+  "article": "Flexor digitorum profundus muscle",
+  "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_profundus_muscle",
+  "raw": {
+   "Origin": "Upper 3/4 of the anterior and medial surfaces of the body of the ulna, interosseous membrane and deep fascia of the forearm",
+   "Insertion": "Base of the distal phalanges of the fingers",
+   "Artery": "Anterior interosseous artery",
+   "Nerve": "Lateral part of the muscle by median (anterior interosseous), medial (ulnar) part of the muscle by muscular branches of ulnar",
+   "Actions": "Flex hand and both interphalangeal joints"
+  },
+  "fill": {
+   "innervation_mn": "Булчингийн хажуу хэсэг — median (anterior interosseous); дунд (ulnar) хэсэг — ulnar-ийн булчингийн салаанууд",
+   "blood_supply_mn": "Anterior interosseous artery"
+  },
+  "conflicts": "Existing origin_mn 'Humerus (шууны урд тасалгааны булчингууд humerus-ээс эхэлдэг)' conflicts with Wikipedia Origin 'Upper 3/4 of the anterior and medial surfaces of the body of the ulna, interosseous membrane and deep fascia of the forearm' (ulna, not humerus). Not changed."
+ },
+ "extensor-carpi-ulnaris": {
+  "article": "Extensor carpi ulnaris muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_carpi_ulnaris_muscle",
+  "raw": {
+   "Origin": "Humeral head: Lateral epicondyle of the humerus. Ulnar head: Olecranon, posterior surface of ulna, antebrachial fascia",
+   "Insertion": "5th metacarpal",
+   "Artery": "Ulnar artery",
+   "Nerve": "Posterior interosseous nerve",
+   "Actions": "Extends and adducts the wrist"
+  },
+  "fill": {
+   "insertion_mn": "5-р metacarpal",
+   "innervation_mn": "Posterior interosseous nerve",
+   "blood_supply_mn": "Ulnar artery"
+  },
+  "conflicts": null
+ },
+ "abductor-pollicis-brevis": {
+  "article": "Abductor pollicis brevis muscle",
+  "url": "https://en.wikipedia.org/wiki/Abductor_pollicis_brevis_muscle",
+  "raw": {
+   "Origin": "Transverse carpal ligament, the scaphoid and trapezium",
+   "Insertion": "Base of the proximal phalanx of thumb",
+   "Artery": "Superficial palmar arch",
+   "Nerve": "Recurrent branch of the median nerve",
+   "Actions": "Abduction of the thumb by acting across the carpometacarpal joint and the metacarpophalangeal joint. It also assists in opposition and extension of the thumb."
+  },
+  "fill": {
+   "innervation_mn": "Median nerve-ийн recurrent салаа",
+   "blood_supply_mn": "Superficial palmar arch"
+  },
+  "conflicts": null
+ },
+ "flexor-digiti-minimi-brevis": {
+  "article": "Flexor digiti minimi brevis muscle of hand",
+  "url": "https://en.wikipedia.org/wiki/Flexor_digiti_minimi_brevis_muscle_of_hand",
+  "raw": {
+   "Origin": "Hamate bone",
+   "Insertion": "Palmar side of the base of the proximal phalanx of fifth digit",
+   "Artery": "Ulnar artery",
+   "Nerve": "Deep branch of ulnar nerve",
+   "Actions": "Flexes little finger"
+  },
+  "fill": {
+   "innervation_mn": "Ulnar nerve-ийн гүн салаа (deep branch)",
+   "blood_supply_mn": "Ulnar artery"
+  },
+  "conflicts": "Minor: existing insertion_mn says medial side of proximal phalanx; Wikipedia says 'Palmar side of the base of the proximal phalanx of fifth digit'. Not changed."
+ },
+ "transversus-abdominis": {
+  "article": "Transverse abdominal muscle",
+  "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+  "raw": {
+   "Origin": "Iliac crest, inguinal ligament, thoracolumbar fascia, and costal cartilages 7-12",
+   "Insertion": "Xiphoid process, linea alba, pubic crest and pecten pubis via conjoint tendon",
+   "Artery": "Subcostal arteries",
+   "Nerve": "Thoracoabdominal nn. (T6-T11), Subcostal n. (T12), iliohypogastric nerve (L1), and ilioinguinal nerve (L1)",
+   "Actions": "Compresses abdominal contents (bilateral), rotates trunk ipsilaterally (unilateral)"
+  },
+  "fill": {
+   "innervation_mn": "Thoracoabdominal nn. (T6-T11), Subcostal n. (T12), iliohypogastric nerve (L1) ба ilioinguinal nerve (L1)",
+   "blood_supply_mn": "Subcostal arteries"
+  },
+  "conflicts": "Existing origin_mn 'Os ilium; хавирга 5–10' vs Wikipedia 'Iliac crest, inguinal ligament, thoracolumbar fascia, and costal cartilages 7-12' (rib levels differ: 5–10 vs 7–12). Existing insertion 'Sternum' vs Wikipedia 'Xiphoid process' (compatible)."
+ },
+ "internal-intercostal": {
+  "article": "Internal intercostal muscles",
+  "url": "https://en.wikipedia.org/wiki/Internal_intercostal_muscles",
+  "raw": {
+   "Origin": "Rib - superior border",
+   "Insertion": "Rib - inferior border",
+   "Artery": "Intercostal arteries",
+   "Nerve": "Intercostal nerves",
+   "Actions": "Hold ribs steady"
+  },
+  "fill": {
+   "innervation_mn": "Intercostal nerves",
+   "blood_supply_mn": "Intercostal arteries"
+  },
+  "conflicts": "Minor: Wikipedia action 'Hold ribs steady' vs existing action_mn (draws ribs together in forced expiration) — differ in emphasis, not opposite."
+ },
+ "ischiococcygeus": {
+  "article": "Coccygeus muscle",
+  "url": "https://en.wikipedia.org/wiki/Coccygeus_muscle",
+  "raw": {
+   "Origin": "Sacrospinous ligament and ischial spine",
+   "Insertion": "Lateral margin of coccyx and related border of sacrum",
+   "Nerve": "Pudendal nerve; sacral nerves: S4, S5 or S3-S4",
+   "Actions": "Pulls coccyx forward after defecation, closing in the back part of the outlet of the pelvis",
+   "Latin": "musculus coccygeus"
+  },
+  "fill": {
+   "origin_mn": "Sacrospinous ligament ба ischial spine",
+   "insertion_mn": "Coccyx-ийн хажуу ирмэг ба sacrum-ийн харгалзах ирмэг",
+   "innervation_mn": "Pudendal nerve; sacral nerves: S4, S5 эсвэл S3-S4"
+  },
+  "conflicts": null
+ },
+ "orbicularis-oculi": {
+  "article": "Orbicularis oculi muscle",
+  "url": "https://en.wikipedia.org/wiki/Orbicularis_oculi_muscle",
+  "raw": {
+   "Origin": "Frontal bone; medial palpebral ligament; lacrimal bone",
+   "Insertion": "Lateral palpebral raphe",
+   "Artery": "Ophthalmic, zygomatico-orbital, angular",
+   "Nerve": "Temporal (orbital, palpebral) and zygomatic (lacrimal) branches of facial nerve",
+   "Actions": "Closes eyelids"
+  },
+  "fill": {
+   "innervation_mn": "Facial nerve-ийн temporal (orbital, palpebral) ба zygomatic (lacrimal) салаа",
+   "blood_supply_mn": "Ophthalmic, zygomatico-orbital, angular"
+  },
+  "conflicts": null
+ },
+ "corrugator-supercilii": {
+  "article": "Corrugator supercilii muscle",
+  "url": "https://en.wikipedia.org/wiki/Corrugator_supercilii_muscle",
+  "raw": {
+   "Origin": "Supraorbital ridge (superciliary arches)",
+   "Insertion": "Forehead skin, near eyebrow",
+   "Artery": "Ophthalmic artery",
+   "Nerve": "Facial nerve",
+   "Actions": "Wrinkles forehead"
+  },
+  "fill": {
+   "origin_mn": "Supraorbital ridge (superciliary arches)",
+   "insertion_mn": "Хөмсөгний ойролцоох духны арьс",
+   "innervation_mn": "Facial nerve",
+   "blood_supply_mn": "Ophthalmic artery"
+  },
+  "conflicts": null
+ },
+ "inferior-oblique": {
+  "article": "Inferior oblique muscle",
+  "url": "https://en.wikipedia.org/wiki/Inferior_oblique_muscle",
+  "raw": {
+   "Origin": "Orbital surface of the maxilla, lateral to the lacrimal groove",
+   "Insertion": "Laterally onto the eyeball, deep to the lateral rectus, by a short flat tendon",
+   "Artery": "Ophthalmic artery",
+   "Nerve": "Oculomotor nerve",
+   "Actions": "Extorsion, elevation, abduction"
+  },
+  "fill": {
+   "innervation_mn": "Oculomotor nerve",
+   "blood_supply_mn": "Ophthalmic artery"
+  },
+  "conflicts": null
+ },
+ "lateral-pterygoid": {
+  "article": "Lateral pterygoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Lateral_pterygoid_muscle",
+  "raw": {
+   "Origin": "Superior head: infratemporal surface of sphenoid bone. Inferior head: lateral pterygoid plate",
+   "Insertion": "Superior head: anterior side of the mandibular condyle. Inferior head: pterygoid fovea",
+   "Artery": "Pterygoid branches of maxillary artery",
+   "Nerve": "Lateral pterygoid nerve from mandibular nerve",
+   "Actions": "Depresses and protrudes mandible, side to side movement of mandible"
+  },
+  "fill": {
+   "innervation_mn": "Mandibular nerve-ээс гарах lateral pterygoid nerve",
+   "blood_supply_mn": "Maxillary artery-ийн pterygoid салаа"
+  },
+  "conflicts": null
+ },
+ "hyoglossus": {
+  "article": "Hyoglossus",
+  "url": "https://en.wikipedia.org/wiki/Hyoglossus",
+  "raw": {
+   "Origin": "Hyoid",
+   "Insertion": "Side of the tongue",
+   "Nerve": "Hypoglossal (CN XII)",
+   "Actions": "Depresses and retracts the tongue"
+  },
+  "fill": {
+   "innervation_mn": "Hypoglossal (CN XII)"
+  },
+  "conflicts": null
+ },
+ "omohyoid": {
+  "article": "Omohyoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Omohyoid_muscle",
+  "raw": {
+   "Origin": "Upper border of the scapula (inferior belly), intermediate tendon (superior belly)",
+   "Insertion": "Intermediate tendon (inferior belly), hyoid bone (superior belly)",
+   "Artery": "Branches from the inferior thyroid artery (ITA)",
+   "Nerve": "Ansa cervicalis (C1-C3)",
+   "Actions": "Depresses the larynx and hyoid bone. Also carries hyoid bone backward and to the side."
+  },
+  "fill": {
+   "origin_mn": "Scapula-гийн дээд ирмэг (доод гэдэс), intermediate tendon (дээд гэдэс)",
+   "insertion_mn": "Intermediate tendon (доод гэдэс), hyoid bone (дээд гэдэс)",
+   "innervation_mn": "Ansa cervicalis (C1-C3)",
+   "blood_supply_mn": "Inferior thyroid artery (ITA)-ийн салаа"
+  },
+  "conflicts": null
+ },
+ "splenius-capitis": {
+  "article": "Splenius capitis muscle",
+  "url": "https://en.wikipedia.org/wiki/Splenius_capitis_muscle",
+  "raw": {
+   "Origin": "Nuchal ligament and spinous process of C7-T3",
+   "Insertion": "Mastoid process of temporal and occipital bone",
+   "Artery": "Muscular branches of the aorta",
+   "Nerve": "Posterior ramus of spinal nerves C3 and C4",
+   "Actions": "Extend, rotate, and laterally flex the head"
+  },
+  "fill": {
+   "innervation_mn": "Spinal nerves C3 ба C4-ийн posterior ramus",
+   "blood_supply_mn": "Aorta-гийн muscular салаа"
+  },
+  "conflicts": null
+ },
+ "longissimus-cervicis": {
+  "skipped": "No own Wikipedia article (Longissimus_cervicis_muscle not found); parent article 'Longissimus' has an infobox for the whole muscle (Latin 'musculus longissimus'), not for longissimus cervicis — not the same structure."
+ },
+ "longissimus-capitis": {
+  "skipped": "No own Wikipedia article (Longissimus_capitis_muscle not found); parent 'Longissimus' infobox describes the whole longissimus (e.g. Artery 'Lateral sacral artery'), not specific to longissimus capitis."
+ },
+ "rotatores": {
+  "article": "Rotatores muscles",
+  "url": "https://en.wikipedia.org/wiki/Rotatores_muscles",
+  "raw": {
+   "Origin": "Transverse process",
+   "Insertion": "Junction of transverse process and lamina, spinous process",
+   "Nerve": "Posterior rami of spinal nerves",
+   "Latin": "musculi rotatores"
+  },
+  "fill": {
+   "origin_mn": "Transverse process",
+   "insertion_mn": "Transverse process ба lamina-гийн нийлэх хэсэг, spinous process",
+   "innervation_mn": "Spinal nerves-ийн posterior rami"
+  },
+  "conflicts": null
+ },
+ "posterior-scalene": {
+  "skipped": "No own Wikipedia article; 'Scalene muscles' infobox describes the whole scalene group (Latin 'mm. scalenii', Insertion 'First and second ribs'), not posterior scalene specifically."
+ },
+ "gluteus-minimus": {
+  "article": "Gluteus minimus",
+  "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+  "raw": {
+   "Origin": "From area in between the anterior gluteal line and inferior gluteal line of gluteal surface ilium, under gluteus medius.",
+   "Insertion": "Greater trochanter of the femur",
+   "Artery": "Superior gluteal artery",
+   "Nerve": "Superior gluteal nerve (L4, L5, S1 nerve roots)",
+   "Actions": "Works in concert with gluteus medius: abduction of the hip; preventing adduction of the hip. Medial rotation of thigh."
+  },
+  "fill": {
+   "origin_mn": "Ilium-ийн gluteal surface дээрх anterior gluteal line ба inferior gluteal line-ийн хоорондох талбай, gluteus medius-ийн доор",
+   "insertion_mn": "Femur-ийн greater trochanter",
+   "innervation_mn": "Superior gluteal nerve (L4, L5, S1 nerve roots)",
+   "blood_supply_mn": "Superior gluteal artery"
+  },
+  "conflicts": "Existing action_mn says femur extension + abduction; Wikipedia lists abduction and medial rotation of thigh, no extension."
+ },
+ "superior-gemellus": {
+  "skipped": "No own article; 'Gemelli muscles' infobox has only an Origin field ('Ischiopubic ramus and obturator membrane') that does not apply to superior gemellus; no Insertion/Nerve/Artery in infobox."
+ },
+ "adductor-magnus": {
+  "article": "Adductor magnus muscle",
+  "url": "https://en.wikipedia.org/wiki/Adductor_magnus_muscle",
+  "raw": {
+   "Origin": "Pubis, tuberosity of the ischium",
+   "Insertion": "Linea aspera and adductor tubercle of femur",
+   "Artery": "Deep femoral artery",
+   "Nerve": "Posterior branch of obturator nerve (adductor) and sciatic nerve (hamstring)",
+   "Actions": "Adduction of hip (both portions) flexion of hip (adductor portion) extension of hip (hamstring portion)"
+  },
+  "fill": {
+   "origin_mn": "Pubis, ischium-ийн tuberosity",
+   "insertion_mn": "Femur-ийн linea aspera ба adductor tubercle",
+   "innervation_mn": "Obturator nerve-ийн хойд салаа (adductor хэсэг) ба sciatic nerve (hamstring хэсэг)",
+   "blood_supply_mn": "Deep femoral artery"
+  },
+  "conflicts": null
+ },
+ "vastus-medialis": {
+  "article": "Vastus medialis",
+  "url": "https://en.wikipedia.org/wiki/Vastus_medialis",
+  "raw": {
+   "Origin": "Medial side of femur",
+   "Insertion": "Quadriceps tendon",
+   "Artery": "Femoral artery",
+   "Nerve": "Femoral nerve",
+   "Actions": "Extends knee"
+  },
+  "fill": {
+   "origin_mn": "Femur-ийн дунд тал",
+   "innervation_mn": "Femoral nerve",
+   "blood_supply_mn": "Femoral artery"
+  },
+  "conflicts": null
+ },
+ "semimembranosus": {
+  "article": "Semimembranosus muscle",
+  "url": "https://en.wikipedia.org/wiki/Semimembranosus_muscle",
+  "raw": {
+   "Origin": "Ischial tuberosity",
+   "Insertion": "Medial condyle of tibia",
+   "Artery": "Profunda femoris and gluteal arteries",
+   "Nerve": "Tibial part of sciatic nerve (L5, S1 and S2)",
+   "Actions": "Extension of hip and flexion of knee"
+  },
+  "fill": {
+   "origin_mn": "Ischial tuberosity",
+   "insertion_mn": "Tibia-гийн medial condyle",
+   "innervation_mn": "Sciatic nerve-ийн tibial хэсэг (L5, S1 ба S2)",
+   "blood_supply_mn": "Profunda femoris ба gluteal arteries"
+  },
+  "conflicts": null
+ },
+ "fibularis-longus": {
+  "article": "Fibularis longus",
+  "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+  "raw": {
+   "Origin": "Proximal part of lateral surface of shaft of fibula and head of fibula",
+   "Insertion": "First metatarsal, medial cuneiform",
+   "Artery": "Fibular (peroneal) artery",
+   "Nerve": "Superficial fibular nerve",
+   "Actions": "Plantarflexion, eversion, support arches"
+  },
+  "fill": {
+   "origin_mn": "Fibula-гийн биеийн хажуу гадаргуугийн ойрын хэсэг ба fibula-гийн толгой (head of fibula)",
+   "insertion_mn": "First metatarsal, medial cuneiform",
+   "innervation_mn": "Superficial fibular nerve",
+   "blood_supply_mn": "Fibular (peroneal) artery"
+  },
+  "conflicts": null
+ },
+ "popliteus": {
+  "article": "Popliteus muscle",
+  "url": "https://en.wikipedia.org/wiki/Popliteus_muscle",
+  "raw": {
+   "Origin": "Lateral femoral epicondyle",
+   "Insertion": "Posterior surface of the tibia proximal to the soleus line",
+   "Artery": "Popliteal artery",
+   "Nerve": "Tibial nerve",
+   "Actions": "Medially rotates tibia on the femur if the femur is fixed (sitting down) or laterally rotates femur on the tibia if tibia is fixed (standing up), unlocks the knee to allow flexion (bending), helps to prevent the forward dislocation of the femur while crouching"
+  },
+  "fill": {
+   "origin_mn": "Lateral femoral epicondyle",
+   "insertion_mn": "Tibia-гийн хойд гадаргуу, soleus line-аас ойр (дээш)",
+   "innervation_mn": "Tibial nerve",
+   "blood_supply_mn": "Popliteal artery"
+  },
+  "conflicts": null
+ },
+ "subclavius": {
+  "article": "Subclavius muscle",
+  "url": "https://en.wikipedia.org/wiki/Subclavius_muscle",
+  "raw": {
+   "Origin": "First rib and cartilage",
+   "Insertion": "Subclavian groove of clavicle (inferior surface of middle one third of the clavicle)",
+   "Artery": "Thoracoacromial trunk, clavicular branch",
+   "Nerve": "Subclavian nerve",
+   "Actions": "Depression of clavicle elevation of first rib"
+  },
+  "fill": {
+   "innervation_mn": "Subclavian nerve",
+   "blood_supply_mn": "Thoracoacromial trunk, clavicular салаа"
+  },
+  "conflicts": null
+ },
+ "rhomboid-minor": {
+  "article": "Rhomboid minor muscle",
+  "url": "https://en.wikipedia.org/wiki/Rhomboid_minor_muscle",
+  "raw": {
+   "Origin": "Nuchal ligaments and spinous processes of C7-T1",
+   "Insertion": "Medial border of scapula, superior to the insertion of rhomboid major muscle",
+   "Artery": "Deep branch of transverse cervical artery",
+   "Nerve": "Dorsal scapular nerve (C4–5)",
+   "Actions": "Retracts and rotates scapula, fixes scapula to thoracic wall"
+  },
+  "fill": {
+   "innervation_mn": "Dorsal scapular nerve (C4–5)",
+   "blood_supply_mn": "Transverse cervical artery-ийн гүн салаа"
+  },
+  "conflicts": null
+ },
+ "subscapularis": {
+  "article": "Subscapularis muscle",
+  "url": "https://en.wikipedia.org/wiki/Subscapularis_muscle",
+  "raw": {
+   "Origin": "Subscapular fossa",
+   "Insertion": "Lesser tubercle of humerus",
+   "Artery": "Subscapular artery",
+   "Nerve": "Upper subscapular nerve, lower subscapular nerve (C5, C6)",
+   "Actions": "Internally rotates and adducts humerus; stabilizes shoulder"
+  },
+  "fill": {
+   "innervation_mn": "Upper subscapular nerve, lower subscapular nerve (C5, C6)",
+   "blood_supply_mn": "Subscapular artery"
+  },
+  "conflicts": null
+ },
+ "coracobrachialis": {
+  "article": "Coracobrachialis muscle",
+  "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+  "raw": {
+   "Origin": "Coracoid process of scapula",
+   "Insertion": "Anteromedial surface of humerus distal to crest of lesser tubercle",
+   "Artery": "Brachial artery",
+   "Nerve": "Musculocutaneous nerve (C5, C6, and C7)",
+   "Actions": "Adducts humerus, flexes the arm at glenohumeral joint"
+  },
+  "fill": {
+   "insertion_mn": "Humerus-ийн урд-дунд (anteromedial) гадаргуу, lesser tubercle-ийн crest-ээс алслагдсан (доош)",
+   "innervation_mn": "Musculocutaneous nerve (C5, C6 ба C7)",
+   "blood_supply_mn": "Brachial artery"
+  },
+  "conflicts": null
+ },
+ "anconeus": {
+  "article": "Anconeus muscle",
+  "url": "https://en.wikipedia.org/wiki/Anconeus_muscle",
+  "raw": {
+   "Origin": "Lateral epicondyle of the humerus proximally",
+   "Insertion": "Lateral surface of the olecranon process of the ulna and the superior proximal part of the posterior ulna",
+   "Artery": "Deep brachial artery, recurrent interosseous artery",
+   "Nerve": "Radial nerve (C5, C6, C7, C8, and T1)",
+   "Actions": "It is partly blended in with the triceps, which it assists in extension of the elbow. It also stabilizes the elbow during pronation and supination and pulls slack out of the elbow joint capsule during extension to prevent impingement."
+  },
+  "fill": {
+   "origin_mn": "Ойрын талд humerus-ийн lateral epicondyle",
+   "insertion_mn": "Ulna-гийн olecranon process-ийн хажуу гадаргуу ба ulna-гийн хойд талын дээд ойрын хэсэг",
+   "innervation_mn": "Radial nerve (C5, C6, C7, C8 ба T1)",
+   "blood_supply_mn": "Deep brachial artery, recurrent interosseous artery"
+  },
+  "conflicts": null
+ },
+ "palmaris-longus": {
+  "article": "Palmaris longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+  "raw": {
+   "Origin": "Medial epicondyle of humerus (common flexor tendon)",
+   "Insertion": "Palmar aponeurosis and flexor retinaculum of the hand",
+   "Artery": "Ulnar artery",
+   "Nerve": "Median nerve",
+   "Actions": "Wrist flexor"
+  },
+  "fill": {
+   "innervation_mn": "Median nerve",
+   "blood_supply_mn": "Ulnar artery"
+  },
+  "conflicts": null
+ },
+ "extensor-carpi-radialis-longus": {
+  "article": "Extensor carpi radialis longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
+  "raw": {
+   "Origin": "Lateral supracondylar ridge",
+   "Insertion": "2nd metacarpal",
+   "Artery": "Radial artery",
+   "Nerve": "Radial nerve",
+   "Actions": "Extensor at the wrist joint, abducts the hand at the wrist"
+  },
+  "fill": {
+   "insertion_mn": "2nd metacarpal",
+   "innervation_mn": "Radial nerve",
+   "blood_supply_mn": "Radial artery"
+  },
+  "conflicts": null
+ },
+ "abductor-pollicis-longus": {
+  "article": "Abductor pollicis longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Abductor_pollicis_longus_muscle",
+  "raw": {
+   "Origin": "Ulna, radius, Interosseous membrane",
+   "Insertion": "Base of 1st metacarpal",
+   "Artery": "Posterior interosseous artery",
+   "Nerve": "Radial nerve C8, T1",
+   "Actions": "Abduction, extension of thumb"
+  },
+  "fill": {
+   "action_mn": "Эрхий хурууг холдуулах, тэнийлгэх",
+   "innervation_mn": "Radial nerve C8, T1",
+   "blood_supply_mn": "Posterior interosseous artery"
+  },
+  "conflicts": null
+ },
+ "opponens-pollicis": {
+  "article": "Opponens pollicis muscle",
+  "url": "https://en.wikipedia.org/wiki/Opponens_pollicis_muscle",
+  "raw": {
+   "Origin": "Trapezium and transverse carpal ligament",
+   "Insertion": "Metacarpal bone of the thumb on its radial side",
+   "Artery": "Superficial palmar arch",
+   "Nerve": "Recurrent branch of the median nerve",
+   "Actions": "Flexion of the thumb's metacarpal at the first carpometacarpal joint, which aids in opposition of the thumb"
+  },
+  "fill": {
+   "innervation_mn": "Median nerve-ийн recurrent салаа",
+   "blood_supply_mn": "Superficial palmar arch"
+  },
+  "conflicts": "Minor: existing insertion_mn 'I сарвууны ясны урд тал' vs Wikipedia 'Metacarpal bone of the thumb on its radial side' (radial vs anterior side)."
+ },
+ "opponens-digiti-minimi": {
+  "article": "Opponens digiti minimi muscle of hand",
+  "url": "https://en.wikipedia.org/wiki/Opponens_digiti_minimi_muscle_of_hand",
+  "raw": {
+   "Origin": "Hook of hamate and flexor retinaculum",
+   "Insertion": "Medial border of 5th metacarpal (in hand, 3rd digit is orientation of mid-line)",
+   "Artery": "Ulnar artery",
+   "Nerve": "Deep branch of ulnar nerve (C8 and T1)",
+   "Actions": "Draws 5th metacarpal anteriorly and rotates it, bringing little finger (5th digit) into opposition with thumb"
+  },
+  "fill": {
+   "innervation_mn": "Ulnar nerve-ийн гүн салаа (C8 ба T1)",
+   "blood_supply_mn": "Ulnar artery"
+  },
+  "conflicts": null
+ },
+ "rectus-abdominis": {
+  "article": "Rectus abdominis muscle",
+  "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+  "raw": {
+   "Origin": "Crest of pubic",
+   "Insertion": "Costal cartilages of ribs 5-7 xiphoid process of sternum",
+   "Artery": "Inferior epigastric artery",
+   "Nerve": "Segmentally by thoraco-abdominal nerves (T7 to T11) and subcostal (T12)",
+   "Actions": "Flexion of the lumbar spine"
+  },
+  "fill": {
+   "innervation_mn": "Thoraco-abdominal nerves (T7–T11) ба subcostal (T12) мэдрэлээр сегментээр мэдрүүлнэ",
+   "blood_supply_mn": "Inferior epigastric artery"
+  },
+  "conflicts": "Existing insertion_mn: 'хавирга 5 ба 7' vs Wikipedia 'Costal cartilages of ribs 5-7 xiphoid process of sternum' (5–7 range, costal cartilages + xiphoid) — minor wording difference, not changed."
+ },
+ "innermost-intercostal": {
+  "article": "Innermost intercostal muscle",
+  "url": "https://en.wikipedia.org/wiki/Innermost_intercostal_muscle",
+  "raw": {
+   "Origin": "Infero-posterior border of each rib (above)",
+   "Insertion": "Supero-posterior border of the rib (below)",
+   "Artery": "Intercostal arteries",
+   "Nerve": "Intercostal nerves",
+   "Actions": "Through adduction of upper ribs to the lower ribs the muscles narrow intercostal slits and diminish thorax volume ..."
+  },
+  "fill": {
+   "origin_mn": "Хавирга бүрийн доод-хойд ирмэг (дээд хавирга)",
+   "insertion_mn": "Хавирганы дээд-хойд ирмэг (доод хавирга)",
+   "innervation_mn": "Intercostal nerves",
+   "blood_supply_mn": "Intercostal arteries"
+  },
+  "conflicts": null
+ },
+ "occipitofrontalis": {
+  "article": "Occipitofrontalis muscle",
+  "url": "https://en.wikipedia.org/wiki/Occipitofrontalis_muscle",
+  "raw": {
+   "Origin": "Two occipital bellies and two frontal bellies.",
+   "Insertion": "Epicranial aponeurosis",
+   "Artery": "Frontal belly: supraorbital and supratrochlear arteries Occipital belly: occipital artery",
+   "Nerve": "Facial nerve",
+   "Actions": "Raises eyebrows, wrinkles forehead"
+  },
+  "fill": {
+   "origin_mn": "Хоёр occipital гэдэс ба хоёр frontal гэдэс.",
+   "insertion_mn": "Epicranial aponeurosis",
+   "innervation_mn": "Facial nerve",
+   "blood_supply_mn": "Frontal гэдэс: supraorbital ба supratrochlear arteries; occipital гэдэс: occipital artery"
+  },
+  "conflicts": null
+ },
+ "superior-rectus": {
+  "article": "Superior rectus muscle",
+  "url": "https://en.wikipedia.org/wiki/Superior_rectus_muscle",
+  "raw": {
+   "Origin": "Annulus of Zinn at the orbital apex",
+   "Insertion": "7.9 mm superior to the corneal limbus",
+   "Nerve": "Oculomotor nerve",
+   "Actions": "Elevation, adduction, intorsion"
+  },
+  "fill": {
+   "innervation_mn": "Oculomotor nerve"
+  },
+  "conflicts": "Infobox has no Artery field; blood_supply_mn left missing."
+ },
+ "superior-oblique": {
+  "article": "Superior oblique muscle",
+  "url": "https://en.wikipedia.org/wiki/Superior_oblique_muscle",
+  "raw": {
+   "Origin": "Sphenoid bone at the orbital apex, medial to optic canal",
+   "Insertion": "Outer posterior quadrant of the eyeball",
+   "Artery": "Lateral muscular branch of the ophthalmic artery",
+   "Nerve": "Trochlear nerve",
+   "Actions": "Primary action is intorsion (medial rotation); secondary actions are to abduct and depress the eyeball (i.e. it makes the eye move outward and downward)"
+  },
+  "fill": {
+   "innervation_mn": "Trochlear nerve",
+   "blood_supply_mn": "Ophthalmic artery-ийн хажуу muscular салаа"
+  },
+  "conflicts": "Existing insertion_mn says 'between superior rectus and lateral rectus'; Wikipedia: 'Outer posterior quadrant of the eyeball' — compatible but differently phrased; not changed."
+ },
+ "medial-pterygoid": {
+  "article": "Medial pterygoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Medial_pterygoid_muscle",
+  "raw": {
+   "Origin": "Deep head: medial side of lateral pterygoid plate behind the upper teeth Superficial head: pyramidal process of palatine bone and maxillary tuberosity",
+   "Insertion": "Medial angle of the mandible",
+   "Artery": "Pterygoid branches of maxillary artery",
+   "Nerve": "Mandibular nerve via nerve to medial pterygoid",
+   "Actions": "Elevates mandible, closes jaw, helps lateral pterygoids in moving the jaw from side to side"
+  },
+  "fill": {
+   "innervation_mn": "Mandibular nerve, nerve to medial pterygoid-оор дамжин",
+   "blood_supply_mn": "Maxillary artery-ийн pterygoid салаанууд"
+  },
+  "conflicts": "Existing insertion_mn includes 'temporomandibular үе'; Wikipedia insertion is only 'Medial angle of the mandible' — not changed."
+ },
+ "digastric": {
+  "article": "Digastric muscle",
+  "url": "https://en.wikipedia.org/wiki/Digastric_muscle",
+  "raw": {
+   "Origin": "Anterior belly - digastric fossa (mandible); posterior belly - mastoid notch of temporal bone",
+   "Insertion": "Intermediate tendon (hyoid bone)",
+   "Artery": "Anterior belly - Submental branch of facial artery; posterior belly - occipital artery",
+   "Nerve": "Anterior belly - mandibular division (V3) of the trigeminal (CN V) via the mylohyoid nerve; posterior belly - facial nerve (CN VII)",
+   "Actions": "Opens the jaw when the masseter and the temporalis are relaxed."
+  },
+  "fill": {
+   "origin_mn": "Урд гэдэс — digastric fossa (mandible); хойд гэдэс — temporal bone-ийн mastoid notch",
+   "insertion_mn": "Intermediate tendon (hyoid bone)",
+   "innervation_mn": "Урд гэдэс — trigeminal (CN V)-ийн mandibular division (V3), mylohyoid nerve-ээр дамжин; хойд гэдэс — facial nerve (CN VII)",
+   "blood_supply_mn": "Урд гэдэс — facial artery-ийн submental салаа; хойд гэдэс — occipital artery"
+  },
+  "conflicts": null
+ },
+ "sternohyoid": {
+  "article": "Sternohyoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Sternohyoid_muscle",
+  "raw": {
+   "Origin": "Manubrium of sternum",
+   "Insertion": "Hyoid bone",
+   "Artery": "Superior thyroid artery",
+   "Nerve": "C1-C3 by a branch of ansa cervicalis",
+   "Actions": "Depresses hyoid"
+  },
+  "fill": {
+   "origin_mn": "Sternum-ийн manubrium",
+   "insertion_mn": "Hyoid bone",
+   "innervation_mn": "C1-C3, ansa cervicalis-ийн салаагаар",
+   "blood_supply_mn": "Superior thyroid artery"
+  },
+  "conflicts": null
+ },
+ "compressor-urethrae": {
+  "skipped": "No dedicated Wikipedia article/infobox: 'Compressor_urethrae_muscle' not found; it is mentioned only in prose in 'Urethral sphincters' (origin: inferior pubic ramus), no infobox values."
+ },
+ "splenius-cervicis": {
+  "article": "Splenius cervicis muscle",
+  "url": "https://en.wikipedia.org/wiki/Splenius_cervicis_muscle",
+  "raw": {
+   "Origin": "Spinous processes of T3-T6",
+   "Insertion": "Transverse processes of C1-C3",
+   "Artery": "Transverse cervical artery and occipital artery",
+   "Nerve": "Posterior rami of the lower Cervical spinal nerves",
+   "Actions": "Bilaterally: Extend the head and neck, Unilaterally: Lateral flexion to the same side, Rotation to the same side."
+  },
+  "fill": {
+   "innervation_mn": "Доод cervical spinal nerves-ийн posterior rami",
+   "blood_supply_mn": "Transverse cervical artery ба occipital artery"
+  },
+  "conflicts": "Existing origin_mn 'Дунд шугам' and insertion_mn 'Хүзүүний хэсэг' are generic; Wikipedia gives specifics (Spinous processes of T3-T6 / Transverse processes of C1-C3). Not a contradiction; not changed."
+ },
+ "longissimus-thoracis": {
+  "skipped": "No article/infobox specific to longissimus thoracis; 'Longissimus_thoracis' resolves to general 'Longissimus' article whose infobox (Origin/Insertion 'Transverse process', etc.) covers the whole muscle group, not this part."
+ },
+ "semispinalis-capitis": {
+  "skipped": "No article/infobox specific to semispinalis capitis; group article 'Semispinalis muscles' infobox has only Nerve 'Greater occipital nerve' for the whole group (body text says dorsal rami of cervical spinal nerves) — not confident it applies to this part."
+ },
+ "interspinales": {
+  "article": "Interspinales muscles",
+  "url": "https://en.wikipedia.org/wiki/Interspinales_muscles",
+  "raw": {
+   "Origin": "Spinous process",
+   "Insertion": "Spinous process",
+   "Nerve": "Posterior rami of spinal nerves",
+   "Actions": "Proprioception of vertebral column"
+  },
+  "fill": {
+   "origin_mn": "Spinous process",
+   "insertion_mn": "Spinous process",
+   "action_mn": "Нурууны баганын проприоцепц (proprioception)",
+   "innervation_mn": "Spinal nerves-ийн posterior rami"
+  },
+  "conflicts": "Infobox has no Artery field; blood_supply_mn left missing."
+ },
+ "psoas-major": {
+  "article": "Psoas major muscle",
+  "url": "https://en.wikipedia.org/wiki/Psoas_major_muscle",
+  "raw": {
+   "Origin": "Transverse processes of T12–L4 and the lateral aspects of the discs between them",
+   "Insertion": "In the lesser trochanter of the femur",
+   "Artery": "lumbar branch of iliolumbar artery",
+   "Nerve": "Lumbar plexus via anterior branches of L1–L3 nerves",
+   "Actions": "Flexion in the hip joint"
+  },
+  "fill": {
+   "origin_mn": "T12–L4-ийн transverse processes ба тэдгээрийн хоорондох дискүүдийн хажуу тал",
+   "insertion_mn": "Femur-ийн lesser trochanter",
+   "action_mn": "Түнхний үеэр нугалах",
+   "innervation_mn": "Lumbar plexus, L1–L3 мэдрэлүүдийн урд салаагаар",
+   "blood_supply_mn": "Iliolumbar artery-ийн lumbar салаа"
+  },
+  "conflicts": null
+ },
+ "tensor-fascia-latae": {
+  "article": "Tensor fasciae latae muscle",
+  "url": "https://en.wikipedia.org/wiki/Tensor_fasciae_latae_muscle",
+  "raw": {
+   "Origin": "Iliac crest",
+   "Insertion": "Iliotibial tract (via greater trochanter)",
+   "Artery": "Primarily lateral circumflex femoral artery, superior gluteal artery",
+   "Nerve": "Superior gluteal nerve (L4, L5, S1)",
+   "Actions": "Hip - flexion, medial rotation, abduction, knee - lateral rotation, torso - stabilization"
+  },
+  "fill": {
+   "origin_mn": "Iliac crest",
+   "insertion_mn": "Iliotibial tract (greater trochanter-оор дамжин)",
+   "innervation_mn": "Superior gluteal nerve (L4, L5, S1)",
+   "blood_supply_mn": "Голчлон lateral circumflex femoral artery, superior gluteal artery"
+  },
+  "conflicts": null
+ },
+ "inferior-gemellus": {
+  "skipped": "'Inferior_gemellus_muscle' goes to the combined 'Gemelli muscles' article; its infobox has no Insertion/Artery/Nerve rows for the inferior gemellus (only one Origin row, 'Ischiopubic ramus and obturator membrane', which does not match the inferior gemellus) — values exist only in prose."
+ },
+ "pectineus": {
+  "article": "Pectineus muscle",
+  "url": "https://en.wikipedia.org/wiki/Pectineus_muscle",
+  "raw": {
+   "Origin": "Pectineal line of the pubic bone",
+   "Insertion": "Pectineal line of the femur",
+   "Artery": "Obturator artery",
+   "Nerve": "Femoral nerve, sometimes obturator nerve",
+   "Actions": "Thigh - flexion, adduction, external rotation"
+  },
+  "fill": {
+   "origin_mn": "Pubic bone-ийн pectineal line",
+   "insertion_mn": "Femur-ийн pectineal line",
+   "innervation_mn": "Femoral nerve, заримдаа obturator nerve",
+   "blood_supply_mn": "Obturator artery"
+  },
+  "conflicts": "Not an existing-field conflict, but note: Wikipedia infobox says 'external rotation' while its body text says the muscle internally rotates the thigh."
+ },
+ "vastus-intermedius": {
+  "article": "Vastus intermedius muscle",
+  "url": "https://en.wikipedia.org/wiki/Vastus_intermedius_muscle",
+  "raw": {
+   "Origin": "Anterolateral femur",
+   "Insertion": "Quadriceps tendon",
+   "Artery": "Femoral artery",
+   "Nerve": "Femoral nerve",
+   "Actions": "Extension of knee joint"
+  },
+  "fill": {
+   "origin_mn": "Femur-ийн урд-хажуу тал",
+   "innervation_mn": "Femoral nerve",
+   "blood_supply_mn": "Femoral artery"
+  },
+  "conflicts": null
+ },
+ "tibialis-anterior": {
+  "article": "Tibialis anterior muscle",
+  "url": "https://en.wikipedia.org/wiki/Tibialis_anterior_muscle",
+  "raw": {
+   "Origin": "From the upper 1/2 or 2/3 of the lateral surface of the tibia and the adjacent interosseous membrane",
+   "Insertion": "Medial cuneiform and the base of first metatarsal bone of the foot",
+   "Artery": "Anterior tibial artery",
+   "Nerve": "Deep fibular (peroneal) nerve (L5)",
+   "Actions": "Dorsiflexion and inversion of the foot"
+  },
+  "fill": {
+   "origin_mn": "Tibia-гийн хажуу гадаргуугийн дээд 1/2 эсвэл 2/3 ба зэргэлдээх interosseous membrane",
+   "insertion_mn": "Medial cuneiform ба хөлийн first metatarsal bone-ийн суурь",
+   "innervation_mn": "Deep fibular (peroneal) nerve (L5)",
+   "blood_supply_mn": "Anterior tibial artery"
+  },
+  "conflicts": null
+ },
+ "fibularis-brevis": {
+  "article": "Fibularis brevis",
+  "url": "https://en.wikipedia.org/wiki/Fibularis_brevis",
+  "raw": {
+   "Origin": "Lower two-thirds of lateral fibula",
+   "Insertion": "Fifth metatarsal",
+   "Artery": "Fibular (peroneal) artery",
+   "Nerve": "Superficial fibular nerve",
+   "Actions": "Plantarflexion, eversion"
+  },
+  "fill": {
+   "origin_mn": "Fibula-гийн хажуу талын доод гуравны хоёр",
+   "insertion_mn": "Fifth metatarsal",
+   "innervation_mn": "Superficial fibular nerve",
+   "blood_supply_mn": "Fibular (peroneal) artery"
+  },
+  "conflicts": null
+ },
+ "flexor-digitorum-longus": {
+  "article": "Flexor digitorum longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_longus_muscle",
+  "raw": {
+   "Origin": "Posterior surface of the body of the tibia",
+   "Insertion": "Plantar surface; base of the distal phalanges of the four lesser toes",
+   "Artery": "Posterior tibial artery",
+   "Nerve": "Tibial nerve",
+   "Actions": "Flexion of the four smaller digits"
+  },
+  "fill": {
+   "origin_mn": "Tibia-гийн биеийн хойд гадаргуу",
+   "insertion_mn": "Plantar гадаргуу; бага дөрвөн хурууны distal phalanges-ийн суурь",
+   "innervation_mn": "Tibial nerve",
+   "blood_supply_mn": "Posterior tibial artery"
+  },
+  "conflicts": null
+ },
+ "pectoralis-minor": {
+  "article": "Pectoralis minor muscle",
+  "url": "https://en.wikipedia.org/wiki/Pectoralis_minor",
+  "raw": {
+   "Origin": "Third to fifth ribs, near the costochondral junction",
+   "Insertion": "Medial border and superior surface of the coracoid process of the scapula",
+   "Artery": "Pectoral branch of the thoracoacromial trunk",
+   "Nerve": "Medial pectoral nerve (C8)",
+   "Actions": "Stabilizes the scapula by drawing it inferiorly and anteriorly against the thoracic wall, raises ribs in inhalation"
+  },
+  "fill": {
+   "innervation_mn": "Medial pectoral nerve (C8)",
+   "blood_supply_mn": "Thoracoacromial trunk-ийн pectoral салаа"
+  },
+  "conflicts": "Minor: existing origin_mn gives ribs '2–4 эсвэл 3–5'; Wikipedia infobox: 'Third to fifth ribs'. Not changed."
+ },
+ "levator-scapulae": {
+  "article": "Levator scapulae muscle",
+  "url": "https://en.wikipedia.org/wiki/Levator_scapulae_muscle",
+  "raw": {
+   "Origin": "Posterior tubercles of transverse processes of C1 - C4 vertebrae",
+   "Insertion": "Superior part of medial border of scapula",
+   "Artery": "Dorsal scapular artery",
+   "Nerve": "Cervical nerve (C3, C4) and dorsal scapular nerve (C5)",
+   "Actions": "Elevates scapula and tilts its glenoid cavity inferiorly by downwardly rotating the scapula"
+  },
+  "fill": {
+   "origin_mn": "C1–C4 нугаламуудын transverse processes-ийн posterior tubercles",
+   "insertion_mn": "Scapula-гийн дунд ирмэгийн дээд хэсэг",
+   "action_mn": "Scapula-г өргөж, доош эргүүлэх замаар түүний glenoid cavity-г доош хазайлгана",
+   "innervation_mn": "Cervical nerve (C3, C4) ба dorsal scapular nerve (C5)",
+   "blood_supply_mn": "Dorsal scapular artery"
+  },
+  "conflicts": null
+ },
+ "supraspinatus": {
+  "article": "Supraspinatus muscle",
+  "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
+  "raw": {
+   "Origin": "Supraspinous fossa of scapula",
+   "Insertion": "Superior facet of greater tubercle of humerus",
+   "Artery": "Suprascapular artery",
+   "Nerve": "Suprascapular nerve",
+   "Actions": "Abduction of arm and stabilizes humerus"
+  },
+  "fill": {
+   "innervation_mn": "Suprascapular nerve",
+   "blood_supply_mn": "Suprascapular artery"
+  },
+  "conflicts": null
+ },
+ "biceps-brachii": {
+  "article": "Biceps",
+  "url": "https://en.wikipedia.org/wiki/Biceps",
+  "raw": {
+   "Origin": "Short head: coracoid process of the scapula. Long head: supraglenoid tubercle",
+   "Insertion": "Radial tuberosity and bicipital aponeurosis into deep fascia on medial part of forearm",
+   "Artery": "Brachial artery",
+   "Nerve": "Musculocutaneous nerve (C5–C7)",
+   "Actions": "Flexes elbow; flexes and abducts shoulder; supinates radioulnar joint in the forearm;"
+  },
+  "fill": {
+   "origin_mn": "Богино толгой: scapula-гийн coracoid process. Урт толгой: supraglenoid tubercle",
+   "insertion_mn": "Radial tuberosity ба bicipital aponeurosis-оор шууны дунд хэсгийн deep fascia-д",
+   "innervation_mn": "Musculocutaneous nerve (C5–C7)",
+   "blood_supply_mn": "Brachial artery"
+  },
+  "conflicts": null
+ },
+ "pronator-teres": {
+  "article": "Pronator teres muscle",
+  "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle",
+  "raw": {
+   "Origin": "Humeral head: medial supracondylar ridge of humerus slightly above the medial epicondyle of humerus (common flexor tendon) Ulnar head: coronoid process of ulna",
+   "Insertion": "Middle of the lateral surface of the body of the radius",
+   "Artery": "Ulnar artery and radial artery",
+   "Nerve": "Median nerve",
+   "Actions": "Pronation of forearm, flexes elbow"
+  },
+  "fill": {
+   "innervation_mn": "Median nerve",
+   "blood_supply_mn": "Ulnar artery ба radial artery"
+  },
+  "conflicts": "Minor: existing origin_mn 'Humerus' omits the ulnar head (coronoid process of ulna) given by Wikipedia. Not changed."
+ },
+ "flexor-carpi-ulnaris": {
+  "article": "Flexor carpi ulnaris muscle",
+  "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+  "raw": {
+   "Origin": "Medial epicondyle (common flexor tendon) and medial margin on olecranon of ulna",
+   "Insertion": "Pisiform, hook of the hamate, base of the fifth metacarpal bone (volar aspect)",
+   "Artery": "Ulnar artery",
+   "Nerve": "Muscular branches of ulnar nerve (from C8 and T1)",
+   "Actions": "Flexion and adduction of wrist"
+  },
+  "fill": {
+   "innervation_mn": "Ulnar nerve-ийн булчингийн салаанууд (C8 ба T1-ээс)",
+   "blood_supply_mn": "Ulnar artery"
+  },
+  "conflicts": "Minor: existing origin_mn 'Humerus' omits the ulnar origin (olecranon) given by Wikipedia; existing insertion_mn is generic. Not changed."
+ },
+ "extensor-carpi-radialis-brevis": {
+  "article": "Extensor carpi radialis brevis muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle",
+  "raw": {
+   "Origin": "Humerus at the anterior of lateral epicondyle (common extensor tendon)",
+   "Insertion": "Posterior base of the 3rd metacarpal",
+   "Artery": "Radial artery",
+   "Nerve": "Deep branch of the radial nerve",
+   "Actions": "Extensor and abductor of the hand at the wrist joint"
+  },
+  "fill": {
+   "insertion_mn": "3-р metacarpal-ийн хойд суурь",
+   "innervation_mn": "Radial nerve-ийн гүн салаа (deep branch)",
+   "blood_supply_mn": "Radial artery"
+  },
+  "conflicts": null
+ },
+ "extensor-pollicis-brevis": {
+  "article": "Extensor pollicis brevis muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_pollicis_brevis_muscle",
+  "raw": {
+   "Origin": "Radius and the Interosseous membrane",
+   "Insertion": "Thumb, proximal phalanx",
+   "Artery": "Posterior interosseous artery",
+   "Nerve": "Posterior interosseous nerve",
+   "Actions": "Extension of thumb at metacarpophalangeal joint"
+  },
+  "fill": {
+   "action_mn": "Эрхий хурууг metacarpophalangeal үеэр тэнийлгэх",
+   "innervation_mn": "Posterior interosseous nerve",
+   "blood_supply_mn": "Posterior interosseous artery"
+  },
+  "conflicts": "Minor: existing origin_mn 'Radius ба ulna'; Wikipedia: 'Radius and the Interosseous membrane' (no ulna). Not changed."
+ },
+ "flexor-pollicis-brevis": {
+  "article": "Flexor pollicis brevis muscle",
+  "url": "https://en.wikipedia.org/wiki/Flexor_pollicis_brevis_muscle",
+  "raw": {
+   "Origin": "Trapezium, flexor retinaculum",
+   "Insertion": "Thumb, proximal phalanx",
+   "Artery": "Superficial palmar arch",
+   "Nerve": "Recurrent branch of the median nerve, deep branch of ulnar nerve (medial head)",
+   "Actions": "Flexes the thumb at the first metacarpophalangeal joint"
+  },
+  "fill": {
+   "innervation_mn": "Median nerve-ийн recurrent салаа, ulnar nerve-ийн гүн салаа (medial толгой)",
+   "blood_supply_mn": "Superficial palmar arch"
+  },
+  "conflicts": null
+ },
+ "lumbricals": {
+  "article": "Lumbricals of the hand",
+  "url": "https://en.wikipedia.org/wiki/Lumbricals_of_the_hand",
+  "raw": {
+   "Origin": "Flexor digitorum profundus",
+   "Insertion": "Extensor expansion",
+   "Artery": "Superficial palmar arch, common palmar digital arteries, deep palmar arch, dorsal digital artery",
+   "Nerve": "Third and fourth deep branch of ulnar nerve, first and second median nerve",
+   "Actions": "Flex metacarpophalangeal joints, extend interphalangeal joints"
+  },
+  "fill": {
+   "innervation_mn": "Гурав ба дөрөвдүгээр: ulnar nerve-ийн гүн салаа; нэг ба хоёрдугаар: median nerve",
+   "blood_supply_mn": "Superficial palmar arch, common palmar digital arteries, deep palmar arch, dorsal digital artery"
+  },
+  "conflicts": null
+ },
+ "quadratus-lumborum": {
+  "article": "Quadratus lumborum muscle",
+  "url": "https://en.wikipedia.org/wiki/Quadratus_lumborum_muscle",
+  "raw": {
+   "Nerve": "The twelfth thoracic and first through fourth ventral rami of lumbar nerves (T12, L1-L4)",
+   "Artery": "Lumbar arteries, lumbar branch of iliolumbar artery"
+  },
+  "fill": {
+   "innervation_mn": "Арван хоёрдугаар цээжний мэдрэл ба lumbar nerves-ийн нэгээс дөрөвдүгээр ventral rami (T12, L1-L4)",
+   "blood_supply_mn": "Lumbar arteries, iliolumbar artery-ийн lumbar салаа"
+  },
+  "conflicts": "Бага зөрүү: existing origin_mn-д 'хавирга 5–10' орсон; Wikipedia infobox-д origin нь зөвхөн 'Posterior border of iliac crest'. (Өөрчлөөгүй.)"
+ },
+ "levator-ani": {
+  "article": "Levator ani",
+  "url": "https://en.wikipedia.org/wiki/Levator_ani",
+  "raw": {
+   "Origin": "Inner surface of the side of the lesser pelvis",
+   "Insertion": "Inner surface of coccyx, levator ani of opposite side, and into structures that penetrate it.",
+   "Nerve": "S2 Pubococcygeus and iliococcygeus: levator ani nerve (S4); inferior rectal nerve from pudendal nerve (S3, S4); coccygeal plexus; Puborectalis: S3, S4; levator ani nerve;",
+   "Artery": "Inferior gluteal artery"
+  },
+  "fill": {
+   "origin_mn": "Lesser pelvis-ийн хажуу хананы дотоод гадаргуу",
+   "insertion_mn": "Coccyx-ийн дотоод гадаргуу, эсрэг талын levator ani, мөн түүнийг нэвтэрч өнгөрөх бүтцүүдэд",
+   "innervation_mn": "S2. Pubococcygeus ба iliococcygeus: levator ani nerve (S4); pudendal nerve-ээс гарах inferior rectal nerve (S3, S4); coccygeal plexus. Puborectalis: S3, S4; levator ani nerve",
+   "blood_supply_mn": "Inferior gluteal artery"
+  },
+  "conflicts": null
+ },
+ "frontalis": {
+  "article": "Frontalis muscle",
+  "url": "https://en.wikipedia.org/wiki/Frontalis_muscle",
+  "raw": {
+   "Origin": "Galea aponeurotica (epicranial aponeurotis)",
+   "Insertion": "Orbicularis oculi muscle",
+   "Artery": "Supraorbital and supratrochlear arteries",
+   "Nerve": "Facial nerve Temporal branch",
+   "Actions": "Raises eyebrows and wrinkles forehead"
+  },
+  "fill": {
+   "origin_mn": "Galea aponeurotica (epicranial aponeurosis)",
+   "insertion_mn": "Orbicularis oculi muscle",
+   "action_mn": "Хөмсгийг өргөж, духыг үрчлээтүүлнэ",
+   "innervation_mn": "Facial nerve-ийн temporal салаа",
+   "blood_supply_mn": "Supraorbital ба supratrochlear arteries"
+  },
+  "conflicts": null
+ },
+ "inferior-rectus": {
+  "article": "Inferior rectus muscle",
+  "url": "https://en.wikipedia.org/wiki/Inferior_rectus_muscle",
+  "raw": {
+   "Nerve": "Inferior branch of oculomotor nerve",
+   "Artery": "Inferior muscular branch of the ophthalmic artery, infraorbital artery"
+  },
+  "fill": {
+   "innervation_mn": "Oculomotor nerve-ийн доод салаа",
+   "blood_supply_mn": "Ophthalmic artery-ийн доод булчингийн салаа, infraorbital artery"
+  },
+  "conflicts": null
+ },
+ "levator-palpebrae-superioris": {
+  "article": "Levator palpebrae superioris muscle",
+  "url": "https://en.wikipedia.org/wiki/Levator_palpebrae_superioris_muscle",
+  "raw": {
+   "Nerve": "Superior division of oculomotor nerve",
+   "Artery": "Muscular branches of ophthalmic artery and supraorbital artery"
+  },
+  "fill": {
+   "innervation_mn": "Oculomotor nerve-ийн дээд хуваагдал (superior division)",
+   "blood_supply_mn": "Ophthalmic artery-ийн булчингийн салаанууд ба supraorbital artery"
+  },
+  "conflicts": null
+ },
+ "genioglossus": {
+  "article": "Genioglossus",
+  "url": "https://en.wikipedia.org/wiki/Genioglossus",
+  "raw": {
+   "Nerve": "Hypoglossal nerve",
+   "Artery": "Lingual artery"
+  },
+  "fill": {
+   "innervation_mn": "Hypoglossal nerve",
+   "blood_supply_mn": "Lingual artery"
+  },
+  "conflicts": null
+ },
+ "stylohyoid": {
+  "article": "Stylohyoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Stylohyoid_muscle",
+  "raw": {
+   "Origin": "Styloid process (temporal)",
+   "Insertion": "Greater cornu of hyoid bone",
+   "Nerve": "Facial nerve (CN VII)"
+  },
+  "fill": {
+   "origin_mn": "Styloid process (temporal)",
+   "insertion_mn": "Hyoid bone-ийн greater cornu",
+   "innervation_mn": "Facial nerve (CN VII)"
+  },
+  "conflicts": null
+ },
+ "thyrohyoid": {
+  "article": "Thyrohyoid muscle",
+  "url": "https://en.wikipedia.org/wiki/Thyrohyoid_muscle",
+  "raw": {
+   "Origin": "Thyroid cartilage of the larynx",
+   "Insertion": "Hyoid bone",
+   "Artery": "Superior thyroid artery",
+   "Nerve": "First cervical nerve (C1) via hypoglossal nerve"
+  },
+  "fill": {
+   "origin_mn": "Larynx-ийн thyroid cartilage",
+   "insertion_mn": "Hyoid bone",
+   "innervation_mn": "Hypoglossal nerve-ээр дамжин ирэх нэгдүгээр хүзүүний мэдрэл (C1)",
+   "blood_supply_mn": "Superior thyroid artery"
+  },
+  "conflicts": null
+ },
+ "sphincter-urethrovaginalis": {
+  "skipped": "Тусдаа Wikipedia нийтлэл байхгүй; хайлт 'External sphincter muscle of female urethra' руу хөтөлсөн. Тэнд 'sphincter urethrovaginalis' нь зөвхөн үтрээний хажуух бүрэлдэхүүн хэсэгт хааяа хэрэглэгддэг нэр гэж дурдагдсан, infobox нь бүхэл external urethral sphincter-ийнх (Origin/Insertion/Artery байхгүй) — ижил булчин гэдэгт итгэлгүй."
+ },
+ "iliocostalis-cervicis": {
+  "skipped": "Wikipedia-д зөвхөн 'Iliocostalis' (бүхэлд нь) нийтлэл; infobox нь lumborum/thoracis/cervicis-ийг нийлүүлсэн (Origin: Sacrum, iliac crest... ) тул cervicis-д тохирохгүй. Нийтлэлийн текстэд cervicis: origin 'angles of the third, fourth, fifth, and sixth ribs', insertion 'posterior tubercles of the transverse processes of the fourth, fifth, and sixth cervical vertebrae' гэж бий — infobox биш тул бөглөөгүй."
+ },
+ "spinalis-capitis": {
+  "skipped": "Wikipedia-д 'Spinalis' нийтлэл; infobox зөвхөн Thoracis/Cervicis хэсгийн утгатай, spinalis capitis-ийн тусдаа утга байхгүй (текстэд 'not well characterized in modern anatomy textbooks' гэж бичсэн)."
+ },
+ "semispinalis-cervicis": {
+  "skipped": "'Semispinalis cervicis muscle' нь 'Semispinalis muscles' нийтлэл рүү чиглэсэн бөгөөд infobox байхгүй."
+ },
+ "intertransversarii": {
+  "article": "Intertransversarii muscles",
+  "url": "https://en.wikipedia.org/wiki/Intertransversarii",
+  "raw": {
+   "Origin": "Transverse process",
+   "Insertion": "Transverse process above",
+   "Nerve": "Ventral rami and dorsal rami of spinal nerves",
+   "Actions": "Lateral flexion of trunk"
+  },
+  "fill": {
+   "origin_mn": "Transverse process",
+   "insertion_mn": "Дээд талын transverse process",
+   "action_mn": "Их биеийг хажуу тийш нугалах",
+   "innervation_mn": "Spinal nerves-ийн ventral rami ба dorsal rami"
+  },
+  "conflicts": null
+ },
+ "iliacus": {
+  "article": "Iliacus muscle",
+  "url": "https://en.wikipedia.org/wiki/Iliacus_muscle",
+  "raw": {
+   "Origin": "Upper two-thirds of the iliac fossa",
+   "Insertion": "Base of the lesser trochanter of femur",
+   "Artery": "Medial femoral circumflex artery, iliac branch of iliolumbar artery",
+   "Nerve": "Femoral nerve",
+   "Actions": "Flexes and rotates medially thigh"
+  },
+  "fill": {
+   "origin_mn": "Iliac fossa-гийн дээд гуравны хоёр",
+   "insertion_mn": "Femur-ийн lesser trochanter-ийн суурь",
+   "action_mn": "Гуяг нугалж, дотогш (medially) эргүүлнэ",
+   "innervation_mn": "Femoral nerve",
+   "blood_supply_mn": "Medial femoral circumflex artery, iliolumbar artery-ийн iliac салаа"
+  },
+  "conflicts": null
+ },
+ "piriformis": {
+  "article": "Piriformis muscle",
+  "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
+  "raw": {
+   "Origin": "Sacrum",
+   "Insertion": "Greater trochanter",
+   "Artery": "Inferior gluteal, lateral sacral and superior gluteal artery,",
+   "Nerve": "Nerve to the piriformis (L5, S1, and S2)"
+  },
+  "fill": {
+   "origin_mn": "Sacrum",
+   "insertion_mn": "Greater trochanter",
+   "innervation_mn": "Nerve to the piriformis (L5, S1, S2)",
+   "blood_supply_mn": "Inferior gluteal, lateral sacral ба superior gluteal artery"
+  },
+  "conflicts": null
+ },
+ "quadratus-femoris": {
+  "article": "Quadratus femoris muscle",
+  "url": "https://en.wikipedia.org/wiki/Quadratus_femoris_muscle",
+  "raw": {
+   "Origin": "Ischial tuberosity",
+   "Insertion": "Intertrochanteric crest",
+   "Artery": "Inferior gluteal artery, medial circumflex femoral artery",
+   "Nerve": "Nerve to quadratus femoris (L4-S1)"
+  },
+  "fill": {
+   "origin_mn": "Ischial tuberosity",
+   "insertion_mn": "Intertrochanteric crest",
+   "innervation_mn": "Nerve to quadratus femoris (L4-S1)",
+   "blood_supply_mn": "Inferior gluteal artery, medial circumflex femoral artery"
+  },
+  "conflicts": null
+ },
+ "gracilis": {
+  "article": "Gracilis muscle",
+  "url": "https://en.wikipedia.org/wiki/Gracilis_muscle",
+  "raw": {
+   "Origin": "Ischiopubic ramus",
+   "Insertion": "Tibia (pes anserinus)",
+   "Artery": "Medial circumflex femoral artery",
+   "Nerve": "Anterior branch of obturator nerve"
+  },
+  "fill": {
+   "origin_mn": "Ischiopubic ramus",
+   "insertion_mn": "Tibia (pes anserinus)",
+   "innervation_mn": "Obturator nerve-ийн урд салаа",
+   "blood_supply_mn": "Medial circumflex femoral artery"
+  },
+  "conflicts": null
+ },
+ "sartorius": {
+  "article": "Sartorius muscle",
+  "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+  "raw": {
+   "Nerve": "Femoral nerve (sometimes from the intermediate cutaneous nerve of thigh)",
+   "Artery": "Femoral artery"
+  },
+  "fill": {
+   "innervation_mn": "Femoral nerve (заримдаа intermediate cutaneous nerve of thigh-ээс)",
+   "blood_supply_mn": "Femoral artery"
+  },
+  "conflicts": null
+ },
+ "extensor-hallucis-longus": {
+  "article": "Extensor hallucis longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_hallucis_longus_muscle",
+  "raw": {
+   "Origin": "Arises from the middle portion of the fibula on the anterior surface and the interosseous membrane",
+   "Insertion": "Inserts on the dorsal side of the base of the distal phalanx of the big toe",
+   "Artery": "Anterior tibial artery",
+   "Nerve": "Deep fibular nerve, L5 (L4-S1)"
+  },
+  "fill": {
+   "origin_mn": "Fibula-гийн дунд хэсгийн урд гадаргуу ба interosseous membrane-ээс эхэлнэ",
+   "insertion_mn": "Хөлийн эрхий хурууны distal phalanx-ийн суурийн нурууны (dorsal) талд бэхлэгдэнэ",
+   "innervation_mn": "Deep fibular nerve, L5 (L4-S1)",
+   "blood_supply_mn": "Anterior tibial artery"
+  },
+  "conflicts": null
+ },
+ "gastrocnemius": {
+  "article": "Gastrocnemius muscle",
+  "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+  "raw": {
+   "Origin": "Proximal to articular surfaces of lateral condyle of femur and medial condyle of femur",
+   "Artery": "Sural arteries",
+   "Nerve": "Tibial nerve from the sciatic, specifically, nerve roots S1–S2",
+   "Actions": "Plantar flexes foot, flexes knee"
+  },
+  "fill": {
+   "origin_mn": "Femur-ийн lateral condyle ба femur-ийн medial condyle-ийн үений гадаргуугаас дээш (проксимал)",
+   "action_mn": "Тавхайг plantar flexion хийнэ, өвдгийг нугална",
+   "innervation_mn": "Sciatic-аас гарах tibial nerve, тодруулбал S1–S2 мэдрэлийн үндэс",
+   "blood_supply_mn": "Sural arteries"
+  },
+  "conflicts": null
+ },
+ "flexor-hallucis-longus": {
+  "article": "Flexor hallucis longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Flexor_hallucis_longus_muscle",
+  "raw": {
+   "Origin": "Fibula, posterior aspect of middle 1/3",
+   "Insertion": "Plantar surface; base of distal phalanx of hallux",
+   "Artery": "(Muscular branch of peroneal artery (peroneal branch of the posterior tibial artery)",
+   "Nerve": "Tibial nerve, S2 and S3"
+  },
+  "fill": {
+   "origin_mn": "Fibula, дунд 1/3-ийн хойд тал",
+   "insertion_mn": "Улны (plantar) гадаргуу; hallux-ийн distal phalanx-ийн суурь",
+   "innervation_mn": "Tibial nerve, S2 ба S3",
+   "blood_supply_mn": "Peroneal artery-ийн булчингийн салаа (posterior tibial artery-ийн peroneal салаа)"
+  },
+  "conflicts": null
+ },
+ "serratus-anterior": {
+  "article": "Serratus anterior muscle",
+  "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+  "raw": {
+   "Nerve": "Long thoracic nerve (from roots of brachial plexus C5-C7)",
+   "Artery": "Lateral thoracic artery, superior thoracic artery (upper part), thoracodorsal artery (lower part)"
+  },
+  "fill": {
+   "innervation_mn": "Long thoracic nerve (brachial plexus-ийн C5-C7 үндсээс)",
+   "blood_supply_mn": "Lateral thoracic artery, superior thoracic artery (дээд хэсэг), thoracodorsal artery (доод хэсэг)"
+  },
+  "conflicts": null
+ },
+ "pectoralis-major": {
+  "article": "Pectoralis major",
+  "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+  "raw": {
+   "Nerve": "Lateral pectoral nerve and medial pectoral nerve Clavicular head: C5 and C6 Sternocostal head: C7, C8 and T1",
+   "Artery": "Pectoral branch of the thoracoacromial trunk"
+  },
+  "fill": {
+   "innervation_mn": "Lateral pectoral nerve ба medial pectoral nerve. Clavicular head: C5 ба C6; sternocostal head: C7, C8 ба T1",
+   "blood_supply_mn": "Thoracoacromial trunk-ийн pectoral салаа"
+  },
+  "conflicts": "Бага зөрүү: existing insertion_mn 'humerus-ийн tuberculum majus'; Wikipedia: 'Lateral lip of the bicipital groove of the humerus' (crista tuberculi majoris). Existing origin_mn зөвхөн sternum; Wikipedia-д clavicle, costal cartilages, external oblique aponeurosis мөн орсон. Existing action_mn 'humerus-ийг урагш хөдөлгөнө' — Wikipedia: flexion, adduction, internal rotation. (Өөрчлөөгүй.)"
+ },
+ "infraspinatus": {
+  "article": "Infraspinatus muscle",
+  "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle",
+  "raw": {
+   "Nerve": "Suprascapular nerve",
+   "Artery": "Suprascapular and circumflex scapular arteries"
+  },
+  "fill": {
+   "innervation_mn": "Suprascapular nerve",
+   "blood_supply_mn": "Suprascapular ба circumflex scapular arteries"
+  },
+  "conflicts": null
+ },
+ "brachialis": {
+  "article": "Brachialis muscle",
+  "url": "https://en.wikipedia.org/wiki/Brachialis_muscle",
+  "raw": {
+   "Origin": "Anterior surface of the humerus, particularly the distal half of this bone",
+   "Insertion": "Coronoid process and the tuberosity of the ulna",
+   "Artery": "Radial recurrent artery, brachial artery",
+   "Nerve": "Musculocutaneous nerve (C5-C7) and radial nerve (C5, C6)"
+  },
+  "fill": {
+   "origin_mn": "Humerus-ийн урд гадаргуу, ялангуяа энэ ясны алслагдсан (distal) хагас",
+   "insertion_mn": "Ulna-гийн coronoid process ба tuberosity",
+   "innervation_mn": "Musculocutaneous nerve (C5-C7) ба radial nerve (C5, C6)",
+   "blood_supply_mn": "Radial recurrent artery, brachial artery"
+  },
+  "conflicts": null
+ },
+ "pronator-quadratus": {
+  "article": "Pronator quadratus muscle",
+  "url": "https://en.wikipedia.org/wiki/Pronator_quadratus_muscle",
+  "raw": {
+   "Nerve": "Median nerve (anterior interosseous nerve)",
+   "Artery": "Anterior interosseous artery"
+  },
+  "fill": {
+   "innervation_mn": "Median nerve (anterior interosseous nerve)",
+   "blood_supply_mn": "Anterior interosseous artery"
+  },
+  "conflicts": null
+ },
+ "flexor-digitorum-superficialis": {
+  "article": "Flexor digitorum superficialis muscle",
+  "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+  "raw": {
+   "Nerve": "Median nerve",
+   "Artery": "Radial artery"
+  },
+  "fill": {
+   "innervation_mn": "Median nerve",
+   "blood_supply_mn": "Radial artery"
+  },
+  "conflicts": null
+ },
+ "extensor-digitorum": {
+  "article": "Extensor digitorum muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_muscle",
+  "raw": {
+   "Insertion": "Extensor expansion of middle and distal phalanges of the 2nd, 3rd, 4th, and 5th fingers",
+   "Nerve": "Posterior interosseous nerve",
+   "Artery": "Posterior interosseous artery"
+  },
+  "fill": {
+   "insertion_mn": "2, 3, 4, 5-р хурууны middle ба distal phalanges-ийн extensor expansion",
+   "innervation_mn": "Posterior interosseous nerve",
+   "blood_supply_mn": "Posterior interosseous artery"
+  },
+  "conflicts": null
+ },
+ "extensor-pollicis-longus": {
+  "article": "Extensor pollicis longus muscle",
+  "url": "https://en.wikipedia.org/wiki/Extensor_pollicis_longus_muscle",
+  "raw": {
+   "Actions": "Extension of the thumb (metacarpophalangeal and interphalangeal)",
+   "Nerve": "Posterior interosseous nerve (branching from the radial nerve)",
+   "Artery": "Posterior interosseous artery"
+  },
+  "fill": {
+   "action_mn": "Эрхий хурууг тэнийлгэх (metacarpophalangeal ба interphalangeal үеэр)",
+   "innervation_mn": "Posterior interosseous nerve (radial nerve-ээс салбарлана)",
+   "blood_supply_mn": "Posterior interosseous artery"
+  },
+  "conflicts": null
+ },
+ "adductor-pollicis": {
+  "article": "Adductor pollicis muscle",
+  "url": "https://en.wikipedia.org/wiki/Adductor_pollicis_muscle",
+  "raw": {
+   "Nerve": "Deep branch of the ulnar nerve (T1)",
+   "Artery": "Deep palmar arch"
+  },
+  "fill": {
+   "innervation_mn": "Ulnar nerve-ийн гүн салаа (T1)",
+   "blood_supply_mn": "Deep palmar arch"
+  },
+  "conflicts": "Бага зөрүү: existing origin_mn 'II–IV сарвууны ясны суурь'; Wikipedia oblique head: 'bases of the second and the third metacarpals' (+ trapezoid, capitate). (Өөрчлөөгүй.)"
+ },
+ "palmar-interossei": {
+  "article": "Palmar interossei muscles",
+  "url": "https://en.wikipedia.org/wiki/Palmar_interossei_muscles",
+  "raw": {
+   "Nerve": "Deep branch of ulnar nerve",
+   "Artery": "Palmar metacarpal artery of deep palmar arch"
+  },
+  "fill": {
+   "innervation_mn": "Ulnar nerve-ийн гүн салаа",
+   "blood_supply_mn": "Deep palmar arch-ийн palmar metacarpal artery"
+  },
+  "conflicts": null
+ }
+}

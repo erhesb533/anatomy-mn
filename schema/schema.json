@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "anatomy-mn/schema.json",
+  "title": "Анатомийн суралцах апп — агуулгын schema (v1: яс, үе мөч, булчин)",
+  "description": "Нэг файл = нэг сэдэв (жишээ: дээд мөчрийн яс). Файл бүр structures, practical_questions, theory_questions гэсэн 3 жагсаалттай. Бичлэг бүр verified:false-аар эхэлнэ; багш шалгасны дараа true болно. Эх сурвалжид байхгүй талбарыг null болгож, нэрийг нь missing_in_sources-д бичнэ (апп дээр 'материалд байхгүй' гэж харагдана).",
+  "type": "object",
+  "required": ["schema_version", "topic", "structures", "practical_questions", "theory_questions"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.1" },
+    "topic": {
+      "type": "object",
+      "required": ["id", "system", "title"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/slug", "description": "жишээ: bones-upper-limb" },
+        "system": { "$ref": "#/$defs/system" },
+        "title": { "$ref": "#/$defs/names" }
+      }
+    },
+    "structures": { "type": "array", "items": { "$ref": "#/$defs/structure" } },
+    "practical_questions": { "type": "array", "items": { "$ref": "#/$defs/practical_question" } },
+    "theory_questions": { "type": "array", "items": { "$ref": "#/$defs/theory_question" } }
+  },
+
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+
+    "system": { "enum": ["bones", "joints", "muscles"] },
+
+    "names": {
+      "type": "object",
+      "description": "Гурван хэлний нэр. mn нь эх сурвалжид байхгүй бол null.",
+      "required": ["mn", "la", "en"],
+      "additionalProperties": false,
+      "properties": {
+        "mn": { "type": ["string", "null"] },
+        "la": { "type": ["string", "null"], "description": "Terminologia Anatomica (TA2)-ын латин нэр" },
+        "en": { "type": ["string", "null"] }
+      }
+    },
+
+    "name_status": {
+      "type": "object",
+      "description": "Нэр бүр хаанаас ирснийг заана. 'proposed' = Claude-ийн санал болгосон орчуулга, багш заавал батална.",
+      "required": ["mn", "la", "en"],
+      "additionalProperties": false,
+      "properties": {
+        "mn": { "enum": ["source", "proposed", "missing"] },
+        "la": { "enum": ["source", "proposed", "missing"] },
+        "en": { "enum": ["source", "proposed", "missing"] }
+      }
+    },
+
+    "source_ref": {
+      "type": "object",
+      "description": "Мэдээлэл аль эх сурвалжийн аль хэсгээс ирснийг заана. source_id нь sources.json дахь id.",
+      "required": ["source_id", "locator"],
+      "additionalProperties": false,
+      "properties": {
+        "source_id": { "type": "string", "description": "жишээ: openstax-ap2e, ta2, mn-glossary" },
+        "locator": { "type": "string", "description": "бүлэг/хэсэг/хүснэгт, жишээ: 'Ch.8.2 Bones of the Upper Limb'" },
+        "fields": {
+          "type": "array", "items": { "type": "string" },
+          "description": "Энэ эх сурвалжаас авсан талбарууд (заавал биш)"
+        }
+      }
+    },
+
+    "text_mn": {
+      "type": ["string", "null"],
+      "description": "Монгол тайлбар. Эх сурвалж англи бол түүнийг орчуулж бичнэ; эх сурвалжид байхгүй бол null."
+    },
+
+    "image_ref": {
+      "type": "object",
+      "required": ["file", "source_id"],
+      "additionalProperties": false,
+      "properties": {
+        "file": { "type": "string", "description": "жишээ: 803_The_Scapula.jpg (OpenStax media нэр)" },
+        "source_id": { "type": "string" },
+        "view": { "type": ["string", "null"], "description": "anterior / posterior / lateral ..." },
+        "region_id": { "type": ["string", "null"], "description": "Зураг дээрх бүсийн id (SVG path эсвэл өнгөний код) — апп бүтээх үед бөглөнө" },
+        "figure_check": { "enum": ["labeled", "visible", null], "description": "Зургийг нүдээр шалгасан дүн: labeled = нэрээр шошголсон, visible = шошгогүй боловч тод харагдана" }
+      }
+    },
+
+    "review": {
+      "type": "object",
+      "description": "Шалгалтын төлөв. Шинэ бичлэг бүр verified:false.",
+      "required": ["verified"],
+      "additionalProperties": false,
+      "properties": {
+        "verified": { "type": "boolean" },
+        "verified_by": { "type": ["string", "null"] },
+        "verified_date": { "type": ["string", "null"], "format": "date" },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+
+    "structure": {
+      "type": "object",
+      "required": ["id", "system", "kind", "region", "ta2_id", "names", "name_status", "parent_id",
+                   "description_mn", "details", "clinical_mn", "images",
+                   "sources", "missing_in_sources", "review"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/slug", "description": "англи нэрээс: humerus, glenohumeral-joint, biceps-brachii" },
+        "system": { "$ref": "#/$defs/system" },
+        "kind": {
+          "enum": ["bone", "bone-landmark", "skeleton-division", "cartilage", "joint", "joint-part",
+                   "ligament", "tendon-fascia", "muscle", "muscle-group", "opening", "region"],
+          "description": "bone-landmark = ясны хэсэг, товгор, ховил; skeleton-division = араг ясны хэсэг/бүс (axial skeleton, pectoral girdle, pelvis); cartilage = мөгөөрс (costal, septal); joint-part = үений бүрэлдэхүүн (capsule, synovial membrane, disc, meniscus, labrum, bursa, tendon sheath); tendon-fascia = sinew, aponeurosis, fascia, retinaculum; opening = зөөлөн эдийн нүх (diaphragm hiatus); region = топографийн муж/зай (triangle, fossa, eminence, perineum)"
+        },
+        "region": {
+          "enum": ["skull", "vertebral-column", "thoracic-cage", "pectoral-girdle", "upper-limb",
+                   "pelvic-girdle", "lower-limb", "head-neck", "back", "thorax", "abdomen", "general"]
+        },
+        "ta2_id": { "type": ["integer", "null"], "description": "Terminologia Anatomica 2-ын ID (sources/ta2/ хүснэгтээс). Олдохгүй бол null." },
+        "names": { "$ref": "#/$defs/names" },
+        "name_status": { "$ref": "#/$defs/name_status" },
+        "synonyms": {
+          "type": "array", "items": { "$ref": "#/$defs/names" },
+          "description": "Өөр нэрс (жишээ: acromion / acromial process)"
+        },
+        "parent_id": { "type": ["string", "null"], "description": "Аль бүтцийн хэсэг вэ (жишээ: acromion → scapula)" },
+        "description_mn": { "$ref": "#/$defs/text_mn" },
+        "details": {
+          "description": "kind-аас хамаарсан нарийвчилсан мэдээлэл",
+          "oneOf": [
+            { "$ref": "#/$defs/bone_details" },
+            { "$ref": "#/$defs/joint_details" },
+            { "$ref": "#/$defs/muscle_details" },
+            { "type": "null" }
+          ]
+        },
+        "clinical_mn": { "$ref": "#/$defs/text_mn" },
+        "images": { "type": "array", "items": { "$ref": "#/$defs/image_ref" } },
+        "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/source_ref" } },
+        "missing_in_sources": {
+          "type": "array", "items": { "type": "string" },
+          "description": "Эх сурвалжид олдоогүй талбарын нэрс, жишээ: ['names.mn', 'details.innervation']"
+        },
+        "review": { "$ref": "#/$defs/review" }
+      }
+    },
+
+    "bone_details": {
+      "type": "object",
+      "required": ["detail_type", "bone_class", "articulates_with", "landmark_ids"],
+      "additionalProperties": false,
+      "properties": {
+        "detail_type": { "const": "bone" },
+        "bone_class": { "enum": ["long", "short", "flat", "irregular", "sesamoid", null] },
+        "articulates_with": { "type": "array", "items": { "type": "string" }, "description": "холбогдох ясны id" },
+        "landmark_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "joint_details": {
+      "type": "object",
+      "required": ["detail_type", "structural_class", "functional_class", "synovial_type",
+                   "bone_ids", "ligament_ids", "movements_mn"],
+      "additionalProperties": false,
+      "properties": {
+        "detail_type": { "const": "joint" },
+        "structural_class": { "enum": ["fibrous", "cartilaginous", "synovial", null] },
+        "functional_class": { "enum": ["synarthrosis", "amphiarthrosis", "diarthrosis", null] },
+        "synovial_type": { "enum": ["pivot", "hinge", "condyloid", "saddle", "plane", "ball-and-socket", null] },
+        "bone_ids": { "type": "array", "items": { "type": "string" } },
+        "ligament_ids": { "type": "array", "items": { "type": "string" } },
+        "movements_mn": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "muscle_details": {
+      "type": "object",
+      "required": ["detail_type", "origin_mn", "insertion_mn", "action_mn", "innervation_mn", "blood_supply_mn"],
+      "additionalProperties": false,
+      "properties": {
+        "detail_type": { "const": "muscle" },
+        "origin_mn": { "$ref": "#/$defs/text_mn", "description": "Эхлэл" },
+        "insertion_mn": { "$ref": "#/$defs/text_mn", "description": "Бэхлэл" },
+        "action_mn": { "$ref": "#/$defs/text_mn", "description": "Үйл ажиллагаа" },
+        "innervation_mn": { "$ref": "#/$defs/text_mn", "description": "Мэдрэлийн хангамж" },
+        "blood_supply_mn": { "$ref": "#/$defs/text_mn", "description": "Цусан хангамж" },
+        "origin_bone_ids": { "type": "array", "items": { "type": "string" } },
+        "insertion_bone_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "practical_question": {
+      "type": "object",
+      "description": "Лабораторийн практик: зураг дээр заасан бүтцийг нэрлэх.",
+      "required": ["id", "structure_id", "image", "prompt_mn", "answer", "accepted_answers",
+                   "difficulty", "sources", "review"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^prac-[a-z0-9-]+$" },
+        "structure_id": { "type": "string" },
+        "image": { "$ref": "#/$defs/image_ref" },
+        "prompt_mn": { "type": "string", "description": "жишээ: 'Сумаар заасан бүтцийг нэрлэ.'" },
+        "answer": { "$ref": "#/$defs/names" },
+        "accepted_answers": {
+          "type": "array", "items": { "type": "string" },
+          "description": "Зөв гэж тооцох өөр бичлэгүүд (синоним, товчлол)"
+        },
+        "difficulty": { "enum": [1, 2, 3] },
+        "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/source_ref" } },
+        "review": { "$ref": "#/$defs/review" }
+      }
+    },
+
+    "theory_question": {
+      "type": "object",
+      "description": "Онолын тест: олон сонголттой, тайлбартай.",
+      "required": ["id", "structure_ids", "question_type", "stem_mn", "options", "correct_option_ids",
+                   "explanation_mn", "difficulty", "sources", "review"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^theo-[a-z0-9-]+$" },
+        "structure_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "question_type": { "enum": ["single-choice", "multiple-choice", "true-false"] },
+        "topic_tag": {
+          "enum": ["location", "landmark", "articulation", "joint-type", "movement",
+                   "origin", "insertion", "action", "innervation", "blood-supply", "clinical", "terminology"]
+        },
+        "stem_mn": { "type": "string" },
+        "options": {
+          "type": "array", "minItems": 2, "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": ["id", "text_mn"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-f]$" },
+              "text_mn": { "type": "string" }
+            }
+          }
+        },
+        "correct_option_ids": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-f]$" } },
+        "explanation_mn": { "type": "string", "description": "Яагаад зөв болохыг эх сурвалжид тулгуурлан тайлбарла" },
+        "difficulty": { "enum": [1, 2, 3] },
+        "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/source_ref" } },
+        "review": { "$ref": "#/$defs/review" }
+      }
+    }
+  }
+}
