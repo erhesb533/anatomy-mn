@@ -29,8 +29,11 @@ export async function mount(container, modelId, opts = {}) {
         <button class="chip" data-t="att" aria-pressed="false">Булчингийн бэхэлгээ</button>
         <button class="chip" data-t="pins" aria-pressed="false">Ясны хэсгүүд</button>
         <button class="chip" data-t="reset">Анхны байрлал</button>
+        <button class="chip" data-t="explode" aria-pressed="false">Задлах</button>
         <button class="chip" data-t="quiz" aria-pressed="false">Таних тест</button>
+        <button class="chip" data-t="showall" hidden>Бүх ясыг харуулах</button>
       </div>
+      <label class="v3d-explode small" hidden>Задралын хэмжээ <input type="range" min="0" max="100" value="60" aria-label="Задралын хэмжээ"></label>
       <div class="v3d-legend small" hidden><span class="dot o"></span> эхлэл <span class="dot e"></span> бэхлэл</div>
       <div class="v3d-panel" aria-live="polite"></div>
     </div>`;
@@ -118,6 +121,51 @@ export async function mount(container, modelId, opts = {}) {
     const m = new THREE.Mesh(pinGeo, pinMat); m.position.fromArray(l.pos); m.userData.info = l; m.renderOrder = 10; pins.add(m);
   }
 
+  // ---- parts: яс бүрийн node (mesh-үүдийн эцэг) — задлах, тусгаарлахад ашиглана ----
+  const partOf = o => { let n = o; while (n && !byNode.get(n.name)) n = n.parent; return n; };
+  const parts = new Map(); // node name -> { obj, base, worldCenter, off(world) }
+  for (const m of [...bones, ...contextMeshes]) {
+    const obj = partOf(m); const key = m.userData.info.node;
+    if (!obj || parts.has(key)) continue;
+    const c = new THREE.Box3().setFromObject(obj).getCenter(new THREE.Vector3());
+    parts.set(key, { obj, base: obj.position.clone(), c, kind: m.userData.info.kind });
+  }
+  const boneParts = [...parts.entries()].filter(([, p]) => p.kind === 'bone');
+  for (const [, p] of parts) {
+    if (p.kind === 'bone') p.offW = p.c.clone().sub(center).multiplyScalar(0.9);
+    else { // харагдацын хэсгийг (шүд) хамгийн ойрын ястай хамт хөдөлгөнө
+      const near = boneParts.reduce((a, b) => (b[1].c.distanceTo(p.c) < a[1].c.distanceTo(p.c) ? b : a));
+      p.offW = near[1].c.clone().sub(center).multiplyScalar(0.9);
+    }
+    const a = p.obj.parent.worldToLocal(p.c.clone()), b = p.obj.parent.worldToLocal(p.c.clone().add(p.offW));
+    p.offL = b.sub(a);
+  }
+  for (const pin of pins.children) pin.userData.base = pin.position.clone();
+  let explodeT = 0;
+  function setExplode(t) {
+    explodeT = t;
+    for (const [, p] of parts) p.obj.position.copy(p.base).addScaledVector(p.offL, t);
+    for (const pin of pins.children) { const p = parts.get(pin.userData.info.bone); pin.position.copy(pin.userData.base); if (p) pin.position.addScaledVector(p.offW, t); }
+    render();
+  }
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let anim = 0;
+  function animateExplode(to) {
+    cancelAnimationFrame(anim);
+    if (reduceMotion) return setExplode(to);
+    const from = explodeT, t0 = performance.now();
+    (function step(now) { const k = Math.min(1, (now - t0) / 450), e = 1 - Math.pow(1 - k, 3); setExplode(from + (to - from) * e); if (k < 1) anim = requestAnimationFrame(step); })(t0);
+  }
+  // ---- тусгаарлах: зөвхөн нэг ясыг харуулна ----
+  let isolated = null;
+  function isolate(node) {
+    isolated = node;
+    for (const [k, p] of parts) p.obj.visible = !node || k === node;
+    for (const pin of pins.children) pin.visible = !node || pin.userData.info.bone === node;
+    const sa = container.querySelector('[data-t=showall]'); if (sa) sa.hidden = !node;
+    render();
+  }
+
   // ---- render loop (only when needed) ----
   let needs = true;
   function render() { needs = true; }
@@ -170,6 +218,7 @@ export async function mount(container, modelId, opts = {}) {
       ${bonePins.length ? `<p class="small">Энэ ясны хэсгүүд:</p><div class="links">${bonePins.map(l => `<button class="chip" data-pin="${A.esc(l.node)}">${A.esc(label(l))}</button>`).join('')}</div>` : ''}
       <div class="actions">
         <button class="btn" data-focus>Ойртож харах</button>
+        ${info.kind === 'bone' ? `<button class="btn" data-iso>${isolated === info.node ? 'Бүх ясыг харуулах' : 'Зөвхөн энэ ясыг харах'}</button>` : ''}
         ${r ? `<a class="btn" href="#/t/${info.topic}/s/${info.structure_id}">Атласаар дэлгэрэнгүй</a>` : ''}
         ${sameMuscle.length > 1 ? `<button class="btn" data-both>Эхлэл ба бэхлэлийг харуулах</button>` : ''}
       </div>
@@ -180,6 +229,11 @@ export async function mount(container, modelId, opts = {}) {
     });
     const fb = $panel.querySelector('[data-focus]');
     if (fb) fb.onclick = () => selected[0] && focus(selected[0]);
+    const iso = $panel.querySelector('[data-iso]');
+    if (iso) iso.onclick = () => {
+      if (isolated === info.node) { isolate(null); frame(); } else { isolate(info.node); focus(selected[0] || parts.get(info.node).obj, 1.6); }
+      describe(info);
+    };
     const both = $panel.querySelector('[data-both]');
     if (both) both.onclick = () => { showAtt(true); highlight(sameMuscle); };
   }
@@ -193,7 +247,7 @@ export async function mount(container, modelId, opts = {}) {
     ptr.set(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1);
     ray.setFromCamera(ptr, camera);
     const targets = [...(pins.visible ? pins.children : []), ...attachments.filter(a => a.visible), ...bones];
-    const hit = ray.intersectObjects(targets, false)[0];
+    const hit = ray.intersectObjects(targets.filter(o => { let n = o; while (n) { if (!n.visible) return false; n = n.parent; } return true; }), false)[0];
     if (!hit) { clearSel(); render(); $panel.innerHTML = ''; return; }
     if (quiz.on) return quizAnswerClick(hit.object);
     highlight(meshesOf(hit.object)); describe(hit.object.userData.info);
@@ -205,7 +259,16 @@ export async function mount(container, modelId, opts = {}) {
   function showAtt(v) { attachments.forEach(a => a.visible = v); setPressed('att', v); $legend.hidden = !v; render(); }
   tools.querySelector('[data-t=att]').onclick = e => showAtt(e.currentTarget.getAttribute('aria-pressed') !== 'true');
   tools.querySelector('[data-t=pins]').onclick = e => { pins.visible = e.currentTarget.getAttribute('aria-pressed') !== 'true'; setPressed('pins', pins.visible); render(); };
-  tools.querySelector('[data-t=reset]').onclick = () => frame();
+  tools.querySelector('[data-t=reset]').onclick = () => { isolate(null); setPressed('explode', false); container.querySelector('.v3d-explode').hidden = true; animateExplode(0); frame(); };
+  const $ex = container.querySelector('.v3d-explode'), $range = $ex.querySelector('input');
+  tools.querySelector('[data-t=explode]').onclick = e => {
+    const on = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+    setPressed('explode', on); $ex.hidden = !on; const t = on ? $range.value / 100 : 0;
+    animateExplode(t); if (!isolated) frame(center, radius * (1 + 0.9 * t));
+  };
+  $range.oninput = () => { cancelAnimationFrame(anim); setExplode($range.value / 100); };
+  $range.onchange = () => { if (!isolated) frame(center, radius * (1 + 0.9 * $range.value / 100)); };
+  tools.querySelector('[data-t=showall]').onclick = () => { isolate(null); frame(); if (selected[0]) describe(selected[0].userData.info); };
   tools.querySelector('[data-t=quiz]').onclick = e => { const on = e.currentTarget.getAttribute('aria-pressed') !== 'true'; setPressed('quiz', on); on ? startQuiz() : stopQuiz(); };
 
   // ---- 3D identification quiz ----
@@ -214,7 +277,7 @@ export async function mount(container, modelId, opts = {}) {
     ...[...new Map(bones.filter(b => !b.userData.info.part_of).map(o => [o.userData.info.node, o])).values()].map(o => ({ obj: o, info: o.userData.info })),
     ...pins.children.map(o => ({ obj: o, info: o.userData.info })),
   ];
-  function startQuiz() { quiz.on = true; quiz.score = 0; quiz.n = 0; showAtt(false); nextQ(); }
+  function startQuiz() { isolate(null); quiz.on = true; quiz.score = 0; quiz.n = 0; showAtt(false); nextQ(); }
   function stopQuiz() { quiz.on = false; pins.children.forEach(p => p.visible = true); pins.visible = false; setPressed('pins', false); clearSel(); render(); $panel.innerHTML = ''; }
   function nextQ() {
     const pool = quizPool();
