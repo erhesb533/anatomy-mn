@@ -60,6 +60,11 @@ async function sources() {
   if (!SOURCES) { const d = await getJSON('schema/sources.json'); SOURCES = Object.fromEntries(d.sources.map(s => [s.id, s])); }
   return SOURCES;
 }
+let MODELS = null;
+async function models() {
+  if (!MODELS) { try { MODELS = (await getJSON('models/index.json')).models; } catch { MODELS = []; } }
+  return MODELS;
+}
 async function topic(id) {
   if (TOPICS[id]) return TOPICS[id];
   const meta = (await index()).topics.find(t => t.id === id);
@@ -133,6 +138,7 @@ async function viewTopic(tid) {
   const d = await topic(tid); if (!d) return notFound();
   const meta = (await index()).topics.find(t => t.id === tid);
   const label = TOPIC_LABELS[tid] || d.topic.title.en;
+  const model3d = (await models()).find(m => m.topics.includes(tid));
   const kinds = [...new Set(d.structures.map(s => s.kind))];
   const kindFilter = sessionGet('kind:' + tid);
   const list = d.structures.filter(s => !kindFilter || s.kind === kindFilter);
@@ -145,6 +151,7 @@ async function viewTopic(tid) {
         <a href="#/t/${tid}/cards"><b>Флэшкарт</b><span>${meta.counts.structures} карт, давтлагын хуваарьтай</span></a>
         <a href="#/t/${tid}/lab"><b>Зураг таних</b><span>${meta.counts.practical} зураг</span></a>
         <a href="#/t/${tid}/quiz"><b>Тест</b><span>${meta.counts.theory} асуулт, тайлбартай</span></a>
+        ${model3d ? `<a href="#/3d/${model3d.id}?from=${tid}"><b>3D загвар</b><span>Эргүүлж харах, дарж таних</span></a>` : ''}
       </div>
       <h2>Атлас</h2>
       <div class="filter" role="group" aria-label="Төрлөөр шүүх">
@@ -349,6 +356,20 @@ async function viewLab(tid) {
   render();
 }
 
+let unmount3d = null;
+async function view3d(modelId, from) {
+  const m = (await models()).find(x => x.id === modelId); if (!m) return notFound();
+  const tid = from && m.topics.includes(from) ? from : m.topics[0];
+  const label = TOPIC_LABELS[tid] || tid;
+  $app.innerHTML = `${crumbs([['#/', 'Нүүр'], ['#/t/' + tid, label], [null, '3D загвар']])}
+    <div class="${sysClass('bones')}"><h1>3D загвар</h1>
+    <p class="lead">Баруун гар. Чирж эргүүлнэ, хоёр хуруугаар томруулна, яс эсвэл цэг дээр дарж нэрийг нь харна.</p>
+    <div id="v3d-host"></div>
+    <p class="small">3D загвар: Z-Anatomy (CC BY-SA 4.0), BodyParts3D © The Database Center for Life Science (CC BY-SA 2.1 JP).</p></div>`;
+  const mod = await import('./viewer3d.js');
+  unmount3d = await mod.mount(document.getElementById('v3d-host'), modelId);
+}
+
 async function viewAbout() {
   const src = Object.values(await sources());
   $app.innerHTML = `${crumbs([['#/', 'Нүүр'], [null, 'Эх сурвалж, лиценз']])}
@@ -389,10 +410,12 @@ document.querySelectorAll('[data-lang]').forEach(b => b.onclick = () => { state.
 
 // ---------- router ----------
 async function route() {
-  const h = location.hash.replace(/^#\/?/, '');
+  const [h, qs] = location.hash.replace(/^#\/?/, '').split('?');
   const p = h.split('/');
+  if (unmount3d) { try { unmount3d(); } catch { /* ignore */ } unmount3d = null; }
   try {
     if (!h) await viewHome();
+    else if (p[0] === '3d') await view3d(p[1], new URLSearchParams(qs || '').get('from'));
     else if (p[0] === 'about') await viewAbout();
     else if (p[0] === 't' && p[2] === 's') await viewStructure(p[1], p[3]);
     else if (p[0] === 't' && p[2] === 'cards') await viewCards(p[1]);
@@ -407,6 +430,7 @@ async function route() {
   }
   if (!p[2] || p[2] === 's') window.scrollTo(0, 0);
 }
+window.AMN = { topic, nameOf, esc, shuffle, fact, verifiedBadge, get state() { return state; } };
 window.addEventListener('hashchange', route);
 syncLang();
 route();

@@ -44,7 +44,7 @@ jobs:
       - name: Нийтлэх файлуудыг бэлтгэх
         run: |
           mkdir _site
-          cp -r index.html styles.css app.js sw.js manifest.webmanifest icons data media _site/
+          cp -r index.html styles.css app.js viewer3d.js sw.js manifest.webmanifest icons data media models vendor _site/
           mkdir -p _site/schema && cp schema/sources.json _site/schema/
       - uses: actions/upload-pages-artifact@v3
       - id: deployment

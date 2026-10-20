@@ -20,5 +20,11 @@ This work is derived from:
    Article title and URL are recorded per field in each record's `sources` list and in
    `tools/wikipedia_patches.json`. Values translated into Mongolian.
 
+## 3D models (`models/`)
+
+`models/*.glb` are derived from **Z-Anatomy** (https://www.z-anatomy.com/, CC BY-SA 4.0), itself derived from
+**BodyParts3D © The Database Center for Life Science** (CC BY-SA 2.1 Japan). Converted to glTF, right side extracted,
+simplified and compressed. These models are licensed **CC BY-SA 4.0** (not NC) — see `models/LICENSE-Z-Anatomy.txt`.
+
 Changes: translated into Mongolian, restructured into JSON records, quiz questions written from the source text.
 Not reviewed by an anatomy teacher yet (`verified: false`).

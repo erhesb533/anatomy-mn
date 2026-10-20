@@ -177,3 +177,18 @@ dialog#zoom .close { position: fixed; top: 12px; right: 12px; padding: 8px 14px;
 @media (prefers-reduced-motion: no-preference) {
   .card-front, .stage { transition: opacity .15s ease; }
 }
+
+/* 3D */
+.v3d-canvas {
+  position: relative; height: min(62vh, 560px); min-height: 320px; border: 1px solid var(--line); border-radius: var(--radius-l);
+  background: radial-gradient(circle at 50% 40%, var(--surface), var(--paper)); overflow: hidden; touch-action: none;
+}
+.v3d-canvas canvas { display: block; width: 100%; height: 100%; }
+.v3d-status { margin: 8px 0 0; }
+.v3d-tools { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+.v3d-legend { display: flex; align-items: center; gap: 6px; margin: -2px 0 8px; }
+.v3d-legend .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-left: 6px; }
+.v3d-legend .dot.o { background: var(--muscles); } .v3d-legend .dot.e { background: var(--joints); }
+.v3d-panel:not(:empty) { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-l); padding: 16px; }
+.v3d-name { font-weight: 700; font-size: 26px; margin: 0 0 4px; line-height: 1.15; }
+.v3d-legend[hidden] { display: none; }

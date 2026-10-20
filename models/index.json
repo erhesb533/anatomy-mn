@@ -1,0 +1,13 @@
+{
+  "license": "Z-Anatomy (CC BY-SA 4.0), BodyParts3D (CC BY-SA 2.1 JP) — models/LICENSE-Z-Anatomy.txt",
+  "models": [
+    {
+      "id": "upper-limb",
+      "file": "models/upper-limb.glb",
+      "map": "models/upper-limb.map.json",
+      "side": "right",
+      "topics": ["bones-upper-limb", "muscles-upper-limb"],
+      "source": "Z-Anatomy SkeletalSystem100.fbx — Bones of upper limb (right)"
+    }
+  ]
+}

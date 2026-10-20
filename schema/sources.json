@@ -77,6 +77,20 @@
       "note": "Зөвхөн OpenStax-д байхгүй талбарыг нөхөхөд ашигласан. Нийтлэл бүрийн холбоос нь бичлэгийн sources[].locator-д байна. Нэвтэрхий толь тул багшийн шалгалт онцгой чухал."
     },
     {
+      "id": "z-anatomy",
+      "title": "Z-Anatomy — нээлттэй эхийн 3D анатомийн атлас (3D загвар)",
+      "publisher": "Z-Anatomy (Lluís Vinent); BodyParts3D © The Database Center for Life Science",
+      "url": "https://www.z-anatomy.com/",
+      "data_url": "https://github.com/LluisV/Z-Anatomy (Resources/Models/FBX/SkeletalSystem100.fbx)",
+      "license": "CC BY-SA 4.0 (Z-Anatomy), CC BY-SA 2.1 JP (BodyParts3D)",
+      "license_terms": "Эх сурвалжийг дурдах; өөрчилсөн загварыг ижил лицензээр түгээх.",
+      "provides": [
+        "models/*.glb",
+        "3D ясны хэсгийн байрлал"
+      ],
+      "note": "Загварыг glTF болгож, баруун гарыг салгаж, шахсан (tools/model3d/). Загвар дахь нэрсийг зөвхөн атласын бүтэцтэй холбоход ашигласан."
+    },
+    {
       "id": "mn-glossary",
       "title": "Монгол анатомийн нэр томьёоны толь (ХҮЛЭЭГДЭЖ БАЙНА)",
       "status": "missing",

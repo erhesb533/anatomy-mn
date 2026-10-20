@@ -12,11 +12,16 @@
 - **Флэшкарт** — Leitner хайрцгийн давтлагын хуваарь (1, 3, 7, 14, 30 хоног).
 - **Зураг таних** — OpenStax-ын шошготой зургууд дээр нэрийг байрлалтай холбох дасгал.
 - **Тест** — олон сонголттой, тайлбартай; буруу хариулсан асуулт дахин түрүүлж гарна.
+- **3D загвар** (дээд мөч, туршилт) — эргүүлэх, томруулах, яс/ясны хэсэг дээр дарж атласын карт харах,
+  булчингийн эхлэл (улаан) ба бэхлэл (хөх)-ийн талбай, тодруулсан ясыг таних тест.
 - Нэрийн хэл сэлгэгч: Lat / Eng / Мон.
 
 ## Бүтэц
 ```
 index.html, app.js, styles.css   Апп (фреймворкгүй, build алхамгүй)
+viewer3d.js                      3D горим (three.js)
+models/                          3D загвар (.glb) ба атласын холбоос (.map.json)
+vendor/three/                    three.js (MIT), репод хадгалсан хувь
 sw.js, manifest.webmanifest      Офлайн, суулгах
 data/*.json                      Агуулга — сэдэв бүр нэг файл (schema/schema.json)
 data/index.json, search.json     tools/build_index.py үүсгэнэ
@@ -24,6 +29,7 @@ media/                           OpenStax зургууд (1400px хүртэл ж
 schema/                          schema.json, sources.json, CONTENT_GUIDE.md, жишээ
 tools/validate.py                Агуулгын шалгалт (CI-д ажиллана)
 tools/build_index.py             Сэдвийн болон хайлтын индекс
+tools/model3d/                   3D загвар хөрвүүлэх (build.mjs) ба атластай холбох (map.py)
 tools/sources/                   Эх текст (OpenStax Markdown, TA2 хүснэгт)
 tools/wikipedia_patches.json     Wikipedia-аас авсан булчингийн утгууд (эх хувь)
 ```
@@ -47,6 +53,8 @@ python3 -m http.server 8000      # http://localhost:8000
 | Тайлбар, ангилал, булчингийн хүснэгт, зураг | OpenStax, *Anatomy and Physiology 2e*, Betts et al., Rice University | CC BY-NC-SA 4.0 |
 | Латин нэр (TA2 ID) | Terminologia Anatomica 2 (FIPAT 2019), Z-Anatomy `TA2.csv` | CC BY-SA 4.0 |
 | Булчингийн мэдрэл, цусан хангамж, зарим эхлэл/бэхлэл | English Wikipedia (Infobox muscle) | CC BY-SA 4.0 |
+| 3D загвар (`models/`) | Z-Anatomy, BodyParts3D (DBCLS) | CC BY-SA 4.0 / CC BY-SA 2.1 JP |
+| 3D хөдөлгүүр (`vendor/three/`) | three.js r169 | MIT |
 
 - **Агуулга** (`data/`, `media/`, `schema/`, `tools/sources/`): **CC BY-NC-SA 4.0** — арилжааны бус, эх сурвалжийг дурдаж, ижил лицензээр түгээнэ. `LICENSE-CONTENT.md`.
 - **Код**: **MIT** — `LICENSE`.

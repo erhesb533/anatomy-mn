@@ -1,6 +1,6 @@
 /* Офлайн ажиллагаа: апп-ын үндсэн файл ба агуулгыг суулгах үед хадгална,
    зургийг анх нээх үед хадгална. Агуулга шинэчлэгдэхэд VERSION-г өөрчил. */
-const VERSION = 'amn-1.1.0';
+const VERSION = 'amn-1.2.0';
 const SHELL = [
   './', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png',
