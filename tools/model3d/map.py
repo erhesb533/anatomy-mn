@@ -30,14 +30,31 @@ for n in nodes:
     if not m and n['kind'] in ('origin', 'insertion'):
         m = idx.get(norm(re.sub(r'^(long|short|lateral|medial|clavicular part of|acromial part of|scapular spinal part of|spinal part of) (head of )?', '', raw.lower())))
         if m: n['part_of'] = True
+    # бүлгийн бүтэц рүү (part_of) — тоолох нэртэй ясууд, үений капсул
+    GROUPS = [(r'^Vertebra C[3-7]$', 'bones-vertebral-column-thorax', 'cervical-vertebrae'),
+              (r'^Vertebra T\d+$', 'bones-vertebral-column-thorax', 'thoracic-vertebrae'),
+              (r'^Vertebra L\d$', 'bones-vertebral-column-thorax', 'lumbar-vertebrae'),
+              (r'^\w+ rib$', 'bones-vertebral-column-thorax', 'ribs'),
+              (r'^Costal cartilage of \w+ rib$', 'bones-vertebral-column-thorax', 'costal-cartilage')]
+    if not m and n['kind'] == 'bone':
+        for pat, t, sid in GROUPS:
+            if re.search(pat, raw): m = (t, sid); n['part_of'] = True; break
+    if not m and n['kind'] == 'bone':
+        cap = re.match(r'^Articular capsules? of (.+)$', raw)
+        if cap:
+            j = idx.get(norm(cap.group(1)))
+            if j: m = j; n['part_of'] = True
     if not m and n['kind'] == 'bone':
         if re.search(r'phalanx .* of hand', raw, re.I): m = ('bones-upper-limb', 'phalanges-of-hand'); n['part_of'] = True
         elif re.search(r'metacarpal bone', raw, re.I): m = ('bones-upper-limb', 'metacarpal-bones'); n['part_of'] = True
         elif re.search(r'phalanx .* of foot', raw, re.I): m = ('bones-lower-limb', 'phalanges-of-foot'); n['part_of'] = True
         elif re.search(r'metatarsal bone', raw, re.I): m = ('bones-lower-limb', 'metatarsal-bones'); n['part_of'] = True
-    if not m and n['kind'] in ('origin', 'insertion'):
-        m2 = idx.get(norm(re.sub(r'^(ascending|transverse|descending|deep|superficial|abdominal|sternocostal|clavicular|acromial|spinal|scapular spinal) (part|head) of ', '', raw, flags=re.I)))
-        if m2: m = m2; n['part_of'] = True
+    if not m and n['kind'] in ('origin', 'insertion', 'bone'):
+        stripped = re.sub(r'^(ascending|transverse|descending|deep|superficial|abdominal|sternocostal|clavicular|acromial|spinal|scapular spinal|long|short|lateral|medial|ulnar|humeral|humero-ulnar|radial|oblique|inferior|superior|anterior|posterior|costal|lumbar|sternal|iliac|pubic|ischial|femoral|tibial|fibular|tendinous|muscular|vertebral|cranial|cervical|thoracic|orbital|palpebral|labial|alar|transverse|first|second|third|fourth) (part|head|belly|portion|fasciculus|fibres|fibers)s? of (the )?', '', raw, flags=re.I)
+        m2 = idx.get(norm(stripped))
+        if not m2: m2 = idx.get(norm(re.sub(r'\b(muscle|part)\b', '', stripped)))
+        if m2 and stripped != raw: m = m2; n['part_of'] = True
+        elif m2: m = m2
     n['name'] = raw
     if m: n['topic'], n['structure_id'] = m; hit += 1
     else: miss += 1; misses.append((n['kind'], raw))

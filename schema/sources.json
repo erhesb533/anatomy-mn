@@ -81,7 +81,7 @@
       "title": "Z-Anatomy — нээлттэй эхийн 3D анатомийн атлас (3D загвар)",
       "publisher": "Z-Anatomy (Lluís Vinent); BodyParts3D © The Database Center for Life Science",
       "url": "https://www.z-anatomy.com/",
-      "data_url": "https://github.com/LluisV/Z-Anatomy (Resources/Models/FBX/SkeletalSystem100.fbx)",
+      "data_url": "https://github.com/LluisV/Z-Anatomy (Resources/Models/FBX/SkeletalSystem100.fbx, MuscularSystem100.fbx, Joints100.fbx)",
       "license": "CC BY-SA 4.0 (Z-Anatomy), CC BY-SA 2.1 JP (BodyParts3D)",
       "license_terms": "Эх сурвалжийг дурдах; өөрчилсөн загварыг ижил лицензээр түгээх.",
       "provides": [

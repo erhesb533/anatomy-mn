@@ -6,7 +6,10 @@ import { MeshoptEncoder, MeshoptSimplifier } from 'meshoptimizer';
 import fs from 'fs';
 
 const [,, inp, groupArg, side, out, outJson, ctxArg] = process.argv;
-const groups = groupArg.split(','), ctxGroups = ctxArg ? ctxArg.split(',') : [];
+// бүлэг бүрт тал зааж болно: "Name.g@both" / "Name.g@r"; нэмэлт тохиргоо орчны хувьсагчаар
+const parseG = a => a.split(',').filter(Boolean).map(x => { const [g, sd] = x.split('@'); return { g, sd: sd || side }; });
+const groups = parseG(groupArg), ctxGroups = parseG(ctxArg || '');
+const RATIO = +(process.env.RATIO || 0.5), NO_ATT = process.env.NO_ATT === '1';
 const xf = (m, v) => [m[0]*v[0]+m[4]*v[1]+m[8]*v[2]+m[12], m[1]*v[0]+m[5]*v[1]+m[9]*v[2]+m[13], m[2]*v[0]+m[6]*v[1]+m[10]*v[2]+m[14]];
 const dist = (a, b) => Math.hypot(a[0]-b[0], a[1]-b[1], a[2]-b[2]);
 await MeshoptEncoder.ready; await MeshoptSimplifier.ready;
@@ -15,18 +18,18 @@ const doc = await io.read(inp);
 const root = doc.getRoot();
 const scene = root.listScenes()[0];
 const byName = new Map(root.listNodes().map(n => [n.getName(), n]));
-for (const gname of [...groups, ...ctxGroups]) if (!byName.get(gname)) throw new Error('group not found ' + gname);
+for (const { g } of [...groups, ...ctxGroups]) if (!byName.get(g)) throw new Error('group not found ' + g);
 
 // world matrix of the group so we can re-parent it to the scene root
 const keep = new Set();
 const walk = n => { keep.add(n); n.listChildren().forEach(walk); };
 // "bone" = mesh-тэй, .g/.j биш node. side: r|l бол зөвхөн тэр тал, both бол хоёр тал + дан ясууд
 const isBone = c => c.getMesh() && !/\.(g|j|t)$/.test(c.getName()) && !/\.(o|e)\d*[rl]$/.test(c.getName());
-const sideOk = name => side === 'both' ? true : (name.endsWith('.' + side) || !/\.[rl]$/.test(name)) && !(side === 'r' ? /\.l$/ : /\.r$/).test(name);
-const bones = [], context = [];
-function find(n, into) { for (const c of n.listChildren()) { if (isBone(c)) { if (sideOk(c.getName())) into.push(c); } else if (/\.g$/.test(c.getName())) find(c, into); } }
-for (const gname of groups) find(byName.get(gname), bones);
-for (const gname of ctxGroups) find(byName.get(gname), context);
+const sideOk = (name, sd) => sd === 'both' ? true : !(sd === 'r' ? /\.l$/ : /\.r$/).test(name);
+const bones = [], context = [], seenN = new Set();
+function find(n, into, sd) { for (const c of n.listChildren()) { if (isBone(c)) { if (sideOk(c.getName(), sd) && !seenN.has(c)) { seenN.add(c); into.push(c); } } else if (/\.g$/.test(c.getName())) find(c, into, sd); } }
+for (const { g, sd } of groups) find(byName.get(g), bones, sd);
+for (const { g, sd } of ctxGroups) find(byName.get(g), context, sd);
 [...bones, ...context].forEach(walk);
 
 // Bake world transforms into each kept bone, then attach to a fresh root.
@@ -51,6 +54,7 @@ for (const b of bones) (function rec(n, boneName) {
     : /\.o\d*[rl]$/.test(name) ? 'origin'
     : /\.e\d*[rl]$/.test(name) ? 'insertion'
     : /\.j$/.test(name) ? 'label' : 'other';
+  if (NO_ATT && (kind === 'origin' || kind === 'insertion' || kind === 'landmark')) { tmp.push(n); return; }
   if (kind === 'landmark') {
     const w = n.getWorldMatrix(); const tpos = [w[12], w[13], w[14]];
     // .j хүүхэд нь шошгоос бүтэц рүү татсан шугам; бүтэц дээрх үзүүрийг олно
@@ -65,7 +69,7 @@ for (const b of bones) (function rec(n, boneName) {
     }
     info.push({ node: name, kind, bone: boneName, label_pos: tpos, tip });
   } else if (kind !== 'label') info.push({ node: name, kind, bone: boneName });
-  if (kind === 'label') tmp.push(n);
+  if (kind === 'label' || (NO_ATT && (kind === 'origin' || kind === 'insertion' || kind === 'landmark'))) tmp.push(n);
   n.listChildren().forEach(c => rec(c, kind === 'bone' ? name : boneName));
 })(b, b.getName());
 // аль цэг ясны гадаргуу дээр байгааг шалгаж pos-г сонгоно
@@ -87,8 +91,8 @@ console.log('landmark pos: tip', chooseTip, 'label', chooseLabel);
 for (const n of tmp) n.dispose();
 // drop materials' textures (none expected) and simplify attachment meshes a bit
 await doc.transform(
-  prune(), dedup(), weld(),
-  simplify({ simplifier: MeshoptSimplifier, ratio: 0.5, error: 0.0005 }),
+  prune(), ...(process.env.NO_DEDUP === "1" ? [] : [dedup()]), weld(),
+  simplify({ simplifier: MeshoptSimplifier, ratio: RATIO, error: 0.0005 }),
   quantize(), meshopt({ encoder: MeshoptEncoder, level: 'medium' }), prune()
 );
 await io.write(out, doc);

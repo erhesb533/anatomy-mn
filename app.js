@@ -154,7 +154,7 @@ async function viewTopic(tid) {
   const d = await topic(tid); if (!d) return notFound();
   const meta = (await index()).topics.find(t => t.id === tid);
   const label = TOPIC_LABELS[tid] || d.topic.title.en;
-  const model3d = (await models()).find(m => m.topics.includes(tid));
+  const models3d = (await models()).filter(m => m.topics.includes(tid));
   const kinds = [...new Set(d.structures.map(s => s.kind))];
   const kindFilter = sessionGet('kind:' + tid);
   const list = d.structures.filter(s => !kindFilter || s.kind === kindFilter);
@@ -167,7 +167,7 @@ async function viewTopic(tid) {
         <a href="#/t/${tid}/cards"><b>Флэшкарт</b><span>${meta.counts.structures} карт, давтлагын хуваарьтай</span></a>
         <a href="#/t/${tid}/lab"><b>Зураг таних</b><span>${meta.counts.practical} зураг</span></a>
         <a href="#/t/${tid}/quiz"><b>Тест</b><span>${meta.counts.theory} асуулт, тайлбартай</span></a>
-        ${model3d ? `<a href="#/3d/${model3d.id}?from=${tid}"><b>3D загвар</b><span>Эргүүлж харах, дарж таних</span></a>` : ''}
+        ${models3d.map(m => `<a href="#/3d/${m.id}?from=${tid}"><b>3D: ${esc(m.label)}</b><span>Эргүүлж харах, задлах, дарж таних</span></a>`).join('')}
       </div>
       <h2>Атлас</h2>
       <div class="filter" role="group" aria-label="Төрлөөр шүүх">
