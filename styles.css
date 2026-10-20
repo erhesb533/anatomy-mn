@@ -192,3 +192,8 @@ dialog#zoom .close { position: fixed; top: 12px; right: 12px; padding: 8px 14px;
 .v3d-panel:not(:empty) { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-l); padding: 16px; }
 .v3d-name { font-weight: 700; font-size: 26px; margin: 0 0 4px; line-height: 1.15; }
 .v3d-legend[hidden] { display: none; }
+
+/* Бета ба алдаа мэдээлэх */
+.brand .beta { font: 500 11px/1 var(--sans); color: var(--warn); border: 1px solid var(--warn); border-radius: 999px; padding: 2px 6px; vertical-align: 3px; margin-left: 4px; }
+.report-line { margin: 12px 0 0; }
+.report-line .link, a.link.report { color: var(--muted); }

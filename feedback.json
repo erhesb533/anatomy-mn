@@ -1,0 +1,8 @@
+{
+  "_comment": "Алдаа мэдээлэх Google Form. form_url-д '.../viewform' холбоосыг, entries-д асуулт бүрийн entry.NNN дугаарыг бичнэ. form_url null бол товч харагдахгүй.",
+  "form_url": null,
+  "entries": {
+    "record": null,
+    "where": null
+  }
+}

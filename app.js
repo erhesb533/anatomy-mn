@@ -60,6 +60,22 @@ async function sources() {
   if (!SOURCES) { const d = await getJSON('schema/sources.json'); SOURCES = Object.fromEntries(d.sources.map(s => [s.id, s])); }
   return SOURCES;
 }
+let FEEDBACK = null;
+async function loadFeedback() {
+  if (FEEDBACK) return FEEDBACK;
+  try { FEEDBACK = await getJSON('feedback.json'); } catch { FEEDBACK = {}; }
+  return FEEDBACK;
+}
+// Алдаа мэдээлэх холбоос: Google Form-ыг бүртгэлийн ID, байршилтайгаар урьдчилан бөглөж нээнэ.
+function reportLink(record, where, cls = 'btn') {
+  const f = FEEDBACK || {};
+  if (!f.form_url) return '';
+  const u = new URL(f.form_url);
+  u.searchParams.set('usp', 'pp_url');
+  if (f.entries && f.entries.record) u.searchParams.set(f.entries.record, record);
+  if (f.entries && f.entries.where) u.searchParams.set(f.entries.where, where);
+  return `<a class="${cls} report" href="${esc(u.toString())}" target="_blank" rel="noopener">Алдаа мэдээлэх</a>`;
+}
 let MODELS = null;
 async function models() {
   if (!MODELS) { try { MODELS = (await getJSON('models/index.json')).models; } catch { MODELS = []; } }
@@ -223,6 +239,7 @@ async function viewStructure(tid, sid) {
         ${prev ? `<a class="btn" href="#/t/${tid}/s/${prev.id}">Өмнөх</a>` : ''}
         ${next ? `<a class="btn" href="#/t/${tid}/s/${next.id}">Дараах</a>` : ''}
       </div>
+      <div class="actions">${reportLink(s.id, 'Атлас: ' + label + ' — ' + (s.names.la || s.names.en))}</div>
     </article>`;
 }
 
@@ -256,7 +273,8 @@ async function viewCards(tid) {
         <div class="progress-line"><span>${i + 1} / ${due.length}</span><span>Хайрцаг ${c.box} / 5</span></div>
         <p class="card-front">${esc(nameOf(s.names))}</p>
         ${shown ? `<p class="card-sub">${esc(other || '')} · ${esc(KIND_LABELS[s.kind] || s.kind)}</p>${back}
-          <div class="actions"><button class="btn bad" data-a="0">Мэдээгүй</button><button class="btn good" data-a="1">Мэдсэн</button></div>`
+          <div class="actions"><button class="btn bad" data-a="0">Мэдээгүй</button><button class="btn good" data-a="1">Мэдсэн</button></div>
+          <p class="small report-line">${reportLink(s.id, 'Флэшкарт: ' + label, 'link')}</p>`
         : `<p class="card-sub">Энэ бүтцийн байрлал, үүргийг санаж байна уу?</p>
           <div class="actions"><button class="btn primary" data-a="show">Хариуг харах</button></div>`}
       </div>
@@ -303,7 +321,7 @@ async function viewQuiz(tid) {
         }).join('')}</div>
         ${checked ? `<div class="explain"><p class="verdict ${isRight() ? 'ok' : 'no'}">${isRight() ? 'Зөв.' : 'Буруу.'}</p><p>${esc(q.explanation_mn)}</p>
           <p class="small">${q.sources.map(x => esc(x.locator)).join('; ')}</p>
-          ${related}</div>` : ''}
+          ${related}<p class="small report-line">${reportLink(q.id, 'Тест: ' + label, 'link')}</p></div>` : ''}
         <div class="actions">${checked ? `<button class="btn primary" id="next">${i + 1 < qs.length ? 'Дараагийн асуулт' : 'Дүнг харах'}</button>`
           : `<button class="btn primary" id="check" ${picked.size ? '' : 'disabled'}>Шалгах</button>`}</div>
       </div>`;
@@ -341,7 +359,8 @@ async function viewLab(tid) {
         <p class="small">Зурган дээрх шошго англиар бичигдсэн.</p>
         ${figureHTML(q.image, '')}
         ${revealed ? `<p>${esc(s.description_mn || '')}</p>
-          <div class="actions"><button class="btn bad" data-a="0">Олсонгүй</button><button class="btn good" data-a="1">Олсон</button></div>`
+          <div class="actions"><button class="btn bad" data-a="0">Олсонгүй</button><button class="btn good" data-a="1">Олсон</button></div>
+          <p class="small report-line">${reportLink(q.id, 'Зураг таних: ' + label + ' — ' + q.image.file, 'link')}</p>`
         : `<div class="actions"><button class="btn primary" data-a="show">Тайлбар харах</button><button class="btn" data-a="skip">Алгасах</button></div>`}
       </div>
       <p class="note">Одоогийн зургууд дээр нэр нь бичигдсэн байгаа тул энэ горим бол нэрийг байрлалтай холбох дасгал. Шошгогүй зураг, сумаар заасан жинхэнэ лабораторийн горим дараагийн хувилбарт нэмэгдэнэ.</p>`;
@@ -377,6 +396,8 @@ async function viewAbout() {
     <p class="lead">Энэ апп-ын агуулга нээлттэй эх сурвалжаас бэлтгэгдсэн бөгөөд анатомийн багш хараахан шалгаагүй. Бичлэг бүр "Шалгагдаагүй" гэсэн тэмдэгтэй, эх сурвалжийн байршил нь бичлэг бүрийн доор бий.</p>
     ${src.map(s => `<h3>${esc(s.title)}</h3><p class="small">${esc(s.publisher || '')}${s.license ? ' · Лиценз: ' + esc(s.license) : ''}<br>
       ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>` : esc(s.note || '')}</p>`).join('')}
+    <h3>Туршилтын хувилбар</h3>
+    <p class="small">Энэ апп туршилтын (бета) шатандаа байна. Агуулгыг шалгалтад бэлдэхдээ сурах бичигтэйгээ тулгаж хэрэглээрэй. Алдаа олвол тухайн хуудсан дээрх "Алдаа мэдээлэх" товчийг дарна уу — ингэснээр агуулга хүн бүрт засагдана.</p>
     <h3>Ашиглах нөхцөл</h3>
     <p class="small">Агуулга: CC BY-NC-SA 4.0 — арилжааны бус, эх сурвалжийг дурдаж, ижил лицензээр түгээнэ. Програмын код: MIT. Анатомийн зургууд: OpenStax Anatomy and Physiology 2e, Betts et al., Rice University.</p>
     <h3>Хувийн мэдээлэл</h3>
@@ -412,6 +433,7 @@ document.querySelectorAll('[data-lang]').forEach(b => b.onclick = () => { state.
 async function route() {
   const [h, qs] = location.hash.replace(/^#\/?/, '').split('?');
   const p = h.split('/');
+  await loadFeedback();
   if (unmount3d) { try { unmount3d(); } catch { /* ignore */ } unmount3d = null; }
   try {
     if (!h) await viewHome();
@@ -430,7 +452,7 @@ async function route() {
   }
   if (!p[2] || p[2] === 's') window.scrollTo(0, 0);
 }
-window.AMN = { topic, nameOf, esc, shuffle, fact, verifiedBadge, get state() { return state; } };
+window.AMN = { topic, nameOf, esc, shuffle, fact, verifiedBadge, reportLink, get state() { return state; } };
 window.addEventListener('hashchange', route);
 syncLang();
 route();

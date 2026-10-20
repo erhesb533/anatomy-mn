@@ -172,7 +172,8 @@ export async function mount(container, modelId, opts = {}) {
         <button class="btn" data-focus>Ойртож харах</button>
         ${r ? `<a class="btn" href="#/t/${info.topic}/s/${info.structure_id}">Атласаар дэлгэрэнгүй</a>` : ''}
         ${sameMuscle.length > 1 ? `<button class="btn" data-both>Эхлэл ба бэхлэлийг харуулах</button>` : ''}
-      </div>`;
+      </div>
+      ${A.reportLink ? `<p class="small report-line">${A.reportLink(info.structure_id || info.node, '3D: ' + modelId + ' — ' + info.name, 'link')}</p>` : ''}`;
     $panel.querySelectorAll('[data-pin]').forEach(b => b.onclick = () => {
       const p = pins.children.find(m => m.userData.info.node === b.dataset.pin);
       pins.visible = true; setPressed('pins', true); highlight([p]); describe(p.userData.info);
