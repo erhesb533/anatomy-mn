@@ -1,6 +1,6 @@
 /* Офлайн ажиллагаа: апп-ын үндсэн файл ба агуулгыг суулгах үед хадгална,
    зургийг анх нээх үед хадгална. Агуулга шинэчлэгдэхэд VERSION-г өөрчил. */
-const VERSION = 'amn-1.6.0';
+const VERSION = 'amn-1.6.1';
 const SHELL = [
   './', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'feedback.json',
@@ -31,6 +31,22 @@ self.addEventListener('fetch', e => {
   const sameOrigin = url.origin === location.origin;
   const isFont = /fonts\.(googleapis|gstatic)\.com$/.test(url.hostname);
   if (!sameOrigin && !isFont) return;
+  // JSON, HTML, JS: сүлжээ эхэлж (шинэ хувилбар шууд харагдана), офлайн бол кэш
+  const fresh = sameOrigin && (req.mode === 'navigate' || /\.(json|js|html|css)$/.test(url.pathname) || url.pathname.endsWith('/'));
+  if (fresh) {
+    e.respondWith((async () => {
+      const cache = await caches.open(VERSION);
+      try {
+        const res = await fetch(req);
+        if (res.ok) cache.put(req, res.clone());
+        return res;
+      } catch (err) {
+        return (await cache.match(req, { ignoreSearch: true })) || (req.mode === 'navigate' ? cache.match('index.html') : Promise.reject(err));
+      }
+    })());
+    return;
+  }
+  // зураг, 3D загвар, фонт: кэш эхэлж
   e.respondWith((async () => {
     const cache = await caches.open(VERSION);
     const hit = await cache.match(req, { ignoreSearch: true });
