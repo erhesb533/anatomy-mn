@@ -1,8 +1,8 @@
 {
-  "_comment": "Алдаа мэдээлэх Google Form. form_url-д '.../viewform' холбоосыг, entries-д асуулт бүрийн entry.NNN дугаарыг бичнэ. form_url null бол товч харагдахгүй.",
-  "form_url": null,
+  "_comment": "Алдаа мэдээлэх Google Form (bayarjar9al@gmail.com бүртгэлд). Асуултын entry дугаарыг форм өөрчлөгдвөл шинэчилнэ.",
+  "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdA-PWn7SBdzJIuj5_ZjtwH1Q-AB-fySHa7k6cd3JdsrE0gJQ/viewform",
   "entries": {
-    "record": null,
-    "where": null
+    "record": "entry.1978325954",
+    "where": "entry.1001570127"
   }
 }
