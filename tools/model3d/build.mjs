@@ -1,11 +1,12 @@
-// Usage: node build.mjs <in.glb> <groupNode> <side r|l> <out.glb> <out-nodes.json>
+// Usage: node build.mjs <in.glb> <group[,group...]> <side r|l|both> <out.glb> <out-nodes.json> [contextGroup,...]
 import { NodeIO } from '@gltf-transform/core';
 import { ALL_EXTENSIONS } from '@gltf-transform/extensions';
 import { prune, dedup, weld, quantize, meshopt, simplify } from '@gltf-transform/functions';
 import { MeshoptEncoder, MeshoptSimplifier } from 'meshoptimizer';
 import fs from 'fs';
 
-const [,, inp, group, side, out, outJson] = process.argv;
+const [,, inp, groupArg, side, out, outJson, ctxArg] = process.argv;
+const groups = groupArg.split(','), ctxGroups = ctxArg ? ctxArg.split(',') : [];
 const xf = (m, v) => [m[0]*v[0]+m[4]*v[1]+m[8]*v[2]+m[12], m[1]*v[0]+m[5]*v[1]+m[9]*v[2]+m[13], m[2]*v[0]+m[6]*v[1]+m[10]*v[2]+m[14]];
 const dist = (a, b) => Math.hypot(a[0]-b[0], a[1]-b[1], a[2]-b[2]);
 await MeshoptEncoder.ready; await MeshoptSimplifier.ready;
@@ -14,21 +15,23 @@ const doc = await io.read(inp);
 const root = doc.getRoot();
 const scene = root.listScenes()[0];
 const byName = new Map(root.listNodes().map(n => [n.getName(), n]));
-const g = byName.get(group);
-if (!g) throw new Error('group not found ' + group);
+for (const gname of [...groups, ...ctxGroups]) if (!byName.get(gname)) throw new Error('group not found ' + gname);
 
 // world matrix of the group so we can re-parent it to the scene root
 const keep = new Set();
 const walk = n => { keep.add(n); n.listChildren().forEach(walk); };
-const other = side === 'r' ? '.l' : '.r';
-// keep only bones of chosen side (+ all their descendants)
-const bones = [];
-(function find(n) { for (const c of n.listChildren()) { if (c.getName().endsWith('.' + side)) bones.push(c); else if (!c.getName().endsWith(other)) find(c); } })(g);
-bones.forEach(walk);
+// "bone" = mesh-тэй, .g/.j биш node. side: r|l бол зөвхөн тэр тал, both бол хоёр тал + дан ясууд
+const isBone = c => c.getMesh() && !/\.(g|j|t)$/.test(c.getName()) && !/\.(o|e)\d*[rl]$/.test(c.getName());
+const sideOk = name => side === 'both' ? true : (name.endsWith('.' + side) || !/\.[rl]$/.test(name)) && !(side === 'r' ? /\.l$/ : /\.r$/).test(name);
+const bones = [], context = [];
+function find(n, into) { for (const c of n.listChildren()) { if (isBone(c)) { if (sideOk(c.getName())) into.push(c); } else if (/\.g$/.test(c.getName())) find(c, into); } }
+for (const gname of groups) find(byName.get(gname), bones);
+for (const gname of ctxGroups) find(byName.get(gname), context);
+[...bones, ...context].forEach(walk);
 
 // Bake world transforms into each kept bone, then attach to a fresh root.
-const newRoot = doc.createNode(group.replace(/\.g$/, ''));
-for (const b of bones) {
+const newRoot = doc.createNode('model');
+for (const b of [...bones, ...context]) {
   const m = b.getWorldMatrix();
   b.getParentNode()?.removeChild(b);
   b.setMatrix(m);
@@ -40,9 +43,10 @@ scene.addChild(newRoot);
 // record node info (before stripping label meshes)
 const info = [];
 const tmp = [];
+for (const c of context) { info.push({ node: c.getName(), kind: 'context', bone: c.getName() }); c.listChildren().forEach(k => tmp.push(k)); }
 for (const b of bones) (function rec(n, boneName) {
   const name = n.getName();
-  const kind = name.endsWith('.' + side) ? 'bone'
+  const kind = n === b ? 'bone'
     : /\.t$/.test(name) ? 'landmark'
     : /\.o\d*[rl]$/.test(name) ? 'origin'
     : /\.e\d*[rl]$/.test(name) ? 'insertion'

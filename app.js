@@ -362,8 +362,8 @@ async function view3d(modelId, from) {
   const tid = from && m.topics.includes(from) ? from : m.topics[0];
   const label = TOPIC_LABELS[tid] || tid;
   $app.innerHTML = `${crumbs([['#/', 'Нүүр'], ['#/t/' + tid, label], [null, '3D загвар']])}
-    <div class="${sysClass('bones')}"><h1>3D загвар</h1>
-    <p class="lead">Баруун гар. Чирж эргүүлнэ, хоёр хуруугаар томруулна, яс эсвэл цэг дээр дарж нэрийг нь харна.</p>
+    <div class="${sysClass('bones')}"><h1>3D загвар: ${esc(m.label || '')}</h1>
+    <p class="lead">${esc(m.hint || '')}</p>
     <div id="v3d-host"></div>
     <p class="small">3D загвар: Z-Anatomy (CC BY-SA 4.0), BodyParts3D © The Database Center for Life Science (CC BY-SA 2.1 JP).</p></div>`;
   const mod = await import('./viewer3d.js');

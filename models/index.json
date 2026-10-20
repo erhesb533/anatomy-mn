@@ -6,8 +6,26 @@
       "file": "models/upper-limb.glb",
       "map": "models/upper-limb.map.json",
       "side": "right",
-      "topics": ["bones-upper-limb", "muscles-upper-limb"],
-      "source": "Z-Anatomy SkeletalSystem100.fbx — Bones of upper limb (right)"
+      "topics": [
+        "bones-upper-limb",
+        "muscles-upper-limb"
+      ],
+      "source": "Z-Anatomy SkeletalSystem100.fbx — Bones of upper limb (right)",
+      "label": "Баруун гар",
+      "hint": "Баруун гар. Чирж эргүүлнэ, хоёр хуруугаар томруулна, яс эсвэл цэг дээр дарж нэрийг нь харна."
+    },
+    {
+      "id": "skull",
+      "label": "Гавал",
+      "file": "models/skull.glb",
+      "map": "models/skull.map.json",
+      "side": "both",
+      "topics": [
+        "bones-skull",
+        "muscles-head-neck-back"
+      ],
+      "hint": "Гавал, доод эрүү, хэлэн доорх яс. Яс бүр дээр дарж нэрийг нь харна; шүд нь зөвхөн харагдацад зориулагдсан.",
+      "source": "Z-Anatomy SkeletalSystem100.fbx — Bones of cranium, Extracranial bones of head (+ Teeth, харагдацад)"
     }
   ]
 }

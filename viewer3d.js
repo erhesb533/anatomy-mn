@@ -71,7 +71,7 @@ export async function mount(container, modelId, opts = {}) {
   const root = gltf.scene; scene.add(root);
   // GLTFLoader нь node-ийн нэрийг цэвэрлэдэг ("Clavicle.r" → "Clavicler"), тиймээс ижил аргаар түлхүүр үүсгэнэ
   const byNode = new Map(map.map(x => [THREE.PropertyBinding.sanitizeNodeName(x.node), x]));
-  const pickables = [], attachments = [], bones = [];
+  const pickables = [], attachments = [], bones = [], contextMeshes = [];
   root.traverse(o => {
     if (!o.isMesh) return;
     // FBX2glTF нь mesh-ийг node-ийн дор хүүхэд болгодог тул нэрийг дээш хайна
@@ -80,6 +80,7 @@ export async function mount(container, modelId, opts = {}) {
     if (!info) { o.visible = false; return; }
     o.userData.info = info;
     if (info.kind === 'bone') { o.material = boneMat; bones.push(o); pickables.push(o); }
+    else if (info.kind === 'context') { o.material = boneMat; contextMeshes.push(o); } // харагдацад (жишээ нь шүд), сонгогдохгүй
     else if (info.kind === 'origin' || info.kind === 'insertion') {
       if (!info.structure_id) { o.visible = false; return; }
       o.material = attMat(info.kind); o.userData.base = o.material; o.visible = false; attachments.push(o);
@@ -94,7 +95,7 @@ export async function mount(container, modelId, opts = {}) {
     const b = new THREE.Box3();
     if (obj.parent === pins) b.setFromCenterAndSize(obj.position, new THREE.Vector3(1, 1, 1).multiplyScalar(radius * 0.12));
     else b.setFromObject(obj);
-    const r = Math.max(b.getSize(new THREE.Vector3()).length() / 2 * context, radius * 0.08);
+    const r = Math.min(Math.max(b.getSize(new THREE.Vector3()).length() / 2 * context, radius * 0.08), radius);
     const target = b.getCenter(new THREE.Vector3());
     const dir = camera.position.clone().sub(controls.target).normalize();
     const dist = r / Math.sin(THREE.MathUtils.degToRad(camera.fov / 2));
@@ -142,7 +143,9 @@ export async function mount(container, modelId, opts = {}) {
 
   // ---- selection ----
   let selected = [];
-  function undim() { for (const b of bones) if (b.material === dimMat) b.material = boneMat; }
+  function undim() { for (const b of [...bones, ...contextMeshes]) if (b.material === dimMat) b.material = boneMat; }
+  // нэг яс олон mesh-ээс (primitive) бүрдэж болно — бүгдийг нь хамт сонгоно
+  const meshesOf = o => o.userData.info && o.userData.info.kind === 'bone' ? bones.filter(b => b.userData.info.node === o.userData.info.node) : [o];
   function clearSel() {
     undim();
     for (const o of selected) o.material = o.userData.info.kind === 'bone' ? boneMat : (o.isMesh && o.parent === pins ? pinMat : o.userData.base);
@@ -155,8 +158,9 @@ export async function mount(container, modelId, opts = {}) {
   }
   function describe(info) {
     const r = rec(info);
-    const sameMuscle = info.structure_id ? attachments.filter(a => a.userData.info.structure_id === info.structure_id) : [];
-    const bonePins = info.kind === 'bone' ? landmarks.filter(l => l.bone === info.node) : [];
+    const sameMuscle = info.structure_id && (info.kind === 'origin' || info.kind === 'insertion') ? attachments.filter(a => a.userData.info.structure_id === info.structure_id) : [];
+    const seen = new Set();
+    const bonePins = info.kind === 'bone' ? landmarks.filter(l => rec(l) && rec(l).parent_id === info.structure_id || l.bone === info.node).filter(l => !seen.has(l.structure_id) && seen.add(l.structure_id)) : [];
     const det = r && r.details || {};
     $panel.innerHTML = `
       <p class="v3d-name latin">${A.esc(label(info))}</p>
@@ -191,7 +195,7 @@ export async function mount(container, modelId, opts = {}) {
     const hit = ray.intersectObjects(targets, false)[0];
     if (!hit) { clearSel(); render(); $panel.innerHTML = ''; return; }
     if (quiz.on) return quizAnswerClick(hit.object);
-    highlight([hit.object]); describe(hit.object.userData.info);
+    highlight(meshesOf(hit.object)); describe(hit.object.userData.info);
   });
 
   // ---- tools ----
@@ -206,7 +210,7 @@ export async function mount(container, modelId, opts = {}) {
   // ---- 3D identification quiz ----
   const quiz = { on: false, item: null, score: 0, n: 0 };
   const quizPool = () => [
-    ...bones.filter(b => !b.userData.info.part_of).map(o => ({ obj: o, info: o.userData.info })),
+    ...[...new Map(bones.filter(b => !b.userData.info.part_of).map(o => [o.userData.info.node, o])).values()].map(o => ({ obj: o, info: o.userData.info })),
     ...pins.children.map(o => ({ obj: o, info: o.userData.info })),
   ];
   function startQuiz() { quiz.on = true; quiz.score = 0; quiz.n = 0; showAtt(false); nextQ(); }
@@ -217,10 +221,11 @@ export async function mount(container, modelId, opts = {}) {
     quiz.item = item;
     pins.visible = item.obj.parent === pins; setPressed('pins', pins.visible);
     if (pins.visible) pins.children.forEach(p => p.visible = p === item.obj);
-    highlight([item.obj]); frame(); focus(item.obj, item.obj.parent === pins ? 4 : 3.5);
+    highlight(meshesOf(item.obj)); frame(); focus(item.obj, item.obj.parent === pins ? 4 : 3.5);
     // бусад ясыг тунгалаг болгож, тодруулсан хэсгийг далдлагдахаас сэргийлнэ
     const target = item.obj.parent === pins ? item.info.bone : item.info.node;
     for (const b of bones) if (b.userData.info.node !== target) b.material = dimMat;
+    for (const c of contextMeshes) c.material = dimMat;
     const same = pool.filter(p => p.info.kind === item.info.kind && p.info.structure_id !== item.info.structure_id);
     const opts = A.shuffle([item, ...A.shuffle(same).slice(0, 3)]);
     $panel.innerHTML = `<div class="progress-line"><span>Таних тест · ${quiz.score} / ${quiz.n}</span></div>
